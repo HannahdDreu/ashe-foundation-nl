@@ -1,0 +1,23 @@
+{
+  "name": "lesson01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
+    "prettier": "npx prettier --write **/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.10",
+    "webpack-bundle-analyzer": "^4.10.1"
+  },
+  "dependencies": {
+    "flag-icons": "^7.1.0",
+    "flowbite": "^2.2.1",
+    "next-i18next": "^15.2.0"
+  }
+}
