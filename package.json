@@ -4,6 +4,9 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
+    "start": "next start",
+    "dev": "next dev",
+    "build": "next build",
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
     "prettier": "npx prettier --write **/*.html"
   },
@@ -16,11 +19,14 @@
     "webpack-bundle-analyzer": "^4.10.1"
   },
   "dependencies": {
-    "axios": "^1.7.9",
+    "axios": "^1.7.8",
     "body-parser": "^1.20.3",
     "express": "^4.21.2",
     "flag-icons": "^7.1.0",
     "flowbite": "^2.2.1",
     "next-i18next": "^15.2.0"
+  },
+  "resolutions": {
+    "@types/scheduler": "0.16.0"
   }
 }
