@@ -16,6 +16,9 @@
     "webpack-bundle-analyzer": "^4.10.1"
   },
   "dependencies": {
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
     "flag-icons": "^7.1.0",
     "flowbite": "^2.2.1",
     "next-i18next": "^15.2.0"
