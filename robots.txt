@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /img/rox.webp
+
+User-agent: *
+Disallow: /img/ProfileHannah.webp
