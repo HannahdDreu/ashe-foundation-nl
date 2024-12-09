@@ -19,12 +19,15 @@
     "webpack-bundle-analyzer": "^4.10.1"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.20",
     "axios": "^1.7.8",
     "body-parser": "^1.20.3",
     "express": "^4.21.2",
     "flag-icons": "^7.1.0",
     "flowbite": "^2.2.1",
-    "next-i18next": "^15.2.0"
+    "next-i18next": "^15.2.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16"
   },
   "resolutions": {
     "@types/scheduler": "0.16.0"

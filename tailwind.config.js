@@ -1,8 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./build/*.html", // Update with the actual paths to your HTML files
-    "./node_modules/flowbite/**/*.js",
+    "./build/*.html",              // Include built HTML files
+    "./src/**/*.{html,js,jsx,ts,tsx}", // Include source files
+    "./public/**/*.html",          // Include public HTML files
+    "./node_modules/flowbite/**/*.js", // Include Flowbite components
   ],
   theme: {
     extend: {
