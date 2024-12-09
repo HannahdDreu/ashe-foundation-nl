@@ -18,6 +18,9 @@
             <meta name="author" content="ASHE Foundation">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="style.css">
+            <link rel="preload" href="/img/flag-us.webp" as="image">
+<link rel="preload" href="/img/flag-nl.webp" as="image">
+<link rel="preload" href="/img/Untitled design.svg" as="image">
               </head>
       <body class="min-h-screen">
 <!-- Google Tag Manager (noscript) -->
@@ -31,6 +34,7 @@
             <!-- Logo Section -->
             <a href="https://www.ashefoundation.nl/" class="flex items-center bg-white px-3 py-2 rounded-lg">
                 <img src="img/Untitled design.svg" class="h-16 sm:h-20" alt="ASHE Foundation Logo">
+
             </a>
 
             <!-- Mobile Menu Button -->
@@ -57,25 +61,27 @@
                 <!-- Language Toggler -->
                 <div class="relative">
                     <button type="button" data-dropdown-toggle="language-dropdown-menu" class="px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 rounded-lg flex items-center">
-                        <img src="img/flag-us.svg" alt="English" class="w-5 h-5 mr-2">
+                        <img src="img/flag-us.webp" alt="English" class="w-5 h-5 mr-2" style="width: 20px; height: auto;">
                         English
                     </button>
-                    <!-- Dropdown Menu -->
-                    <div class="hidden absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-10" id="language-dropdown-menu">
+                    <div id="language-dropdown-menu" class="hidden absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-10">
                         <ul class="py-1">
                             <li>
-                                <a href="https://www.ashefoundation.net/" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                                    <img src="img/flag-us.svg" alt="English" class="w-5 h-5 mr-2"> English
+                                <a href="https://www.ashefoundation.nl/" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                                    <img src="img/flag-nl.webp" alt="Dutch" class="w-5 h-5 mr-2" style="width: 20px; height: auto;">
+                                    Dutch
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.ashefoundation.nl/" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                                    <img src="img/flag-nl.svg" alt="Dutch" class="w-5 h-5 mr-2"> Dutch
+                                <a href="https://www.ashefoundation.net/" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                                    <img src="img/flag-us.webp" alt="English" class="w-5 h-5 mr-2" style="width: 20px; height: auto;">
+                                    English
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
+                
             </div>
         </div>
 
