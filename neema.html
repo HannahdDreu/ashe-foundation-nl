@@ -217,7 +217,7 @@
     <link rel="stylesheet" href="/css/main.css" />
 
     <!-- Google Tag Manager -->
-    <script src="/js/gtm.js" async></script>
+    <script src="./js/gtm.js" defer></script>
   </head>
   <body class="min-h-screen neema-story">
     <!-- Skip to content link for accessibility -->
@@ -1450,8 +1450,24 @@
 
     <!-- Load JavaScript Files -->
     <script src="./js/translations.js" defer></script>
-    <script src="./js/gtm.js" defer></script>
-    <script src="./js/main.js" defer></script>
-    <script src="./js/modals.js" defer></script>
+    <script>
+      // Load main.js when DOM is ready
+      document.addEventListener('DOMContentLoaded', function() {
+        const mainScript = document.createElement('script');
+        mainScript.src = './js/main.js';
+        mainScript.defer = true;
+        document.body.appendChild(mainScript);
+        
+        // Only load modals.js if we have modal elements on the page
+        if (document.querySelector('.modal') || 
+            document.querySelector('[data-modal]') || 
+            document.getElementById('graph-modal')) {
+          const modalScript = document.createElement('script');
+          modalScript.src = './js/modals.js';
+          modalScript.defer = true;
+          document.body.appendChild(modalScript);
+        }
+      });
+    </script>
   </body>
 </html>
