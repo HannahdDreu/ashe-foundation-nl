@@ -31,6 +31,11 @@ exports.handler = async (event, context) => {
                    event.headers['x-forwarded-for'] || 
                    '127.0.0.1';
     
+    // Take only the first IP address if there are multiple
+    if (clientIP.includes(',')) {
+      clientIP = clientIP.split(',')[0].trim();
+    }
+    
     // Convert IPv6 localhost to IPv4
     if (clientIP === '::1' || clientIP.includes(':')) {
       clientIP = '127.0.0.1';
