@@ -985,15 +985,6 @@
     <!-- Load JavaScript Files -->
     <script src="./js/translations.js" defer></script>
     <script src="./js/main.js" defer></script>
-    <script defer>
-      // This script will run after translations.js and main.js
-      if (document.querySelector('.modal') || 
-          document.querySelector('[data-modal]') || 
-          document.getElementById('graph-modal')) {
-        const modalScript = document.createElement('script');
-        modalScript.src = './js/modals.js';
-        document.body.appendChild(modalScript);
-      }
-    </script>
+    <script src="./js/modals.js" defer></script>
   </body>
 </html>
