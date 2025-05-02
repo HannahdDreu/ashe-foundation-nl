@@ -224,14 +224,14 @@
               <div class="flex items-center gap-3">
                 <!-- Language Toggler -->
                 <div
-                  class="flex items-center bg-light rounded-full p-2 border border-yellow"
+                  class="flex items-center bg-light rounded-md p-1 border border-yellow"
                   role="group"
                   aria-label="Taal selectie"
                 >
                   <button
                     type="button"
                     id="lang-nl"
-                    class="flex items-center px-2 py-1 text-sm active-lang"
+                    class="flex items-center px-1.5 py-0.5 text-xs sm:text-sm active-lang"
                     aria-pressed="true"
                     aria-label="Schakel naar Nederlandse taal"
                   >
@@ -239,17 +239,21 @@
                       src="img/flag-nl.webp"
                       alt="Nederlandse vlag"
                       loading="lazy"
-                      class="w-5 h-5 mr-2"
-                      width="20"
-                      height="20"
+                      class="w-4 h-4"
+                      width="16"
+                      height="16"
                     />
-                    <span data-lang-nl>NL</span>
+                    <span class="hidden sm:inline ml-1 sm:ml-2" data-lang-nl
+                      >NL</span
+                    >
                   </button>
-                  <span class="text-gray mx-1" aria-hidden="true">|</span>
+                  <span class="text-gray mx-0.5 sm:mx-1" aria-hidden="true"
+                    >|</span
+                  >
                   <button
                     type="button"
                     id="lang-en"
-                    class="flex items-center px-2 py-1 text-sm"
+                    class="flex items-center px-1.5 py-0.5 text-xs sm:text-sm"
                     aria-pressed="false"
                     aria-label="Switch to English language"
                   >
@@ -257,11 +261,13 @@
                       src="img/flag-us.webp"
                       alt="United States flag"
                       loading="lazy"
-                      class="w-5 h-5 mr-2"
-                      width="20"
-                      height="20"
+                      class="w-4 h-4"
+                      width="16"
+                      height="16"
                     />
-                    <span data-lang-en>EN</span>
+                    <span class="hidden sm:inline ml-1 sm:ml-2" data-lang-en
+                      >EN</span
+                    >
                   </button>
                 </div>
 
