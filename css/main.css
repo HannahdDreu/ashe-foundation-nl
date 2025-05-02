@@ -887,14 +887,16 @@ select {
   z-index: 1000 !important; /* Higher than your nav's z-index of 100 */
 }
 
+/* Add this CSS to your main.css file */
+
 /* Fix for project carousel indicators overlapping buttons */
 .carousel-indicators {
-  /* Reposition indicators ABOVE the buttons */
+  /* Position below the carousel content but above the buttons */
   position: absolute;
-  top: 65%; /* Position above the buttons at the bottom */
+  bottom: 80px; /* Position above the buttons */
   left: 0;
   right: 0;
-  z-index: 5;
+  z-index: 20;
   margin: 0;
   padding: 0;
 }
@@ -926,7 +928,7 @@ select {
 .project-card a,
 .project-card button {
   position: relative !important;
-  z-index: 10 !important; /* Higher than indicators */
+  z-index: 25 !important; /* Higher than indicators */
 }
 
 /* Ensure proper stacking context for the carousel */
@@ -935,10 +937,10 @@ select {
   z-index: 1;
 }
 
+/* Mobile-specific adjustments */
 @media (max-width: 768px) {
-  /* Additional mobile-specific adjustments */
   .carousel-indicators {
-    top: 60%; /* Position slightly higher on mobile */
+    bottom: 70px; /* Slightly higher on mobile */
   }
   
   /* Even smaller dots on mobile */
