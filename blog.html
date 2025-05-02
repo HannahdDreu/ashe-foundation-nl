@@ -1,0 +1,1597 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <title>ASHE Foundation - Blog</title>
+
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Blijf op de hoogte via onze blogs." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+
+    <!-- Open Graph tags for social sharing - Updated -->
+    <meta
+      property="og:title"
+      content="Extreme droogte in Tanzania treft Maasai gemeenschap zwaar"
+    />
+    <meta
+      property="og:description"
+      content="De aanhoudende droogte in Tanzania heeft ernstige gevolgen voor de Maasai gemeenschap. ASHE Foundation werkt aan toegang tot schoon drinkwater."
+    />
+    <meta
+      property="og:image"
+      content="https://ashefoundation.nl/img/Amywater.webp"
+    />
+    <meta property="og:url" content="https://ashefoundation.nl/blog" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="ASHE Foundation" />
+
+    <!-- LinkedIn specific tags -->
+    <meta property="linkedin:owner" content="ASHE Foundation" />
+    <meta property="linkedin:card" content="summary_large_image" />
+
+    <!-- Language detection meta tags -->
+    <link rel="alternate" hreflang="nl" href="https://ashefoundation.nl/blog" />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://ashefoundation.net/blog"
+    />
+    <link rel="canonical" href="https://ashefoundation.nl/blog" />
+
+    <!-- Common preloads -->
+    <link rel="preload" href="/img/flag-us.webp" as="image" type="image/webp" />
+    <link rel="preload" href="/img/flag-nl.webp" as="image" type="image/webp" />
+    <link
+      rel="preload"
+      href="/img/Untitleddesign.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+    <link rel="preload" href="/css/main.css" as="style" />
+
+    <!-- Page-specific preloads -->
+    <link
+      rel="preload"
+      href="/img/hero-image.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+    />
+
+    <!-- Critical CSS - Keep minimal essential styles for above-the-fold content -->
+    <style>
+      /* Optimized Critical CSS for waterproject.html */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #403d39;
+        background-color: #fff1e6;
+      }
+
+      /* Hero Section for Water Project page */
+      .hero-section {
+        background-image:
+          linear-gradient(
+            to bottom,
+            rgba(64, 61, 57, 0.5),
+            rgba(224, 122, 95, 0.4)
+          ),
+          url("/img/hero-image.webp");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        position: relative;
+      }
+
+      /* Header elements */
+      .site-logo {
+        height: 90px;
+        transition: transform 0.3s ease;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background-color: white;
+        border-bottom: 4px solid #e07a5f;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Language styling */
+      .active-lang {
+        color: #e07a5f;
+        font-weight: 600;
+      }
+
+      .nav-link {
+        position: relative;
+      }
+
+      .nav-indicator {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background-color: #e07a5f;
+        transition: width 0.3s ease;
+      }
+
+      /* Mobile-specific critical CSS */
+      @media (max-width: 768px) {
+        .hero-section {
+          padding: 4rem 0; /* Reduced padding for mobile */
+        }
+
+        h1#hero-title {
+          font-size: 2rem; /* Smaller title on mobile */
+          margin-bottom: 0.5rem;
+        }
+
+        /* Adjust image gallery for mobile */
+        .w-full.h-56.object-cover {
+          height: 180px; /* Slightly smaller images on mobile */
+        }
+      }
+    </style>
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "NGO",
+        "name": "ASHE Foundation",
+        "url": "https://ashefoundation.nl/blog",
+        "logo": "https://ashefoundation.nl/img/Untitleddesign.svg",
+        "description": "Blijf op de hoogte via onze blogs",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Netherlands"
+        },
+        "sameAs": ["https://ashefoundation.net/blog"]
+      }
+    </script>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/webp"
+      href="/img/Untitleddesign.webp"
+      sizes="144x144"
+    />
+
+    <!-- Font import -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <script src="https://cdn.tailwindcss.com?minify"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              terracotta: "#E07A5F",
+              "terracotta-dark": "#C45D41",
+              "terracotta-light": "#FF8A70",
+              green: "#57CC99" /* Bright green */,
+              "green-light": "#80ED99" /* Lighter green */,
+              "green-dark": "#38A169" /* Darker green */,
+              yellow: "#F9C846" /* Vibrant yellow */,
+              "yellow-light": "#FFE066" /* Light yellow */,
+              dark: "#403D39" /* Warmer dark color */,
+              light: "#FFF1E6" /* Warm light color */,
+              gray: "#A7B39A" /* Muted sage for text */,
+            },
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <!-- Google Tag Manager -->
+    <script src="/js/gtm.js" async></script>
+  </head>
+  <body class="min-h-screen water-project">
+    <!-- Skip to content link for accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-terracotta focus:text-white focus:z-50"
+    >
+      Spring naar hoofdinhoud
+    </a>
+    <!-- HEADER -->
+    <header
+      class="bg-white sticky top-0 z-50 shadow-md border-b-4 border-terracotta"
+    >
+      <nav class="px-4 lg:px-8 py-2" aria-label="Hoofdnavigatie">
+        <div class="mx-auto max-w-7xl">
+          <!-- Mobile Layout -->
+          <div class="lg:hidden">
+            <!-- Language & Logo Row -->
+            <div class="flex justify-between items-center">
+              <a
+                href="/"
+                class="flex items-center"
+                aria-label="ASHE Foundation Home"
+              >
+                <img
+                  src="img/Untitleddesign.svg"
+                  class="site-logo"
+                  alt="ASHE Foundation Logo"
+                  loading="lazy"
+                  width="150"
+                  height="75"
+                />
+              </a>
+
+              <div class="flex items-center gap-3">
+                <!-- Language Toggler -->
+                <div
+                  class="flex items-center bg-light rounded-full p-2 border border-yellow"
+                  role="group"
+                  aria-label="Taal selectie"
+                >
+                  <button
+                    type="button"
+                    id="lang-nl"
+                    class="flex items-center px-2 py-1 text-sm active-lang"
+                    aria-pressed="true"
+                    aria-label="Schakel naar Nederlandse taal"
+                  >
+                    <img
+                      src="img/flag-nl.webp"
+                      alt="Nederlandse vlag"
+                      loading="lazy"
+                      class="w-5 h-5 mr-2"
+                      width="20"
+                      height="20"
+                    />
+                    <span data-lang-nl>NL</span>
+                  </button>
+                  <span class="text-gray mx-1" aria-hidden="true">|</span>
+                  <button
+                    type="button"
+                    id="lang-en"
+                    class="flex items-center px-2 py-1 text-sm"
+                    aria-pressed="false"
+                    aria-label="Switch to English language"
+                  >
+                    <img
+                      src="img/flag-us.webp"
+                      alt="United States flag"
+                      loading="lazy"
+                      class="w-5 h-5 mr-2"
+                      width="20"
+                      height="20"
+                    />
+                    <span data-lang-en>EN</span>
+                  </button>
+                </div>
+
+                <!-- Hamburger Menu -->
+                <button
+                  data-collapse-toggle="mobile-menu"
+                  type="button"
+                  class="inline-flex items-center p-2 text-sm text-dark rounded-lg hover:bg-terracotta hover:text-white transition-colors"
+                  aria-controls="mobile-menu"
+                  aria-expanded="false"
+                  aria-label="Open navigatiemenu"
+                >
+                  <span class="sr-only">Open main menu</span>
+                  <svg
+                    class="w-7 h-7"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="hidden" id="mobile-menu" role="navigation">
+              <ul
+                class="flex flex-col mt-4 font-medium space-y-3 border-t pt-4"
+                aria-label="Mobiel navigatiemenu"
+              >
+                <li>
+                  <a
+                    href="/"
+                    class="block py-2 text-dark hover:text-terracotta"
+                    data-lang-key="nav-home"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/watwedoen"
+                    class="block py-2 text-dark hover:text-terracotta"
+                    data-lang-key="nav-what-we-do"
+                    >Wat wij doen</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/wiewijzijn"
+                    class="block py-2 text-dark hover:text-terracotta"
+                    data-lang-key="nav-who-we-are"
+                    >Wie wij zijn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/projecten"
+                    class="block py-2 text-dark hover:text-terracotta"
+                    data-lang-key="nav-projects"
+                    >Projecten</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/contact"
+                    class="block py-2 text-dark hover:text-terracotta"
+                    data-lang-key="nav-contact"
+                    >Contact</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    href="https://donorbox.org/ashe-foundation"
+                    target="_blank"
+                    rel="noopener"
+                    class="block w-full text-center py-3 px-4 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                    data-lang-key="nav-donate"
+                    aria-label="Doneer nu aan de ASHE Foundation"
+                  >
+                    Doneer
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Desktop Layout -->
+          <div class="hidden lg:flex justify-between items-center">
+            <a
+              href="/"
+              class="flex items-center"
+              aria-label="ASHE Foundation Home"
+            >
+              <img
+                src="img/Untitleddesign.svg"
+                class="site-logo"
+                alt="ASHE Foundation Logo"
+                loading="lazy"
+                width="150"
+                height="75"
+              />
+            </a>
+
+            <div
+              class="flex items-center space-x-8"
+              role="navigation"
+              aria-label="Hoofdnavigatie"
+            >
+              <a
+                href="/"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
+                data-lang-key="nav-home"
+              >
+                Home
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                href="/watwedoen"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
+                data-lang-key="nav-what-we-do"
+              >
+                Wat wij doen
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                href="/wiewijzijn"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
+                data-lang-key="nav-who-we-are"
+              >
+                Wie wij zijn
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                href="/projecten"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
+                data-lang-key="nav-projects"
+              >
+                Projecten
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                href="/contact"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
+                data-lang-key="nav-contact"
+              >
+                Contact
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <!-- Donate Button -->
+              <a
+                href="https://donorbox.org/ashe-foundation"
+                target="_blank"
+                rel="noopener"
+                class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                data-lang-key="nav-donate"
+                aria-label="Doneer nu aan de ASHE Foundation"
+              >
+                Doneer
+              </a>
+
+              <!-- Language Toggler -->
+              <div
+                class="flex items-center bg-light rounded-full p-2 border border-yellow"
+                role="group"
+                aria-label="Taal selectie"
+              >
+                <button
+                  type="button"
+                  id="lang-nl-desktop"
+                  class="flex items-center px-2 py-1 text-sm active-lang"
+                  aria-pressed="true"
+                  aria-label="Schakel naar Nederlandse taal"
+                >
+                  <img
+                    src="img/flag-nl.webp"
+                    alt="Nederlandse vlag"
+                    loading="lazy"
+                    class="w-5 h-5 mr-2"
+                    width="20"
+                    height="20"
+                  />
+                  <span data-lang-nl>NL</span>
+                </button>
+                <span class="text-gray mx-1" aria-hidden="true">|</span>
+                <button
+                  type="button"
+                  id="lang-en-desktop"
+                  class="flex items-center px-2 py-1 text-sm"
+                  aria-pressed="false"
+                  aria-label="Switch to English language"
+                >
+                  <img
+                    src="img/flag-us.webp"
+                    alt="United States flag"
+                    loading="lazy"
+                    class="w-5 h-5 mr-2"
+                    width="20"
+                    height="20"
+                  />
+                  <span data-lang-en>EN</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main-content" class="bg-terracotta bg-opacity-10 py-12">
+      <!-- Hero Section -->
+      <section
+        class="hero-section py-20 md:py-28 relative mb-12"
+        style="
+          background-image:
+            linear-gradient(
+              to bottom,
+              rgba(64, 61, 57, 0.7),
+              rgba(224, 122, 95, 0.6)
+            ),
+            url(&quot;/img/water-project-banner.webp&quot;);
+          background-size: cover;
+          background-position: center;
+        "
+        aria-labelledby="blog-title"
+      >
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+          <h1
+            id="blog-title"
+            class="text-4xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto leading-tight text-white"
+            data-lang-key="drought-title"
+          >
+            Extreme droogte in Tanzania treft Maasai gemeenschap zwaar
+          </h1>
+          <div class="flex items-center space-x-4 text-white text-sm mt-4">
+            <div class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              <time datetime="2025-03-20">1 mei 2025</time>
+            </div>
+            <span class="hidden md:inline">|</span>
+            <div class="hidden md:flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"
+                />
+              </svg>
+              <span data-lang-key="category">Klimaatverandering</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Article Container -->
+      <div class="max-w-4xl mx-auto px-6 mb-12">
+        <!-- Main Article Block -->
+        <article class="bg-white p-10 rounded-lg shadow-md">
+          <!-- Introduction -->
+          <p
+            class="text-xl font-medium text-dark leading-relaxed mb-8"
+            data-lang-key="blog-intro"
+          >
+            Terwijl de wereld zich richt op klimaatverandering, voltrekt zich in
+            het binnenland van Tanzania een stille ramp. De aanhoudende droogte
+            heeft verwoestende gevolgen voor de Maasai-gemeenschappen, die
+            afhankelijk zijn van veeteelt voor hun levensonderhoud.
+          </p>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="climate-change-title"
+          >
+            Klimaatverandering en extreme weersomstandigheden
+          </h2>
+          <p class="mb-6" data-lang-key="climate-change-text">
+            Tanzania heeft in 2024 het heetste jaar ooit geregistreerd, met
+            ongekend hoge nachttemperaturen (bron: Down to Earth). Hoewel
+            sommige gebieden te maken kregen met overstromingen, blijven andere
+            regio's, zoals het binnenland, kampen met ernstige droogte.
+          </p>
+          <figure class="my-8 flex flex-col items-center">
+            <img
+              src="/img/gallery-4.webp"
+              alt="Droog landschap in Tanzania tijdens de droogte"
+              class="w-3/4 md:w-2/3 h-auto rounded-lg"
+              loading="lazy"
+            />
+            <figcaption
+              class="text-sm text-gray-500 mt-2 text-center"
+              data-lang-key="drought-landscape-caption"
+            >
+              Verdroogd landschap in het binnenland van Tanzania, 2025
+            </figcaption>
+          </figure>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="impact-maasai-title"
+          >
+            Impact op de Maasai-gemeenschappen
+          </h2>
+          <p class="mb-6" data-lang-key="impact-maasai-text1">
+            De Maasai, bekend om hun nomadische veeteelt, worden zwaar
+            getroffen. Veel vee is gestorven door gebrek aan water en voedsel,
+            wat leidt tot voedselonzekerheid en armoede. Volgens de UNDP
+            proberen Maasai-gemeenschappen hun graslanden te herstellen door
+            inheemse planten te gebruiken.
+          </p>
+          <p class="mb-6" data-lang-key="impact-maasai-text2">
+            In het dorp Loolera, waar ASHE Foundation actief is, heeft de
+            watervoorziening het bijzonder moeilijk om aan de groeiende vraag te
+            voldoen. Vele families moeten nu urenlange tochten maken om aan
+            schoon drinkwater te komen. De situatie verslechtert met de dag,
+            vooral voor kwetsbare groepen zoals kinderen, ouderen en zwangere
+            vrouwen.
+          </p>
+          <blockquote
+            class="italic border-l-4 border-terracotta pl-4 py-2 my-8"
+          >
+            <p data-lang-key="maasai-quote">
+              "We hebben nog nooit zo'n droogte meegemaakt. Onze dieren sterven
+              en onze kinderen hebben niet genoeg water. We moeten elke dag
+              verder lopen om water te vinden."
+            </p>
+            <footer
+              class="mt-2 font-medium text-terracotta"
+              data-lang-key="maasai-quote-attribution"
+            >
+              — Naserian, lokale Maasai-vrouw uit Loolera
+            </footer>
+          </blockquote>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="sustainable-solutions-title"
+          >
+            Duurzame oplossingen en veerkracht
+          </h2>
+          <p class="mb-6" data-lang-key="sustainable-solutions-text1">
+            Ondanks de enorme uitdagingen tonen de Maasai veerkracht. Door
+            herstel van graslanden met inheemse planten en kleinschalige
+            irrigatie-initiatieven wordt geprobeerd de effecten van de droogte
+            tegen te gaan. Dit soort projecten bewijst dat lokale kennis
+            essentieel is voor klimaataanpassing.
+          </p>
+          <p class="mb-6" data-lang-key="sustainable-solutions-text2">
+            ASHE Foundation werkt nauw samen met lokale partners en
+            gemeenschapsleiders om duurzame oplossingen te implementeren die
+            zowel onmiddellijke hulp bieden als langetermijnveerkracht opbouwen.
+          </p>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="water-project-title"
+          >
+            Project Water: Een levensreddend initiatief
+          </h2>
+          <p class="mb-6" data-lang-key="water-project-text1">
+            Als antwoord op deze crisis heeft ASHE Foundation het "Project
+            Water" gelanceerd. Dit project is gericht op het verbeteren van de
+            waterinfrastructuur in Loolera en omgeving, waardoor ongeveer 10.000
+            Maasai toegang krijgen tot schoon drinkwater.
+          </p>
+          <div class="grid md:grid-cols-2 gap-4 my-8">
+            <img
+              src="/img/waterpipe.webp"
+              alt="Vrouw bij watervoorziening in Tanzania"
+              class="w-full h-64 object-cover rounded-lg"
+              loading="lazy"
+            />
+            <img
+              src="/img/water-project-work.webp"
+              alt="Werkzaamheden aan waterproject in Loolera"
+              class="w-full h-64 object-cover rounded-lg"
+              loading="lazy"
+            />
+          </div>
+          <p class="mb-6" data-lang-key="water-project-text2">
+            Het project omvat het aanleggen van waterpunten, het boren van
+            waterputten en het installeren van duurzame pompsystemen. Daarnaast
+            worden lokale gemeenschapsleden opgeleid in waterbeheer en
+            -onderhoud, zodat het project op lange termijn zelfvoorzienend kan
+            zijn.
+          </p>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="how-help-title"
+          >
+            Hoe u kunt helpen
+          </h2>
+          <p class="mb-4" data-lang-key="how-help-intro">
+            ASHE Foundation zet zich actief in om de Maasai-gemeenschappen te
+            ondersteunen door:
+          </p>
+          <ul class="list-disc pl-8 mb-6">
+            <li class="mb-2" data-lang-key="how-help-point1">
+              Het aanleggen van waterinfrastructuur
+            </li>
+            <li class="mb-2" data-lang-key="how-help-point2">
+              Het aanleggen van watervoorzieningen
+            </li>
+            <li class="mb-2" data-lang-key="how-help-point3">
+              Het bieden van noodhulp in tijden van crisis
+            </li>
+          </ul>
+          <p class="mb-6" data-lang-key="how-help-text1">
+            <strong>Uw donatie kan een direct verschil maken.</strong> Samen
+            kunnen we werken aan een duurzamere en veerkrachtigere toekomst voor
+            de Maasai in Tanzania.
+          </p>
+          <p
+            class="text-xl text-terracotta font-bold mb-8"
+            data-lang-key="how-help-text2"
+          >
+            Met slechts 5 euro kunt u al 3 mensen voorzien van schoon
+            drinkwater! Uw hulp is hard nodig!
+          </p>
+
+          <!-- Call to Action -->
+          <div
+            class="bg-terracotta bg-opacity-10 rounded-lg p-8 my-10 text-center"
+          >
+            <h3
+              class="text-2xl font-bold text-terracotta mb-4"
+              data-lang-key="be-part-solution"
+            >
+              Word deel van de oplossing
+            </h3>
+            <p class="mb-6" data-lang-key="be-part-solution-text">
+              Samen kunnen we de Maasai-gemeenschap in Tanzania helpen door deze
+              moeilijke periode heen te komen.
+            </p>
+            <a
+              href="https://donorbox.org/water-project-11"
+              target="_blank"
+              rel="noopener"
+              class="inline-block py-3 px-8 bg-terracotta hover:bg-terracotta-light text-white font-medium rounded-full transition-colors duration-300 shadow-md"
+              aria-label="Doneer nu voor Project Water"
+              data-lang-key="donate-water-project"
+            >
+              Doneer nu voor Project Water
+            </a>
+          </div>
+
+          <!-- Share Section -->
+          <div class="border-t border-b border-gray-200 py-6 my-10">
+            <h3
+              class="text-lg font-semibold mb-4"
+              data-lang-key="share-article"
+            >
+              Deel dit artikel
+            </h3>
+            <div class="flex flex-wrap gap-5">
+              <!-- LinkedIn Share Link -->
+              <a
+                href="https://www.linkedin.com/sharing/share-offsite/?url=https://ashefoundation.nl/blog"
+                class="text-terracotta hover:text-terracotta-dark flex items-center transition"
+                aria-label="Deel op LinkedIn"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Facebook Share Link -->
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://ashefoundation.nl/blog"
+                class="text-terracotta hover:text-terracotta-dark flex items-center transition"
+                aria-label="Deel op Facebook"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Twitter/X Share Link -->
+              <a
+                href="https://twitter.com/intent/tweet?url=https://ashefoundation.nl/blog&text=Extreme droogte in Tanzania treft Maasai gemeenschap zwaar"
+                class="text-terracotta hover:text-terracotta-dark flex items-center transition"
+                aria-label="Deel op Twitter/X"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Instagram Copy to Clipboard Button -->
+              <button
+                id="instagram-copy"
+                class="text-terracotta hover:text-terracotta-dark flex items-center transition group relative"
+                aria-label="Kopiëren voor Instagram"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+
+                <!-- Tooltip for copy state -->
+                <span
+                  id="instagram-tooltip"
+                  class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-dark text-white px-3 py-1 rounded text-sm opacity-0 transition-opacity duration-300 pointer-events-none whitespace-nowrap"
+                >
+                  Gekopieerd naar klembord!
+                </span>
+              </button>
+            </div>
+
+            <!-- Hidden textarea for Instagram copy -->
+            <textarea id="instagram-content" class="sr-only" aria-hidden="true">
+🌊 Extreme droogte in Tanzania treft Maasai gemeenschap zwaar
+
+De aanhoudende droogte in Tanzania heeft ernstige gevolgen voor de Maasai gemeenschap. @ashefoundation werkt aan toegang tot schoon drinkwater voor duizenden mensen.
+
+Met slechts €5 help je al 3 mensen aan schoon water!
+
+Lees meer op: https://ashefoundation.nl/blog
+
+#Tanzania #Maasai #CleanWater #Drought #ClimateChange #HumanitarianAid #ASHE #NGO
+<div class="border-t border-b border-gray-200 py-6 my-10">
+  <h3 class="text-lg font-semibold mb-4" data-lang-key="share-article">Deel dit artikel</h3>
+  <div class="flex flex-wrap gap-4">
+    <!-- LinkedIn Share Link -->
+    <a 
+      href="https://www.linkedin.com/sharing/share-offsite/?url=https://ashefoundation.nl/blog"
+      class="text-terracotta hover:text-terracotta-dark transition" 
+      aria-label="Deel op LinkedIn" 
+      target="_blank" 
+      rel="noopener"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+      </svg>
+    </a>
+
+    <!-- Facebook Share Link -->
+    <a 
+      href="https://www.facebook.com/sharer/sharer.php?u=https://ashefoundation.nl/blog" 
+      class="text-terracotta hover:text-terracotta-dark transition" 
+      aria-label="Deel op Facebook" 
+      target="_blank" 
+      rel="noopener"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+      </svg>
+    </a>
+
+    <!-- Twitter/X Share Link -->
+    <a 
+      href="https://twitter.com/intent/tweet?url=https://ashefoundation.nl/blog&text=Extreme droogte in Tanzania treft Maasai gemeenschap zwaar" 
+      class="text-terracotta hover:text-terracotta-dark transition" 
+      aria-label="Deel op Twitter/X" 
+      target="_blank" 
+      rel="noopener"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+      </svg>
+    </a>
+
+    <!-- Instagram Copy to Clipboard Button -->
+    <button 
+      id="instagram-copy" 
+      class="text-terracotta hover:text-terracotta-dark transition relative" 
+      aria-label="Kopiëren voor Instagram"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+      
+      <!-- Tooltip for copy state -->
+      <span id="instagram-tooltip" class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-dark text-white px-3 py-1 rounded text-sm opacity-0 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+        Gekopieerd naar klembord!
+      </span>
+    </button>
+  </div>
+  
+  <!-- Hidden textarea for Instagram copy -->
+  <textarea id="instagram-content" class="sr-only" aria-hidden="true">
+🌊 Extreme droogte in Tanzania treft Maasai gemeenschap zwaar
+
+De aanhoudende droogte in Tanzania heeft ernstige gevolgen voor de Maasai gemeenschap. @ashefoundation werkt aan toegang tot schoon drinkwater voor duizenden mensen.
+
+Met slechts €5 help je al 3 mensen aan schoon water!
+
+Lees meer op: https://ashefoundation.nl/blog
+
+#Tanzania #Maasai #CleanWater #Drought #ClimateChange #HumanitarianAid #ASHE #NGO
+  </textarea
+            >
+          </div>
+
+          <!-- Related Articles Section -->
+          <div class="my-10">
+            <h3
+              class="text-2xl font-bold text-terracotta mb-6"
+              data-lang-key="related-articles"
+            >
+              Gerelateerde artikelen
+            </h3>
+            <div class="grid md:grid-cols-2 gap-8 mb-10">
+              <!-- Related Article 1 -->
+              <div
+                class="bg-terracotta bg-opacity-5 rounded-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105"
+              >
+                <img
+                  src="/img/Naserian.webp"
+                  alt="Naserian's winkelproject"
+                  class="w-full h-48 object-cover"
+                  loading="lazy"
+                />
+                <div class="p-6">
+                  <h4
+                    class="text-lg font-bold text-terracotta mb-2"
+                    data-lang-key="naserian-shop-title"
+                  >
+                    Naserian's Winkel: Een succesverhaal
+                  </h4>
+                  <p
+                    class="text-gray-600 mb-3 text-sm"
+                    data-lang-key="naserian-shop-desc"
+                  >
+                    Hoe het openen van een winkel het leven van Naserian en haar
+                    gemeenschap heeft verbeterd.
+                  </p>
+                  <a
+                    href="/naserian"
+                    class="text-terracotta font-medium hover:underline inline-flex items-center text-sm"
+                  >
+                    <span data-lang-key="read-more">Lees meer</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-1"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- Related Article 2 -->
+              <div
+                class="bg-terracotta bg-opacity-5 rounded-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105"
+              >
+                <img
+                  src="/img/Neema.webp"
+                  alt="Neema's droomproject"
+                  class="w-full h-48 object-cover"
+                  loading="lazy"
+                />
+                <div class="p-6">
+                  <h4
+                    class="text-lg font-bold text-terracotta mb-2"
+                    data-lang-key="neema-dream-title"
+                  >
+                    Neema's Droom: Van visie naar werkelijkheid
+                  </h4>
+                  <p
+                    class="text-gray-600 mb-3 text-sm"
+                    data-lang-key="neema-dream-desc"
+                  >
+                    Het inspirerende verhaal van Neema en hoe ze haar droom van
+                    een eigen winkel realiseerde.
+                  </p>
+                  <a
+                    href="/neema"
+                    class="text-terracotta font-medium hover:underline inline-flex items-center text-sm"
+                  >
+                    <span data-lang-key="read-more">Lees meer</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-1"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Back to Projects Button -->
+          <div class="text-center">
+            <a
+              href="/projecten"
+              class="inline-block py-3 px-6 bg-terracotta hover:bg-terracotta-light text-white font-medium rounded-full transition-colors duration-300 shadow-md"
+            >
+              <span class="inline-flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span data-lang-key="back-to-projects"
+                  >Terug naar Projecten</span
+                >
+              </span>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Newsletter Section (from contact page with terracotta background updated) -->
+      <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2
+            id="newsletter-title"
+            class="text-3xl font-bold text-terracotta mb-8 text-center"
+            data-lang-key="newsletter-title"
+          >
+            Blijf op de hoogte
+          </h2>
+          <div class="bg-terracotta bg-opacity-10 rounded-lg p-8 shadow-md">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+              <div>
+                <h3
+                  id="newsletter-subtitle"
+                  class="text-xl font-bold text-terracotta mb-4"
+                  data-lang-key="newsletter-subtitle"
+                >
+                  Schrijf je in voor onze nieuwsbrief
+                </h3>
+                <p
+                  class="mb-4 text-dark"
+                  data-lang-key="newsletter-description"
+                >
+                  Ontvang updates over onze projecten, campagnes en acties
+                  direct in je inbox. We houden je graag op de hoogte van onze
+                  voortgang en impact.
+                </p>
+              </div>
+
+              <div>
+                <form
+                  id="newsletter-form"
+                  class="space-y-4"
+                  aria-labelledby="newsletter-subtitle"
+                >
+                  <div
+                    id="newsletter-result"
+                    class="hidden rounded-md p-4 mb-4"
+                  >
+                    <p class="text-sm font-medium"></p>
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-dark font-medium mb-1"
+                      data-lang-key="newsletter-email"
+                    >
+                      E-mailadres
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="w-full px-4 py-3 border border-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-terracotta"
+                      placeholder="jouw@email.nl"
+                      required
+                      aria-required="true"
+                      autocomplete="email"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      for="name"
+                      class="block text-dark font-medium mb-1"
+                      data-lang-key="newsletter-name"
+                    >
+                      Naam
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="w-full px-4 py-3 border border-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-terracotta"
+                      placeholder="Jouw naam"
+                      required
+                      aria-required="true"
+                      autocomplete="name"
+                    />
+                  </div>
+
+                  <div class="flex items-start mt-4">
+                    <input
+                      type="checkbox"
+                      id="newsletter-consent"
+                      name="consent"
+                      class="mt-1 mr-3"
+                      required
+                      aria-required="true"
+                      aria-describedby="consent-description"
+                    />
+                    <label
+                      for="newsletter-consent"
+                      id="consent-description"
+                      class="text-sm text-dark"
+                      data-lang-key="newsletter-consent"
+                    >
+                      Ik geef toestemming aan ASHE Foundation om mijn gegevens
+                      te gebruiken voor het versturen van nieuwsbrieven en
+                      informatie over campagnes en activiteiten. Voor meer
+                      informatie zie onze
+                      <a
+                        href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:33bcb8b3-4519-4414-8fd7-a56de689d200"
+                        class="text-terracotta hover:underline"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Bekijk onze privacyverklaring (opent in nieuw tabblad)"
+                      >
+                        privacyverklaring </a
+                      >.
+                    </label>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="w-full bg-terracotta hover:bg-terracotta-light text-white font-semibold py-3 px-6 rounded-lg shadow-md transition transform hover:scale-105"
+                    data-lang-key="newsletter-submit"
+                    aria-label="Schrijf je in voor onze nieuwsbrief"
+                  >
+                    Inschrijven
+                  </button>
+                </form>
+
+                <p class="text-xs text-gray-600 mt-4" data-lang-key="newsletter-privacy-notice">
+                  Je kunt je op elk moment uitschrijven via de link onderaan elke e-mail. Door je aan te melden stem je ermee in dat wij je persoonlijke gegevens verwerken zoals beschreven in onze
+                  <a href="/privacystatement.html" class="text-terracotta hover:underline" target="_blank" rel="noopener" aria-label="Bekijk onze privacyverklaring (opent in nieuw tabblad)">privacyverklaring</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-12 pb-6 relative overflow-hidden">
+      <div
+        class="absolute inset-0 opacity-5 pattern-accent"
+        aria-hidden="true"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <!-- About Column -->
+          <div>
+            <a
+              href="/"
+              class="inline-block mb-4"
+              aria-label="Terug naar home pagina"
+            >
+              <img
+                src="img/Untitleddesign.svg"
+                alt="ASHE Foundation Logo"
+                class="h-20 p-2 rounded-lg hover:shadow-lg transition-shadow"
+                width="150"
+                height="80"
+                loading="lazy"
+              />
+            </a>
+            <p class="text-gray-300 mb-4" data-lang-key="footer-about">
+              Ashe Foundation werkt aan een wereld waarin de Maasai gemeenschap
+              in Tanzania kansen heeft om het goede leven en het eigen geluk na
+              te streven.
+            </p>
+          </div>
+
+          <!-- Company Links -->
+          <div>
+            <h3
+              class="text-lg font-semibold mb-4 text-yellow"
+              data-lang-key="footer-company"
+              id="footer-company-heading"
+            >
+              Bedrijf
+            </h3>
+            <ul
+              class="space-y-2 text-gray-300"
+              aria-labelledby="footer-company-heading"
+            >
+              <li>
+                <a
+                  href="/financieel"
+                  class="hover:text-yellow transition-colors flex items-center"
+                  data-lang-key="footer-financial"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Jaarverslag en jaarrekeningen</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/wiewijzijn"
+                  class="hover:text-yellow transition-colors flex items-center"
+                  data-lang-key="footer-team"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Ons team</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact & Services -->
+          <div>
+            <h3
+              class="text-lg font-semibold mb-4 text-yellow"
+              data-lang-key="footer-contact-services"
+              id="footer-contact-heading"
+            >
+              Contact & Services
+            </h3>
+            <ul
+              class="space-y-2 text-gray-300"
+              aria-labelledby="footer-contact-heading"
+            >
+              <li>
+                <a
+                  href="/contact"
+                  class="hover:text-yellow transition-colors flex items-center"
+                  data-lang-key="footer-contact"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/klachten"
+                  class="hover:text-yellow transition-colors flex items-center"
+                  data-lang-key="footer-complaints"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Een opmerking of klacht?</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div>
+            <h3
+              class="text-lg font-semibold mb-4 text-yellow"
+              data-lang-key="footer-legal"
+              id="footer-legal-heading"
+            >
+              Legal
+            </h3>
+            <ul
+              class="space-y-2 text-gray-300"
+              aria-labelledby="footer-legal-heading"
+            >
+              <li>
+                <a
+                  href="/privacystatement.html"
+                  class="hover:text-yellow transition-colors flex items-center footer-privacy-nl"
+                  data-lang-key="footer-privacy"
+                  aria-label="Bekijk onze privacy verklaring en disclaimer"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Privacy verklaring & Disclaimer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/algemenevoorwaarden.html"
+                  class="hover:text-yellow transition-colors flex items-center footer-terms-nl"
+                  data-lang-key="footer-terms"
+                  aria-label="Bekijk onze algemene voorwaarden"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Algemene Voorwaarden</a
+                >
+                <a
+                  href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:42d6cfe6-cb21-459c-9663-ce9f8738bc33"
+                  target="_blank"
+                  rel="noopener"
+                  class="hover:text-yellow transition-colors flex items-center footer-terms-en hidden"
+                  data-lang-key="footer-terms"
+                  aria-label="View our terms and conditions"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Terms and Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-gray-800"
+        >
+          <div class="mb-4 md:mb-0">
+            <p class="text-sm text-gray-400">
+              &copy; 2025 Ashe Foundation. All Rights Reserved.
+            </p>
+          </div>
+
+          <div class="flex items-center">
+            <a
+              href="https://anbi.nl/"
+              target="_blank"
+              rel="noopener"
+              class="inline-block transform transition-transform hover:scale-105"
+              aria-label="Bezoek de ANBI website"
+            >
+              <img
+                src="img/anbi-logo-a397f74b-153w.webp"
+                alt="logo van ANBI - Algemeen Nut Beogende Instelling"
+                title="ANBI"
+                loading="lazy"
+                class="h-14 bg-white p-1 rounded-lg"
+                width="153"
+                height="56"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- COOKIE BANNER -->
+    <div
+      class="fixed inset-x-0 bottom-0 z-50 bg-white shadow-lg border-t-4 border-terracotta p-4 cookie-banner"
+      style="display: none"
+      role="alert"
+      aria-live="polite"
+      id="cookie-banner"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <div class="max-w-2xl">
+          <h4
+            class="text-base font-semibold mb-1 text-terracotta"
+            data-lang-key="cookie-title"
+            id="cookie-heading"
+          >
+            Cookies op deze website
+          </h4>
+          <p class="text-sm text-dark">
+            <span data-lang-key="cookie-text-part1"
+              >Wij gebruiken cookies om jou de beste ervaring op onze website te
+              geven. In</span
+            >
+            <a
+              href="/privacystatement.html"
+              class="text-green font-medium hover:underline"
+              rel="noopener"
+            >
+              <span data-lang-key="cookie-text-part2"
+                >ons privacy statement</span
+              >
+            </a>
+            <span data-lang-key="cookie-text-part3"
+              >lees je meer over de cookies die wij gebruiken.</span
+            >
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <button
+            id="rcc-confirm-button"
+            class="bg-terracotta hover:bg-terracotta-light text-white text-sm font-medium py-2 px-4 rounded-full transition-colors"
+            data-lang-key="cookie-agree"
+            aria-labelledby="cookie-heading"
+          >
+            Ik ga akkoord
+          </button>
+          <button
+            id="cookie-preferences-button"
+            class="bg-yellow hover:bg-yellow-light text-dark text-sm font-medium py-2 px-4 rounded-full transition-colors"
+            data-lang-key="cookie-preferences"
+            aria-labelledby="cookie-heading"
+          >
+            Voorkeuren aanpassen
+          </button>
+          <button
+            id="rcc-decline-button"
+            class="bg-light hover:bg-gray-200 text-dark text-sm font-medium py-2 px-4 rounded-full transition-colors"
+            data-lang-key="cookie-disagree"
+            aria-labelledby="cookie-heading"
+          >
+            Niet akkoord
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- COOKIE PREFERENCES MODAL -->
+    <div
+      id="cookie-preferences-modal"
+      class="modal"
+      role="dialog"
+      aria-labelledby="cookie-modal-title"
+      aria-modal="true"
+      hidden
+    >
+      <div class="modal-content">
+        <span class="close-modal" id="close-cookie-modal">&times;</span>
+        <h2
+          id="cookie-modal-title"
+          class="text-3xl font-bold text-terracotta mb-6"
+          data-lang-key="cookie-modal-title"
+        >
+          Cookievoorkeuren
+        </h2>
+        <div class="text-dark">
+          <p class="leading-relaxed mb-6" data-lang-key="cookie-modal-intro">
+            Bij het weigeren van cookies kan het voorkomen dat bepaalde
+            functionaliteiten binnen de website niet werken zoals bedoeld. Mocht
+            je van gedachten veranderen, dan kan je eenvoudig -op ieder moment,
+            en per categorie- cookies toestaan of weigeren.
+          </p>
+
+          <!-- Necessary cookies -->
+          <div class="mb-6 border-b pb-4">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold" data-lang-key="cookie-necessary">
+                Noodzakelijke cookies
+              </h3>
+              <div
+                class="relative inline-block w-12 h-6 bg-gray-200 rounded-full"
+              >
+                <input
+                  type="checkbox"
+                  id="necessary-cookies"
+                  class="sr-only"
+                  checked
+                  disabled
+                />
+                <span
+                  class="absolute inset-0 bg-terracotta rounded-full transition-colors"
+                ></span>
+                <span
+                  class="absolute h-5 w-5 left-0.5 top-0.5 bg-white rounded-full transition-transform transform translate-x-6"
+                ></span>
+              </div>
+            </div>
+            <p class="text-sm mt-2" data-lang-key="cookie-necessary-desc">
+              Deze cookies zijn nodig om de website te laten functioneren.
+            </p>
+          </div>
+
+          <!-- Analytics cookies -->
+          <div class="mb-6 border-b pb-4">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold" data-lang-key="cookie-analytics">
+                Analytische cookies
+              </h3>
+              <div
+                class="relative inline-block w-12 h-6 bg-gray-200 rounded-full"
+              >
+                <input type="checkbox" id="analytics-cookies" class="sr-only" />
+                <span
+                  class="absolute inset-0 rounded-full transition-colors"
+                ></span>
+                <span
+                  class="absolute h-5 w-5 left-0.5 top-0.5 bg-white rounded-full transition-transform"
+                ></span>
+              </div>
+            </div>
+            <p class="text-sm mt-2" data-lang-key="cookie-analytics-desc">
+              Deze cookies helpen ons inzicht te krijgen in hoe bezoekers onze
+              website gebruiken.
+            </p>
+          </div>
+
+          <div class="flex gap-3 justify-end mt-6">
+            <button
+              id="save-cookie-preferences"
+              class="bg-terracotta hover:bg-terracotta-light text-white text-sm font-medium py-2 px-4 rounded-full transition-colors"
+              data-lang-key="cookie-save"
+            >
+              Opslaan
+            </button>
+            <button
+              id="close-cookie-preferences"
+              class="bg-light hover:bg-gray-200 text-dark text-sm font-medium py-2 px-4 rounded-full transition-colors border border-gray-300"
+              data-lang-key="cookie-cancel"
+            >
+              Annuleren
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Load JavaScript Files -->
+    <script src="./js/translations.js" defer></script>
+    <script src="./js/gtm.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/modals.js" defer></script>
+  </body>
+</html>

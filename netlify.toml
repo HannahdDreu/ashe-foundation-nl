@@ -1,0 +1,79 @@
+[build]
+  publish = "."  # Points to the root directory of your project
+  functions = "netlify/functions"
+
+# Domain-specific language handling based on browser language
+# If user's browser is set to English, they'll see the English site (.net)
+# If user's browser is set to Dutch, they'll see the Dutch site (.nl)
+
+# English browser users on the .net domain stay on .net
+[[redirects]]
+  from = "https://ashefoundation.net/*"
+  to = "https://ashefoundation.net/:splat"
+  status = 200
+  force = true
+  conditions = {Language = ["en"]}
+
+# Dutch browser users on the .net domain get redirected to .nl
+[[redirects]]
+  from = "https://ashefoundation.net/*"
+  to = "https://ashefoundation.nl/:splat"
+  status = 301
+  force = true
+  conditions = {Language = ["nl"]}
+
+# Dutch browser users on the .nl domain stay on .nl
+[[redirects]]
+  from = "https://ashefoundation.nl/*"
+  to = "https://ashefoundation.nl/:splat"
+  status = 200
+  force = true
+  conditions = {Language = ["nl"]}
+
+# English browser users on the .nl domain get redirected to .net
+[[redirects]]
+  from = "https://ashefoundation.nl/*"
+  to = "https://ashefoundation.net/:splat"
+  status = 301
+  force = true
+  conditions = {Language = ["en"]}
+
+# Manual language toggler handling - if language is explicitly set in the URL
+# If user clicks language switcher to English, redirect to .net domain
+[[redirects]]
+  from = "/*"
+  to = "https://ashefoundation.net/:splat"
+  status = 301
+  force = true
+  conditions = {Query = ["lang=en"]}
+
+# If user clicks language switcher to Dutch, redirect to .nl domain
+[[redirects]]
+  from = "/*"
+  to = "https://ashefoundation.nl/:splat"
+  status = 301
+  force = true
+  conditions = {Query = ["lang=nl"]}
+
+# Handle clean URLs (redirect requests without .html to the .html version)
+[[redirects]]
+  from = "/*"
+  to = "/:splat.html"
+  status = 200
+  force = false
+  conditions = {Path = ["!**.html", "!**.css", "!**.js", "!**.jpg", "!**.png", "!**.webp", "!**.svg", "!**.ico"]}
+
+# For URLs with query parameters
+[[redirects]]
+  from = "/*?*"
+  to = "/:splat.html?:query"
+  status = 200
+  force = false
+  conditions = {Path = ["!**.html", "!**.css", "!**.js", "!**.jpg", "!**.png", "!**.webp", "!**.svg", "!**.ico"]}
+
+# Catch-all redirect as fallback
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 200
+  force = false

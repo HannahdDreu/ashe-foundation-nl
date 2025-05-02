@@ -1,312 +1,1763 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
-    <head>
-        <title>ASHE Foundation</title>
-        
-        <!-- Favicon -->
-        <link rel="icon" type="image/webp" href="/img/Untitled design.webp" sizes="144x144">
-    
-        <!-- Preloads -->
-        <link rel="preload" href="style.css" as="style">
-        <link rel="preload" href="/img/flag-us.webp" as="image" type="image/webp">
-        <link rel="preload" href="/img/flag-nl.webp" as="image" type="image/webp">
-        <link rel="preload" href="/img/Untitled design.svg" as="image" type="image/svg+xml">
-        <link rel="preload" href="/video/naserian.mp4" as="video" type="video/mp4">
-        <link rel="preload" href="/video/neema.mp4" as="video" type="video/mp4">
-        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    
-        <!-- DNS Prefetching -->
-        <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-        <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
-    
-        <!-- Meta Tags -->
-        <meta charset="UTF-8">
-        <meta name="description" content="Ashe Foundation werkt aan een wereld waarin de Maasai gemeenschap in Tanzania kansen heeft om het goede leven en het eigen geluk na te streven.">
-        <meta name="keywords" content="Contact, Stichting, Doneren, Maasai gemeenschap">
-        <meta name="author" content="ASHE Foundation">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#ffffff">
-        <meta name="robots" content="index, follow">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-        <!-- Inline Critical CSS -->
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            header {
-                background-color: #fff;
-                padding: 1rem;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-        </style>
-    
-        <!-- Stylesheets -->
-        <script src="https://cdn.tailwindcss.com?minify"></script>
-        <link rel="stylesheet" href="style.css">
-    
-        <!-- Google Tag Manager -->
-        <script async>
-            (function(w, d, s, l, i) {
-              w[l] = w[l] || [];
-              w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-              var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-              j.async = true;
-              j.defer = true;
-              j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-              f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-MDTTVCKD');
-          </script>
-    </head>
-      <body class="min-h-screen">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDTTVCKD"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-<!-- HEADER -->
-<header>
-    <nav class="bg-white border-solid border-b-2 px-4 lg:px-6 py-4">
-        <div class="mx-auto max-w-screen-xl">
-            <!-- Mobile Layout -->
-            <div class="lg:hidden">
-                <!-- First Row: Language Toggler -->
-                <div class="flex justify-end items-center mb-2">
-                    <div class="relative">
-                        <button type="button" data-dropdown-toggle="language-dropdown-menu-mobile" class="px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 rounded-lg flex items-center">
-                            <img src="img/flag-us.webp" alt="English" class="w-5 h-5 mr-2" style="width: 20px; height: auto;">
-                            English
-                        </button>
-                        <!-- Dropdown Menu -->
-                        <div class="hidden absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-10" id="language-dropdown-menu-mobile">
-                            <ul class="py-1">
-                                <li>
-                                    <a href="https://www.ashefoundation.nl/" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                                        <img src="img/flag-nl.webp" alt="Dutch" class="w-5 h-5 mr-2" style="width: 20px; height: 20px;">
-                                        Dutch
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.ashefoundation.net/" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                                        <img src="img/flag-us.webp" alt="English" class="w-5 h-5 mr-2" style="width: 20px; height: auto;">
-                                        English
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+  <head>
+    <title>Wie Wij Zijn - ASHE Foundation</title>
 
-                <!-- Second Row: Logo and Hamburger Menu -->
-                <div class="flex justify-between items-center">
-                    <a href="https://www.ashefoundation.nl/" class="flex items-center bg-white px-3 py-2 rounded-lg">
-                        <img src="img/Untitled design.svg" class="h-16 sm:h-20" alt="ASHE Foundation Logo">
-                    </a>
-                    <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-                        </svg>
+    <!-- Meta tags for SEO -->
+    <meta
+      name="description"
+      content="Maak kennis met het team achter Ashe Foundation. Wij werken samen aan een betere toekomst voor de Maasai gemeenschap in Tanzania."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Wie Wij Zijn - ASHE Foundation" />
+    <meta
+      property="og:description"
+      content="Maak kennis met het toegewijde team van Ashe Foundation dat werkt aan een betere toekomst voor de Maasai gemeenschap in Tanzania."
+    />
+    <meta
+      property="og:image"
+      content="https://ashefoundation.nl/img/Untitleddesign.webp"
+    />
+    <meta property="og:url" content="https://ashefoundation.nl/wiewijzijn" />
+    <meta property="og:type" content="website" />
+
+    <!-- Language detection meta tags -->
+    <link rel="alternate" hreflang="nl" href="https://ashefoundation.nl/" />
+    <link rel="alternate" hreflang="en" href="https://ashefoundation.net/" />
+    <link rel="canonical" href="https://ashefoundation.nl/" />
+
+    <!-- Common preloads -->
+    <link rel="preload" href="/img/flag-us.webp" as="image" type="image/webp" />
+    <link rel="preload" href="/img/flag-nl.webp" as="image" type="image/webp" />
+    <link
+      rel="preload"
+      href="/img/Untitleddesign.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+    <link rel="preload" href="/css/main.css" as="style" />
+
+    <!-- Page-specific preloads -->
+    <link
+      rel="preload"
+      href="/img/team-banner.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+    />
+
+    <!-- Critical CSS - Keep minimal essential styles for above-the-fold content -->
+    <style>
+      /* Optimized Critical CSS for watwedoen.html */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #403d39;
+        background-color: #fff1e6;
+      }
+
+      /* Hero Section for watwedoen page */
+      .hero-section {
+        background-image:
+          linear-gradient(
+            to bottom,
+            rgba(64, 61, 57, 0.5),
+            rgba(224, 122, 95, 0.4)
+          ),
+          url("/img/Kangai.webp");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        position: relative;
+      }
+
+      /* Header elements */
+      .site-logo {
+        height: 90px;
+        transition: transform 0.3s ease;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background-color: white;
+        border-bottom: 4px solid #e07a5f;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Language styling */
+      .active-lang {
+        color: #e07a5f;
+        font-weight: 600;
+      }
+
+      /* Mobile-specific critical CSS */
+      @media (max-width: 768px) {
+        .hero-section {
+          padding: 4rem 0; /* Reduced padding for mobile */
+        }
+
+        h1#team-heading {
+          font-size: 2rem; /* Smaller title on mobile */
+          margin-bottom: 0.5rem;
+        }
+
+        /* Adjust team cards for mobile */
+        .team-card {
+          padding: 1.5rem; /* Less padding on mobile */
+        }
+      }
+    </style>
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "NGO",
+        "name": "ASHE Foundation",
+        "url": "https://ashefoundation.nl/wiewijzijn",
+        "logo": "https://ashefoundation.nl/img/Untitleddesign.svg",
+        "description": "Ashe Foundation werkt aan een wereld waarin de Maasai gemeenschap in Tanzania kansen heeft om het goede leven en het eigen geluk na te streven.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Netherlands"
+        },
+        "sameAs": ["https://ashefoundation.net/"]
+      }
+    </script>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/webp"
+      href="/img/Untitleddesign.webp"
+      sizes="144x144"
+    />
+
+    <!-- Font import -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <script src="https://cdn.tailwindcss.com?minify"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              terracotta: "#E07A5F",
+              "terracotta-dark": "#C45D41",
+              "terracotta-light": "#FF8A70",
+              green: "#57CC99",
+              "green-light": "#80ED99",
+              "green-dark": "#38A169",
+              yellow: "#F9C846",
+              "yellow-light": "#FFE066",
+              dark: "#403D39",
+              light: "#FFF1E6",
+              gray: "#A7B39A",
+            },
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Your CSS files -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Google Tag Manager -->
+    <script src="gtm.js"></script>
+  </head>
+  <body class="min-h-screen">
+    <!-- Skip to content link for accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-terracotta focus:text-white focus:z-50"
+    >
+      Spring naar hoofdinhoud
+    </a>
+    <!-- HEADER -->
+    <header
+      class="bg-white sticky top-0 z-50 shadow-md border-b-4 border-terracotta"
+    >
+      <nav class="px-4 lg:px-8 py-2" aria-label="Hoofdnavigatie">
+        <div class="mx-auto max-w-7xl">
+          <!-- Mobile Layout -->
+          <div class="lg:hidden">
+            <!-- Language & Logo Row -->
+            <div class="flex justify-between items-center">
+              <a
+                href="/"
+                class="flex items-center"
+                aria-label="ASHE Foundation Home"
+              >
+                <img
+                  src="img/Untitleddesign.svg"
+                  class="site-logo"
+                  alt="ASHE Foundation Logo"
+                  loading="lazy"
+                  width="150"
+                  height="75"
+                />
+              </a>
+
+              <div class="flex items-center gap-3">
+                <!-- Language Toggler -->
+                <div
+                  class="flex items-center bg-light rounded-full p-2 border border-yellow"
+                  role="group"
+                  aria-label="Taal selectie"
+                >
+                  <button
+                    type="button"
+                    id="lang-nl"
+                    class="flex items-center px-2 py-1 text-sm active-lang"
+                    aria-pressed="true"
+                    aria-label="Schakel naar Nederlandse taal"
+                  >
+                    <img
+                      src="img/flag-nl.webp"
+                      alt="Nederlandse vlag"
+                      loading="lazy"
+                      class="w-5 h-5 mr-2"
+                      width="20"
+                      height="20"
+                    />
+                    <span data-lang-nl>NL</span>
+                  </button>
+                  <span class="text-gray mx-1" aria-hidden="true">|</span>
+                  <button
+                    type="button"
+                    id="lang-en"
+                    class="flex items-center px-2 py-1 text-sm"
+                    aria-pressed="false"
+                    aria-label="Switch to English language"
+                  >
+                    <img
+                      src="img/flag-us.webp"
+                      alt="United States flag"
+                      loading="lazy"
+                      class="w-5 h-5 mr-2"
+                      width="20"
+                      height="20"
+                    />
+                    <span data-lang-en>EN</span>
+                  </button>
+                </div>
+                <!-- Hamburger Menu -->
+                <button
+                  data-collapse-toggle="mobile-menu"
+                  type="button"
+                  class="inline-flex items-center p-2 text-sm text-dark rounded-lg hover:bg-terracotta hover:text-white transition-colors"
+                  aria-controls="mobile-menu"
+                  aria-expanded="false"
+                  aria-label="Open navigatiemenu"
+                >
+                  <span class="sr-only">Open main menu</span>
+                  <svg
+                    class="w-7 h-7"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="hidden" id="mobile-menu" role="navigation">
+              <ul
+                class="flex flex-col mt-4 font-medium space-y-3 border-t pt-4"
+                aria-label="Mobiel navigatiemenu"
+              >
+                <li>
+                  <a
+                    href="/"
+                    class="block py-2 text-dark hover:text-terracotta"
+                    data-lang-key="nav-home"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/watwedoen"
+                    class="block py-2 text-dark hover:text-terracotta"
+                    data-lang-key="nav-what-we-do"
+                    >Wat wij doen</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/wiewijzijn"
+                    class="block py-2 text-terracotta font-semibold"
+                    data-lang-key="nav-who-we-are"
+                    aria-current="page"
+                    >Wie wij zijn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/projecten"
+                    class="block py-2 text-dark hover:text-terracotta"
+                    data-lang-key="nav-projects"
+                    >Projecten</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/contact"
+                    class="block py-2 text-dark hover:text-terracotta"
+                    data-lang-key="nav-contact"
+                    >Contact</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    href="https://donorbox.org/ashe-foundation"
+                    target="_blank"
+                    rel="noopener"
+                    class="block w-full text-center py-3 px-4 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                    data-lang-key="nav-donate"
+                    aria-label="Doneer nu aan de ASHE Foundation"
+                  >
+                    Doneer
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Desktop Layout -->
+          <div class="hidden lg:flex justify-between items-center">
+            <a
+              href="/"
+              class="flex items-center"
+              aria-label="ASHE Foundation Home"
+            >
+              <img
+                src="img/Untitleddesign.svg"
+                class="site-logo"
+                alt="ASHE Foundation Logo"
+                loading="lazy"
+                width="150"
+                height="75"
+              />
+            </a>
+
+            <div
+              class="flex items-center space-x-8"
+              role="navigation"
+              aria-label="Hoofdnavigatie"
+            >
+              <a
+                href="/"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
+                data-lang-key="nav-home"
+              >
+                Home
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                href="/watwedoen"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
+                data-lang-key="nav-what-we-do"
+              >
+                Wat wij doen
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                href="/wiewijzijn"
+                class="text-terracotta font-semibold relative nav-link"
+                data-lang-key="nav-who-we-are"
+                aria-current="page"
+              >
+                Wie wij zijn
+                <span
+                  class="absolute left-0 bottom-0 w-full h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                href="/projecten"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
+                data-lang-key="nav-projects"
+              >
+                Projecten
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                href="/contact"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
+                data-lang-key="nav-contact"
+              >
+                Contact
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </div>
+            <div class="flex items-center space-x-4">
+              <!-- Donate Button -->
+              <a
+                href="https://donorbox.org/ashe-foundation"
+                target="_blank"
+                rel="noopener"
+                class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                data-lang-key="nav-donate"
+                aria-label="Doneer nu aan de ASHE Foundation"
+              >
+                Doneer
+              </a>
+
+              <!-- Language Toggler -->
+              <div
+                class="flex items-center bg-light rounded-full p-2 border border-yellow"
+                role="group"
+                aria-label="Taal selectie"
+              >
+                <button
+                  type="button"
+                  id="lang-nl-desktop"
+                  class="flex items-center px-2 py-1 text-sm active-lang"
+                  aria-pressed="true"
+                  aria-label="Schakel naar Nederlandse taal"
+                >
+                  <img
+                    src="img/flag-nl.webp"
+                    alt="Nederlandse vlag"
+                    loading="lazy"
+                    class="w-5 h-5 mr-2"
+                    width="20"
+                    height="20"
+                  />
+                  <span data-lang-nl>NL</span>
+                </button>
+                <span class="text-gray mx-1" aria-hidden="true">|</span>
+                <button
+                  type="button"
+                  id="lang-en-desktop"
+                  class="flex items-center px-2 py-1 text-sm"
+                  aria-pressed="false"
+                  aria-label="Switch to English language"
+                >
+                  <img
+                    src="img/flag-us.webp"
+                    alt="United States flag"
+                    loading="lazy"
+                    class="w-5 h-5 mr-2"
+                    width="20"
+                    height="20"
+                  />
+                  <span data-lang-en>EN</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div id="main-content" role="main">
+      <!-- Hero Banner Section -->
+      <section
+        class="hero-section py-20 md:py-28 relative"
+        style="
+          background-image:
+            linear-gradient(
+              to bottom,
+              rgba(64, 61, 57, 0.5),
+              rgba(224, 122, 95, 0.4)
+            ),
+            url(&quot;/img/team-banner.webp&quot;);
+          background-size: cover;
+          background-position: center;
+        "
+        aria-labelledby="team-heading"
+      >
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+          <h1
+            class="text-4xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto leading-tight"
+            id="team-heading"
+            data-lang-key="team-title"
+          >
+            Ons team
+          </h1>
+          <p
+            class="text-xl text-white max-w-3xl mx-auto opacity-90"
+            data-lang-key="team-subtitle"
+          >
+            Samen werken wij aan een betere toekomst voor de Maasai gemeenschap
+          </p>
+        </div>
+      </section>
+
+      <!-- Team Introduction Section -->
+      <section class="py-16 bg-white" aria-labelledby="board-heading">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2
+              class="text-3xl font-bold text-terracotta mb-4 relative inline-block"
+              id="board-heading"
+              data-lang-key="board-title"
+            >
+              Het bestuur
+              <span
+                class="absolute bottom-0 left-0 w-full h-1 bg-yellow"
+                aria-hidden="true"
+              ></span>
+            </h2>
+            <p
+              class="text-dark max-w-3xl mx-auto"
+              data-lang-key="board-description"
+            >
+              Het bestuur van Ashe Foundation bestaat uit drie leden en zijn
+              gezamenlijk bevoegd.<br />
+              Er worden geen financiële uitkeringen gedaan aan de bestuurders
+              van Ashe Foundation.<br /><br />
+              Alle donaties aan Ashe Foundation worden slechts gebruikt voor de
+              missie van Ashe Foundation.
+            </p>
+          </div>
+
+          <!-- Team Carousel -->
+          <div
+            class="carousel relative mb-12"
+            id="team-carousel"
+            aria-roledescription="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- Slide 1: Board Members -->
+              <div
+                class="carousel-item p-4"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="Bestuursleden"
+              >
+                <div class="grid md:grid-cols-3 gap-6">
+                  <!-- Board Member 1 -->
+                  <div
+                    class="team-card"
+                    role="article"
+                    aria-labelledby="amy-name"
+                  >
+                    <img
+                      src="/img/PXL_20240111_100411450.webp"
+                      alt="Amory Berkenveld - Oropi"
+                      class="mx-auto rounded-full w-36 h-36 shadow-lg mb-6"
+                      width="144"
+                      height="144"
+                      loading="lazy"
+                    />
+                    <h3
+                      class="text-xl font-bold text-terracotta mb-2"
+                      id="amy-name"
+                      data-lang-key="member-amy-name"
+                    >
+                      Amory Berkenveld - Oropi
+                    </h3>
+                    <p
+                      class="text-sm text-green-dark font-medium mb-4"
+                      data-lang-key="member-amy-title"
+                    >
+                      Oprichter en voorzitter
+                    </p>
+                    <p
+                      class="text-dark text-sm leading-relaxed"
+                      data-lang-key="member-amy-bio"
+                    >
+                      In 2023 heb ik Ashe Foundation opgericht met als doel
+                      duurzame verandering te brengen door nauw samen te werken
+                      met lokale leiders en gemeenschapsleden. Door te luisteren
+                      naar hun behoeften en ideeën, kunnen we projecten
+                      ontwikkelen die echt impact hebben.
+                    </p>
+                    <button
+                      type="button"
+                      class="read-more-btn mt-2 text-sm font-medium text-terracotta hover:text-terracotta-dark flex items-center"
+                      onclick="openModal('amy-modal')"
+                      data-lang-key="read-more"
+                      aria-label="Lees meer over Amory Berkenveld"
+                    >
+                      Lees meer
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 ml-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
                     </button>
-                </div>
+                  </div>
 
-                <!-- Mobile Navigation Menu -->
-                <div class="hidden" id="mobile-menu">
-                    <ul class="flex flex-col mt-4 font-medium space-y-2">
-                        <li><a href="index.html" class="block py-2 text-gray-500 hover:text-gray-800">Home</a></li>
-                        <li><a href="watwedoen.html" class="block py-2 text-gray-500 hover:text-gray-800">Wat wij doen</a></li>
-                        <li><a href="wiewijzijn.html" class="block py-2 text-gray-500 hover:text-gray-800">Wie wij zijn</a></li>
-                        <li><a href="projecten.html" class="block py-2 text-gray-500 hover:text-gray-800">Projecten</a></li>
-                        <li><a href="contact.html" class="block py-2 text-gray-500 hover:text-gray-800">Contact</a></li>
-                        <li>
-                            <a href="https://donorbox.org/project-enkishon" target="_blank" class="block px-4 py-2 text-center text-white bg-rose-600 rounded-lg hover:bg-rose-700">
-                                Doneer
-                            </a>
-                        </li>
-                    </ul>
+                  <!-- Board Member 2 -->
+                  <div
+                    class="team-card"
+                    role="article"
+                    aria-labelledby="roxane-name"
+                  >
+                    <img
+                      src="/img/rox.webp"
+                      alt="Roxane Root"
+                      class="mx-auto rounded-full w-36 h-36 shadow-lg mb-6"
+                      width="144"
+                      height="144"
+                      loading="lazy"
+                    />
+                    <h3
+                      class="text-xl font-bold text-terracotta mb-2"
+                      id="roxane-name"
+                      data-lang-key="member-roxane-name"
+                    >
+                      Roxane Root
+                    </h3>
+                    <p
+                      class="text-sm text-green-dark font-medium mb-4"
+                      data-lang-key="member-roxane-title"
+                    >
+                      Secretaris
+                    </p>
+                    <p
+                      class="text-dark text-sm leading-relaxed"
+                      data-lang-key="member-roxane-bio"
+                    >
+                      Met een achtergrond in het secretariaat zal Roxane Root
+                      binnen Ashe Foundation de functie van secretaris
+                      vervullen. Zij zal ondersteuning bieden bij vergaderingen,
+                      waarin de op te nemen projecten besproken worden en
+                      bestuursbesluiten genomen worden.
+                    </p>
+                    <button
+                      type="button"
+                      class="read-more-btn mt-2 text-sm font-medium text-terracotta hover:text-terracotta-dark flex items-center"
+                      onclick="openModal('roxane-modal')"
+                      data-lang-key="read-more"
+                      aria-label="Lees meer over Roxane Root"
+                    >
+                      Lees meer
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 ml-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <!-- Board Member 3 -->
+                  <div
+                    class="team-card"
+                    role="article"
+                    aria-labelledby="hannah-name"
+                  >
+                    <img
+                      src="/img/ProfileHannah.webp"
+                      alt="Hannah de Dreu"
+                      class="mx-auto rounded-full w-36 h-36 shadow-lg mb-6"
+                      width="144"
+                      height="144"
+                      loading="lazy"
+                    />
+                    <h3
+                      class="text-xl font-bold text-terracotta mb-2"
+                      id="hannah-name"
+                      data-lang-key="member-hannah-name"
+                    >
+                      Hannah de Dreu
+                    </h3>
+                    <p
+                      class="text-sm text-green-dark font-medium mb-4"
+                      data-lang-key="member-hannah-title"
+                    >
+                      Penningmeester
+                    </p>
+                    <p
+                      class="text-dark text-sm leading-relaxed"
+                      data-lang-key="member-hannah-bio"
+                    >
+                      Toen ik hoorde over het werk van Ashe Foundation in
+                      Tanzania, was ik direct onder de indruk van de impact die
+                      zij maken binnen de Maasai-gemeenschap. De missie en de
+                      aanpak van de stichting spraken me aan, en ik wilde graag
+                      een bijdrage leveren.
+                    </p>
+                    <button
+                      type="button"
+                      class="read-more-btn mt-2 text-sm font-medium text-terracotta hover:text-terracotta-dark flex items-center"
+                      onclick="openModal('hannah-modal')"
+                      data-lang-key="read-more"
+                      aria-label="Lees meer over Hannah de Dreu"
+                    >
+                      Lees meer
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 ml-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
+              </div>
+
+              <!-- Slide 2: Team Members -->
+              <div
+                class="carousel-item p-4"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="Team leden"
+              >
+                <div class="grid md:grid-cols-3 gap-6">
+                  <!-- Team Member: Julia -->
+                  <div
+                    class="team-card"
+                    role="article"
+                    aria-labelledby="julia-name"
+                  >
+                    <img
+                      src="/img/julia.webp"
+                      alt="Julia Deijkers"
+                      class="mx-auto rounded-full w-36 h-36 shadow-lg mb-6"
+                      width="144"
+                      height="144"
+                      loading="lazy"
+                    />
+                    <h3
+                      class="text-xl font-bold text-terracotta mb-2"
+                      id="julia-name"
+                      data-lang-key="member-julia-name"
+                    >
+                      Julia Deijkers
+                    </h3>
+                    <p
+                      class="text-sm text-green-dark font-medium mb-4"
+                      data-lang-key="member-julia-title"
+                    >
+                      Social Media & Marketing
+                    </p>
+                    <p
+                      class="text-dark text-sm leading-relaxed"
+                      data-lang-key="member-julia-bio"
+                    >
+                      Mijn eerste ontmoeting met het Maasai-volk vond plaats
+                      tijdens een safari in Tanzania, waar ik ook Amy
+                      Berkenveld, oprichter van Stichting Ashe Foundation, voor
+                      het eerst ontmoette. Haar passie voor het verbeteren van
+                      de omstandigheden van de Maasai-gemeenschap maakte een
+                      blijvende indruk op mij.
+                    </p>
+                    <button
+                      type="button"
+                      class="read-more-btn mt-2 text-sm font-medium text-terracotta hover:text-terracotta-dark flex items-center"
+                      onclick="openModal('julia-modal')"
+                      data-lang-key="read-more"
+                      aria-label="Lees meer over Julia Deijkers"
+                    >
+                      Lees meer
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 ml-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <!-- Local Partner -->
+                  <div
+                    class="team-card"
+                    role="article"
+                    aria-labelledby="kangai-name"
+                  >
+                    <img
+                      src="/img/PXL_20240918_131147830.webp"
+                      alt="Kangai Oropi"
+                      class="mx-auto rounded-full w-36 h-36 shadow-lg mb-6"
+                      width="144"
+                      height="144"
+                      loading="lazy"
+                    />
+                    <h3
+                      class="text-xl font-bold text-terracotta mb-2"
+                      id="kangai-name"
+                      data-lang-key="member-kangai-name"
+                    >
+                      Kangai Oropi
+                    </h3>
+                    <p
+                      class="text-sm text-green-dark font-medium mb-4"
+                      data-lang-key="member-kangai-title"
+                    >
+                      Lokale Partner
+                    </p>
+                    <p
+                      class="text-dark text-sm leading-relaxed"
+                      data-lang-key="member-kangai-bio"
+                    >
+                      Als lokale vertegenwoordiger in Tanzania ben ik de schakel
+                      tussen de stichting en de Maasai gemeenschap. Ik help bij
+                      het identificeren van behoeften en het implementeren van
+                      projecten die echt impact maken.
+                    </p>
+                    <button
+                      type="button"
+                      class="read-more-btn mt-2 text-sm font-medium text-terracotta hover:text-terracotta-dark flex items-center"
+                      onclick="openModal('kangai-modal')"
+                      data-lang-key="read-more"
+                      aria-label="Lees meer over Kangai Oropi"
+                    >
+                      Lees meer
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 ml-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <!-- Empty card or future member -->
+                  <div
+                    class="team-card flex flex-col justify-center items-center pattern-accent bg-light"
+                    role="article"
+                    aria-labelledby="volunteer-title"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-16 h-16 text-terracotta mb-4"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
+                      />
+                    </svg>
+                    <h3
+                      class="text-xl font-bold text-terracotta mb-2"
+                      id="volunteer-title"
+                      data-lang-key="volunteer-title"
+                    >
+                      Word vrijwilliger
+                    </h3>
+                    <p
+                      class="text-dark text-sm leading-relaxed text-center"
+                      data-lang-key="volunteer-description"
+                    >
+                      Wil je meehelpen bij onze missie? We zijn altijd op zoek
+                      naar gepassioneerde vrijwilligers die hun talenten willen
+                      inzetten voor de Maasai gemeenschap.
+                    </p>
+                    <a
+                      href="/contact"
+                      class="mt-4 py-2 px-4 bg-terracotta hover:bg-terracotta-light text-white rounded-full text-sm font-medium transition-colors inline-flex items-center"
+                      data-lang-key="volunteer-button"
+                      aria-label="Neem contact op om vrijwilliger te worden"
+                    >
+                      Neem contact op
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 ml-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <!-- Desktop Layout -->
-            <div class="hidden lg:flex justify-between items-center">
-                <a href="https://www.ashefoundation.nl/" class="flex items-center bg-white px-3 py-2 rounded-lg">
-                    <img src="img/Untitled design.svg" class="h-16 sm:h-20" alt="ASHE Foundation Logo">
-                </a>
-                <div class="flex space-x-6">
-                    <a href="index.html" class="text-gray-500 hover:text-gray-800">Home</a>
-                    <a href="watwedoen.html" class="text-gray-500 hover:text-gray-800">Wat wij doen</a>
-                    <a href="wiewijzijn.html" class="text-gray-500 hover:text-gray-800">Wie wij zijn</a>
-                    <a href="projecten.html" class="text-gray-500 hover:text-gray-800">Projecten</a>
-                    <a href="contact.html" class="text-gray-500 hover:text-gray-800">Contact</a>
-                </div>
-                <div class="flex space-x-4">
-                                        <!-- Donate Button -->
-                                        <a href="https://donorbox.org/project-enkishon" target="_blank" class="px-4 py-2 text-white bg-rose-600 rounded-lg hover:bg-rose-700">
-                                            Doneer
-                                        </a>
-                    <!-- Language Toggler -->
-                    <div class="relative">
-                        <button type="button" data-dropdown-toggle="language-dropdown-menu-desktop" class="px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 rounded-lg flex items-center">
-                            <img src="img/flag-us.webp" alt="English" class="w-5 h-5 mr-2" style="width: 20px; height: auto;">
-                            English
-                        </button>
-                        <!-- Dropdown Menu -->
-                        <div class="hidden absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-10" id="language-dropdown-menu-desktop">
-                            <ul class="py-1">
-                                <li>
-                                    <a href="https://www.ashefoundation.nl/" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                                        <img src="img/flag-nl.webp" alt="Dutch" class="w-5 h-5 mr-2" style="width: 20px; height: 20px;">
-                                        Dutch
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.ashefoundation.net/" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                                        <img src="img/flag-us.webp" alt="English" class="w-5 h-5 mr-2" style="width: 20px; height: auto;">
-                                        English
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- Carousel Controls - Now correctly positioned OUTSIDE the carousel-inner but still inside the carousel container -->
+            <button
+              class="carousel-control carousel-control-prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-terracotta hover:bg-terracotta-light rounded-full p-2 shadow-lg z-10"
+              id="carousel-prev"
+              aria-label="Vorige slide"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <button
+              class="carousel-control carousel-control-next absolute top-1/2 right-4 transform -translate-y-1/2 bg-terracotta hover:bg-terracotta-light rounded-full p-2 shadow-lg z-10"
+              id="carousel-next"
+              aria-label="Volgende slide"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-    </nav>
-</header>
-<!-- MAIN -->
-<main class="container mx-auto py-16 px-4 sm:px-6 lg:px-8 max-w-6xl">
-  <!-- Section: Team -->
-  <section class="text-center">
-    <h1 class="text-4xl font-extrabold text-rose-600 mb-8">Ons Team</h1>
-    <h2 class="text-xl md:text-2xl font-semibold text-gray-600 mb-6">Het bestuur en onze lokale partner</h2>
-    <p class="text-gray-600 leading-relaxed mb-12">
-      Het bestuur van Ashe Foundation bestaat uit drie leden en zijn gezamenlijk bevoegd.<br>
-      Er worden geen financiële uitkeringen gedaan aan de bestuurders van Ashe Foundation.<br><br>
-      Alle financiële donaties gaan rechtstreeks naar de Maasai gemeenschap.
-    </p>
+      </section>
 
-    <!-- Team Cards -->
-    <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-      <!-- Card 1 -->
-      <div class="bg-white rounded-lg shadow-md p-6">
-        <img src="/img/amy.webp" alt="Amory Berkenveld" class="mx-auto rounded-full w-36 h-36 shadow-lg mb-4">
-        <h5 class="text-xl font-bold text-gray-800">Amory Berkenveld</h5>
-        <p class="text-sm text-gray-500">Oprichter en voorzitter</p>
-      </div>
+      <!-- Modal section -->
+      <div class="modals-container">
+        <!-- Amy Modal -->
+        <div
+          id="amy-modal"
+          class="modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="amy-modal-title"
+        >
+          <div class="modal-content">
+            <span class="close-modal" id="close-amy-modal">&times;</span>
+            <h2
+              class="text-3xl font-bold text-terracotta mb-6"
+              id="amy-modal-title"
+              data-lang-key="member-amy-name"
+            >
+              Amory Berkenveld - Oropi
+            </h2>
+            <div class="text-dark">
+              <div class="flex flex-col md:flex-row gap-6 mb-6">
+                <img
+                  src="/img/PXL_20240111_100411450.webp"
+                  alt="Amory Berkenveld"
+                  loading="lazy"
+                  class="w-40 h-40 object-cover rounded-full mx-auto md:mx-0"
+                  width="160"
+                  height="160"
+                />
+                <div>
+                  <p
+                    class="text-sm text-green-dark font-medium mb-2"
+                    data-lang-key="member-amy-title"
+                  >
+                    Oprichter en voorzitter
+                  </p>
+                  <p
+                    class="leading-relaxed mb-4"
+                    data-lang-key="member-amy-bio"
+                  >
+                    In 2023 heb ik Ashe Foundation opgericht met als doel
+                    duurzame verandering te brengen door nauw samen te werken
+                    met lokale leiders en gemeenschapsleden. Door te luisteren
+                    naar hun behoeften en ideeën, kunnen we projecten
+                    ontwikkelen die echt impact hebben.
+                  </p>
+                </div>
+              </div>
 
-      <!-- Card 2 -->
-      <div class="bg-white rounded-lg shadow-md p-6">
-        <img src="/img/rox.webp" alt="Roxane Root" class="mx-auto rounded-full w-36 h-36 shadow-lg mb-4" data-robots="noindex">
-        <h5 class="text-xl font-bold text-gray-800">Roxane Root</h5>
-        <p class="text-sm text-gray-500">Secretaris</p>
-      </div>
+              <p
+                class="leading-relaxed mb-4"
+                data-lang-key="member-amy-full-bio-3"
+              >
+                Met mijn bestuurskundige achtergrond en werkervaringen binnen
+                het publieke domein breng ik praktische kennis en visie naar
+                onze stichting. Ik geloof sterk in het principe van 'lokaal
+                eigenaarschap' - projecten hebben alleen duurzame impact als de
+                gemeenschap er volledig achter staat en actief betrokken is.
+              </p>
 
-      <!-- Card 3 -->
-      <div class="bg-white rounded-lg shadow-md p-6">
-        <img src="/img/ProfileHannah.webp" alt="Hannah de Dreu" class="mx-auto rounded-full w-36 h-36 shadow-lg mb-4" data-robots="noindex">
-        <h5 class="text-xl font-bold text-gray-800">Hannah de Dreu</h5>
-        <p class="text-sm text-gray-500">Penningmeester</p>
-      </div>
+              <p class="leading-relaxed" data-lang-key="member-amy-full-bio-4">
+                Als voorzitter werk ik nauw samen met onze partners,
+                bestuursleden en vrijwilligers om ervoor te zorgen dat onze
+                missie wordt verwezenlijkt: het creëren van een wereld waarin de
+                Maasai gemeenschap kansen heeft om het goede leven en het eigen
+                geluk na te streven.
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Card 4 -->
-      <div class="bg-white rounded-lg shadow-md p-6">
-        <img src="/img/Kangaiprofiel.webp" alt="Kangai Oropi" class="mx-auto rounded-full w-36 h-36 shadow-lg mb-4">
-        <h5 class="text-xl font-bold text-gray-800">Kangai Oropi</h5>
-        <p class="text-sm text-gray-500">Lokale Partner</p>
+        <!-- Roxane Modal -->
+        <div
+          id="roxane-modal"
+          class="modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="roxane-modal-title"
+        >
+          <div class="modal-content">
+            <span class="close-modal" id="close-roxane-modal">&times;</span>
+            <h2
+              class="text-3xl font-bold text-terracotta mb-6"
+              id="roxane-modal-title"
+              data-lang-key="member-roxane-name"
+            >
+              Roxane Root
+            </h2>
+            <div class="text-dark">
+              <div class="flex flex-col md:flex-row gap-6 mb-6">
+                <img
+                  src="/img/rox.webp"
+                  alt="Roxane Root"
+                  loading="lazy"
+                  class="w-40 h-40 object-cover rounded-full mx-auto md:mx-0"
+                  width="160"
+                  height="160"
+                />
+                <div>
+                  <p
+                    class="text-sm text-green-dark font-medium mb-2"
+                    data-lang-key="member-roxane-title"
+                  >
+                    Secretaris
+                  </p>
+                  <p
+                    class="leading-relaxed mb-4"
+                    data-lang-key="member-roxane-bio"
+                  >
+                    Met een achtergrond in het secretariaat zal Roxane Root
+                    binnen Ashe Foundation de functie van secretaris vervullen.
+                    Zij zal ondersteuning bieden bij vergaderingen, waarin de op
+                    te nemen projecten besproken worden en bestuursbesluiten
+                    genomen worden.
+                  </p>
+                </div>
+              </div>
+
+              <p
+                class="leading-relaxed mb-4"
+                data-lang-key="member-roxane-full-bio-2"
+              >
+                Deze vergaderingen zullen genotuleerd worden. In de basis hoort
+                deze taak bij de secretaris. Roxane is heel erg dankbaar dat zij
+                op deze manier kan bijdragen aan de welzijn van de maasai
+                gemeenschap in Tanzania.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hannah Modal -->
+        <div
+          id="hannah-modal"
+          class="modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="hannah-modal-title"
+        >
+          <div class="modal-content">
+            <span class="close-modal" id="close-hannah-modal">&times;</span>
+            <h2
+              class="text-3xl font-bold text-terracotta mb-6"
+              id="hannah-modal-title"
+              data-lang-key="member-hannah-name"
+            >
+              Hannah de Dreu
+            </h2>
+            <div class="text-dark">
+              <div class="flex flex-col md:flex-row gap-6 mb-6">
+                <img
+                  src="/img/ProfileHannah.webp"
+                  alt="Hannah de Dreu"
+                  loading="lazy"
+                  class="w-40 h-40 object-cover rounded-full mx-auto md:mx-0"
+                  width="160"
+                  height="160"
+                />
+                <div>
+                  <p
+                    class="text-sm text-green-dark font-medium mb-2"
+                    data-lang-key="member-hannah-title"
+                  >
+                    Penningmeester
+                  </p>
+                  <p
+                    class="leading-relaxed mb-4"
+                    data-lang-key="member-hannah-bio"
+                  >
+                    Toen ik hoorde over het werk van Ashe Foundation in
+                    Tanzania, was ik direct onder de indruk van de impact die
+                    zij maken binnen de Maasai-gemeenschap. De missie en de
+                    aanpak van de stichting spraken me aan, en ik wilde graag
+                    een bijdrage leveren.
+                  </p>
+                </div>
+              </div>
+
+              <p
+                class="leading-relaxed mb-4"
+                data-lang-key="member-hannah-full-bio-2"
+              >
+                Met mijn achtergrond in operations en digitale projecten
+                ondersteun ik Ashe Foundation als penningmeester en beheer ik de
+                website. Bij mijn huidige werk, bij een Insuretech houd ik me
+                bezig met procesoptimalisatie en development, en die kennis zet
+                ik met plezier ook voor de stichting in.
+              </p>
+
+              <p
+                class="leading-relaxed mb-4"
+                data-lang-key="member-hannah-full-bio-3"
+              >
+                Door mijn reizen en jaren in het buitenland heb ik geleerd met
+                een open blik naar andere culturen te kijken. Het werk van Ashe
+                Foundation sluit daar mooi op aan: betrokken, mensgericht en met
+                oog voor samenwerking over grenzen heen.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Julia Modal -->
+        <div
+          id="julia-modal"
+          class="modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="julia-modal-title"
+        >
+          <div class="modal-content">
+            <span class="close-modal" id="close-julia-modal">&times;</span>
+            <h2
+              class="text-3xl font-bold text-terracotta mb-6"
+              id="julia-modal-title"
+              data-lang-key="member-julia-name"
+            >
+              Julia Deijkers
+            </h2>
+            <div class="text-dark">
+              <div class="flex flex-col md:flex-row gap-6 mb-6">
+                <img
+                  src="/img/julia.webp"
+                  alt="Julia Deijkers"
+                  loading="lazy"
+                  class="w-40 h-40 object-cover rounded-full mx-auto md:mx-0"
+                  width="160"
+                  height="160"
+                />
+                <div>
+                  <p
+                    class="text-sm text-green-dark font-medium mb-2"
+                    data-lang-key="member-julia-title"
+                  >
+                    Social Media & Marketing
+                  </p>
+                  <p
+                    class="leading-relaxed mb-4"
+                    data-lang-key="member-julia-bio"
+                  >
+                    Mijn eerste ontmoeting met het Maasai-volk vond plaats
+                    tijdens een safari in Tanzania, waar ik ook Amy Berkenveld,
+                    oprichter van Stichting Ashe Foundation, voor het eerst
+                    ontmoette. Haar passie voor het verbeteren van de
+                    omstandigheden van de Maasai-gemeenschap maakte een
+                    blijvende indruk op mij.
+                  </p>
+                </div>
+              </div>
+
+              <p
+                class="leading-relaxed mb-4"
+                data-lang-key="member-julia-full-bio-1"
+              >
+                Als fotograaf en content creator ben ik gespecialiseerd in het
+                vastleggen en vertellen van authentieke verhalen. Na mijn reis
+                naar Tanzania besloot ik mijn vaardigheden in te zetten om het
+                verhaal van de Maasai gemeenschap en het werk van Ashe
+                Foundation met de wereld te delen.
+              </p>
+
+              <p
+                class="leading-relaxed mb-4"
+                data-lang-key="member-julia-full-bio-2"
+              >
+                In mijn rol als verantwoordelijke voor social media en marketing
+                ontwikkel ik strategieën om het bereik van Ashe Foundation te
+                vergroten. Door middel van boeiende content, fotografie en
+                verhalen breng ik de cultuur, uitdagingen en successen van de
+                Maasai gemeenschap onder de aandacht van een breder publiek.
+              </p>
+
+              <p
+                class="leading-relaxed mb-4"
+                data-lang-key="member-julia-full-bio-3"
+              >
+                Ik geloof sterk in de kracht van visuele storytelling om
+                bewustzijn te creëren en mensen te verbinden met onze missie.
+                Door authentieke verhalen te delen, kunnen we niet alleen
+                fondsen werven, maar ook begrip en waardering kweken voor de
+                rijke cultuur en veerkracht van de Maasai.
+              </p>
+
+              <p
+                class="leading-relaxed"
+                data-lang-key="member-julia-full-bio-4"
+              >
+                Door mijn werk voor Ashe Foundation kan ik mijn passie voor
+                fotografie en storytelling combineren met een betekenisvol doel:
+                bijdragen aan positieve verandering voor een gemeenschap die me
+                na aan het hart ligt.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kangai Modal -->
+        <div
+          id="kangai-modal"
+          class="modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="kangai-modal-title"
+        >
+          <div class="modal-content">
+            <span class="close-modal" id="close-kangai-modal">&times;</span>
+            <h2
+              class="text-3xl font-bold text-terracotta mb-6"
+              id="kangai-modal-title"
+              data-lang-key="member-kangai-name"
+            >
+              Kangai Oropi
+            </h2>
+            <div class="text-dark">
+              <div class="flex flex-col md:flex-row gap-6 mb-6">
+                <img
+                  src="/img/PXL_20240918_131147830.webp"
+                  alt="Kangai Oropi"
+                  loading="lazy"
+                  class="w-40 h-40 object-cover rounded-full mx-auto md:mx-0"
+                  width="160"
+                  height="160"
+                />
+                <div>
+                  <p
+                    class="text-sm text-green-dark font-medium mb-2"
+                    data-lang-key="member-kangai-title"
+                  >
+                    Lokale Partner
+                  </p>
+                  <p
+                    class="leading-relaxed mb-4"
+                    data-lang-key="member-kangai-bio"
+                  >
+                    Als lokale vertegenwoordiger in Tanzania ben ik de schakel
+                    tussen de stichting en de Maasai gemeenschap. Ik help bij
+                    het identificeren van behoeften en het implementeren van
+                    projecten die echt impact maken.
+                  </p>
+                </div>
+              </div>
+
+              <p
+                class="leading-relaxed mb-4"
+                data-lang-key="member-kangai-full-bio-1"
+              >
+                Geboren en getogen in de Maasai gemeenschap in Tanzania, heb ik
+                een diepgaand begrip van onze cultuur, tradities en de
+                uitdagingen waarmee we worden geconfronteerd. Mijn betrokkenheid
+                bij Ashe Foundation komt voort uit mijn wens om mijn gemeenschap
+                te helpen vooruitkomen zonder onze culturele identiteit te
+                verliezen.
+              </p>
+
+              <p
+                class="leading-relaxed mb-4"
+                data-lang-key="member-kangai-full-bio-2"
+              >
+                Ik werk nauw samen met dorpsoudsten, gemeenschapsleiders en
+                lokale belanghebbenden om de behoeften van onze gemeenschap in
+                kaart te brengen en projecten te ontwikkelen die hierop
+                aansluiten.
+              </p>
+
+              <p
+                class="leading-relaxed mb-4"
+                data-lang-key="member-kangai-full-bio-3"
+              >
+                Als coördinator van onze lokale projecten zorg ik ervoor dat
+                alle initiatieven cultureel respectvol zijn, door de gemeenschap
+                worden gedragen en duurzame impact hebben. Ik ben
+                verantwoordelijk voor het dagelijks toezicht op projecten, het
+                betrekken van gemeenschapsleden en het rapporteren over
+                voortgang en resultaten.
+              </p>
+
+              <p
+                class="leading-relaxed"
+                data-lang-key="member-kangai-full-bio-4"
+              >
+                Ik ben trots op de manier waarop Ashe Foundation samenwerkt met
+                onze gemeenschap - als echte partners met wederzijds respect.
+                Door deze aanpak kunnen we projecten ontwikkelen die niet alleen
+                tegemoetkomen aan onze onmiddellijke behoeften, maar ook
+                bijdragen aan een sterkere, zelfvoorzienende toekomst voor de
+                volgende generaties Maasai.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-</main>
+    <!-- End of main content -->
 
-<!--FOOTER-->
-<footer class="p-4 bg-gray-500 sm:p-6 dark:bg-gray-800">
-    <div class="mx-auto max-w-screen-xl">
-        <div class="md:flex md:justify-between">
-            <div class="mb-6 md:mb-0">
-            </div>
-            <div class="grid grid-cols-2 gap-16 sm:gap-16 sm:grid-cols-3">
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-300 uppercase dark:text-white">Bedrijf</h2>
-                    <ul class="text-gray-400 dark:text-gray-400">
-                      
-                        <li class="mb-4">
-                            <a href="financieel.html" class="hover:underline">Jaarverslag en jaarrekeningen</a>
-                        </li> 
-                        <!--<li class="mb-4">
-                          <a href="https://tailwindcss.com/" class="hover:underline">Financiën en fondsenwerving</a>
-                      </li>
-                    </ul>-->
-                </div>
-                <div>
-                   <h2 class="mb-6 text-sm font-semibold text-gray-300 uppercase dark:text-white">Contact & Services</h2>
-                    <ul class="text-gray-400 dark:text-gray-400">
-                        <li class="mb-4">
-                            <a href="contact.html" class="hover:underline ">Contact</a>
-                        </li>
-                        <li>
-                            <a href="klachten.html" class="hover:underline">Een opmerking of klacht?</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-300 uppercase dark:text-white">Legal</h2>
-                    <ul class="text-gray-400 dark:text-gray-400">
-                        <li class="mb-4">
-                            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:33bcb8b3-4519-4414-8fd7-a56de689d200" Target="_blank" class="hover:underline">Privacy verklaring & Disclaimer</a>
-                        </li>
-                        <li>
-                            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:7aa40308-6134-4e14-8fdc-d0cc07f0b1bb" Target="_blank" class="hover:underline">Algemene Voorwaarden</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-12 pb-6 relative overflow-hidden">
+      <div
+        class="absolute inset-0 opacity-5 pattern-accent"
+        aria-hidden="true"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <!-- About Column -->
+          <div>
+            <a
+              href="/"
+              class="inline-block mb-4"
+              aria-label="Terug naar home pagina"
+            >
+              <img
+                src="img/Untitleddesign.svg"
+                alt="ASHE Foundation Logo"
+                class="h-20 p-2 rounded-lg hover:shadow-lg transition-shadow"
+                width="150"
+                height="80"
+                loading="lazy"
+              />
+            </a>
+            <p class="text-gray-300 mb-4" data-lang-key="footer-about">
+              Ashe Foundation werkt aan een wereld waarin de Maasai gemeenschap
+              in Tanzania kansen heeft om het goede leven en het eigen geluk na
+              te streven.
+            </p>
+          </div>
+
+          <!-- Company Links -->
+          <div>
+            <h3
+              class="text-lg font-semibold mb-4 text-yellow"
+              data-lang-key="footer-company"
+              id="footer-company-heading"
+            >
+              Bedrijf
+            </h3>
+            <ul
+              class="space-y-2 text-gray-300"
+              aria-labelledby="footer-company-heading"
+            >
+              <li>
+                <a
+                  href="/financieel"
+                  class="hover:text-yellow transition-colors flex items-center"
+                  data-lang-key="footer-financial"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Jaarverslag en jaarrekeningen</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/wiewijzijn"
+                  class="hover:text-yellow transition-colors flex items-center"
+                  data-lang-key="footer-team"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Ons team</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact & Services -->
+          <div>
+            <h3
+              class="text-lg font-semibold mb-4 text-yellow"
+              data-lang-key="footer-contact-services"
+              id="footer-contact-heading"
+            >
+              Contact & Services
+            </h3>
+            <ul
+              class="space-y-2 text-gray-300"
+              aria-labelledby="footer-contact-heading"
+            >
+              <li>
+                <a
+                  href="/contact"
+                  class="hover:text-yellow transition-colors flex items-center"
+                  data-lang-key="footer-contact"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/klachten"
+                  class="hover:text-yellow transition-colors flex items-center"
+                  data-lang-key="footer-complaints"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Een opmerking of klacht?</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div>
+            <h3
+              class="text-lg font-semibold mb-4 text-yellow"
+              data-lang-key="footer-legal"
+              id="footer-legal-heading"
+            >
+              Legal
+            </h3>
+            <ul
+              class="space-y-2 text-gray-300"
+              aria-labelledby="footer-legal-heading"
+            >
+              <li>
+                <a
+                  href="/privacystatement.html"
+                  class="hover:text-yellow transition-colors flex items-center footer-privacy-nl"
+                  data-lang-key="footer-privacy"
+                  aria-label="Bekijk onze privacy verklaring en disclaimer"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Privacy verklaring & Disclaimer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/algemenevoorwaarden.html"
+                  class="hover:text-yellow transition-colors flex items-center footer-terms-nl"
+                  data-lang-key="footer-terms"
+                  aria-label="Bekijk onze algemene voorwaarden"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Algemene Voorwaarden</a
+                >
+                <a
+                  href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:42d6cfe6-cb21-459c-9663-ce9f8738bc33"
+                  target="_blank"
+                  rel="noopener"
+                  class="hover:text-yellow transition-colors flex items-center footer-terms-en hidden"
+                  data-lang-key="footer-terms"
+                  aria-label="View our terms and conditions"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Terms and Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-300 sm:text-center dark:text-gray-300">© 2024 <a href="https://flowbite.com" class="hover:underline">Ashe Foundation</a>. All Rights Reserved.
-            </span>
-            <!--
-            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-                <a href="#" class="text-rose-200 hover:text-rose-400 dark:hover:text-white">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                </a>
-                <a href="#" class="text-rose-200 hover:text-rose-400 dark:hover:text-white">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
-                </a>
-            </div>-->
+
+        <div
+          class="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-gray-800"
+        >
+          <div class="mb-4 md:mb-0">
+            <p class="text-sm text-gray-400">
+              &copy; 2025 Ashe Foundation. All Rights Reserved.
+            </p>
+          </div>
+
+          <div class="flex items-center">
+            <a
+              href="https://anbi.nl/"
+              target="_blank"
+              rel="noopener"
+              class="inline-block transform transition-transform hover:scale-105"
+              aria-label="Bezoek de ANBI website"
+            >
+              <img
+                src="img/anbi-logo-a397f74b-153w.webp"
+                alt="logo van ANBI - Algemeen Nut Beogende Instelling"
+                title="ANBI"
+                loading="lazy"
+                class="h-14 bg-white p-1 rounded-lg"
+                width="153"
+                height="56"
+              />
+            </a>
+          </div>
         </div>
+      </div>
+    </footer>
+
+    <!-- COOKIE BANNER -->
+    <div
+      class="fixed inset-x-0 bottom-0 z-50 bg-white shadow-lg border-t-4 border-terracotta p-4 cookie-banner"
+      style="display: none"
+      role="alert"
+      aria-live="polite"
+      id="cookie-banner"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <div class="max-w-2xl">
+          <h4
+            class="text-base font-semibold mb-1 text-terracotta"
+            data-lang-key="cookie-title"
+            id="cookie-heading"
+          >
+            Cookies op deze website
+          </h4>
+          <p class="text-sm text-dark">
+            <span data-lang-key="cookie-text-part1"
+              >Wij gebruiken cookies om jou de beste ervaring op onze website te
+              geven. In</span
+            >
+            <a
+              href="/privacystatement.html"
+              class="text-green font-medium hover:underline"
+              rel="noopener"
+            >
+              <span data-lang-key="cookie-text-part2"
+                >ons privacy statement</span
+              >
+            </a>
+            <span data-lang-key="cookie-text-part3"
+              >lees je meer over de cookies die wij gebruiken.</span
+            >
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <button
+            id="rcc-confirm-button"
+            class="bg-terracotta hover:bg-terracotta-light text-white text-sm font-medium py-2 px-4 rounded-full transition-colors"
+            data-lang-key="cookie-agree"
+            aria-labelledby="cookie-heading"
+          >
+            Ik ga akkoord
+          </button>
+          <button
+            id="cookie-preferences-button"
+            class="bg-yellow hover:bg-yellow-light text-dark text-sm font-medium py-2 px-4 rounded-full transition-colors"
+            data-lang-key="cookie-preferences"
+            aria-labelledby="cookie-heading"
+          >
+            Voorkeuren aanpassen
+          </button>
+          <button
+            id="rcc-decline-button"
+            class="bg-light hover:bg-gray-200 text-dark text-sm font-medium py-2 px-4 rounded-full transition-colors"
+            data-lang-key="cookie-disagree"
+            aria-labelledby="cookie-heading"
+          >
+            Niet akkoord
+          </button>
+        </div>
+      </div>
     </div>
-  </footer>
- <!-- ANBI STATUS-->
- <section class="bg-white dark:bg-white">
-    <div class="py-4 lg:py-8 mx-auto max-w-screen-xl px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-6">
-            <div class="flex justify-end items-center lg:col-start-6">
-                <a href="https://anbi.nl/" target="_blank">
-                    <img src="img/anbi-logo-a397f74b-153w (1).webp" alt="logo van ANBI" title="ANBI" loading="lazy" class="h-12 sm:h-16 lg:h-20"/>
-                </a>
+
+    <!-- COOKIE PREFERENCES MODAL -->
+    <div
+      id="cookie-preferences-modal"
+      class="modal"
+      role="dialog"
+      aria-labelledby="cookie-modal-title"
+      aria-modal="true"
+      hidden
+    >
+      <div class="modal-content">
+        <span class="close-modal" id="close-cookie-modal">&times;</span>
+        <h2
+          id="cookie-modal-title"
+          class="text-3xl font-bold text-terracotta mb-6"
+          data-lang-key="cookie-modal-title"
+        >
+          Cookievoorkeuren
+        </h2>
+        <div class="text-dark">
+          <p class="leading-relaxed mb-6" data-lang-key="cookie-modal-intro">
+            Bij het weigeren van cookies kan het voorkomen dat bepaalde
+            functionaliteiten binnen de website niet werken zoals bedoeld. Mocht
+            je van gedachten veranderen, dan kan je eenvoudig -op ieder moment,
+            en per categorie- cookies toestaan of weigeren.
+          </p>
+
+          <!-- Necessary cookies -->
+          <div class="mb-6 border-b pb-4">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold" data-lang-key="cookie-necessary">
+                Noodzakelijke cookies
+              </h3>
+              <div
+                class="relative inline-block w-12 h-6 bg-gray-200 rounded-full"
+              >
+                <input
+                  type="checkbox"
+                  id="necessary-cookies"
+                  class="sr-only"
+                  checked
+                  disabled
+                />
+                <span
+                  class="absolute inset-0 bg-terracotta rounded-full transition-colors"
+                ></span>
+                <span
+                  class="absolute h-5 w-5 left-0.5 top-0.5 bg-white rounded-full transition-transform transform translate-x-6"
+                ></span>
+              </div>
             </div>
+            <p class="text-sm mt-2" data-lang-key="cookie-necessary-desc">
+              Deze cookies zijn nodig om de website te laten functioneren.
+            </p>
+          </div>
+
+          <!-- Analytics cookies -->
+          <div class="mb-6 border-b pb-4">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold" data-lang-key="cookie-analytics">
+                Analytische cookies
+              </h3>
+              <div
+                class="relative inline-block w-12 h-6 bg-gray-200 rounded-full"
+              >
+                <input type="checkbox" id="analytics-cookies" class="sr-only" />
+                <span
+                  class="absolute inset-0 rounded-full transition-colors"
+                ></span>
+                <span
+                  class="absolute h-5 w-5 left-0.5 top-0.5 bg-white rounded-full transition-transform"
+                ></span>
+              </div>
+            </div>
+            <p class="text-sm mt-2" data-lang-key="cookie-analytics-desc">
+              Deze cookies helpen ons inzicht te krijgen in hoe bezoekers onze
+              website gebruiken.
+            </p>
+          </div>
+
+          <div class="flex gap-3 justify-end mt-6">
+            <button
+              id="save-cookie-preferences"
+              class="bg-terracotta hover:bg-terracotta-light text-white text-sm font-medium py-2 px-4 rounded-full transition-colors"
+              data-lang-key="cookie-save"
+            >
+              Opslaan
+            </button>
+            <button
+              id="close-cookie-preferences"
+              class="bg-light hover:bg-gray-200 text-dark text-sm font-medium py-2 px-4 rounded-full transition-colors border border-gray-300"
+              data-lang-key="cookie-cancel"
+            >
+              Annuleren
+            </button>
+          </div>
         </div>
+      </div>
     </div>
-</section>
-        <script>
-          let ham = document.getElementById('hammm')
-          function Open(){
-            ham.classList.add('w-[100%]')
-          }
-          function Close(){
-            ham.classList.remove('w-[100%]')
-          }
-        </script>
-<script src="dropdown.js"></script>
-<script src="mobile-menu.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="path/to/main.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-</body>
-  </html>
+
+    <!-- Load JavaScript Files -->
+    <script src="./js/translations.js" defer></script>
+    <script src="./js/gtm.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/modals.js" defer></script>
+  </body>
+</html>

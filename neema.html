@@ -1,350 +1,1451 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
-    <head>
-        <title>ASHE Foundation</title>
-        
-        <!-- Favicon -->
-        <link rel="icon" type="image/webp" href="/img/Untitled design.webp" sizes="144x144">
-    
-        <!-- Preloads -->
-        <link rel="preload" href="style.css" as="style">
-        <link rel="preload" href="/img/flag-us.webp" as="image" type="image/webp">
-        <link rel="preload" href="/img/flag-nl.webp" as="image" type="image/webp">
-        <link rel="preload" href="/img/Untitled design.svg" as="image" type="image/svg+xml">
-        <link rel="preload" href="/video/naserian.mp4" as="video" type="video/mp4">
-        <link rel="preload" href="/video/neema.mp4" as="video" type="video/mp4">
-        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    
-        <!-- DNS Prefetching -->
-        <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-        <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
-    
-        <!-- Meta Tags -->
-        <meta charset="UTF-8">
-        <meta name="description" content="Ashe Foundation werkt aan een wereld waarin de Maasai gemeenschap in Tanzania kansen heeft om het goede leven en het eigen geluk na te streven.">
-        <meta name="keywords" content="Contact, Stichting, Doneren, Maasai gemeenschap">
-        <meta name="author" content="ASHE Foundation">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#ffffff">
-        <meta name="robots" content="index, follow">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-        <!-- Inline Critical CSS -->
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            header {
-                background-color: #fff;
-                padding: 1rem;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-        </style>
-    
-        <!-- Stylesheets -->
-        <script src="https://cdn.tailwindcss.com?minify"></script>
-        <link rel="stylesheet" href="style.css">
-    
-        <!-- Google Tag Manager -->
-        <script async>
-            (function(w, d, s, l, i) {
-              w[l] = w[l] || [];
-              w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-              var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-              j.async = true;
-              j.defer = true;
-              j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-              f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-MDTTVCKD');
-          </script>
-    </head>
-  <body class="min-h-screen"> 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDTTVCKD"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-<!-- HEADER -->
-<header>
-    <nav class="bg-white border-solid border-b-2 px-4 lg:px-6 py-4">
-        <div class="mx-auto max-w-screen-xl">
-            <!-- Mobile Layout -->
-            <div class="lg:hidden">
-                <!-- First Row: Language Toggler -->
-                <div class="flex justify-end items-center mb-2">
-                    <div class="relative">
-                        <button type="button" data-dropdown-toggle="language-dropdown-menu-mobile" class="px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 rounded-lg flex items-center">
-                            <img src="img/flag-us.webp" alt="English" class="w-5 h-5 mr-2" style="width: 20px; height: auto;">
-                            English
-                        </button>
-                        <!-- Dropdown Menu -->
-                        <div class="hidden absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-10" id="language-dropdown-menu-mobile">
-                            <ul class="py-1">
-                                <li>
-                                    <a href="https://www.ashefoundation.nl/" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                                        <img src="img/flag-nl.webp" alt="Dutch" class="w-5 h-5 mr-2" style="width: 20px; height: 20px;">
-                                        Dutch
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.ashefoundation.net/" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                                        <img src="img/flag-us.webp" alt="English" class="w-5 h-5 mr-2" style="width: 20px; height: auto;">
-                                        English
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+  <head>
+    <title>Neema's Verhaal - ASHE Foundation</title>
+    <!-- Meta tags for SEO -->
+    <meta
+      name="description"
+      content="Ontdek het inspirerende verhaal van Neema, een alleenstaande Maasai-moeder wiens droom van een eigen winkel werkelijkheid werd dankzij de ASHE Foundation."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Neema's Verhaal - ASHE Foundation" />
+    <meta
+      property="og:description"
+      content="Lees hoe Neema, een alleenstaande Maasai-moeder, haar eigen winkel startte en financiële onafhankelijkheid bereikte met hulp van de ASHE Foundation."
+    />
+    <meta
+      property="og:image"
+      content="https://ashefoundation.nl/img/Neema-banner.webp"
+    />
+    <meta property="og:url" content="https://ashefoundation.nl/neema" />
+    <meta property="og:type" content="article" />
+
+    <!-- Language detection meta tags -->
+    <link
+      rel="alternate"
+      hreflang="nl"
+      href="https://ashefoundation.nl/neema"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://ashefoundation.net/neema"
+    />
+    <link rel="canonical" href="https://ashefoundation.nl/neema" />
+
+    <!-- Common preloads -->
+    <link rel="preload" href="/img/flag-us.webp" as="image" type="image/webp" />
+    <link rel="preload" href="/img/flag-nl.webp" as="image" type="image/webp" />
+    <link
+      rel="preload"
+      href="/img/Untitleddesign.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+    <link rel="preload" href="/css/main.css" as="style" />
+
+    <!-- Page-specific preloads -->
+    <link
+      rel="preload"
+      href="/img/Neema-banner.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="/video/neema.mp4"
+      as="video"
+      type="video/mp4"
+      media="(min-width: 768px)"
+    />
+
+    <!-- Critical CSS - Keep minimal essential styles for above-the-fold content -->
+    <style>
+      /* Optimized Critical CSS for neema.html */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #403d39;
+        background-color: #fff1e6;
+      }
+
+      /* Hero Section for Neema page */
+      .hero-section {
+        background-image:
+          linear-gradient(
+            to bottom,
+            rgba(64, 61, 57, 0.5),
+            rgba(224, 122, 95, 0.4)
+          ),
+          url("/img/Neema-banner.webp");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        position: relative;
+      }
+
+      /* Header elements */
+      .site-logo {
+        height: 90px;
+        transition: transform 0.3s ease;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background-color: white;
+        border-bottom: 4px solid #e07a5f;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Language and Navigation */
+      .active-lang {
+        color: #e07a5f;
+        font-weight: 600;
+      }
+
+      .nav-link {
+        position: relative;
+      }
+
+      .nav-indicator {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background-color: #e07a5f;
+        transition: width 0.3s ease;
+      }
+
+      /* Original critical CSS here */
+
+      /* Mobile-specific critical CSS */
+      @media (max-width: 768px) {
+        .hero-section {
+          padding: 4rem 0; /* Reduced padding for mobile */
+        }
+
+        h1#hero-title {
+          font-size: 2rem; /* Smaller title on mobile */
+          margin-bottom: 0.5rem;
+        }
+
+        /* Adjust video container height for mobile */
+        .overflow-hidden.relative.rounded-xl {
+          height: auto; /* Adjust video container height */
+        }
+      }
+    </style>
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Neema's Verhaal - Een nieuwe winkel, een nieuw begin",
+        "image": "https://ashefoundation.nl/img/Neema-banner.webp",
+        "datePublished": "2024-02-01",
+        "description": "Ontdek hoe alleenstaande Maasai-moeder Neema met hulp van de ASHE Foundation haar eigen winkel startte om haar gezin te onderhouden.",
+        "author": {
+          "@type": "Organization",
+          "name": "ASHE Foundation"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "ASHE Foundation",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://ashefoundation.nl/img/Untitleddesign.svg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://ashefoundation.nl/neema"
+        }
+      }
+    </script>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/webp"
+      href="/img/Untitleddesign.webp"
+      sizes="144x144"
+    />
+
+    <!-- Font import -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <script src="https://cdn.tailwindcss.com?minify"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              terracotta: "#E07A5F",
+              "terracotta-dark": "#C45D41",
+              "terracotta-light": "#FF8A70",
+              green: "#57CC99" /* Bright green */,
+              "green-light": "#80ED99" /* Lighter green */,
+              "green-dark": "#38A169" /* Darker green */,
+              yellow: "#F9C846" /* Vibrant yellow */,
+              "yellow-light": "#FFE066" /* Light yellow */,
+              dark: "#403D39" /* Warmer dark color */,
+              light: "#FFF1E6" /* Warm light color */,
+              gray: "#A7B39A" /* Muted sage for text */,
+            },
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <!-- Google Tag Manager -->
+    <script src="/js/gtm.js" async></script>
+  </head>
+  <body class="min-h-screen neema-story">
+    <!-- Skip to content link for accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-terracotta focus:text-white focus:z-50"
+    >
+      Spring naar hoofdinhoud
+    </a>
+
+    <!-- HEADER -->
+    <header
+      class="bg-white sticky top-0 z-50 shadow-md border-b-4 border-terracotta"
+    >
+      <nav class="px-4 lg:px-8 py-2" aria-label="Hoofdnavigatie">
+        <div class="mx-auto max-w-7xl">
+          <!-- Mobile Layout -->
+          <div class="lg:hidden">
+            <!-- Mobile layout content -->
+            <div class="flex justify-between items-center">
+              <a
+                href="/"
+                class="flex items-center"
+                aria-label="ASHE Foundation Home"
+              >
+                <img
+                  src="img/Untitleddesign.svg"
+                  class="site-logo"
+                  alt="ASHE Foundation Logo"
+                  loading="lazy"
+                  width="150"
+                  height="75"
+                />
+              </a>
+
+              <div class="flex items-center gap-3">
+                <!-- Language Toggler -->
+                <div
+                  class="flex items-center bg-light rounded-full p-2 border border-yellow"
+                  role="group"
+                  aria-label="Taal selectie"
+                >
+                  <button
+                    type="button"
+                    id="lang-nl"
+                    class="flex items-center px-2 py-1 text-sm active-lang"
+                    aria-pressed="true"
+                    aria-label="Schakel naar Nederlandse taal"
+                  >
+                    <img
+                      src="img/flag-nl.webp"
+                      alt="Nederlandse vlag"
+                      loading="lazy"
+                      class="w-5 h-5 mr-2"
+                      width="20"
+                      height="20"
+                    />
+                    <span data-lang-nl>NL</span>
+                  </button>
+                  <span class="text-gray mx-1" aria-hidden="true">|</span>
+                  <button
+                    type="button"
+                    id="lang-en"
+                    class="flex items-center px-2 py-1 text-sm"
+                    aria-pressed="false"
+                    aria-label="Switch to English language"
+                  >
+                    <img
+                      src="img/flag-us.webp"
+                      alt="United States flag"
+                      loading="lazy"
+                      class="w-5 h-5 mr-2"
+                      width="20"
+                      height="20"
+                    />
+                    <span data-lang-en>EN</span>
+                  </button>
                 </div>
 
-                <!-- Second Row: Logo and Hamburger Menu -->
-                <div class="flex justify-between items-center">
-                    <a href="https://www.ashefoundation.nl/" class="flex items-center bg-white px-3 py-2 rounded-lg">
-                        <img src="img/Untitled design.svg" class="h-16 sm:h-20" alt="ASHE Foundation Logo">
-                    </a>
-                    <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-                        </svg>
-                    </button>
-                </div>
-
-                <!-- Mobile Navigation Menu -->
-                <div class="hidden" id="mobile-menu">
-                    <ul class="flex flex-col mt-4 font-medium space-y-2">
-                        <li><a href="index.html" class="block py-2 text-gray-500 hover:text-gray-800">Home</a></li>
-                        <li><a href="watwedoen.html" class="block py-2 text-gray-500 hover:text-gray-800">Wat wij doen</a></li>
-                        <li><a href="wiewijzijn.html" class="block py-2 text-gray-500 hover:text-gray-800">Wie wij zijn</a></li>
-                        <li><a href="projecten.html" class="block py-2 text-gray-500 hover:text-gray-800">Projecten</a></li>
-                        <li><a href="contact.html" class="block py-2 text-gray-500 hover:text-gray-800">Contact</a></li>
-                        <li>
-                            <a href="https://donorbox.org/project-enkishon" target="_blank" class="block px-4 py-2 text-center text-white bg-rose-600 rounded-lg hover:bg-rose-700">
-                                Doneer
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <!-- Hamburger Menu -->
+                <button
+                  data-collapse-toggle="mobile-menu"
+                  type="button"
+                  class="inline-flex items-center p-2 text-sm text-dark rounded-lg hover:bg-terracotta hover:text-white transition-colors"
+                  aria-controls="mobile-menu"
+                  aria-expanded="false"
+                  aria-label="Open navigatiemenu"
+                >
+                  <span class="sr-only">Open main menu</span>
+                  <svg
+                    class="w-7 h-7"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
             </div>
 
-            <!-- Desktop Layout -->
-            <div class="hidden lg:flex justify-between items-center">
-                <a href="https://www.ashefoundation.nl/" class="flex items-center bg-white px-3 py-2 rounded-lg">
-                    <img src="img/Untitled design.svg" class="h-16 sm:h-20" alt="ASHE Foundation Logo">
-                </a>
-                <div class="flex space-x-6">
-                    <a href="index.html" class="text-gray-500 hover:text-gray-800">Home</a>
-                    <a href="watwedoen.html" class="text-gray-500 hover:text-gray-800">Wat wij doen</a>
-                    <a href="wiewijzijn.html" class="text-gray-500 hover:text-gray-800">Wie wij zijn</a>
-                    <a href="projecten.html" class="text-gray-500 hover:text-gray-800">Projecten</a>
-                    <a href="contact.html" class="text-gray-500 hover:text-gray-800">Contact</a>
-                </div>
-                <div class="flex space-x-4">
-                                        <!-- Donate Button -->
-                                        <a href="https://donorbox.org/project-enkishon" target="_blank" class="px-4 py-2 text-white bg-rose-600 rounded-lg hover:bg-rose-700">
-                                            Doneer
-                                        </a>
-                    <!-- Language Toggler -->
-                    <div class="relative">
-                        <button type="button" data-dropdown-toggle="language-dropdown-menu-desktop" class="px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 rounded-lg flex items-center">
-                            <img src="img/flag-us.webp" alt="English" class="w-5 h-5 mr-2" style="width: 20px; height: auto;">
-                            English
-                        </button>
-                        <!-- Dropdown Menu -->
-                        <div class="hidden absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-10" id="language-dropdown-menu-desktop">
-                            <ul class="py-1">
-                                <li>
-                                    <a href="https://www.ashefoundation.nl/" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                                        <img src="img/flag-nl.webp" alt="Dutch" class="w-5 h-5 mr-2" style="width: 20px; height: 20px;">
-                                        Dutch
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.ashefoundation.net/" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                                        <img src="img/flag-us.webp" alt="English" class="w-5 h-5 mr-2" style="width: 20px; height: auto;">
-                                        English
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <!-- Mobile Navigation Menu -->
+            <div class="hidden" id="mobile-menu" role="navigation">
+              <ul
+                class="flex flex-col mt-4 font-medium space-y-3 border-t pt-4"
+                aria-label="Mobiel navigatiemenu"
+              >
+                <li>
+                  <a
+                    href="/"
+                    class="block py-2 text-dark hover:text-terracotta"
+                    data-lang-key="nav-home"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/watwedoen"
+                    class="block py-2 text-dark hover:text-terracotta"
+                    data-lang-key="nav-what-we-do"
+                    >Wat wij doen</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/wiewijzijn"
+                    class="block py-2 text-dark hover:text-terracotta"
+                    data-lang-key="nav-who-we-are"
+                    >Wie wij zijn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/projecten"
+                    class="block py-2 text-dark hover:text-terracotta"
+                    data-lang-key="nav-projects"
+                    >Projecten</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/contact"
+                    class="block py-2 text-dark hover:text-terracotta"
+                    data-lang-key="nav-contact"
+                    >Contact</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    href="https://donorbox.org/ashe-foundation"
+                    target="_blank"
+                    rel="noopener"
+                    class="block w-full text-center py-3 px-4 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                    data-lang-key="nav-donate"
+                    aria-label="Doneer nu aan de ASHE Foundation"
+                  >
+                    Doneer
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
+
+          <!-- Desktop Layout -->
+          <div class="hidden lg:flex justify-between items-center">
+            <a
+              href="/"
+              class="flex items-center"
+              aria-label="ASHE Foundation Home"
+            >
+              <img
+                src="img/Untitleddesign.svg"
+                class="site-logo"
+                alt="ASHE Foundation Logo"
+                loading="lazy"
+                width="150"
+                height="75"
+              />
+            </a>
+
+            <div
+              class="flex items-center space-x-8"
+              role="navigation"
+              aria-label="Hoofdnavigatie"
+            >
+              <a
+                href="/"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
+                data-lang-key="nav-home"
+              >
+                Home
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  aria-hidden="true"
+                ></span>
+              </a>
+
+              <a
+                href="/watwedoen"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
+                data-lang-key="nav-what-we-do"
+              >
+                Wat wij doen
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  aria-hidden="true"
+                ></span>
+              </a>
+
+              <a
+                href="/wiewijzijn"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
+                data-lang-key="nav-who-we-are"
+              >
+                Wie wij zijn
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  aria-hidden="true"
+                ></span>
+              </a>
+
+              <a
+                href="/projecten"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
+                data-lang-key="nav-projects"
+              >
+                Projecten
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  aria-hidden="true"
+                ></span>
+              </a>
+
+              <a
+                href="/contact"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
+                data-lang-key="nav-contact"
+              >
+                Contact
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <!-- Donate Button -->
+              <a
+                href="https://donorbox.org/ashe-foundation"
+                target="_blank"
+                rel="noopener"
+                class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                data-lang-key="nav-donate"
+                aria-label="Doneer nu aan de ASHE Foundation"
+              >
+                Doneer
+              </a>
+
+              <!-- Language Toggler -->
+              <div
+                class="flex items-center bg-light rounded-full p-2 border border-yellow"
+                role="group"
+                aria-label="Taal selectie"
+              >
+                <button
+                  type="button"
+                  id="lang-nl-desktop"
+                  class="flex items-center px-2 py-1 text-sm active-lang"
+                  aria-pressed="true"
+                  aria-label="Schakel naar Nederlandse taal"
+                >
+                  <img
+                    src="img/flag-nl.webp"
+                    alt="Nederlandse vlag"
+                    loading="lazy"
+                    class="w-5 h-5 mr-2"
+                    width="20"
+                    height="20"
+                  />
+                  <span data-lang-nl>NL</span>
+                </button>
+                <span class="text-gray mx-1" aria-hidden="true">|</span>
+                <button
+                  type="button"
+                  id="lang-en-desktop"
+                  class="flex items-center px-2 py-1 text-sm"
+                  aria-pressed="false"
+                  aria-label="Switch to English language"
+                >
+                  <img
+                    src="img/flag-us.webp"
+                    alt="United States flag"
+                    loading="lazy"
+                    class="w-5 h-5 mr-2"
+                    width="20"
+                    height="20"
+                  />
+                  <span data-lang-en>EN</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-    </nav>
-</header>
-<!-- MAIN -->
-<main class="max-w-screen-xl mx-auto px-6 py-10">
-    <!-- Banner Section -->
-    <header class="relative bg-gray-900 text-white mb-16">
-      <img
-        src="img/Neema-banner.webp"
-        alt="Naserian's Story"
-        class="w-full h-64 object-cover opacity-75"
-      />
-      <div class="absolute inset-0 flex items-center justify-center">
-        <h1 class="text-4xl font-bold">Neema's Story</h1>
-      </div>
+      </nav>
     </header>
 
-    <!-- Content Section -->
-    <div class="grid lg:grid-cols-2 gap-8">
-      <!-- Left Section: Story Details -->
-      <section class="bg-white shadow-md rounded-lg p-6">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">Neema's Droom wordt Werkelijkheid</h2>
-        <p class="text-gray-600">
-            Neema is een alleenstaande Maasai-vrouw, die een paar jaar geleden haar man
-            heeft verloren. Sindsdien staat zij er alleen voor met haar vijf kinderen, afhankelijk
-            van het inkomen dat haar oudste zoon, Shilwa (26 jaar), verdient. Om zijn moeder en
-            broers en zussen te ondersteunen, verkoopt hij Maasai-sieraden op het strand van
-            Zanzibar. Hoewel hij hiermee genoeg verdient om hun honger te stillen, is hun
-            toekomst onzeker en het gezin leeft van dag tot dag. Zoals voor velen in de Maasai-
-            gemeenschap, is het vinden van stabiel werk bijna onmogelijk, waardoor financiële
-            zekerheid altijd buiten bereik blijft.
-            <br> <br> 
-            Maar Neema heeft een droom die haar en haar gezin hoop biedt: een eigen winkel
-            openen. Een winkel waar ze groenten, fruit, rijst, bonen en andere
-            basislevensmiddelen kan verkopen. Het zou niet alleen haar gezin een stabiel
-            inkomen bieden, maar ook de Maasai-gemeenschap in Tanzania sterker maken.
-            Dankzij de steun van de Ashe Foundation komt die droom nu dichterbij dan ooit. Met
-            hulp van onze donateurs geven we Neema de kans om een winkel te openen. Wij
-            voorzien haar van een plek, het interieur en de eerste voorraad levensmiddelen.
-            Deze winkel betekent meer dan inkomsten alleen; het is een nieuwe start voor
-            Neema en haar gezin en een stap naar meer gelijkheid en zelfvoorzienendheid
-            binnen de Maasai-gemeenschap.
-            <br> <br>
-            Samen creëren we niet alleen een betere toekomst voor Neema en haar kinderen,
-            maar helpen we de inheemse bevolking van Tanzania om hun basisbehoeften te
-            vervullen. Dankzij de vrijgevigheid van onze donateurs kan Neema binnenkort trots
-            haar winkel openen en haar droom omzetten in werkelijkheid – een droom die niet
-            alleen haar familie, maar de hele gemeenschap vooruit helpt.</p>
-            <br> <br> 
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">Neema's Droom is Werkelijkheid Geworden: De Winkel is Geopend!</h2>
-            <p class="text-gray-600">
-            Met trots kondigen we aan dat Neema’s lang gekoesterde droom werkelijkheid is
-            geworden: haar eigen winkel is officieel geopend! Waar zij en haar gezin voorheen in
-            onzekerheid leefden en afhankelijk waren van het bescheiden inkomen dat haar
-            zoon Shilwa verdiende met het verkopen van sieraden, heeft Neema nu een stabiele
-            bron van inkomsten en een toekomstperspectief voor haar kinderen.
-            <br> <br>
-            Dankzij de betrokken donateurs en de inzet van de Ashe Foundation kan Neema nu
-            zelf voorzien in de basisbehoeften van haar gezin. De winkel is gevuld met groenten,
-            fruit, rijst, bonen en andere levensmiddelen die essentieel zijn voor de gemeenschap.
-            Dagelijks trekt de winkel klanten aan, niet alleen uit nieuwsgierigheid, maar ook
-            vanwege het aanbod dat voor velen toegankelijk is geworden. Deze kleine winkel
-            betekent meer dan een inkomstenbron; het is een symbool van hoop, kracht en
-            doorzettingsvermogen.
-            <br> <br>
-            Neema straalt van trots achter haar toonbank, omringd door de levensmiddelen die
-            haar leven en dat van haar kinderen hebben veranderd. De winkel biedt nu niet
-            alleen een stabiele toekomst voor haar gezin, maar versterkt ook de hele Maasai-
-            gemeenschap in Tanzania. Dankzij de steun van velen hebben we samen
-            bijgedragen aan een stap naar economische zelfstandigheid en gelijkheid. Neema’s
-            winkel is een tastbaar bewijs van wat we samen kunnen bereiken, en het is een
-            verhaal van veerkracht en hoop dat nog vele generaties zal inspireren.
-        </p>
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+      <!-- Hero Banner Section -->
+      <section
+        class="hero-section py-20 md:py-28 relative"
+        aria-labelledby="hero-title"
+      >
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+          <h1
+            id="hero-title"
+            class="text-4xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto leading-tight"
+            data-lang-key="neema-story-title"
+          >
+            Neema's Verhaal
+          </h1>
+          <p
+            class="text-xl text-white max-w-3xl mx-auto opacity-90"
+            data-lang-key="neema-story-subtitle"
+          >
+            Een nieuwe winkel, een nieuw begin voor een alleenstaande moeder
+          </p>
+        </div>
+      </section>
+      <!-- Video and Success Story Section -->
+      <section class="py-16 bg-white" aria-labelledby="neema-dream-title">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="overflow-hidden relative rounded-xl shadow-lg">
+              <video
+                poster="img/Neema-banner.webp"
+                class="w-full h-auto object-cover"
+                controls
+                preload="none"
+                aria-label="Video over Neema's winkel project"
+              >
+                <source src="/video/neema.mp4" type="video/mp4" />
+                Je browser ondersteunt de video tag niet.
+              </video>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-center justify-center pointer-events-none opacity-80 hover:opacity-0 transition-opacity duration-300"
+              >
+                <button
+                  class="w-16 h-16 bg-terracotta rounded-full flex items-center justify-center play-btn pointer-events-auto"
+                  aria-label="Speel video af"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <h2
+                id="neema-dream-title"
+                class="text-3xl font-bold text-terracotta mb-6 relative inline-block"
+                data-lang-key="update-project-neema"
+              >
+                Neema's droom wordt werkelijkheid
+                <span
+                  class="absolute bottom-0 left-0 w-full h-1 bg-yellow"
+                ></span>
+              </h2>
+              <div class="text-dark space-y-4">
+                <p class="font-bold" data-lang-key="fantastic-news">
+                  Fantastisch nieuws!
+                </p>
+                <p data-lang-key="update-text-1">
+                  Neema is een alleenstaande Maasai-vrouw die een paar jaar
+                  geleden haar man heeft verloren. Sindsdien staat zij er alleen
+                  voor met haar vijf kinderen, afhankelijk van het inkomen dat
+                  haar oudste zoon, Shilwa, verdient.
+                </p>
+                <p data-lang-key="update-text-2">
+                  Dankzij jullie donaties is Neema's droom werkelijkheid
+                  geworden: een eigen winkel waar ze groenten, fruit, rijst,
+                  bonen en andere basislevensmiddelen verkoopt. Deze winkel
+                  biedt haar gezin niet alleen een stabiel inkomen, maar
+                  versterkt ook de hele Maasai-gemeenschap in Tanzania.
+                </p>
+                <p data-lang-key="update-text-3">
+                  Neema straalt van trots achter haar toonbank, omringd door de
+                  levensmiddelen die haar leven en dat van haar kinderen hebben
+                  veranderd. Dit succes was niet mogelijk geweest zonder de
+                  steun van jullie, onze donateurs. Hartelijk dank voor jullie
+                  vrijgevigheid!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Project Timeline Section -->
+      <section class="py-16 bg-white" aria-labelledby="timeline-title">
+        <div class="max-w-7xl mx-auto px-6">
+          <h2
+            id="timeline-title"
+            class="text-3xl font-bold text-terracotta mb-10 text-center relative inline-block"
+            data-lang-key="project-journey"
+          >
+            De reis van het project
+            <span class="absolute bottom-0 left-0 w-full h-1 bg-green"></span>
+          </h2>
+
+          <div class="timeline-container" role="list">
+            <!-- Timeline item 1 -->
+            <div class="timeline-item timeline-left" role="listitem">
+              <div
+                class="bg-light p-4 rounded-lg shadow-md border-l-4 border-yellow"
+              >
+                <h3
+                  class="text-xl font-bold text-terracotta mb-2"
+                  data-lang-key="timeline-1-title"
+                >
+                  Start van het project
+                </h3>
+                <p class="text-dark" data-lang-key="timeline-1-text">
+                  Na het ontmoeten van Neema en het horen van haar situatie als
+                  alleenstaande moeder, besloten we een project te starten om
+                  haar te helpen een eigen levensmiddelenwinkel op te zetten.
+                </p>
+                <p class="text-sm text-gray-500 mt-2">September 2024</p>
+              </div>
+            </div>
+
+            <!-- Timeline item 2 -->
+            <div class="timeline-item timeline-right" role="listitem">
+              <div
+                class="bg-light p-4 rounded-lg shadow-md border-l-4 border-terracotta"
+              >
+                <h3
+                  class="text-xl font-bold text-terracotta mb-2"
+                  data-lang-key="timeline-2-title"
+                >
+                  Fondsenwerving
+                </h3>
+                <p class="text-dark" data-lang-key="timeline-2-text">
+                  We begonnen met het werven van fondsen om de benodigde
+                  middelen te verzamelen voor het opzetten van de winkel en de
+                  eerste voorraad.
+                </p>
+                <p class="text-sm text-gray-500 mt-2">1 oktober 2024</p>
+              </div>
+            </div>
+
+            <!-- Timeline item 3 -->
+            <div class="timeline-item timeline-left" role="listitem">
+              <div
+                class="bg-light p-4 rounded-lg shadow-md border-l-4 border-green"
+              >
+                <h3
+                  class="text-xl font-bold text-terracotta mb-2"
+                  data-lang-key="timeline-3-title"
+                >
+                  Locatie gevonden
+                </h3>
+                <p class="text-dark" data-lang-key="timeline-3-text">
+                  Een perfecte locatie voor de winkel werd gevonden in het dorp,
+                  goed bereikbaar voor de lokale gemeenschap en met voldoende
+                  ruimte voor voorraad.
+                </p>
+                <p class="text-sm text-gray-500 mt-2">13 oktober 2024</p>
+              </div>
+            </div>
+
+            <!-- Timeline item 4 -->
+            <div class="timeline-item timeline-right" role="listitem">
+              <div
+                class="bg-light p-4 rounded-lg shadow-md border-l-4 border-terracotta"
+              >
+                <h3
+                  class="text-xl font-bold text-terracotta mb-2"
+                  data-lang-key="timeline-4-title"
+                >
+                  Opening winkel
+                </h3>
+                <p class="text-dark" data-lang-key="timeline-4-text">
+                  De winkel is officieel geopend! Neema kan nu beginnen met de
+                  verkoop van levensmiddelen aan de lokale gemeenschap.
+                </p>
+                <p class="text-sm text-gray-500 mt-2">20 oktober 2024</p>
+              </div>
+            </div>
+
+            <!-- Timeline item 5 -->
+            <div class="timeline-item timeline-left" role="listitem">
+              <div
+                class="bg-light p-4 rounded-lg shadow-md border-l-4 border-yellow"
+              >
+                <h3
+                  class="text-xl font-bold text-terracotta mb-2"
+                  data-lang-key="timeline-5-title"
+                >
+                  Eerste successen
+                </h3>
+                <p class="text-dark" data-lang-key="timeline-5-text">
+                  Neema in de winkel: ongeveer half jaar later en er komen
+                  dagelijks tientallen mensen langs. Neema heeft hierdoor niet
+                  alleen een stabiel inkomen, maar kan ook nog eens sparen. Zij
+                  is samen met haar kinderen uit de armoede gehaald.
+                </p>
+                <p class="text-sm text-gray-500 mt-2">April 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- Right Section: Call to Action -->
-      <section class="bg-white shadow-md rounded-lg p-6 text-center">
-        <h3 class="text-2xl font-bold text-gray-800 mb-6">Help Meer Mensen</h3>
-        <p class="text-gray-600 mb-4">
-          Met jouw steun kunnen we meer vrouwen zoals Neema helpen. Samen maken we een blijvende impact.
-        </p>
-        <img src="img/donation-qr-code.svg" alt="Scan om te doneren" class="mx-auto h-40 w-40 rounded-lg shadow-md mb-4">
-        <a href="#" class="inline-block px-6 py-3 bg-rose-600 text-white rounded-lg font-semibold">Doneer Hier</a>
-      </section>
-    </div>
-  </main>
-<!--FOOTER-->
-<footer class="p-4 bg-gray-500 sm:p-6 dark:bg-gray-800">
-  <div class="mx-auto max-w-screen-xl">
-      <div class="md:flex md:justify-between">
-          <div class="mb-6 md:mb-0">
-          </div>
-          <div class="grid grid-cols-2 gap-16 sm:gap-16 sm:grid-cols-3">
-              <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-300 uppercase dark:text-white">Bedrijf</h2>
-                  <ul class="text-gray-400 dark:text-gray-400">
-                    
-                      <li class="mb-4">
-                          <a href="financieel.html" class="hover:underline">Jaarverslag en jaarrekeningen</a>
-                      </li> 
-                      <!--<li class="mb-4">
-                        <a href="https://tailwindcss.com/" class="hover:underline">Financiën en fondsenwerving</a>
-                    </li>
-                  </ul>-->
+      <!-- Photo Gallery Section -->
+      <section class="py-16 bg-light" aria-labelledby="gallery-title">
+        <div class="max-w-7xl mx-auto px-6">
+          <h2
+            id="gallery-title"
+            class="text-3xl font-bold text-terracotta mb-10 text-center"
+            data-lang-key="photo-gallery"
+          >
+            Foto's van de winkel
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Image 1 -->
+            <div
+              class="overflow-hidden rounded-lg shadow-lg transform transition-transform hover:scale-105"
+            >
+              <img
+                src="img/Neemawinkel.webp"
+                alt="Kangai met Neema en een zoon van haar bijna een half jaar later."
+                class="w-full h-64 object-cover"
+                width="400"
+                height="256"
+                loading="lazy"
+                srcset="img/Neemawinkel.webp 400w, img/Neemawinkel.webp 800w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+              <div class="p-4 bg-white">
+                <p
+                  class="text-dark font-medium"
+                  data-lang-key="gallery-img1-caption"
+                >
+                  De nieuwe winkel
+                </p>
               </div>
-              <div>
-                 <h2 class="mb-6 text-sm font-semibold text-gray-300 uppercase dark:text-white">Contact & Services</h2>
-                  <ul class="text-gray-400 dark:text-gray-400">
-                      <li class="mb-4">
-                          <a href="contact.html" class="hover:underline ">Contact</a>
-                      </li>
-                      <li>
-                          <a href="klachten.html" class="hover:underline">Een opmerking of klacht?</a>
-                      </li>
-                  </ul>
-              </div>
-              <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-300 uppercase dark:text-white">Legal</h2>
-                  <ul class="text-gray-400 dark:text-gray-400">
-                      <li class="mb-4">
-                          <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:33bcb8b3-4519-4414-8fd7-a56de689d200" Target="_blank" class="hover:underline">Privacy verklaring & Disclaimer</a>
-                      </li>
-                      <li>
-                          <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:7aa40308-6134-4e14-8fdc-d0cc07f0b1bb" Target="_blank" class="hover:underline">Algemene Voorwaarden</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-300 sm:text-center dark:text-gray-300">© 2024 <a href="https://flowbite.com" class="hover:underline">Ashe Foundation</a>. All Rights Reserved.
-          </span>
-          <!--
-          <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-              <a href="#" class="text-rose-200 hover:text-rose-400 dark:hover:text-white">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-              </a>
-              <a href="#" class="text-rose-200 hover:text-rose-400 dark:hover:text-white">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
-              </a>
-          </div>-->
-      </div>
-  </div>
-</footer>
-  <!-- ANBI STATUS-->
-  <section class="bg-white dark:bg-white">
-    <div class="py-4 lg:py-8 mx-auto max-w-screen-xl px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-6">
-            <div class="flex justify-end items-center lg:col-start-6">
-                <a href="https://anbi.nl/" target="_blank">
-                    <img src="img/anbi-logo-a397f74b-153w (1).webp" alt="logo van ANBI" title="ANBI" loading="lazy" class="h-12 sm:h-16 lg:h-20"/>
-                </a>
             </div>
+
+            <!-- Image 2 -->
+            <div
+              class="overflow-hidden rounded-lg shadow-lg transform transition-transform hover:scale-105"
+            >
+              <img
+                src="img/Neema-banner.webp"
+                alt="Neema staat met haar kinderen voor haar nieuwe winkel"
+                class="w-full h-64 object-cover"
+                width="400"
+                height="256"
+                loading="lazy"
+                srcset="img/Neema-banner.webp 400w, img/Neema-banner.webp 800w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+              <div class="p-4 bg-white">
+                <p
+                  class="text-dark font-medium"
+                  data-lang-key="gallery-img2-caption"
+                >
+                  Neema met haar kinderen
+                </p>
+              </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div
+              class="overflow-hidden rounded-lg shadow-lg transform transition-transform hover:scale-105"
+            >
+              <img
+                src="img/gallery-5.webp"
+                alt="Voorraad levensmiddelen uitgestald in Neema's winkel"
+                class="w-full h-64 object-cover"
+                width="400"
+                height="256"
+                loading="lazy"
+                srcset="img/gallery-5.webp 400w, img/gallery-5.webp 800w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+              <div class="p-4 bg-white">
+                <p
+                  class="text-dark font-medium"
+                  data-lang-key="gallery-img3-caption"
+                >
+                  De levensmiddelen in de winkel
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <!-- Impact Section -->
+      <section
+        class="py-16 bg-white relative overflow-hidden"
+        aria-labelledby="impact-section-title"
+      >
+        <div
+          class="absolute inset-0 opacity-5 pattern-accent"
+          aria-hidden="true"
+        ></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+          <h2
+            id="impact-section-title"
+            class="text-3xl font-bold text-terracotta mb-10 text-center relative inline-block"
+            data-lang-key="impact-title"
+          >
+            De impact van het project
+            <span class="absolute bottom-0 left-0 w-full h-1 bg-yellow"></span>
+          </h2>
+
+          <div
+            class="grid md:grid-cols-3 gap-8 text-center"
+            role="list"
+            aria-label="Impact statistieken"
+          >
+            <div
+              class="bg-light p-6 rounded-xl shadow-md border-t-4 border-terracotta transform transition-transform hover:scale-105"
+              role="listitem"
+            >
+              <div class="text-3xl font-bold text-terracotta mb-2">6</div>
+              <h3
+                class="text-xl font-bold text-dark mb-4"
+                data-lang-key="impact-1-title"
+              >
+                Mensen uit de armoede geholpen
+              </h3>
+              <p class="text-dark" data-lang-key="impact-1-text">
+                Neema kan nu haar gezin van vijf kinderen onderhouden en hen
+                naar school sturen.
+              </p>
+            </div>
+
+            <div
+              class="bg-light p-6 rounded-xl shadow-md border-t-4 border-green transform transition-transform hover:scale-105"
+              role="listitem"
+            >
+              <div class="text-3xl font-bold text-green mb-2">1</div>
+              <h3
+                class="text-xl font-bold text-dark mb-4"
+                data-lang-key="impact-2-title"
+              >
+                Vrouw als zelfstandige ondernemer
+              </h3>
+              <p class="text-dark" data-lang-key="impact-2-text">
+                Neema is nu een zelfstandige ondernemer met haar eigen bedrijf
+                in de gemeenschap.
+              </p>
+            </div>
+
+            <div
+              class="bg-light p-6 rounded-xl shadow-md border-t-4 border-yellow transform transition-transform hover:scale-105"
+              role="listitem"
+            >
+              <div class="text-3xl font-bold text-yellow mb-2">1000+</div>
+              <h3
+                class="text-xl font-bold text-dark mb-4"
+                data-lang-key="impact-3-title"
+              >
+                Mensen bereikt
+              </h3>
+              <p class="text-dark" data-lang-key="impact-3-text">
+                Lokale bewoners hebben nu toegang tot betaalbare levensmiddelen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Steps Section -->
+      <section
+        class="py-16 bg-light pattern-accent relative"
+        aria-labelledby="next-steps-title"
+      >
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+          <div
+            class="bg-white rounded-xl shadow-lg p-8 border-t-4 border-terracotta"
+          >
+            <h2
+              id="next-steps-title"
+              class="text-2xl font-bold text-terracotta mb-4"
+              data-lang-key="what-next-title"
+            >
+              Hoe nu verder?
+            </h2>
+            <p class="text-dark mb-6" data-lang-key="what-next-text">
+              We blijven op deze pagina updates geven over de winkel. Ook blijft
+              Neema begeleiding krijgen van Ashe Foundation om haar onderneming
+              succesvol te houden. De begeleiding bestaat dan voornamelijk uit
+              het adviseren over het inkopen van de voorraad en de
+              langetermijnvisie voor de winkel.
+            </p>
+
+            <div class="flex flex-wrap gap-6 mt-8 items-center justify-between">
+              <div>
+                <a
+                  href="/projecten"
+                  class="inline-flex items-center text-terracotta hover:text-terracotta-dark font-medium transition-colors"
+                  aria-label="Terug naar alle projecten pagina"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span data-lang-key="back-to-projects"
+                    >Terug naar projecten</span
+                  >
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://donorbox.org/ashe-foundation"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-primary"
+                  data-lang-key="support-more-projects"
+                  aria-label="Doneer om meer projecten te steunen"
+                >
+                  Steun meer projecten
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Help More People Section -->
+      <section
+        class="py-16 bg-terracotta text-white"
+        aria-labelledby="help-more-title"
+      >
+        <div class="max-w-7xl mx-auto px-6 text-center">
+          <h2
+            id="help-more-title"
+            class="text-3xl font-bold mb-6"
+            data-lang-key="help-more-title"
+          >
+            Help Meer Mensen
+          </h2>
+          <p
+            class="text-lg mb-8 max-w-3xl mx-auto"
+            data-lang-key="help-more-text"
+          >
+            Met jouw steun kunnen we meer vrouwen zoals Neema helpen. Samen
+            maken we een blijvende impact op de levens van de Maasai
+            gemeenschap.
+          </p>
+
+          <div class="flex justify-center">
+            <div class="flex flex-col gap-4">
+              <a
+                href="https://donorbox.org/ashe-foundation"
+                target="_blank"
+                rel="noopener"
+                class="inline-block py-3 px-8 bg-white text-terracotta hover:bg-yellow hover:text-dark font-semibold rounded-full shadow-md transition-all transform hover:scale-105"
+                data-lang-key="donate-here"
+                aria-label="Doneer nu om meer mensen zoals Neema te helpen"
+              >
+                Doneer hier
+              </a>
+
+              <a
+                href="/projecten"
+                class="inline-block py-3 px-8 bg-transparent border-2 border-white text-white hover:bg-white hover:text-terracotta font-semibold rounded-full shadow-md transition-all transform hover:scale-105"
+                data-lang-key="see-other-projects"
+                aria-label="Bekijk andere projecten van de ASHE Foundation"
+              >
+                Bekijk andere projecten
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quote Section -->
+      <section class="py-16 bg-light" aria-label="Citaat van Neema">
+        <div class="max-w-4xl mx-auto px-6">
+          <div
+            class="bg-white rounded-xl p-8 shadow-lg relative border-l-4 border-terracotta"
+          >
+            <svg
+              class="absolute top-6 left-6 w-16 h-16 text-terracotta opacity-10"
+              fill="currentColor"
+              viewBox="0 0 32 32"
+              aria-hidden="true"
+            >
+              <path
+                d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+              ></path>
+            </svg>
+            <div class="relative z-10 pl-10">
+              <p
+                class="text-xl md:text-2xl text-dark italic mb-6"
+                data-lang-key="neema-quote"
+              >
+                "Ik ben Ashe foundation voor eeuwig dankbaar. Allemaal dankzij
+                Gods glorie! Ashe Naleng!"
+              </p>
+              <p class="font-bold text-terracotta" data-lang-key="neema-name">
+                Neema
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-12 pb-6 relative overflow-hidden">
+      <div
+        class="absolute inset-0 opacity-5 pattern-accent"
+        aria-hidden="true"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <!-- About Column -->
+          <div>
+            <a
+              href="/"
+              class="inline-block mb-4"
+              aria-label="Terug naar home pagina"
+            >
+              <img
+                src="img/Untitleddesign.svg"
+                alt="ASHE Foundation Logo"
+                class="h-20 p-2 rounded-lg hover:shadow-lg transition-shadow"
+                width="150"
+                height="80"
+                loading="lazy"
+              />
+            </a>
+            <p class="text-gray-300 mb-4" data-lang-key="footer-about">
+              Ashe Foundation werkt aan een wereld waarin de Maasai gemeenschap
+              in Tanzania kansen heeft om het goede leven en het eigen geluk na
+              te streven.
+            </p>
+          </div>
+
+          <!-- Company Links -->
+          <div>
+            <h3
+              class="text-lg font-semibold mb-4 text-yellow"
+              data-lang-key="footer-company"
+              id="footer-company-heading"
+            >
+              Bedrijf
+            </h3>
+            <ul
+              class="space-y-2 text-gray-300"
+              aria-labelledby="footer-company-heading"
+            >
+              <li>
+                <a
+                  href="/financieel"
+                  class="hover:text-yellow transition-colors flex items-center"
+                  data-lang-key="footer-financial"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Jaarverslag en jaarrekeningen</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/wiewijzijn"
+                  class="hover:text-yellow transition-colors flex items-center"
+                  data-lang-key="footer-team"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Ons team</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact & Services -->
+          <div>
+            <h3
+              class="text-lg font-semibold mb-4 text-yellow"
+              data-lang-key="footer-contact-services"
+              id="footer-contact-heading"
+            >
+              Contact & Services
+            </h3>
+            <ul
+              class="space-y-2 text-gray-300"
+              aria-labelledby="footer-contact-heading"
+            >
+              <li>
+                <a
+                  href="/contact"
+                  class="hover:text-yellow transition-colors flex items-center"
+                  data-lang-key="footer-contact"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/klachten"
+                  class="hover:text-yellow transition-colors flex items-center"
+                  data-lang-key="footer-complaints"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Een opmerking of klacht?</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div>
+            <h3
+              class="text-lg font-semibold mb-4 text-yellow"
+              data-lang-key="footer-legal"
+              id="footer-legal-heading"
+            >
+              Legal
+            </h3>
+            <ul
+              class="space-y-2 text-gray-300"
+              aria-labelledby="footer-legal-heading"
+            >
+              <li>
+                <a
+                  href="/privacystatement.html"
+                  class="hover:text-yellow transition-colors flex items-center footer-privacy-nl"
+                  data-lang-key="footer-privacy"
+                  aria-label="Bekijk onze privacy verklaring en disclaimer"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Privacy verklaring & Disclaimer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/algemenevoorwaarden.html"
+                  class="hover:text-yellow transition-colors flex items-center footer-terms-nl"
+                  data-lang-key="footer-terms"
+                  aria-label="Bekijk onze algemene voorwaarden"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Algemene Voorwaarden</a
+                >
+                <a
+                  href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:42d6cfe6-cb21-459c-9663-ce9f8738bc33"
+                  target="_blank"
+                  rel="noopener"
+                  class="hover:text-yellow transition-colors flex items-center footer-terms-en hidden"
+                  data-lang-key="footer-terms"
+                  aria-label="View our terms and conditions"
+                >
+                  <span
+                    class="inline-block w-2 h-2 bg-terracotta rounded-full mr-2"
+                    aria-hidden="true"
+                  ></span>
+                  Terms and Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-gray-800"
+        >
+          <div class="mb-4 md:mb-0">
+            <p class="text-sm text-gray-400">
+              &copy; 2025 Ashe Foundation. All Rights Reserved.
+            </p>
+          </div>
+
+          <div class="flex items-center">
+            <a
+              href="https://anbi.nl/"
+              target="_blank"
+              rel="noopener"
+              class="inline-block transform transition-transform hover:scale-105"
+              aria-label="Bezoek de ANBI website"
+            >
+              <img
+                src="img/anbi-logo-a397f74b-153w.webp"
+                alt="logo van ANBI - Algemeen Nut Beogende Instelling"
+                title="ANBI"
+                loading="lazy"
+                class="h-14 bg-white p-1 rounded-lg"
+                width="153"
+                height="56"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- COOKIE BANNER -->
+    <div
+      class="fixed inset-x-0 bottom-0 z-50 bg-white shadow-lg border-t-4 border-terracotta p-4 cookie-banner"
+      style="display: none"
+      role="alert"
+      aria-live="polite"
+      id="cookie-banner"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <div class="max-w-2xl">
+          <h4
+            class="text-base font-semibold mb-1 text-terracotta"
+            data-lang-key="cookie-title"
+            id="cookie-heading"
+          >
+            Cookies op deze website
+          </h4>
+          <p class="text-sm text-dark">
+            <span data-lang-key="cookie-text-part1"
+              >Wij gebruiken cookies om jou de beste ervaring op onze website te
+              geven. In</span
+            >
+            <a
+              href="/privacystatement.html"
+              class="text-green font-medium hover:underline"
+              rel="noopener"
+            >
+              <span data-lang-key="cookie-text-part2"
+                >ons privacy statement</span
+              >
+            </a>
+            <span data-lang-key="cookie-text-part3"
+              >lees je meer over de cookies die wij gebruiken.</span
+            >
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <button
+            id="rcc-confirm-button"
+            class="bg-terracotta hover:bg-terracotta-light text-white text-sm font-medium py-2 px-4 rounded-full transition-colors"
+            data-lang-key="cookie-agree"
+            aria-labelledby="cookie-heading"
+          >
+            Ik ga akkoord
+          </button>
+          <button
+            id="cookie-preferences-button"
+            class="bg-yellow hover:bg-yellow-light text-dark text-sm font-medium py-2 px-4 rounded-full transition-colors"
+            data-lang-key="cookie-preferences"
+            aria-labelledby="cookie-heading"
+          >
+            Voorkeuren aanpassen
+          </button>
+          <button
+            id="rcc-decline-button"
+            class="bg-light hover:bg-gray-200 text-dark text-sm font-medium py-2 px-4 rounded-full transition-colors"
+            data-lang-key="cookie-disagree"
+            aria-labelledby="cookie-heading"
+          >
+            Niet akkoord
+          </button>
+        </div>
+      </div>
     </div>
-</section>
-        <script>
-          let ham = document.getElementById('hammm')
-          function Open(){
-            ham.classList.add('w-[100%]')
-          }
-          function Close(){
-            ham.classList.remove('w-[100%]')
-          }
-        </script>
-<script src="dropdown.js"></script>
-<script src="mobile-menu.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="path/to/main.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-</body>
-  </html>
+
+    <!-- COOKIE PREFERENCES MODAL -->
+    <div
+      id="cookie-preferences-modal"
+      class="modal"
+      role="dialog"
+      aria-labelledby="cookie-modal-title"
+      aria-modal="true"
+      hidden
+    >
+      <div class="modal-content">
+        <span class="close-modal" id="close-cookie-modal">&times;</span>
+        <h2
+          id="cookie-modal-title"
+          class="text-3xl font-bold text-terracotta mb-6"
+          data-lang-key="cookie-modal-title"
+        >
+          Cookievoorkeuren
+        </h2>
+        <div class="text-dark">
+          <p class="leading-relaxed mb-6" data-lang-key="cookie-modal-intro">
+            Bij het weigeren van cookies kan het voorkomen dat bepaalde
+            functionaliteiten binnen de website niet werken zoals bedoeld. Mocht
+            je van gedachten veranderen, dan kan je eenvoudig -op ieder moment,
+            en per categorie- cookies toestaan of weigeren.
+          </p>
+
+          <!-- Necessary cookies -->
+          <div class="mb-6 border-b pb-4">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold" data-lang-key="cookie-necessary">
+                Noodzakelijke cookies
+              </h3>
+              <div
+                class="relative inline-block w-12 h-6 bg-gray-200 rounded-full"
+              >
+                <input
+                  type="checkbox"
+                  id="necessary-cookies"
+                  class="sr-only"
+                  checked
+                  disabled
+                />
+                <span
+                  class="absolute inset-0 bg-terracotta rounded-full transition-colors"
+                ></span>
+                <span
+                  class="absolute h-5 w-5 left-0.5 top-0.5 bg-white rounded-full transition-transform transform translate-x-6"
+                ></span>
+              </div>
+            </div>
+            <p class="text-sm mt-2" data-lang-key="cookie-necessary-desc">
+              Deze cookies zijn nodig om de website te laten functioneren.
+            </p>
+          </div>
+
+          <!-- Analytics cookies -->
+          <div class="mb-6 border-b pb-4">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold" data-lang-key="cookie-analytics">
+                Analytische cookies
+              </h3>
+              <div
+                class="relative inline-block w-12 h-6 bg-gray-200 rounded-full"
+              >
+                <input type="checkbox" id="analytics-cookies" class="sr-only" />
+                <span
+                  class="absolute inset-0 rounded-full transition-colors"
+                ></span>
+                <span
+                  class="absolute h-5 w-5 left-0.5 top-0.5 bg-white rounded-full transition-transform"
+                ></span>
+              </div>
+            </div>
+            <p class="text-sm mt-2" data-lang-key="cookie-analytics-desc">
+              Deze cookies helpen ons inzicht te krijgen in hoe bezoekers onze
+              website gebruiken.
+            </p>
+          </div>
+
+          <div class="flex gap-3 justify-end mt-6">
+            <button
+              id="save-cookie-preferences"
+              class="bg-terracotta hover:bg-terracotta-light text-white text-sm font-medium py-2 px-4 rounded-full transition-colors"
+              data-lang-key="cookie-save"
+            >
+              Opslaan
+            </button>
+            <button
+              id="close-cookie-preferences"
+              class="bg-light hover:bg-gray-200 text-dark text-sm font-medium py-2 px-4 rounded-full transition-colors border border-gray-300"
+              data-lang-key="cookie-cancel"
+            >
+              Annuleren
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Load JavaScript Files -->
+    <script src="./js/translations.js" defer></script>
+    <script src="./js/gtm.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/modals.js" defer></script>
+  </body>
+</html>
