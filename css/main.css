@@ -887,11 +887,8 @@ select {
   z-index: 1000 !important; /* Higher than your nav's z-index of 100 */
 }
 
-/* Add this CSS to your main.css file */
-
-/* Fix for project carousel indicators overlapping buttons */
+/* Base styles for carousel indicators */
 .carousel-indicators {
-  /* Position below the carousel content but above the buttons */
   position: absolute;
   bottom: 80px; /* Position above the buttons */
   left: 0;
@@ -899,22 +896,25 @@ select {
   z-index: 20;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
-/* Make the indicators smaller and more visible */
+/* Style for individual indicators */
 .carousel-indicators button,
 .carousel-indicator {
-  width: 6px !important;
-  height: 6px !important;
-  margin: 0 4px !important;
+  width: 8px !important;
+  height: 8px !important;
+  margin: 0 5px !important;
   opacity: 0.9;
   background-color: #ffffff !important;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); /* Add shadow for visibility */
   border: none !important;
   padding: 0 !important;
+  border-radius: 50%;
 }
 
-/* Make active indicator stand out */
+/* Active indicator styling */
 .carousel-indicators .active,
 .carousel-indicators .bg-rose-600,
 .carousel-indicator.active,
@@ -924,30 +924,23 @@ select {
   opacity: 1;
 }
 
-/* Make sure buttons remain clickable by increasing their z-index */
+/* Ensure buttons have higher z-index */
 .project-card a,
 .project-card button {
   position: relative !important;
   z-index: 25 !important; /* Higher than indicators */
 }
 
-/* Ensure proper stacking context for the carousel */
-#carousel {
-  position: relative;
-  z-index: 1;
-}
-
-/* Mobile-specific adjustments */
+/* Hide indicators on mobile devices */
 @media (max-width: 768px) {
   .carousel-indicators {
-    bottom: 70px; /* Slightly higher on mobile */
+    display: none !important; /* Completely hide on mobile */
   }
-  
-  /* Even smaller dots on mobile */
-  .carousel-indicators button,
-  .carousel-indicator {
-    width: 5px !important;
-    height: 5px !important;
-    margin: 0 3px !important;
+}
+
+/* Display indicators on larger screens */
+@media (min-width: 769px) {
+  .carousel-indicators {
+    display: flex !important;
   }
 }
