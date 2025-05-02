@@ -886,3 +886,50 @@ select {
 #graph-modal {
   z-index: 1000 !important; /* Higher than your nav's z-index of 100 */
 }
+
+/* Fix for project carousel indicators on mobile */
+@media (max-width: 768px) {
+  /* Make carousel indicators smaller on mobile */
+  #carousel + .carousel-indicators {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 5;
+  }
+  
+  /* Make the individual indicators smaller */
+  #carousel + .carousel-indicators .carousel-indicator,
+  .carousel-indicators .w-3,
+  .carousel-indicators button {
+    width: 6px !important;
+    height: 6px !important;
+    margin: 0 3px;
+  }
+  
+  /* Ensure links in project cards are above indicators in stacking order */
+  .project-card a,
+  .project-card button {
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Active indicator should be only slightly larger */
+  #carousel + .carousel-indicators .active,
+  #carousel + .carousel-indicators .bg-rose-600 {
+    transform: scale(1.2) !important;
+  }
+}
+
+/* Global indicator improvements - apply to all screen sizes */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+/* Improve positioning of project cards */
+#carousel {
+  position: relative;
+  z-index: 1;
+}
