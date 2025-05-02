@@ -887,17 +887,16 @@ select {
   z-index: 1000 !important; /* Higher than your nav's z-index of 100 */
 }
 
+/* Add this CSS to your main.css file */
+
 /* Base styles for carousel indicators */
 .carousel-indicators {
-  position: absolute;
-  bottom: 80px; /* Position above the buttons */
-  left: 0;
-  right: 0;
-  z-index: 20;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  z-index: 20;
 }
 
 /* Style for individual indicators */
@@ -931,16 +930,28 @@ select {
   z-index: 25 !important; /* Higher than indicators */
 }
 
-/* Hide indicators on mobile devices */
+/* Device-specific positioning */
 @media (max-width: 768px) {
+  /* Hide on mobile devices */
   .carousel-indicators {
-    display: none !important; /* Completely hide on mobile */
+    display: none !important;
   }
 }
 
-/* Display indicators on larger screens */
 @media (min-width: 769px) {
+  /* Original position for desktop */
   .carousel-indicators {
+    position: static !important; /* Return to original flow position */
+    margin-top: 8px !important;
+    margin-bottom: 16px !important;
     display: flex !important;
+  }
+  
+  /* Laptop styling for indicators */
+  .carousel-indicators button,
+  .carousel-indicator {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0 6px !important;
   }
 }
