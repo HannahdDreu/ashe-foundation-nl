@@ -299,47 +299,48 @@
 
               <div class="flex items-center gap-3">
                 <!-- Language Toggler -->
-                <div
-                  class="flex items-center bg-light rounded-full p-2 border border-yellow"
-                  role="group"
-                  aria-label="Taal selectie"
-                >
-                  <button
-                    type="button"
-                    id="lang-nl"
-                    class="flex items-center px-2 py-1 text-sm active-lang"
-                    aria-pressed="true"
-                    aria-label="Schakel naar Nederlandse taal"
-                  >
-                    <img
-                      src="img/flag-nl.webp"
-                      alt="Nederlandse vlag"
-                      loading="lazy"
-                      class="w-5 h-5 mr-2"
-                      width="20"
-                      height="20"
-                    />
-                    <span data-lang-nl>NL</span>
-                  </button>
-                  <span class="text-gray mx-1" aria-hidden="true">|</span>
-                  <button
-                    type="button"
-                    id="lang-en"
-                    class="flex items-center px-2 py-1 text-sm"
-                    aria-pressed="false"
-                    aria-label="Switch to English language"
-                  >
-                    <img
-                      src="img/flag-us.webp"
-                      alt="United States flag"
-                      loading="lazy"
-                      class="w-5 h-5 mr-2"
-                      width="20"
-                      height="20"
-                    />
-                    <span data-lang-en>EN</span>
-                  </button>
-                </div>
+<!-- Language Toggler - Responsive Version -->
+<div
+  class="flex items-center bg-light rounded-md p-1 border border-yellow"
+  role="group"
+  aria-label="Taal selectie"
+>
+  <button
+    type="button"
+    id="lang-nl"
+    class="flex items-center px-1.5 py-0.5 text-xs sm:text-sm active-lang"
+    aria-pressed="true"
+    aria-label="Schakel naar Nederlandse taal"
+  >
+    <img
+      src="img/flag-nl.webp"
+      alt="Nederlandse vlag"
+      loading="lazy"
+      class="w-4 h-4"
+      width="16"
+      height="16"
+    />
+    <span class="hidden sm:inline ml-1 sm:ml-2" data-lang-nl>NL</span>
+  </button>
+  <span class="text-gray mx-0.5 sm:mx-1" aria-hidden="true">|</span>
+  <button
+    type="button"
+    id="lang-en"
+    class="flex items-center px-1.5 py-0.5 text-xs sm:text-sm"
+    aria-pressed="false"
+    aria-label="Switch to English language"
+  >
+    <img
+      src="img/flag-us.webp"
+      alt="United States flag"
+      loading="lazy"
+      class="w-4 h-4"
+      width="16"
+      height="16"
+    />
+    <span class="hidden sm:inline ml-1 sm:ml-2" data-lang-en>EN</span>
+  </button>
+</div>
 
                 <!-- Hamburger Menu -->
                 <button
@@ -999,15 +1000,8 @@
               >
                 Donatie mogelijkheden
               </h3>
-              <div
-                class="grid grid-cols-3 gap-4 text-center"
-                role="list"
-                aria-label="Beschikbare betaalmethoden"
-              >
-                <div
-                  class="p-3 rounded-lg hover:bg-light transition-colors"
-                  role="listitem"
-                >
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center" role="list" aria-label="Beschikbare betaalmethoden">
+                <div class="p-3 rounded-lg hover:bg-light transition-colors border border-white" role="listitem">
                   <div
                     class="bg-light rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2"
                     aria-hidden="true"
@@ -1034,10 +1028,7 @@
                     Ideal
                   </p>
                 </div>
-                <div
-                  class="p-3 rounded-lg hover:bg-light transition-colors"
-                  role="listitem"
-                >
+                <div class="p-3 rounded-lg hover:bg-light transition-colors border border-white" role="listitem">
                   <div
                     class="bg-light rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2"
                     aria-hidden="true"
@@ -1064,10 +1055,7 @@
                     Bankoverschrijving
                   </p>
                 </div>
-                <div
-                  class="p-3 rounded-lg hover:bg-light transition-colors"
-                  role="listitem"
-                >
+                <div class="p-3 rounded-lg hover:bg-light transition-colors border border-white" role="listitem">
                   <div
                     class="bg-light rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2"
                     aria-hidden="true"
