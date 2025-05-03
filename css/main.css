@@ -977,3 +977,13 @@ select {
     margin: 0 6px !important;
   }
 }
+
+/* Lazy loading styles */
+.lazy-background {
+  background-color: #403D39; /* Fallback color while image loads */
+  transition: background-color 0.3s ease;
+}
+
+.lazy-background.loaded {
+  background-color: transparent;
+}

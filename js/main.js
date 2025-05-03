@@ -1044,6 +1044,51 @@ const UIComponents = (function() {
         console.error("Error initializing enhanced lazy loading:", e);
       }
     }
+
+    // Add this new function inside the UIComponents module
+function initLazyBackgrounds() {
+  const lazyBackgrounds = safeQuerySelectorAll('.lazy-background[data-bg]');
+  
+  if ('IntersectionObserver' in window) {
+    const imageObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const element = entry.target;
+          const bgImage = element.getAttribute('data-bg');
+          
+          // Preload the image
+          const img = new Image();
+          img.onload = function() {
+            // Once loaded, apply the background image
+            element.style.backgroundImage = `url(${bgImage})`;
+            element.style.backgroundSize = 'cover';
+            element.style.backgroundPosition = 'center';
+            element.classList.add('loaded');
+          };
+          img.src = bgImage;
+          
+          imageObserver.unobserve(element);
+        }
+      });
+    }, {
+      rootMargin: '50px 0px',
+      threshold: 0.01
+    });
+
+    lazyBackgrounds.forEach(bg => imageObserver.observe(bg));
+  } else {
+    // Fallback for browsers that don't support IntersectionObserver
+    lazyBackgrounds.forEach(bg => {
+      const bgImage = bg.getAttribute('data-bg');
+      bg.style.backgroundImage = `url(${bgImage})`;
+      bg.style.backgroundSize = 'cover';
+      bg.style.backgroundPosition = 'center';
+      bg.classList.add('loaded');
+    });
+  }
+}
+
+// Don't forget to update the return statement in the UIComponents module:
     
     // Public API
     return {
@@ -1054,7 +1099,8 @@ const UIComponents = (function() {
       initReadMoreToggles,
       initVideoPlayers,
       initLazyLoading,
-      initEnhancedLazyLoading
+      initEnhancedLazyLoading,
+      initLazyBackgrounds
     };
   })();
 
@@ -1835,6 +1881,7 @@ document.addEventListener("DOMContentLoaded", function () {
   UIComponents.initReadMoreToggles();
   UIComponents.initVideoPlayers();
   UIComponents.initLazyLoading();
+  UIComponents.initLazyBackgrounds();
   
   // Initialize Newsletter form if it exists on the page
   if (document.querySelector('form[aria-labelledby="newsletter-subtitle"]')) {
