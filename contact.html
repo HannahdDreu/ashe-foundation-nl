@@ -70,15 +70,6 @@
 
       /* Hero Section for Contact page */
       .hero-section {
-        background-image:
-          linear-gradient(
-            to bottom,
-            rgba(64, 61, 57, 0.5),
-            rgba(224, 122, 95, 0.4)
-          ),
-          url("/img/team-banner.webp");
-        background-size: cover;
-        background-position: center;
         color: white;
         position: relative;
       }
@@ -527,6 +518,37 @@
         class="hero-section py-20 md:py-28 relative"
         aria-labelledby="contact-title"
       >
+        <!-- Background image container -->
+        <div class="absolute inset-0">
+          <picture>
+            <source
+              media="(max-width: 640px)"
+              srcset="/img/team-banner-640w.webp"
+            />
+            <source
+              media="(max-width: 1024px)"
+              srcset="/img/team-banner-1024w.webp"
+            />
+            <img
+              src="/img/team-banner-1920w.webp"
+              alt="ASHE Foundation team"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </picture>
+          <!-- Gradient overlay -->
+          <div
+            class="absolute inset-0"
+            style="
+              background-image: linear-gradient(
+                to bottom,
+                rgba(64, 61, 57, 0.5),
+                rgba(224, 122, 95, 0.4)
+              );
+            "
+          ></div>
+        </div>
+        <!-- Content -->
         <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
           <h1
             id="contact-title"

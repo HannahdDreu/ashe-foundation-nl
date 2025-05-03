@@ -516,6 +516,35 @@
         class="hero-section py-20 md:py-28 relative"
         aria-labelledby="hero-title"
       >
+        <!-- Background image container -->
+        <div class="absolute inset-0">
+          <picture>
+            <source media="(max-width: 640px)" srcset="/img/Kangai-640w.webp" />
+            <source
+              media="(max-width: 1024px)"
+              srcset="/img/Kangai-1024w.webp"
+            />
+            <img
+              src="/img/Kangai-1920w.webp"
+              alt="Hero background image"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </picture>
+          <!-- Gradient overlay -->
+          <div
+            class="absolute inset-0"
+            style="
+              background-image: linear-gradient(
+                to bottom,
+                rgba(64, 61, 57, 0.5),
+                rgba(224, 122, 95, 0.4)
+              );
+            "
+          ></div>
+        </div>
+
+        <!-- Content -->
         <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
           <h1
             id="hero-title"
@@ -567,12 +596,17 @@
               aria-label="Open informatie over onze missie"
             >
               <img
-                src="img/ourmission.webp"
+                src="img/ourmission-400w.webp"
                 alt="Maasai vrouw in traditionele kleding"
                 class="w-full h-full object-cover"
                 width="400"
                 height="500"
                 loading="lazy"
+                srcset="
+                  img/ourmission-400w.webp 400w,
+                  img/ourmission-800w.webp 800w
+                "
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
               <div class="card-overlay">
                 <h3
@@ -601,12 +635,17 @@
               aria-label="Open informatie over onze strategieën"
             >
               <img
-                src="img/womanvillage.webp"
+                src="img/womanvillage-400w.webp"
                 alt="Maasai vrouw in haar dorp"
                 class="w-full h-full object-cover"
                 width="400"
                 height="500"
                 loading="lazy"
+                srcset="
+                  img/womanvillage-400w.webp 400w,
+                  img/womanvillage-800w.webp 800w
+                "
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
               <div class="card-overlay">
                 <h3
@@ -635,12 +674,14 @@
               aria-label="Open informatie over onze Theory of Change"
             >
               <img
-                src="img/toc.webp"
+                src="img/toc-400w.webp"
                 alt="Klein meisje lachend met een grote bril op"
                 class="w-full h-full object-cover"
                 width="400"
                 height="500"
                 loading="lazy"
+                srcset="img/toc-400wwebp 400w, img/toc-800w.webp 800w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
               <div class="card-overlay">
                 <h3
@@ -669,12 +710,14 @@
               aria-label="Open informatie over ons team"
             >
               <img
-                src="img/teamwork.webp"
+                src="img/teamwork-400w.webp"
                 alt="Amory met een tor op haar rechter schouder"
                 class="w-full h-full object-cover"
                 width="400"
                 height="500"
                 loading="lazy"
+                srcset="img/teamwork-400wwebp 400w, img/teamwork-800w.webp 800w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
               <div class="card-overlay">
                 <h3
@@ -703,12 +746,17 @@
               aria-label="Open informatie over partners worden"
             >
               <img
-                src="img/partnership.webp"
+                src="img/partnership-400w.webp"
                 alt="Twee maasai vrouwen bereiden mais"
                 class="w-full h-full object-cover"
                 width="400"
                 height="500"
                 loading="lazy"
+                srcset="
+                  img/partnership-400w.webp 400w,
+                  img/partnership-800w.webp 800w
+                "
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
               <div class="card-overlay">
                 <h3
@@ -735,12 +783,17 @@
               aria-label="Ga naar de projecten pagina"
             >
               <img
-                src="img/projectphoto.webp"
+                src="img/projectphoto-400w.webp"
                 alt="Twee Maasai vrouwen koken"
                 class="w-full h-full object-cover"
                 width="400"
                 height="500"
                 loading="lazy"
+                srcset="
+                  img/projectphoto-400w.webp 400w,
+                  img/projectphoto-800w.webp 800w
+                "
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
               <div class="card-overlay">
                 <h3

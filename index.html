@@ -312,12 +312,12 @@
                     aria-label="Schakel naar Nederlandse taal"
                   >
                     <img
-                      src="img/flag-nl.webp"
+                      src="img/flag-nl-optimized.webp"
                       alt="Nederlandse vlag"
+                      class="w-5 h-5 mr-2"
                       loading="lazy"
-                      class="w-4 h-4"
-                      width="16"
-                      height="16"
+                      width="20"
+                      height="20"
                     />
                     <span class="hidden sm:inline ml-1 sm:ml-2" data-lang-nl
                       >NL</span
@@ -688,14 +688,20 @@
               class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
             >
               <img
-                src="img/gallery-3.webp"
+                src="img/gallery-3-600w.webp"
                 alt="Groep Maasai mannen in een kring"
                 class="w-full h-56 object-cover"
                 width="300"
                 height="224"
                 loading="lazy"
-                srcset="img/gallery-3.webp 300w, img/gallery-3.webp 600w"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                srcset="
+                  img/gallery-3-300w.webp   300w,
+                  img/gallery-3-600w.webp   600w,
+                  img/gallery-3-1200w.webp 1200w
+                "
+                sizes="(max-width: 640px) 100vw, 
+                   (max-width: 1024px) 50vw, 
+                   25vw"
               />
               <div
                 class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end"
@@ -767,15 +773,15 @@
             <div class="story-card" aria-labelledby="naserian-title">
               <div class="overflow-hidden relative">
                 <img
-                  src="img/naserianwinkel.webp"
+                  src="img/naserianwinkel-600w.webp"
                   alt="Naserian staat trots voor haar nieuw geopende winkel"
                   class="w-full h-60 object-cover"
                   width="600"
                   height="240"
                   loading="lazy"
                   srcset="
-                    img/naserianwinkel.webp  600w,
-                    img/naserianwinkel.webp 1200w
+                    img/naserianwinkel-600w.webp   600w,
+                    img/naserianwinkel-1200w.webp 1200w
                   "
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
@@ -1601,7 +1607,7 @@
               <!-- Dutch graph (shown when language is Dutch) -->
               <img
                 id="nl-graph"
-                src="img/waterproject-nl-graph.webp"
+                src="img/waterproject-nl-graph-optimized.webp"
                 alt="Waterproject grafiek met financiële details en tijdlijn"
                 class="w-full"
                 loading="lazy"
@@ -1612,7 +1618,7 @@
               <!-- English graph (hidden by default) -->
               <img
                 id="en-graph"
-                src="img/waterproject-en-graph.webp"
+                src="img/waterproject-en-graph-optimized.webp"
                 alt="Water project graph with financial details and timeline"
                 class="w-full hidden"
                 loading="lazy"
@@ -1686,7 +1692,7 @@
               <iframe
                 src="https://donorbox.org/embed/water-project-11?hide_donation_meter=true"
                 name="donorbox"
-                title="Donation form for Water Project" 
+                title="Donation form for Water Project"
                 allow="payment"
                 style="
                   max-width: 500px;

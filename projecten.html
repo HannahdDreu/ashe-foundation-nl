@@ -517,19 +517,40 @@
       <!-- Hero Section -->
       <section
         class="hero-section py-20 md:py-28 relative"
-        style="
-          background-image:
-            linear-gradient(
-              to bottom,
-              rgba(64, 61, 57, 0.5),
-              rgba(224, 122, 95, 0.4)
-            ),
-            url(&quot;/img/projecten-banner.webp&quot;);
-          background-size: cover;
-          background-position: center;
-        "
         aria-labelledby="projects-title"
       >
+        <!-- Background image container -->
+        <div class="absolute inset-0">
+          <picture>
+            <source
+              media="(max-width: 640px)"
+              srcset="/img/projecten-banner-640w.webp"
+            />
+            <source
+              media="(max-width: 1024px)"
+              srcset="/img/projecten-banner-1024w.webp"
+            />
+            <img
+              src="/img/projecten-banner-1920w.webp"
+              alt="Projects banner"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </picture>
+          <!-- Gradient overlay -->
+          <div
+            class="absolute inset-0"
+            style="
+              background-image: linear-gradient(
+                to bottom,
+                rgba(64, 61, 57, 0.5),
+                rgba(224, 122, 95, 0.4)
+              );
+            "
+          ></div>
+        </div>
+
+        <!-- Content -->
         <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
           <h1
             id="projects-title"
@@ -602,12 +623,17 @@
                 >
                   <!-- Image -->
                   <img
-                    src="img/Amywater.webp"
+                    src="img/Amywater-400w.webp"
                     alt="Vrouw bij watervoorziening in Tanzania voor Project Water"
                     class="absolute inset-0 w-full h-full object-cover"
                     width="800"
                     height="1200"
                     loading="lazy"
+                    srcset="
+                      img/Amywater-400w.webp 400w,
+                      img/Amywater-800w.webp 800w
+                    "
+                    sizes="(max-width: 768px) 100vw, 320px"
                   />
                   <!-- Overlay -->
                   <div
@@ -667,12 +693,17 @@
                 >
                   <!-- Image -->
                   <img
-                    src="img/Naserian.webp"
+                    src="img/Naserian-400w.webp"
                     alt="Naserian staat bij haar nieuw geopende winkel in Tanzania"
                     class="absolute inset-0 w-full h-full object-cover"
                     width="800"
                     height="1200"
                     loading="lazy"
+                    srcset="
+                      img/Naserian-400w.webp 400w,
+                      img/Naserian-800w.webp 800w
+                    "
+                    sizes="(max-width: 768px) 100vw, 320px"
                   />
                   <!-- Overlay -->
                   <div
@@ -722,12 +753,14 @@
                 >
                   <!-- Image -->
                   <img
-                    src="img/Neema.webp"
+                    src="img/Neema-400w.webp"
                     alt="Neema met haar kinderen bij haar nieuwe winkel"
                     class="absolute inset-0 w-full h-full object-cover"
                     width="800"
                     height="1200"
                     loading="lazy"
+                    srcset="img/Neema-400w.webp 400w, img/Neema-800w.webp 800w"
+                    sizes="(max-width: 768px) 100vw, 320px"
                   />
                   <!-- Overlay -->
                   <div
@@ -900,12 +933,17 @@
               <!-- Image -->
               <div class="lg:w-1/2 flex items-stretch">
                 <img
-                  src="img/bomawoman.webp"
+                  src="img/bomawoman-300w.webp"
                   alt="Een vrouw van de Maasai-gemeenschap werkt aan een Boma-project"
                   class="w-full h-full object-cover rounded-l-lg"
                   width="600"
                   height="800"
                   loading="lazy"
+                  srcset="
+                    img/bomawoman-300w.webp 300w,
+                    img/bomawoman-600w.webp 600w
+                  "
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
                 />
               </div>
               <!-- Text Content -->
@@ -965,12 +1003,17 @@
               <!-- Image -->
               <div class="lg:w-1/2 flex items-stretch">
                 <img
-                  src="img/dancing.webp"
+                  src="img/dancing-300w.webp"
                   alt="Traditionele dans van de Maasai-gemeenschap"
                   class="w-full h-full object-cover rounded-l-lg"
                   width="600"
                   height="800"
                   loading="lazy"
+                  srcset="
+                    img/dancing-300w.webp 300w,
+                    img/dancing-600w.webp 600w
+                  "
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
                 />
               </div>
               <!-- Text Content -->
@@ -1047,12 +1090,17 @@
               aria-labelledby="drought-title"
             >
               <img
-                src="img/kidswater.webp"
+                src="img/kidswater-400w.webp"
                 alt="Droogte in Tanzania - Maasai gemeenschap bij uitgedroogde watervoorziening"
                 class="w-full h-48 object-cover"
                 width="400"
                 height="192"
                 loading="lazy"
+                srcset="
+                  img/kidswater-400w.webp 400w,
+                  img/kidswater-800w.webp 800w
+                "
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
               <div class="p-6">
                 <div class="flex items-center text-sm text-gray-500 mb-2">

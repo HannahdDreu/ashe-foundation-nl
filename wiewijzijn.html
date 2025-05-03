@@ -496,19 +496,40 @@
       <!-- Hero Banner Section -->
       <section
         class="hero-section py-20 md:py-28 relative"
-        style="
-          background-image:
-            linear-gradient(
-              to bottom,
-              rgba(64, 61, 57, 0.5),
-              rgba(224, 122, 95, 0.4)
-            ),
-            url(&quot;/img/team-banner.webp&quot;);
-          background-size: cover;
-          background-position: center;
-        "
         aria-labelledby="team-heading"
       >
+        <!-- Background image container -->
+        <div class="absolute inset-0">
+          <picture>
+            <source
+              media="(max-width: 640px)"
+              srcset="/img/team-banner-640w.webp"
+            />
+            <source
+              media="(max-width: 1024px)"
+              srcset="/img/team-banner-1024w.webp"
+            />
+            <img
+              src="/img/team-banner-1920w.webp"
+              alt="Team banner"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </picture>
+          <!-- Gradient overlay -->
+          <div
+            class="absolute inset-0"
+            style="
+              background-image: linear-gradient(
+                to bottom,
+                rgba(64, 61, 57, 0.5),
+                rgba(224, 122, 95, 0.4)
+              );
+            "
+          ></div>
+        </div>
+
+        <!-- Content -->
         <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
           <h1
             class="text-4xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto leading-tight"
@@ -576,12 +597,13 @@
                     aria-labelledby="amy-name"
                   >
                     <img
-                      src="/img/PXL_20240111_100411450.webp"
+                      src="/img/amy-144w.webp"
                       alt="Amory Berkenveld - Oropi"
                       class="mx-auto rounded-full w-36 h-36 shadow-lg mb-6"
                       width="144"
                       height="144"
                       loading="lazy"
+                      srcset="/img/amy-144w.webp 1x, /img/amy-288w.webp 2x"
                     />
                     <h3
                       class="text-xl font-bold text-terracotta mb-2"
@@ -637,12 +659,13 @@
                     aria-labelledby="roxane-name"
                   >
                     <img
-                      src="/img/rox.webp"
+                      src="/img/rox-144w.webp"
                       alt="Roxane Root"
                       class="mx-auto rounded-full w-36 h-36 shadow-lg mb-6"
                       width="144"
                       height="144"
                       loading="lazy"
+                      srcset="/img/rox-144w.webp 1x, /img/rox-288w.webp 2x"
                     />
                     <h3
                       class="text-xl font-bold text-terracotta mb-2"
@@ -698,12 +721,16 @@
                     aria-labelledby="hannah-name"
                   >
                     <img
-                      src="/img/ProfileHannah.webp"
+                      src="/img/hannah-144w.webp"
                       alt="Hannah de Dreu"
                       class="mx-auto rounded-full w-36 h-36 shadow-lg mb-6"
                       width="144"
                       height="144"
                       loading="lazy"
+                      srcset="
+                        /img/hannah-144w.webp 1x,
+                        /img/hannah-144w.webp 2x
+                      "
                     />
                     <h3
                       class="text-xl font-bold text-terracotta mb-2"
@@ -769,12 +796,13 @@
                     aria-labelledby="julia-name"
                   >
                     <img
-                      src="/img/julia.webp"
+                      src="/img/julia-144w.webp"
                       alt="Julia Deijkers"
                       class="mx-auto rounded-full w-36 h-36 shadow-lg mb-6"
                       width="144"
                       height="144"
                       loading="lazy"
+                      srcset="/img/julia-144w.webp 1x, /img/julia-288w.webp 2x"
                     />
                     <h3
                       class="text-xl font-bold text-terracotta mb-2"
@@ -831,12 +859,16 @@
                     aria-labelledby="kangai-name"
                   >
                     <img
-                      src="/img/PXL_20240918_131147830.webp"
+                      src="/img/kangai-144w.webp"
                       alt="Kangai Oropi"
                       class="mx-auto rounded-full w-36 h-36 shadow-lg mb-6"
                       width="144"
                       height="144"
                       loading="lazy"
+                      srcset="
+                        /img/kangai-144w.webp 1x,
+                        /img/kangai-288w.webp 2x
+                      "
                     />
                     <h3
                       class="text-xl font-bold text-terracotta mb-2"
@@ -1015,7 +1047,7 @@
             <div class="text-dark">
               <div class="flex flex-col md:flex-row gap-6 mb-6">
                 <img
-                  src="/img/PXL_20240111_100411450.webp"
+                  src="/img/amy-modal-160w.webp"
                   alt="Amory Berkenveld"
                   loading="lazy"
                   class="w-40 h-40 object-cover rounded-full mx-auto md:mx-0"
@@ -1084,7 +1116,7 @@
             <div class="text-dark">
               <div class="flex flex-col md:flex-row gap-6 mb-6">
                 <img
-                  src="/img/rox.webp"
+                  src="/img/rox-modal-160w.webp"
                   alt="Roxane Root"
                   loading="lazy"
                   class="w-40 h-40 object-cover rounded-full mx-auto md:mx-0"
@@ -1144,7 +1176,7 @@
             <div class="text-dark">
               <div class="flex flex-col md:flex-row gap-6 mb-6">
                 <img
-                  src="/img/ProfileHannah.webp"
+                  src="/img/hannah-modal-160w.webp"
                   alt="Hannah de Dreu"
                   loading="lazy"
                   class="w-40 h-40 object-cover rounded-full mx-auto md:mx-0"
@@ -1215,7 +1247,7 @@
             <div class="text-dark">
               <div class="flex flex-col md:flex-row gap-6 mb-6">
                 <img
-                  src="/img/julia.webp"
+                  src="/img/julia-modal-160w.webp"
                   alt="Julia Deijkers"
                   loading="lazy"
                   class="w-40 h-40 object-cover rounded-full mx-auto md:mx-0"
@@ -1309,7 +1341,7 @@
             <div class="text-dark">
               <div class="flex flex-col md:flex-row gap-6 mb-6">
                 <img
-                  src="/img/PXL_20240918_131147830.webp"
+                  src="/img/kangai-modal-160w.webp"
                   alt="Kangai Oropi"
                   loading="lazy"
                   class="w-40 h-40 object-cover rounded-full mx-auto md:mx-0"

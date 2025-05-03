@@ -525,6 +525,38 @@
         class="hero-section py-20 md:py-28 relative"
         aria-labelledby="naserian-hero-title"
       >
+        <!-- Background image container -->
+        <div class="absolute inset-0">
+          <picture>
+            <source
+              media="(max-width: 640px)"
+              srcset="/img/naserianwinkel-640w.webp"
+            />
+            <source
+              media="(max-width: 1024px)"
+              srcset="/img/naserianwinkel-1024w.webp"
+            />
+            <img
+              src="/img/naserianwinkel-1920w.webp"
+              alt="Naserian's winkel banner"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </picture>
+          <!-- Gradient overlay -->
+          <div
+            class="absolute inset-0"
+            style="
+              background-image: linear-gradient(
+                to bottom,
+                rgba(64, 61, 57, 0.5),
+                rgba(224, 122, 95, 0.4)
+              );
+            "
+          ></div>
+        </div>
+
+        <!-- Content -->
         <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
           <h1
             id="naserian-hero-title"
@@ -552,7 +584,7 @@
               <video
                 controls
                 preload="metadata"
-                poster="/img/naserianwinkel.webp"
+                poster="/img/naserianwinkel-1024w.webp"
                 class="w-full h-auto object-cover"
                 aria-label="Video van Naserian's winkel"
               >
@@ -769,15 +801,15 @@
               role="listitem"
             >
               <img
-                src="img/naserianwinkel1.webp"
+                src="img/naserianwinkel1-400w.webp"
                 alt="Naserian's winkel buitenkant"
                 class="w-full h-64 object-cover"
                 width="400"
                 height="256"
                 loading="lazy"
                 srcset="
-                  img/naserianwinkel1.webp 400w,
-                  img/naserianwinkel1.webp 800w
+                  img/naserianwinkel1-400w.webp 400w,
+                  img/naserianwinkel1-800w.webp 800w
                 "
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
@@ -797,13 +829,16 @@
               role="listitem"
             >
               <img
-                src="img/Naserian1.webp"
+                src="img/Naserian1-400w.webp"
                 alt="Naserian met een aantal van haar kinderen"
                 class="w-full h-64 object-cover object-top"
                 width="400"
                 height="256"
                 loading="lazy"
-                srcset="img/Naserian1.webp 400w, img/Naserian1.webp 800w"
+                srcset="
+                  img/Naserian1-400w.webp 400w,
+                  img/Naserian1-800w.webp 800w
+                "
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
               <div class="p-4 bg-white">
@@ -822,15 +857,15 @@
               role="listitem"
             >
               <img
-                src="img/naserianwinkel.webp"
+                src="img/naserianwinkel-gallery-400w.webp"
                 alt="Kleding in de winkel"
                 class="w-full h-64 object-cover"
                 width="400"
                 height="256"
                 loading="lazy"
                 srcset="
-                  img/naserianwinkel.webp 400w,
-                  img/naserianwinkel.webp 800w
+                  img/naserianwinkel-gallery-400w.webp 400w,
+                  img/naserianwinkel-gallery-800w.webp 800w
                 "
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />

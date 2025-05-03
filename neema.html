@@ -76,15 +76,6 @@
 
       /* Hero Section for Neema page */
       .hero-section {
-        background-image:
-          linear-gradient(
-            to bottom,
-            rgba(64, 61, 57, 0.5),
-            rgba(224, 122, 95, 0.4)
-          ),
-          url("/img/Neema-banner.webp");
-        background-size: cover;
-        background-position: center;
         color: white;
         position: relative;
       }
@@ -545,6 +536,38 @@
         class="hero-section py-20 md:py-28 relative"
         aria-labelledby="hero-title"
       >
+        <!-- Background image container -->
+        <div class="absolute inset-0">
+          <picture>
+            <source
+              media="(max-width: 640px)"
+              srcset="/img/Neema-banner-640w.webp"
+            />
+            <source
+              media="(max-width: 1024px)"
+              srcset="/img/Neema-banner-1024w.webp"
+            />
+            <img
+              src="/img/Neema-banner-1920w.webp"
+              alt="Neema's banner"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </picture>
+          <!-- Gradient overlay -->
+          <div
+            class="absolute inset-0"
+            style="
+              background-image: linear-gradient(
+                to bottom,
+                rgba(64, 61, 57, 0.5),
+                rgba(224, 122, 95, 0.4)
+              );
+            "
+          ></div>
+        </div>
+
+        <!-- Content -->
         <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
           <h1
             id="hero-title"
@@ -567,7 +590,7 @@
           <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="overflow-hidden relative rounded-xl shadow-lg">
               <video
-                poster="img/Neema-banner.webp"
+                poster="img/Neema-banner-1024w.webp"
                 class="w-full h-auto object-cover"
                 controls
                 preload="none"
@@ -781,13 +804,16 @@
               class="overflow-hidden rounded-lg shadow-lg transform transition-transform hover:scale-105"
             >
               <img
-                src="img/Neemawinkel.webp"
+                src="img/Neemawinkel-400w.webp"
                 alt="Kangai met Neema en een zoon van haar bijna een half jaar later."
                 class="w-full h-64 object-cover"
                 width="400"
                 height="256"
                 loading="lazy"
-                srcset="img/Neemawinkel.webp 400w, img/Neemawinkel.webp 800w"
+                srcset="
+                  img/Neemawinkel-400w.webp 400w,
+                  img/Neemawinkel-800w.webp 800w
+                "
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div class="p-4 bg-white">
@@ -805,13 +831,16 @@
               class="overflow-hidden rounded-lg shadow-lg transform transition-transform hover:scale-105"
             >
               <img
-                src="img/Neema-banner.webp"
+                src="img/Neema-banner-gallery-400w.webp"
                 alt="Neema staat met haar kinderen voor haar nieuwe winkel"
                 class="w-full h-64 object-cover"
                 width="400"
                 height="256"
                 loading="lazy"
-                srcset="img/Neema-banner.webp 400w, img/Neema-banner.webp 800w"
+                srcset="
+                  img/Neema-banner-gallery-400w.webp 400w,
+                  img/Neema-banner-gallery-800w.webp 800w
+                "
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div class="p-4 bg-white">
@@ -829,13 +858,16 @@
               class="overflow-hidden rounded-lg shadow-lg transform transition-transform hover:scale-105"
             >
               <img
-                src="img/gallery-5.webp"
+                src="img/gallery-5-400w.webp"
                 alt="Voorraad levensmiddelen uitgestald in Neema's winkel"
                 class="w-full h-64 object-cover"
                 width="400"
                 height="256"
                 loading="lazy"
-                srcset="img/gallery-5.webp 400w, img/gallery-5.webp 800w"
+                srcset="
+                  img/gallery-5-400w.webp 400w,
+                  img/gallery-5-800w.webp 800w
+                "
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div class="p-4 bg-white">

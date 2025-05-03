@@ -520,19 +520,40 @@
       <!-- Hero Section -->
       <section
         class="hero-section py-20 md:py-28 relative mb-12"
-        style="
-          background-image:
-            linear-gradient(
-              to bottom,
-              rgba(64, 61, 57, 0.7),
-              rgba(224, 122, 95, 0.6)
-            ),
-            url(&quot;/img/water-project-banner.webp&quot;);
-          background-size: cover;
-          background-position: center;
-        "
         aria-labelledby="blog-title"
       >
+        <!-- Background image container -->
+        <div class="absolute inset-0">
+          <picture>
+            <source
+              media="(max-width: 640px)"
+              srcset="/img/water-project-banner-640w.webp"
+            />
+            <source
+              media="(max-width: 1024px)"
+              srcset="/img/water-project-banner-1024w.webp"
+            />
+            <img
+              src="/img/water-project-banner-1920w.webp"
+              alt="Water project banner"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </picture>
+          <!-- Gradient overlay -->
+          <div
+            class="absolute inset-0"
+            style="
+              background-image: linear-gradient(
+                to bottom,
+                rgba(64, 61, 57, 0.7),
+                rgba(224, 122, 95, 0.6)
+              );
+            "
+          ></div>
+        </div>
+
+        <!-- Your content (must have position: relative to stay above the background) -->
         <div class="max-w-5xl mx-auto px-6 relative z-10">
           <h1
             id="blog-title"
@@ -598,7 +619,15 @@
             afhankelijk zijn van veeteelt voor hun levensonderhoud.
           </p>
 
-          <h2 class="text-2xl font-bold text-terracotta mb-4 mt-10" data-lang-key="climate-change-title" style="word-wrap: break-word; overflow-wrap: break-word; hyphens: auto;">
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="climate-change-title"
+            style="
+              word-wrap: break-word;
+              overflow-wrap: break-word;
+              hyphens: auto;
+            "
+          >
             Klimaatverandering en extreme weersomstandigheden
           </h2>
           <p class="mb-6" data-lang-key="climate-change-text">
@@ -609,10 +638,16 @@
           </p>
           <figure class="my-8 flex flex-col items-center">
             <img
-              src="/img/gallery-4.webp"
+              src="/img/gallery-4-600w.webp"
               alt="Droog landschap in Tanzania tijdens de droogte"
               class="w-3/4 md:w-2/3 h-auto rounded-lg"
               loading="lazy"
+              srcset="
+                /img/gallery-4-300w.webp   300w,
+                /img/gallery-4-600w.webp   600w,
+                /img/gallery-4-1200w.webp 1200w
+              "
+              sizes="(max-width: 768px) 75vw, 66vw"
             />
             <figcaption
               class="text-sm text-gray-500 mt-2 text-center"
@@ -692,16 +727,26 @@
           </p>
           <div class="grid md:grid-cols-2 gap-4 my-8">
             <img
-              src="/img/waterpipe.webp"
+              src="/img/waterpipe-400w.webp"
               alt="Vrouw bij watervoorziening in Tanzania"
               class="w-full h-64 object-cover rounded-lg"
               loading="lazy"
+              srcset="
+                /img/waterpipe-400w.webp 400w,
+                /img/waterpipe-800w.webp 800w
+              "
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
             <img
-              src="/img/water-project-work.webp"
+              src="/img/water-project-work-400w.webp"
               alt="Werkzaamheden aan waterproject in Loolera"
               class="w-full h-64 object-cover rounded-lg"
               loading="lazy"
+              srcset="
+                /img/water-project-work-400w.webp 400w,
+                /img/water-project-work-800w.webp 800w
+              "
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
           <p class="mb-6" data-lang-key="water-project-text2">
@@ -967,10 +1012,15 @@ Lees meer op: https://ashefoundation.nl/blog
                 class="bg-terracotta bg-opacity-5 rounded-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105"
               >
                 <img
-                  src="/img/Naserian.webp"
+                  src="/img/Naserian-400w.webp"
                   alt="Naserian's winkelproject"
                   class="w-full h-48 object-cover"
                   loading="lazy"
+                  srcset="
+                    /img/Naserian-400w.webp 400w,
+                    /img/Naserian-800w.webp 800w
+                  "
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div class="p-6">
                   <h4
@@ -1012,10 +1062,12 @@ Lees meer op: https://ashefoundation.nl/blog
                 class="bg-terracotta bg-opacity-5 rounded-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105"
               >
                 <img
-                  src="/img/Neema.webp"
+                  src="/img/Neema-400w.webp"
                   alt="Neema's droomproject"
                   class="w-full h-48 object-cover"
                   loading="lazy"
+                  srcset="/img/Neema-400w.webp 400w, /img/Neema-800w.webp 800w"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div class="p-6">
                   <h4
@@ -1607,4 +1659,5 @@ Lees meer op: https://ashefoundation.nl/blog
     <script src="./js/translations.js" defer></script>
     <script src="./js/main.js" defer></script>
     <script src="./js/modals.js" defer></script>
+  </body>
 </html>
