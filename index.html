@@ -57,12 +57,12 @@
 
     <!-- Page-specific preloads -->
     <link
-      rel="preload"
-      href="/img/hero-image.webp"
-      as="image"
-      type="image/webp"
-      fetchpriority="high"
-    />
+    rel="preload"
+    href="/img/maasai-water-view.webp"
+    as="image"
+    type="image/webp"
+    fetchpriority="high"
+  />
 
     <link
       rel="preload"
@@ -99,18 +99,11 @@
 
       /* Hero Section styling - visible immediately */
       .hero-section {
-        background-image:
-          linear-gradient(
-            to bottom,
-            rgba(64, 61, 57, 0.5),
-            rgba(224, 122, 95, 0.4)
-          ),
-          url("/img/hero-image.webp");
-        background-size: cover;
-        background-position: center;
-        color: white;
-        position: relative;
-      }
+  position: relative;
+  color: white;
+  overflow: hidden;
+  background-color: #403D39; /* Fallback while image loads */
+}
 
       .hero-section:before {
         content: "";
@@ -546,7 +539,7 @@
                   aria-label="Schakel naar Nederlandse taal"
                 >
                   <img
-                    src="img/flag-nl.webp"
+                    src="img/flag-nl-optimized.webp"
                     alt="Nederlandse vlag"
                     class="w-5 h-5 mr-2"
                     loading="lazy"
@@ -564,7 +557,7 @@
                   aria-label="Switch to English language"
                 >
                   <img
-                    src="img/flag-us.webp"
+                    src="img/flag-us-optimized.webp"
                     alt="United States flag"
                     class="w-5 h-5 mr-2"
                     loading="lazy"
@@ -582,49 +575,74 @@
 
     <!-- MAIN CONTENT -->
     <main id="main-content" style="margin-top: 120px">
-      <!-- Homepage Hero Section with specific class -->
-      <section
-        class="hero-section home-hero-section py-20 md:py-32"
-        aria-labelledby="hero-title"
+<!-- Hero Section -->
+<section class="hero-section home-hero-section py-20 md:py-32 relative overflow-hidden" aria-labelledby="hero-title">
+  <!-- Background image container -->
+  <div class="absolute inset-0 z-0">
+    <picture>
+      <source
+        media="(max-width: 800px)"
+        srcset="/img/maasai-water-view-800w.webp"
+      />
+      <source
+        media="(max-width: 1200px)"
+        srcset="/img/maasai-water-view-1200w.webp"
+      />
+      <img
+        src="/img/maasai-water-view.webp"
+        alt=""
+        class="w-full h-full object-cover"
+        fetchpriority="high"
+        loading="eager"
+        decoding="async"
+      />
+    </picture>
+    <!-- Gradient overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-dark/40 to-terracotta/40"></div>
+  </div>
+  
+  <!-- Add the decorative bar at the bottom -->
+  <div class="absolute bottom-0 left-0 right-0 h-2.5 bg-gradient-to-r from-yellow via-green to-terracotta z-10"></div>
+  
+  <!-- Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+    <h1
+      id="hero-title"
+      class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 max-w-4xl mx-auto leading-tight text-shadow"
+      data-lang-key="hero-title"
+    >
+      "Een positieve impact op iemands leven creëert een dynamiek van
+      wederzijdse dankbaarheid." - Ashe Foundation
+    </h1>
+    <p
+      class="text-lg md:text-xl max-w-3xl mx-auto mb-8 opacity-90 text-shadow"
+      data-lang-key="hero-subtitle"
+    >
+      Wij werken aan een wereld waarin de Maasai gemeenschap kansen heeft
+      om het goede leven en het eigen geluk na te streven.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      
+        <a href="/projecten"
+        class="btn-primary"
+        data-lang-key="hero-btn-projects"
+        aria-label="Bekijk al onze projecten"
       >
-        <div class="max-w-7xl mx-auto px-6 text-center">
-          <h1
-            id="hero-title"
-            class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 max-w-4xl mx-auto leading-tight text-shadow"
-            data-lang-key="hero-title"
-          >
-            "Een positieve impact op iemands leven creëert een dynamiek van
-            wederzijdse dankbaarheid." - Ashe Foundation
-          </h1>
-          <p
-            class="text-lg md:text-xl max-w-3xl mx-auto mb-8 opacity-90 text-shadow"
-            data-lang-key="hero-subtitle"
-          >
-            Wij werken aan een wereld waarin de Maasai gemeenschap kansen heeft
-            om het goede leven en het eigen geluk na te streven.
-          </p>
-          <div class="flex flex-wrap justify-center gap-4">
-            <a
-              href="/projecten"
-              class="btn-primary"
-              data-lang-key="hero-btn-projects"
-              aria-label="Bekijk al onze projecten"
-            >
-              Ontdek onze projecten
-            </a>
-            <a
-              href="https://donorbox.org/ashe-foundation"
-              target="_blank"
-              rel="noopener"
-              class="btn-secondary"
-              data-lang-key="hero-btn-help"
-              aria-label="Doneer nu om ons werk te steunen"
-            >
-              Help ons nu
-            </a>
-          </div>
-        </div>
-      </section>
+        Ontdek onze projecten
+      </a>
+      
+        <a href="https://donorbox.org/ashe-foundation"
+        target="_blank"
+        rel="noopener"
+        class="btn-secondary"
+        data-lang-key="hero-btn-help"
+        aria-label="Doneer nu om ons werk te steunen"
+      >
+        Help ons nu
+      </a>
+    </div>
+  </div>
+</section>
 
       <!-- Image Row Section -->
       <section class="py-12 bg-white" aria-label="Beelden van ons werk">
@@ -662,13 +680,13 @@
               class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
             >
               <img
-                src="img/gallery-2.webp"
+                src="img/gallery-2-300w.webp"
                 alt="Maasai vrouw in traditionele rode kleding en sieraden"
                 class="w-full h-56 object-cover"
                 width="300"
                 height="224"
                 loading="lazy"
-                srcset="img/gallery-2.webp 300w, img/gallery-2.webp 600w"
+                srcset="img/gallery-2-300w.webp 300w, img/gallery-2-600w.webp 600w"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
               />
               <div
@@ -831,15 +849,15 @@
             <div class="story-card" aria-labelledby="neema-title">
               <div class="overflow-hidden relative">
                 <img
-                  src="img/Neema-banner.webp"
+                  src="img/Neema-banner-600w.webp"
                   alt="Neema met haar kinderen bij haar nieuwe winkel"
                   class="w-full h-60 object-cover"
                   width="600"
                   height="240"
                   loading="lazy"
                   srcset="
-                    img/Neema-banner.webp  600w,
-                    img/Neema-banner.webp 1200w
+                    img/Neema-banner-600w.webp  600w,
+                    img/Neema-banner-1200w.webp 1200w
                   "
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
