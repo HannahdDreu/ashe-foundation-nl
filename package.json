@@ -1,33 +1,36 @@
 {
   "name": "lesson01",
   "version": "1.0.0",
-  "description": "",
   "main": "tailwind.config.js",
   "scripts": {
     "serve": "node --no-deprecation node_modules/.bin/http-server . -o",
     "prettier": "npx prettier --write **/*.html",
-    "dev": "npm run serve"
+    "dev": "npm run serve",
+    "build:tailwind-utils": "node ./node_modules/.bin/tailwindcss -i ./src/tailwind-utils.css -o ./temp-tailwind-utils.css --minify",
+    "append-to-main": "echo '/* Tailwind Utilities - Auto-generated */' >> ./css/main.css && cat ./temp-tailwind-utils.css >> ./css/main.css && rm ./temp-tailwind-utils.css",
+    "build:css": "npm run build:tailwind-utils && npm run append-to-main"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
     "concurrently": "^9.1.2",
     "http-server": "^14.1.1",
+    "postcss": "^8.5.3",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "tailwindcss": "^4.0.17",
+    "tailwindcss": "^4.1.5",
     "webpack-bundle-analyzer": "^4.10.1"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.21",
     "axios": "^1.8.4",
     "flag-icons": "^7.3.2",
     "flowbite": "^2.2.1",
-    "node-fetch": "^2.7.0",
-    "postcss": "^8.5.3"
+    "node-fetch": "^2.7.0"
   },
   "resolutions": {
     "@types/scheduler": "0.16.0"
-  }
+  },
+  "description": ""
 }

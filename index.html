@@ -56,13 +56,9 @@
     <link rel="preload" href="/css/main.css" as="style" />
 
     <!-- Page-specific preloads -->
-    <link
-      rel="preload"
-      href="/img/maasai-water-view.webp"
-      as="image"
-      type="image/webp"
-      fetchpriority="high"
-    />
+<link rel="preload" href="/img/maasai-water-view-800w.webp" as="image" type="image/webp" media="(max-width: 800px)" fetchpriority="high" />
+<link rel="preload" href="/img/maasai-water-view-1200w.webp" as="image" type="image/webp" media="(min-width: 801px) and (max-width: 1200px)" fetchpriority="high" />
+<link rel="preload" href="/img/maasai-water-view.webp" as="image" type="image/webp" media="(min-width: 1201px)" fetchpriority="high" />
 
     <link
       rel="preload"
@@ -76,14 +72,6 @@
       href="/img/waterproject-en-graph.webp"
       as="image"
       type="image/webp"
-    />
-
-    <link
-      rel="preload"
-      href="/img/maasai-water-view.webp"
-      as="image"
-      type="image/webp"
-      fetchpriority="high"
     />
 
     <!-- Critical CSS - Keep minimal essential styles for above-the-fold content -->
