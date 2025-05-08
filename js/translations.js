@@ -39,6 +39,7 @@ const translations = {
       "Wij werken aan een wereld waarin de Maasai gemeenschap kansen heeft om het goede leven en het eigen geluk na te streven.",
     "hero-btn-projects": "Ontdek onze projecten",
     "hero-btn-help": "Help ons nu",
+    "hero-cta": "Ontdek onze projecten",
 
     // Ashe meaning
     "ashe-meaning": "\"Ashe betekent: 'bedankt' in Maa(sai) taal\"",
@@ -117,6 +118,7 @@ const translations = {
     "become-donor": "Word donateur",
 
     // WATWEDOEN PAGE
+    "hero-title-1": "Ashe Foundation versterkt de bestaanszekerheid van de Maasai in Tanzania",
     "discover-title": "Ontdek wat wij doen",
     "mission-card-title": "Onze missie",
     "mission-card-desc":
@@ -749,11 +751,12 @@ const translations = {
 
     // INDEX FILE
     // Hero section
-    "hero-title": "A better future for the Maasai community in Tanzania",
+    "hero-title": "A positive impact on someone's life creates a dynamic of mutual gratitude. - Ashe Foundation",
     "hero-subtitle":
       "We work towards a world where the Maasai community has opportunities to pursue a good life and their own happiness.",
     "hero-btn-projects": "Discover our projects",
     "hero-btn-help": "Help us now",
+    "hero-cta": "Discover our projects",
 
     // Ashe meaning
     "ashe-meaning": "\"Ashe means: 'thank you' in Maa(sai) language\"",
@@ -831,6 +834,7 @@ const translations = {
     "become-donor": "Become a donor",
 
     // WATWEDOEN PAGE
+    "hero-title-1": "Ashe Foundation strengthens the livelihood security of the Maasai in Tanzania",
     "discover-title": "Discover what we do",
     "mission-card-title": "Our mission",
     "mission-card-desc":
