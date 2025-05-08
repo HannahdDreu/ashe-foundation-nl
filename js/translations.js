@@ -33,8 +33,7 @@ const translations = {
 
     // INDEX FILE
     // Hero section
-    "hero-title":
-      '"Een positieve impact op iemands leven creëert een dynamiek van wederzijdse dankbaarheid." - Ashe Foundation',
+    "hero-title": "\"Een positieve impact op iemands leven creëert een dynamiek van wederzijdse dankbaarheid.\" - Ashe Foundation",
     "hero-subtitle":
       "Wij werken aan een wereld waarin de Maasai gemeenschap kansen heeft om het goede leven en het eigen geluk na te streven.",
     "hero-btn-projects": "Ontdek onze projecten",
@@ -751,7 +750,7 @@ const translations = {
 
     // INDEX FILE
     // Hero section
-    "hero-title": "A positive impact on someone's life creates a dynamic of mutual gratitude. - Ashe Foundation",
+    "hero-title": "\"A positive impact on someone's life creates a dynamic of mutual gratitude.\" - Ashe Foundation",
     "hero-subtitle":
       "We work towards a world where the Maasai community has opportunities to pursue a good life and their own happiness.",
     "hero-btn-projects": "Discover our projects",
