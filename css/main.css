@@ -988,3 +988,9 @@ select {
   background-color: transparent;
 }
 
+/* Hide projecten navigation buttons on mobile */
+@media (max-width: 768px) {
+  .projecten-nav-button {
+    display: none !important;
+  }
+}
