@@ -359,8 +359,8 @@ const translations = {
     "cost-title": "Wat is er nodig?",
     "cost-text":
       "Om de waterleidingen te kunnen kopen en laten aanleggen is in totaal 15.000 euro nodig. En jouw hulp is daarbij hard nodig!",
-    "cost-cta-1": "Doneer nu €5 euro en voorzie 3 mensen van schoon water.",
-    "cost-cta-2": "Doneer €50 euro en voorzie 30 mensen van schoon water.",
+    "cost-cta-1": "Doneer nu 5 euro en voorzie 3 mensen van schoon water.",
+    "cost-cta-2": "Doneer 50 euro en voorzie 30 mensen van schoon water.",
     "donate-button": "Doneer nu",
 
     // Impact section
