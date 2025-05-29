@@ -7,6 +7,13 @@
  * - Support for consent revocation
  */
 
+// MOVED OUTSIDE: GTM Configuration (for global access)
+const GTM_CONFIG = {
+  id: "GTM-MDTTVCKD",
+  dataLayerName: "dataLayer",
+  environment: "production",
+};
+
 (function () {
   // Version tracking
   const VERSION = '1.3.0';
@@ -46,92 +53,45 @@
     },
   };
 
-  // GTM Configuration
-  const GTM_CONFIG = {
-    id: "GTM-MDTTVCKD",
-    dataLayerName: "dataLayer",
-    environment: "production",
-  };
-
   // Utility to check if GTM is already loaded
   function isGTMLoaded() {
     return typeof window[GTM_CONFIG.dataLayerName] !== "undefined";
   }
-  // Main GTM loading function with proper error handling
+
+  // MODIFIED: Main GTM loading function - now only sets up enhanced tracking
+  // (GTM itself is loaded by gtm-consent-mode.js)
   function loadGTM() {
-    if (isGTMLoaded()) {
-      console.log("GTM already loaded, skipping initialization");
-      return;
+    if (!isGTMLoaded()) {
+      console.warn("GTM not loaded by consent mode - this shouldn't happen");
+      return false;
     }
 
     try {
-      // Initialize dataLayer
-      window[GTM_CONFIG.dataLayerName] = window[GTM_CONFIG.dataLayerName] || [];
-
-      // Push standard GTM initialization event with timestamp
-      window[GTM_CONFIG.dataLayerName].push({
-        "gtm.start": new Date().getTime(),
-        event: "gtm.js",
-        environment: GTM_CONFIG.environment,
-      });
-
-      // Create script element with async loading
-      const scriptElement = document.createElement("script");
-      scriptElement.async = true;
-      scriptElement.src = `https://www.googletagmanager.com/gtm.js?id=${GTM_CONFIG.id}`;
-      scriptElement.id = "gtm-script";
-
-      // Add error handling to the script loading
-      scriptElement.onerror = function () {
-        console.warn(
-          "Failed to load Google Tag Manager. Check network connection or ad blockers."
-        );
-      };
-
-      // Insert script into the DOM
-      const firstScript = document.getElementsByTagName("script")[0];
-      firstScript.parentNode.insertBefore(scriptElement, firstScript);
-
-      // Add noscript iframe for GTM (for users without JavaScript)
-      const noscriptContainer = document.createElement("div");
-      noscriptContainer.innerHTML = `<noscript id="gtm-noscript"><iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_CONFIG.id}" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager" aria-hidden="true"></iframe></noscript>`;
-      document.body.prepend(noscriptContainer.firstChild);
-
-      console.log("Google Tag Manager initialized successfully");
+      console.log("Setting up enhanced GTM tracking");
+      // GTM is already loaded, just set up enhanced features
+      initializeEnhancedDataLayer();
+      setupEnhancedEventTracking();
       return true;
     } catch (e) {
-      console.error("Error initializing Google Tag Manager:", e);
+      console.error("Error setting up enhanced GTM tracking:", e);
       return false;
     }
   }
 
-  // Function to remove GTM if consent is revoked
+  // MODIFIED: Function to disable tracking (but not remove GTM entirely)
+  // GTM stays loaded for debugging, but consent is set to denied
   function removeGTM() {
     try {
-      // Remove the GTM script
-      const gtmScript = document.getElementById("gtm-script");
-      if (gtmScript) {
-        gtmScript.parentNode.removeChild(gtmScript);
-      }
-
-      // Remove the noscript iframe
-      const gtmNoscript = document.getElementById("gtm-noscript");
-      if (gtmNoscript) {
-        gtmNoscript.parentNode.removeChild(gtmNoscript);
-      }
-
-      // Clear dataLayer
-      if (window[GTM_CONFIG.dataLayerName]) {
-        window[GTM_CONFIG.dataLayerName] = [];
-      }
-
-      console.log("Google Tag Manager removed successfully");
+      console.log("Disabling GTM tracking via consent mode");
+      // Don't actually remove GTM scripts (for debugging)
+      // Consent is handled by gtm-consent-mode.js
       return true;
     } catch (e) {
-      console.error("Error removing Google Tag Manager:", e);
+      console.error("Error disabling GTM tracking:", e);
       return false;
     }
   }
+
   // Function to show feedback message
   function showFeedbackMessage(message) {
     // Create a temporary message element
@@ -297,6 +257,7 @@
       modal._hasToggleListener = true;
     }
   }
+
   // Translate the cookie modal
   function translateCookieModal() {
     const modal = document.getElementById("cookie-preferences-modal");
@@ -375,103 +336,110 @@
       thumb.style.transform = 'translateX(0)';
     }
   }
-  // Save cookie preferences - UPDATED: Removed marketing cookies
-// In gtm.js, modify the saveCookiePreferences function:
-function saveCookiePreferences() {
-  try {
-    // Find the toggle that was actually clicked/changed
-    // We need to determine which toggle initiated the save action
-    
-    // Get both possible toggles
-    const analyticsToggleModal = document.getElementById("analytics-cookies");
-    const analyticsTogglePrivacy = document.getElementById("analytics-cookies-privacy");
-    
-    // Determine which one to use - prioritize the one in the visible container
-    let analyticsToggle;
-    const modal = document.getElementById("cookie-preferences-modal");
-    
-    // If modal is visible, use that toggle
-    if (modal && (modal.style.display === "block" || modal.style.display === "flex")) {
-      analyticsToggle = analyticsToggleModal;
-    } else {
-      // Otherwise use the privacy page toggle
-      analyticsToggle = analyticsTogglePrivacy;
-    }
-    
-    // If neither is found, try the other one as fallback
-    if (!analyticsToggle) {
-      analyticsToggle = analyticsToggleModal || analyticsTogglePrivacy;
-    }
-    
-    if (!analyticsToggle) {
-      console.warn("Could not find any analytics toggle element");
-      return;
-    }
-    
-    // CRITICAL: Get the actual checked state from the determined toggle
-    const isAnalyticsChecked = analyticsToggle.checked;
-    console.log("Toggle state before saving:", isAnalyticsChecked);
-    
-    // Save new preferences
-    const newPreferences = {
-      necessary: true,
-      analytics: isAnalyticsChecked
-    };
-    
-    console.log("Saving cookie preferences:", newPreferences);
-    localStorage.setItem("cookiePreferences", JSON.stringify(newPreferences));
-    
-    // Set consent status based on preferences
-    if (newPreferences.analytics) {
-      localStorage.setItem("cookieConsent", "accepted");
-      loadGTM();
-    } else {
-      localStorage.setItem("cookieConsent", "declined");
-      removeGTM();
-    }
-    
-    // Get the current language for feedback message
-    const currentLang = window.LanguageManager ? 
-      window.LanguageManager.getCurrentLanguage() : 
-      (localStorage.getItem("asheLanguage") || "nl");
+
+  // MODIFIED: Save cookie preferences - updated for consent mode
+  function saveCookiePreferences() {
+    try {
+      // Find the toggle that was actually clicked/changed
       
-    const message = currentLang === "nl" ? "Cookie instellingen opgeslagen." : "Cookie settings saved.";
-    showFeedbackMessage(message);
-    
-    // Update ALL toggles to match the saved preferences
-    if (analyticsToggleModal && analyticsToggleModal !== analyticsToggle) {
-      analyticsToggleModal.checked = newPreferences.analytics;
-      updateToggleUI(analyticsToggleModal);
+      // Get both possible toggles
+      const analyticsToggleModal = document.getElementById("analytics-cookies");
+      const analyticsTogglePrivacy = document.getElementById("analytics-cookies-privacy");
+      
+      // Determine which one to use - prioritize the one in the visible container
+      let analyticsToggle;
+      const modal = document.getElementById("cookie-preferences-modal");
+      
+      // If modal is visible, use that toggle
+      if (modal && (modal.style.display === "block" || modal.style.display === "flex")) {
+        analyticsToggle = analyticsToggleModal;
+      } else {
+        // Otherwise use the privacy page toggle
+        analyticsToggle = analyticsTogglePrivacy;
+      }
+      
+      // If neither is found, try the other one as fallback
+      if (!analyticsToggle) {
+        analyticsToggle = analyticsToggleModal || analyticsTogglePrivacy;
+      }
+      
+      if (!analyticsToggle) {
+        console.warn("Could not find any analytics toggle element");
+        return;
+      }
+      
+      // CRITICAL: Get the actual checked state from the determined toggle
+      const isAnalyticsChecked = analyticsToggle.checked;
+      console.log("Toggle state before saving:", isAnalyticsChecked);
+      
+      // Save new preferences
+      const newPreferences = {
+        necessary: true,
+        analytics: isAnalyticsChecked
+      };
+      
+      console.log("Saving cookie preferences:", newPreferences);
+      localStorage.setItem("cookiePreferences", JSON.stringify(newPreferences));
+
+      // ADDED: Update Google Consent Mode
+      if (typeof window.updateGoogleConsent === 'function') {
+        window.updateGoogleConsent(newPreferences.analytics);
+      }
+      
+      // MODIFIED: Set consent status but don't load/remove GTM
+      // (GTM is always loaded, consent controls the data collection)
+      if (newPreferences.analytics) {
+        localStorage.setItem("cookieConsent", "accepted");
+        // Set up enhanced tracking if not already done
+        setTimeout(() => {
+          initializeEnhancedDataLayer();
+          setupEnhancedEventTracking();
+        }, 500);
+      } else {
+        localStorage.setItem("cookieConsent", "declined");
+        // GTM stays loaded but tracking is disabled via consent mode
+      }
+      
+      // Get the current language for feedback message
+      const currentLang = window.LanguageManager ? 
+        window.LanguageManager.getCurrentLanguage() : 
+        (localStorage.getItem("asheLanguage") || "nl");
+        
+      const message = currentLang === "nl" ? "Cookie instellingen opgeslagen." : "Cookie settings saved.";
+      showFeedbackMessage(message);
+      
+      // Update ALL toggles to match the saved preferences
+      if (analyticsToggleModal && analyticsToggleModal !== analyticsToggle) {
+        analyticsToggleModal.checked = newPreferences.analytics;
+        updateToggleUI(analyticsToggleModal);
+      }
+      
+      if (analyticsTogglePrivacy && analyticsTogglePrivacy !== analyticsToggle) {
+        analyticsTogglePrivacy.checked = newPreferences.analytics;
+        updateToggleUI(analyticsTogglePrivacy);
+      }
+      
+      // Hide cookie banner if it exists
+      const cookieBanner = document.querySelector(".cookie-banner");
+      if (cookieBanner) {
+        cookieBanner.style.display = "none";
+      }
+      
+      // Hide modal if it's open
+      if (modal && (modal.style.display === "block" || modal.style.display === "flex")) {
+        modal.style.display = "none";
+        document.body.style.overflow = ""; // Re-enable scrolling
+      }
+    } catch (e) {
+      console.error("Error saving cookie preferences:", e);
     }
-    
-    if (analyticsTogglePrivacy && analyticsTogglePrivacy !== analyticsToggle) {
-      analyticsTogglePrivacy.checked = newPreferences.analytics;
-      updateToggleUI(analyticsTogglePrivacy);
-    }
-    
-    // Hide cookie banner if it exists
-    const cookieBanner = document.querySelector(".cookie-banner");
-    if (cookieBanner) {
-      cookieBanner.style.display = "none";
-    }
-    
-    // Hide modal if it's open
-    if (modal && (modal.style.display === "block" || modal.style.display === "flex")) {
-      modal.style.display = "none";
-      document.body.style.overflow = ""; // Re-enable scrolling
-    }
-  } catch (e) {
-    console.error("Error saving cookie preferences:", e);
   }
-}
 
   // Handle partial consent - UPDATED: Simplified since we only use analytics now
   function handlePartialConsent(preferences) {
-    // For now, we'll just load GTM if analytics is accepted
-    if (preferences.analytics) {
-      loadGTM();
-    } else {
-      removeGTM();
+    // For consent mode, we just update the consent status
+    if (typeof window.updateGoogleConsent === 'function') {
+      window.updateGoogleConsent(preferences.analytics);
     }
   }
 
@@ -536,16 +504,23 @@ function saveCookiePreferences() {
     modalElement.addEventListener('keydown', modalElement._keydownHandler);
   }
 
-  // Initialize GTM based on user consent
+  // MODIFIED: Initialize based on consent - updated for consent mode
   function initializeBasedOnConsent() {
     const cookieConsent = consentManager.getConsentStatus();
     const preferences = getCookiePreferences();
 
-    // Load GTM if consent is "accepted" or analytics is true
+    // GTM is already loaded by consent mode, just set up enhanced tracking if consented
     if (cookieConsent === "accepted" || (preferences.analytics && cookieConsent !== "declined")) {
-      loadGTM();
+      console.log("Setting up enhanced tracking - user has consented");
+      // Small delay to ensure GTM is ready
+      setTimeout(() => {
+        initializeEnhancedDataLayer();
+        setupEnhancedEventTracking();
+      }, 500);
+      trackConsentChangeEnhanced('granted');
     } else {
-      console.log("GTM not loaded - waiting for user consent");
+      console.log("GTM loaded but analytics disabled via consent");
+      trackConsentChangeEnhanced('denied');
     }
   }
 
@@ -611,7 +586,7 @@ function saveCookiePreferences() {
       preferencesButton._hasListener = true;
     }
     
-    // Accept button in banner
+    // MODIFIED: Accept button in banner - updated for consent mode
     const confirmButton = document.getElementById("rcc-confirm-button");
     if (confirmButton && !confirmButton._hasListener) {
       confirmButton.addEventListener("click", function() {
@@ -621,7 +596,17 @@ function saveCookiePreferences() {
           analytics: true
         }));
         consentManager.setConsentStatus("accepted");
-        loadGTM();
+        
+        // Update Google Consent Mode
+        if (typeof window.updateGoogleConsent === 'function') {
+          window.updateGoogleConsent(true);
+        }
+        
+        // Set up enhanced tracking
+        setTimeout(() => {
+          initializeEnhancedDataLayer();
+          setupEnhancedEventTracking();
+        }, 500);
         
         // Get the current language for feedback message
         const currentLang = window.LanguageManager ? 
@@ -640,7 +625,7 @@ function saveCookiePreferences() {
       confirmButton._hasListener = true;
     }
     
-    // Decline button in banner
+    // MODIFIED: Decline button in banner - updated for consent mode
     const declineButton = document.getElementById("rcc-decline-button");
     if (declineButton && !declineButton._hasListener) {
       declineButton.addEventListener("click", function() {
@@ -650,7 +635,11 @@ function saveCookiePreferences() {
           analytics: false
         }));
         consentManager.setConsentStatus("declined");
-        removeGTM();
+        
+        // Update Google Consent Mode
+        if (typeof window.updateGoogleConsent === 'function') {
+          window.updateGoogleConsent(false);
+        }
         
         // Get the current language for feedback message
         const currentLang = window.LanguageManager ? 
@@ -678,7 +667,7 @@ function saveCookiePreferences() {
       savePrivacyPrefs._hasListener = true;
     }
     
-    // FIXED: "Delete all cookies" button in privacy settings
+    // MODIFIED: "Delete all cookies" button - updated for consent mode
     const revokeAllCookies = document.getElementById("revoke-all-cookies");
     if (revokeAllCookies && !revokeAllCookies._hasListener) {
       revokeAllCookies.addEventListener("click", function() {
@@ -688,6 +677,11 @@ function saveCookiePreferences() {
           analytics: false
         }));
         consentManager.setConsentStatus("declined");
+        
+        // Update Google Consent Mode
+        if (typeof window.updateGoogleConsent === 'function') {
+          window.updateGoogleConsent(false);
+        }
         
         // IMPORTANT: Update checkbox state BEFORE updating UI
         const analyticsToggle = document.getElementById("analytics-cookies-privacy");
@@ -702,8 +696,6 @@ function saveCookiePreferences() {
           modalAnalyticsToggle.checked = false;
           updateToggleUI(modalAnalyticsToggle);
         }
-        
-        removeGTM();
         
         // Get the current language for feedback message
         const currentLang = window.LanguageManager ? 
@@ -774,7 +766,7 @@ function saveCookiePreferences() {
     // Set up cookie consent listeners
     setupConsentListeners();
     
-    // Initialize GTM if already consented
+    // Initialize enhanced tracking if already consented
     initializeBasedOnConsent();
     
     // Show cookie banner if no consent yet
@@ -834,3 +826,278 @@ function saveCookiePreferences() {
   window.saveCookiePreferences = saveCookiePreferences;
   window.initializeToggleElements = initializeToggleElements;
 })();
+
+// Enhanced dataLayer initialization
+function initializeEnhancedDataLayer() {
+  // Only initialize if GTM is being loaded
+  if (window[GTM_CONFIG.dataLayerName]) {
+    // Push enhanced page view data
+    const pageData = {
+      event: 'page_view_enhanced',
+      page_title: document.title,
+      page_location: window.location.href,
+      page_path: window.location.pathname,
+      language: document.documentElement.lang || 'nl',
+      site_section: getSiteSection(),
+      user_type: 'visitor'
+    };
+
+    window[GTM_CONFIG.dataLayerName].push(pageData);
+    console.log('Enhanced page tracking initialized:', pageData);
+  }
+}
+
+// Helper function to determine site section
+function getSiteSection() {
+  const path = window.location.pathname;
+  if (path === '/' || path === '/index.html') return 'home';
+  if (path.includes('/project')) return 'projects';
+  if (path.includes('/doneer') || path.includes('/donate')) return 'donation';
+  if (path.includes('/contact')) return 'contact';
+  if (path.includes('/wiewijzijn')) return 'about';
+  if (path.includes('/watwedoen')) return 'what-we-do';
+  if (path.includes('/blog')) return 'blog';
+  return 'other';
+}
+
+// Enhanced event tracking functions
+function setupEnhancedEventTracking() {
+  // Only set up if GTM is loaded and dataLayer exists
+  if (!window[GTM_CONFIG.dataLayerName]) {
+    console.warn('Enhanced tracking not initialized - dataLayer not available');
+    return;
+  }
+
+  console.log('Setting up enhanced GA4 event tracking');
+
+  // Track donation interactions
+  trackDonationEvents();
+  
+  // Track navigation
+  trackNavigationEvents();
+  
+  // Track content engagement
+  trackContentEngagement();
+  
+  // Track form interactions
+  trackFormInteractions();
+  
+  // Track file downloads
+  trackFileDownloads();
+  
+  // Track external links
+  trackExternalLinks();
+}
+
+// Donation tracking (crucial for nonprofits)
+function trackDonationEvents() {
+  document.addEventListener('click', function(e) {
+    const target = e.target.closest('a[href*="doneer"], a[href*="donate"], .donate-btn, [data-donate]');
+    if (target && window[GTM_CONFIG.dataLayerName]) {
+      window[GTM_CONFIG.dataLayerName].push({
+        event: 'donation_click',
+        event_category: 'donation',
+        event_action: 'click',
+        event_label: target.textContent.trim() || 'donation_button',
+        page_location: window.location.href,
+        click_text: target.textContent.trim()
+      });
+      console.log('Donation click tracked:', target.textContent.trim());
+    }
+  });
+
+  // Track donation form submissions
+  document.addEventListener('submit', function(e) {
+    if (e.target.matches('form[action*="donate"], .donation-form') && window[GTM_CONFIG.dataLayerName]) {
+      window[GTM_CONFIG.dataLayerName].push({
+        event: 'donation_form_submit',
+        event_category: 'donation',
+        event_action: 'form_submit',
+        form_id: e.target.id || 'donation_form'
+      });
+      console.log('Donation form submission tracked');
+    }
+  });
+}
+
+// Navigation tracking
+function trackNavigationEvents() {
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (link && link.href && window[GTM_CONFIG.dataLayerName]) {
+      const isInternal = link.hostname === window.location.hostname;
+      const linkText = link.textContent.trim();
+      
+      if (isInternal) {
+        window[GTM_CONFIG.dataLayerName].push({
+          event: 'internal_link_click',
+          event_category: 'navigation',
+          event_action: 'internal_click',
+          event_label: linkText,
+          link_url: link.href,
+          link_text: linkText
+        });
+      }
+    }
+  });
+}
+
+// Content engagement tracking
+function trackContentEngagement() {
+  // Track video plays
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('.play-btn, [data-video]') && window[GTM_CONFIG.dataLayerName]) {
+      window[GTM_CONFIG.dataLayerName].push({
+        event: 'video_play',
+        event_category: 'content',
+        event_action: 'video_play',
+        page_location: window.location.href
+      });
+      console.log('Video play tracked');
+    }
+  });
+
+  // Track modal opens
+  document.addEventListener('click', function(e) {
+    const modalTrigger = e.target.closest('[data-modal], .modal-trigger');
+    if (modalTrigger && window[GTM_CONFIG.dataLayerName]) {
+      window[GTM_CONFIG.dataLayerName].push({
+        event: 'modal_open',
+        event_category: 'content',
+        event_action: 'modal_view',
+        event_label: modalTrigger.dataset.modal || 'unknown_modal'
+      });
+      console.log('Modal open tracked:', modalTrigger.dataset.modal);
+    }
+  });
+
+  // Track scroll depth
+  let scrollDepthTracked = [];
+  window.addEventListener('scroll', throttle(function() {
+    const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+    
+    [25, 50, 75, 90].forEach(threshold => {
+      if (scrollPercent >= threshold && !scrollDepthTracked.includes(threshold) && window[GTM_CONFIG.dataLayerName]) {
+        scrollDepthTracked.push(threshold);
+        window[GTM_CONFIG.dataLayerName].push({
+          event: 'scroll_depth',
+          event_category: 'content',
+          event_action: 'scroll',
+          event_label: threshold + '%',
+          scroll_depth: threshold
+        });
+        console.log('Scroll depth tracked:', threshold + '%');
+      }
+    });
+  }, 1000));
+}
+
+// Form interaction tracking
+function trackFormInteractions() {
+  // Track newsletter signups
+  document.addEventListener('submit', function(e) {
+    if (e.target.matches('form[aria-labelledby="newsletter-subtitle"], .newsletter-form') && window[GTM_CONFIG.dataLayerName]) {
+      window[GTM_CONFIG.dataLayerName].push({
+        event: 'newsletter_signup',
+        event_category: 'engagement',
+        event_action: 'form_submit',
+        form_name: 'newsletter'
+      });
+      console.log('Newsletter signup tracked');
+    }
+  });
+
+  // Track contact form submissions
+  document.addEventListener('submit', function(e) {
+    if (e.target.matches('.contact-form, form[action*="contact"]') && window[GTM_CONFIG.dataLayerName]) {
+      window[GTM_CONFIG.dataLayerName].push({
+        event: 'contact_form_submit',
+        event_category: 'engagement',
+        event_action: 'form_submit',
+        form_name: 'contact'
+      });
+      console.log('Contact form submission tracked');
+    }
+  });
+}
+
+// File download tracking
+function trackFileDownloads() {
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (link && link.href && window[GTM_CONFIG.dataLayerName]) {
+      const fileExtension = link.href.split('.').pop().toLowerCase();
+      if (['pdf', 'doc', 'docx', 'xls', 'xlsx', 'zip'].includes(fileExtension)) {
+        window[GTM_CONFIG.dataLayerName].push({
+          event: 'file_download',
+          event_category: 'content',
+          event_action: 'download',
+          event_label: link.href,
+          file_extension: fileExtension,
+          file_name: link.href.split('/').pop()
+        });
+        console.log('File download tracked:', link.href.split('/').pop());
+      }
+    }
+  });
+}
+
+// External link tracking
+function trackExternalLinks() {
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (link && link.href && link.hostname !== window.location.hostname && window[GTM_CONFIG.dataLayerName]) {
+      window[GTM_CONFIG.dataLayerName].push({
+        event: 'external_link_click',
+        event_category: 'navigation',
+        event_action: 'external_click',
+        event_label: link.href,
+        link_url: link.href,
+        link_domain: link.hostname
+      });
+      console.log('External link tracked:', link.hostname);
+    }
+  });
+}
+
+// Enhanced language change tracking
+function trackLanguageChangeEnhanced(language) {
+  if (window[GTM_CONFIG.dataLayerName]) {
+    window[GTM_CONFIG.dataLayerName].push({
+      event: 'language_change',
+      event_category: 'user_preference',
+      event_action: 'language_switch',
+      event_label: language,
+      new_language: language
+    });
+    console.log('Language change tracked:', language);
+  }
+}
+
+// Enhanced cookie consent tracking
+function trackConsentChangeEnhanced(consentStatus) {
+  if (window[GTM_CONFIG.dataLayerName]) {
+    window[GTM_CONFIG.dataLayerName].push({
+      event: 'consent_update',
+      event_category: 'privacy',
+      event_action: 'consent_change',
+      event_label: consentStatus,
+      consent_status: consentStatus
+    });
+    console.log('Consent change tracked:', consentStatus);
+  }
+}
+
+// Utility function for throttling
+function throttle(func, limit) {
+  let inThrottle;
+  return function() {
+    const args = arguments;
+    const context = this;
+    if (!inThrottle) {
+      func.apply(context, args);
+      inThrottle = true;
+      setTimeout(() => inThrottle = false, limit);
+    }
+  }
+}

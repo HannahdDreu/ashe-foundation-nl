@@ -994,3 +994,99 @@ select {
     display: none !important;
   }
 }
+
+/* Donate page specific mobile fixes */
+@media (max-width: 768px) {
+  /* Fix bank details section on mobile */
+  .bank-details-container {
+    word-break: break-all;
+    overflow-wrap: break-word;
+  }
+  
+  /* Ensure bank account numbers wrap properly */
+  .bank-details-container .font-semibold {
+    font-size: 0.9rem;
+    word-break: break-all;
+    line-height: 1.4;
+  }
+  
+  /* Fix the bank details cards on mobile */
+  .bg-light.p-8 {
+    padding: 1rem !important;
+  }
+  
+  /* Make bank details responsive */
+  .py-3.border-b {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 0.5rem;
+  }
+  
+  .py-3.border-b .font-medium {
+    font-size: 0.9rem;
+  }
+  
+  .py-3.border-b .font-semibold {
+    font-size: 0.85rem;
+    color: var(--color-terracotta);
+  }
+}
+
+/* Additional mobile fixes for donate page */
+@media (max-width: 480px) {
+  /* Extra small screens - make text even smaller if needed */
+  .bank-details-container .text-lg {
+    font-size: 1rem !important;
+  }
+  
+  /* Ensure donorbox iframe is responsive */
+  iframe[name="donorbox"] {
+    min-width: 280px !important;
+    width: 100% !important;
+  }
+}
+
+/* Fix payment methods section on mobile */
+@media (max-width: 768px) {
+  /* Make payment method cards smaller text on mobile */
+  .payment-methods-title {
+    font-size: 1rem !important;
+  }
+  
+  /* Fix payment method grid items */
+  [role="list"] [role="listitem"] {
+    padding: 0.75rem 0.5rem !important;
+  }
+  
+  [role="list"] [role="listitem"] .font-medium {
+    font-size: 0.75rem !important;
+    line-height: 1.2;
+    text-align: center;
+    word-break: break-word;
+  }
+  
+  /* Make the payment method icons smaller */
+  [role="list"] [role="listitem"] .w-12.h-12 {
+    width: 2rem !important;
+    height: 2rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+  
+  [role="list"] [role="listitem"] .w-12.h-12 svg {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  /* Even smaller text for very small screens */
+  [role="list"] [role="listitem"] .font-medium {
+    font-size: 0.7rem !important;
+  }
+  
+  /* Reduce grid gap */
+  .grid.grid-cols-2.gap-4 {
+    gap: 0.5rem !important;
+  }
+}

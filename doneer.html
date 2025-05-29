@@ -1,41 +1,33 @@
 <!doctype html>
 <html lang="nl">
   <head>
-    <title>Klachten - ASHE Foundation - Een opmerking of klacht indienen</title>
+    <title>Doneer - ASHE Foundation</title>
 
     <!-- Meta tags for SEO -->
     <meta
       name="description"
-      content="Heeft u een klacht of opmerking over Ashe Foundation? Via deze pagina kunt u eenvoudig uw feedback delen. Wij streven naar snelle en transparante afhandeling."
+      content="Doneer aan de ASHE Foundation en help de Maasai gemeenschap in Tanzania met toegang tot schoon water, onderwijs en duurzame projecten."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
 
     <!-- Open Graph tags for social sharing -->
-    <meta property="og:title" content="Klachten - ASHE Foundation" />
+    <meta property="og:title" content="Doneer - ASHE Foundation" />
     <meta
       property="og:description"
-      content="Heeft u een klacht of opmerking over Ashe Foundation? Via deze pagina kunt u eenvoudig uw feedback delen. Wij streven naar snelle en transparante afhandeling."
+      content="Help de Maasai gemeenschap in Tanzania met een donatie aan de ASHE Foundation. Elke bijdrage maakt verschil."
     />
     <meta
       property="og:image"
       content="https://ashefoundation.nl/img/Untitleddesign.webp"
     />
-    <meta property="og:url" content="https://ashefoundation.nl/klachten" />
+    <meta property="og:url" content="https://ashefoundation.nl/doneer" />
     <meta property="og:type" content="website" />
 
-    <!-- Language meta tags -->
-    <link
-      rel="alternate"
-      hreflang="nl"
-      href="https://ashefoundation.nl/klachten"
-    />
-    <link
-      rel="alternate"
-      hreflang="en"
-      href="https://ashefoundation.net/complaints"
-    />
-    <link rel="canonical" href="https://ashefoundation.nl/klachten" />
+    <!-- Language detection meta tags -->
+    <link rel="alternate" hreflang="nl" href="https://ashefoundation.nl/doneer" />
+    <link rel="alternate" hreflang="en" href="https://ashefoundation.net/donate" />
+    <link rel="canonical" href="https://ashefoundation.nl/doneer" />
 
     <!-- Common preloads -->
     <link rel="preload" href="/img/flag-us.webp" as="image" type="image/webp" />
@@ -48,9 +40,18 @@
     />
     <link rel="preload" href="/css/main.css" as="style" />
 
+    <!-- Page-specific preloads -->
+    <link
+    rel="preload"
+    href="/img/team-banner.webp"
+    as="image"
+    type="image/webp"
+    fetchpriority="high"
+  />
+
     <!-- Critical CSS - Keep minimal essential styles for above-the-fold content -->
     <style>
-      /* Optimized Critical CSS for klachten.html */
+      /* Optimized Critical CSS for donate page */
       body {
         font-family: "Poppins", sans-serif;
         margin: 0;
@@ -59,14 +60,22 @@
         background-color: #fff1e6;
       }
 
-      /* Main section background */
-      section.py-16.bg-light {
-        background-color: #fff1e6;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+      /* Hero Section for donate page */
+      .hero-section {
+        background-image:
+  linear-gradient(
+    to bottom,
+    rgba(64, 61, 57, 0.5),
+    rgba(224, 122, 95, 0.4)
+  ),
+  url("/img/team-banner.webp");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        position: relative;
       }
 
-      /* Header and navigation */
+      /* Header elements */
       .site-logo {
         height: 90px;
         transition: transform 0.3s ease;
@@ -81,47 +90,21 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
 
+      /* Language styling */
       .active-lang {
         color: #e07a5f;
         font-weight: 600;
       }
 
-      /* Title styling - visible above the fold */
-      h1.text-3xl {
-        font-size: 1.875rem;
-        line-height: 2.25rem;
-        font-weight: 700;
-        color: #e07a5f;
-        margin-bottom: 1rem;
-        position: relative;
-        display: inline-block;
-      }
-
-      h1.text-3xl .absolute {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 0.25rem;
-        background-color: #57cc99;
-      }
-
-      /* Original critical CSS here */
-
       /* Mobile-specific critical CSS */
       @media (max-width: 768px) {
-        section.py-16.bg-light {
-          padding-top: 3rem; /* Less padding on mobile */
-          padding-bottom: 3rem;
+        .hero-section {
+          padding: 4rem 0;
         }
 
-        h1.text-3xl {
-          font-size: 1.75rem; /* Smaller title on mobile */
-        }
-
-        /* Mobile-friendly card adjustments */
-        .bg-white.p-8.rounded-xl {
-          padding: 1.5rem; /* Less padding on mobile */
+        h1#donate-hero-title {
+          font-size: 2rem;
+          margin-bottom: 0.5rem;
         }
       }
     </style>
@@ -130,15 +113,16 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Klachten - ASHE Foundation",
-        "description": "Heeft u een klacht of opmerking over Ashe Foundation? Via deze pagina kunt u eenvoudig uw feedback delen.",
-        "url": "https://ashefoundation.nl/klachten",
-        "isPartOf": {
-          "@type": "NGO",
-          "name": "ASHE Foundation",
-          "url": "https://ashefoundation.nl/"
-        }
+        "@type": "NGO",
+        "name": "ASHE Foundation",
+        "url": "https://ashefoundation.nl/doneer",
+        "logo": "https://ashefoundation.nl/img/Untitleddesign.svg",
+        "description": "Doneer aan de ASHE Foundation en help de Maasai gemeenschap in Tanzania.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Netherlands"
+        },
+        "sameAs": ["https://ashefoundation.net/donate"]
       }
     </script>
 
@@ -166,14 +150,14 @@
               terracotta: "#E07A5F",
               "terracotta-dark": "#C45D41",
               "terracotta-light": "#FF8A70",
-              green: "#57CC99" /* Bright green */,
-              "green-light": "#80ED99" /* Lighter green */,
-              "green-dark": "#38A169" /* Darker green */,
-              yellow: "#F9C846" /* Vibrant yellow */,
-              "yellow-light": "#FFE066" /* Light yellow */,
-              dark: "#403D39" /* Warmer dark color */,
-              light: "#FFF1E6" /* Warm light color */,
-              gray: "#A7B39A" /* Muted sage for text */,
+              green: "#57CC99",
+              "green-light": "#80ED99",
+              "green-dark": "#38A169",
+              yellow: "#F9C846",
+              "yellow-light": "#FFE066",
+              dark: "#403D39",
+              light: "#FFF1E6",
+              gray: "#A7B39A",
             },
             fontFamily: {
               sans: ["Poppins", "sans-serif"],
@@ -183,28 +167,29 @@
       };
     </script>
 
-    <!-- Main CSS -->
+    <!-- External CSS -->
     <link rel="stylesheet" href="/css/main.css" />
 
     <!-- Google Tag Manager -->
     <script src="./js/gtm-consent-mode.js"></script>
     <script src="./js/gtm.js"></script>
   </head>
-  <body class="min-h-screen">
+  <body class="min-h-screen donate-page">
      <!-- Google Tag Manager (noscript) -->
      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDTTVCKD"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      
     <!-- Skip to content link for accessibility -->
-
     <a
       href="#main-content"
       class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-terracotta focus:text-white focus:z-50"
     >
       Spring naar hoofdinhoud
     </a>
+
     <!-- HEADER -->
     <header
-      class="bg-white fixed top-0 left-0 right-0 z-[100] shadow-md border-b-4 border-terracotta"
+      class="bg-white sticky top-0 z-50 shadow-md border-b-4 border-terracotta"
     >
       <nav class="px-4 lg:px-8 py-2" aria-label="Hoofdnavigatie">
         <div class="mx-auto max-w-7xl">
@@ -352,16 +337,6 @@
                     >Contact</a
                   >
                 </li>
-                <li class="pt-2">
-                  <a
-                  href="/doneer"
-                  class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-                  data-lang-key="nav-donate"
-                  aria-label="Doneer nu aan de ASHE Foundation"
-                >
-                  Doneer
-                </a>
-                </li>
               </ul>
             </div>
           </div>
@@ -399,7 +374,6 @@
                   aria-hidden="true"
                 ></span>
               </a>
-
               <a
                 href="/watwedoen"
                 class="text-dark hover:text-terracotta font-medium relative nav-link"
@@ -411,7 +385,6 @@
                   aria-hidden="true"
                 ></span>
               </a>
-
               <a
                 href="/wiewijzijn"
                 class="text-dark hover:text-terracotta font-medium relative nav-link"
@@ -423,7 +396,6 @@
                   aria-hidden="true"
                 ></span>
               </a>
-
               <a
                 href="/projecten"
                 class="text-dark hover:text-terracotta font-medium relative nav-link"
@@ -435,7 +407,6 @@
                   aria-hidden="true"
                 ></span>
               </a>
-
               <a
                 href="/contact"
                 class="text-dark hover:text-terracotta font-medium relative nav-link"
@@ -450,16 +421,6 @@
             </div>
 
             <div class="flex items-center space-x-4">
-              <!-- Donate Button -->
-
-              <a
-              href="/doneer"
-              class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-              data-lang-key="nav-donate"
-              aria-label="Doneer nu aan de ASHE Foundation"
-            >
-              Doneer
-            </a>
 
               <!-- Language Toggler -->
               <div
@@ -509,104 +470,395 @@
       </nav>
     </header>
 
-    <!-- MAIN -->
-    <main id="main-content" style="margin-top: 120px">
-      <!-- Complaints Section Header -->
-      <section class="py-16 bg-light" aria-labelledby="complaints-title">
-        <div class="max-w-7xl mx-auto px-6">
-          <header class="text-center mb-8">
-            <h1
-              id="complaints-title"
-              class="text-3xl font-bold text-terracotta mb-4 relative inline-block"
-              data-lang-key="complaints-title"
-            >
-              Een opmerking of klacht?
-              <span
-                class="absolute bottom-0 left-0 w-full h-1 bg-green"
-                aria-hidden="true"
-              ></span>
-            </h1>
-          </header>
+<!-- MAIN -->
+<main id="main-content">
+<!-- Hero Section -->
+<section
+class="hero-section py-20 md:py-28 relative"
+aria-labelledby="donate-hero-title"
+>
+<!-- Background image container -->
+<div class="absolute inset-0">
+  <picture>
+    <source
+      media="(max-width: 640px)"
+      srcset="/img/team-banner-640w.webp"
+    />
+    <source
+      media="(max-width: 1024px)"
+      srcset="/img/team-banner-1024w.webp"
+    />
+    <img
+      src="/img/team-banner-1920w.webp"
+      alt="Team banner"
+      class="w-full h-full object-cover"
+      loading="eager"
+    />
+  </picture>
+  <!-- Gradient overlay -->
+  <div
+    class="absolute inset-0"
+    style="
+      background-image: linear-gradient(
+        to bottom,
+        rgba(64, 61, 57, 0.5),
+        rgba(224, 122, 95, 0.4)
+      );
+    "
+  ></div>
+</div>
 
-          <!-- Single Content Block -->
-          <div
-            class="bg-white p-8 rounded-xl shadow-md border-t-4 border-terracotta max-w-3xl mx-auto"
-            role="article"
-            aria-labelledby="complaints-title"
+<!-- Content -->
+<div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+  <h1
+    id="donate-hero-title"
+    class="text-4xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto leading-tight"
+    data-lang-key="donate-hero-title"
+  >
+    Help de Maasai gemeenschap
+  </h1>
+  <p
+    class="text-xl text-white max-w-3xl mx-auto opacity-90 mb-8"
+    data-lang-key="donate-hero-subtitle"
+  >
+    Jouw donatie maakt direct verschil voor duizenden mensen in Tanzania
+  </p>
+</div>
+</section>
+
+  <!-- Donation Form Section -->
+  <section
+    id="donation-form"
+    class="py-16 bg-light"
+    aria-labelledby="donation-form-title"
+  >
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-8">
+        <h2
+          id="donation-form-title"
+          class="text-3xl font-bold text-terracotta mb-4 relative inline-block"
+          data-lang-key="donation-form-title"
+        >
+          Doneer online
+          <span
+            class="absolute bottom-0 left-0 w-full h-1 bg-green"
+            aria-hidden="true"
+          ></span>
+        </h2>
+        <p
+          class="text-dark max-w-3xl mx-auto"
+          data-lang-key="donation-form-subtitle"
+        >
+          Kies het bedrag dat bij je past. Elke bijdrage, groot of klein, maakt verschil.
+        </p>
+      </div>
+
+      <!-- Embedded Donation Form -->
+      <div class="bg-white rounded-xl shadow-lg p-8">
+        <div style="display: flex; justify-content: center">
+          <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
+          <iframe
+            src="https://donorbox.org/embed/ashe-foundation?hide_donation_meter=true"
+            name="donorbox"
+            title="Donatie formulier voor ASHE Foundation"
+            allow="payment"
+            style="
+              max-width: 500px;
+              min-width: 250px;
+              height: 900px;
+              width: 100%;
+              max-height: none !important;
+              margin: 0 auto;
+              border: none;
+              overflow: hidden;
+            "
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bank Transfer Section -->
+  <section class="py-16 bg-white" aria-labelledby="bank-transfer-title">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2
+          id="bank-transfer-title"
+          class="text-3xl font-bold text-terracotta mb-4 relative inline-block"
+          data-lang-key="bank-transfer-title"
+        >
+          Of doneer via bankoverschrijving
+          <span
+            class="absolute bottom-0 left-0 w-full h-1 bg-yellow"
+            aria-hidden="true"
+          ></span>
+        </h2>
+        <p
+          class="text-dark max-w-3xl mx-auto"
+          data-lang-key="bank-transfer-subtitle"
+        >
+          Liever direct overmaken? Gebruik onderstaande gegevens voor uw donatie.
+        </p>
+      </div>
+
+      <div class="max-w-2xl mx-auto">
+        <div class="bg-light p-8 rounded-xl shadow-md border-l-4 border-green">
+          <h3
+            class="text-xl font-bold text-terracotta mb-6 text-center"
+            data-lang-key="bank-details-title"
           >
-            <p class="text-dark mb-6" data-lang-key="complaints-intro">
-              Heeft u opmerkingen of feedback voor ons, dan horen we dat graag.
-              We staan open voor input van onze leden, donateurs en andere
-              betrokkenen, ongeacht de reden van uw ontevredenheid over onze
-              werkwijze, activiteiten en/of standpunten. Het is ons doel om
-              eventuele fouten te corrigeren, onze procedures aan te passen
-              indien nodig, en onze dienstverlening te verbeteren.
-            </p>
-
-            <h2
-              id="what-is-complaint"
-              class="text-xl font-bold text-terracotta mb-3"
-              data-lang-key="complaints-what-title"
-            >
-              Wat beschouwen we als een opmerking of klacht?
-            </h2>
-            <p
-              class="text-dark mb-6 italic"
-              data-lang-key="complaints-what-content"
-            >
-              Wij beschouwen elke (mondelinge of schriftelijke) uiting van
-              ontevredenheid van een persoon of instantie over (i) ons beleid
-              en/of standpunten of (ii) over specifieke uitingen, acties of
-              gedragingen van ons personeel, vrijwilligers, bestuursleden of
-              groepen binnen Ashe Foundation als een "opmerking" of "klacht".
-            </p>
-
-            <h2
-              id="how-to-submit"
-              class="text-xl font-bold text-terracotta mb-3"
-              data-lang-key="complaints-how-title"
-            >
-              Hoe kunt u een opmerking of klacht indienen?
-            </h2>
-            <p class="text-dark mb-6" data-lang-key="complaints-how-content">
-              Stuur een email naar
-              <a
-                href="mailto:klacht@ashefoundation.nl"
-                class="text-green hover:underline"
-                >klacht@ashefoundation.nl</a
-              >
-            </p>
-
-            <h2
-              id="complaint-process"
-              class="text-xl font-bold text-terracotta mb-3"
-              data-lang-key="complaints-process-title"
-            >
-              Hoe worden opmerkingen en klachten afgehandeld?
-            </h2>
-            <p
-              class="text-dark mb-6"
-              data-lang-key="complaints-process-content"
-            >
-              We streven ernaar om zo snel mogelijk, maar in ieder geval binnen
-              twee weken na ontvangst, te reageren op uw opmerking of klacht.
-              Alle opmerkingen en klachten worden geregistreerd en vertrouwelijk
-              behandeld.
-            </p>
-
-            <div class="mt-8 border-t border-gray-200 pt-6">
-              <a
-                href="/contact"
-                class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-                data-lang-key="contact-us"
-                aria-label="Ga naar de contactpagina"
-              >
-                Neem contact op
-              </a>
+            Bankgegevens ASHE Foundation
+          </h3>
+          
+          <div class="space-y-4 bank-details-container">
+            <div class="flex justify-between items-center py-3 border-b border-gray-200 flex-col sm:flex-row sm:items-center">
+              <span class="font-medium text-dark" data-lang-key="bank-name-label">
+                Banknaam:
+              </span>
+              <span class="text-dark font-semibold">
+                BUNQ
+              </span>
             </div>
+            
+            <div class="flex justify-between items-center py-3 border-b border-gray-200 flex-col sm:flex-row sm:items-center">
+              <span class="font-medium text-dark" data-lang-key="account-number-label">
+                Rekeningnummer:
+              </span>
+              <span class="text-dark font-semibold text-lg">
+                NL56 BUNQ 2102 1849 00
+              </span>
+            </div>
+            
+            <div class="flex justify-between items-center py-3 border-b border-gray-200 flex-col sm:flex-row sm:items-center">
+              <span class="font-medium text-dark" data-lang-key="account-holder-label">
+                Rekeninghouder:
+              </span>
+              <span class="text-dark font-semibold">
+                Stichting ASHE Foundation
+              </span>
+            </div>
+          
+          <div class="mt-6 p-4 bg-white rounded-lg border border-terracotta">
+            <p class="text-sm text-dark text-center" data-lang-key="bank-transfer-note">
+              <strong>Vergeet niet:</strong> Vermeld bij uw overschrijving uw naam en e-mailadres 
+              zodat wij u een donatiebewijs kunnen toesturen voor de belastingdienst.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANBI Information Section -->
+  <section class="py-16 bg-light" aria-labelledby="anbi-info-title">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2
+          id="anbi-info-title"
+          class="text-3xl font-bold text-terracotta mb-4 relative inline-block"
+          data-lang-key="anbi-info-title"
+        >
+          Fiscaal aftrekbaar doneren
+          <span
+            class="absolute bottom-0 left-0 w-full h-1 bg-terracotta"
+            aria-hidden="true"
+          ></span>
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- ANBI Status -->
+        <div
+          class="bg-white p-6 rounded-xl shadow-md border-t-4 border-green"
+          role="article"
+          aria-labelledby="anbi-status-title"
+        >
+          <div class="flex justify-center mb-4">
+            <img
+              src="img/anbi-logo-a397f74b-153w.webp"
+              alt="ANBI Logo - Algemeen Nut Beogende Instelling"
+              class="h-20"
+              width="153"
+              height="80"
+              loading="lazy"
+            />
+          </div>
+          <h3
+            id="anbi-status-title"
+            class="text-xl font-bold text-dark text-center mb-3"
+            data-lang-key="anbi-status-title"
+          >
+            Erkende ANBI Status
+          </h3>
+          <p class="text-center text-dark mb-4" data-lang-key="anbi-status-text">
+            Als erkende ANBI stichting voldoen wij aan strenge eisen voor
+            transparantie en effectiviteit. Dit betekent dat uw donaties
+            fiscaal aftrekbaar zijn.
+          </p>
+          <ul class="space-y-2 text-dark">
+            <li class="flex items-start">
+              <span
+                class="inline-block w-2 h-2 bg-green rounded-full mr-2 mt-2"
+                aria-hidden="true"
+              ></span>
+              <span data-lang-key="anbi-benefit-1">
+                Donaties zijn fiscaal aftrekbaar van uw belasting
+              </span>
+            </li>
+            <li class="flex items-start">
+              <span
+                class="inline-block w-2 h-2 bg-green rounded-full mr-2 mt-2"
+                aria-hidden="true"
+              ></span>
+              <span data-lang-key="anbi-benefit-2">
+                100% van uw donatie gaat naar onze projecten
+              </span>
+            </li>
+            <li class="flex items-start">
+              <span
+                class="inline-block w-2 h-2 bg-green rounded-full mr-2 mt-2"
+                aria-hidden="true"
+              ></span>
+              <span data-lang-key="anbi-benefit-3">
+                Volledige transparantie in onze financiële rapportage
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Payment Methods -->
+        <div
+          class="bg-white p-6 rounded-xl shadow-md border-t-4 border-yellow"
+          role="article"
+          aria-labelledby="payment-methods-title"
+        >
+          <h3
+            id="payment-methods-title"
+            class="text-xl font-bold text-dark text-center mb-4"
+            data-lang-key="payment-methods-title"
+          >
+            Betaalmogelijkheden
+          </h3>
+          <div
+            class="grid grid-cols-2 gap-4 text-center mb-6"
+            role="list"
+            aria-label="Beschikbare betaalmethoden"
+          >
+            <div
+              class="p-3 rounded-lg bg-light hover:shadow-md transition-shadow border"
+              role="listitem"
+            >
+              <div
+                class="bg-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2"
+                aria-hidden="true"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-terracotta"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+                  />
+                </svg>
+              </div>
+              <p class="font-medium text-dark" data-lang-key="payment-ideal">
+                iDEAL
+              </p>
+            </div>
+            <div
+              class="p-3 rounded-lg bg-light hover:shadow-md transition-shadow border"
+              role="listitem"
+            >
+              <div
+                class="bg-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2"
+                aria-hidden="true"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-green"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <p class="font-medium text-dark" data-lang-key="payment-bank">
+                Bankoverschrijving
+              </p>
+            </div>
+            <div
+              class="p-3 rounded-lg bg-light hover:shadow-md transition-shadow border"
+              role="listitem"
+            >
+              <div
+                class="bg-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2"
+                aria-hidden="true"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-yellow"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <p class="font-medium text-dark" data-lang-key="payment-recurring">
+                Periodieke Gift
+              </p>
+            </div>
+            <div
+              class="p-3 rounded-lg bg-light hover:shadow-md transition-shadow border"
+              role="listitem"
+            >
+              <div
+                class="bg-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2"
+                aria-hidden="true"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-terracotta"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </div>
+              <p class="font-medium text-dark" data-lang-key="payment-paypal">
+                PayPal
+              </p>
+            </div>
+          </div>
+          <p class="text-sm text-center text-dark" data-lang-key="secure-payment">
+            Alle betalingen worden veilig verwerkt via Donorbox
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
     </main>
 
     <!-- FOOTER -->
