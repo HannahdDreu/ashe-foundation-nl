@@ -199,14 +199,20 @@
     <link rel="stylesheet" href="/css/main.css" />
 
     <!-- Google Tag Manager -->
-    <script src="./js/gtm-consent-mode.js"></script>
-    <script src="./js/gtm.js"></script>
+    <script type="module" src="/src/js/gtm.js"></script>
+    <script type="module" src="/src/js/gtm-consent-mode.js"></script>
   </head>
   <body class="min-h-screen water-project">
-     <!-- Google Tag Manager (noscript) -->
-     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDTTVCKD"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MDTTVCKD"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+
     <!-- Skip to content link for accessibility -->
     <a
       href="#main-content"
@@ -366,13 +372,13 @@
                 </li>
                 <li class="pt-2">
                   <a
-                  href="/doneer"
-                  class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-                  data-lang-key="nav-donate"
-                  aria-label="Doneer nu aan de ASHE Foundation"
-                >
-                  Doneer
-                </a>
+                    href="/doneer"
+                    class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                    data-lang-key="nav-donate"
+                    aria-label="Doneer nu aan de ASHE Foundation"
+                  >
+                    Doneer
+                  </a>
                 </li>
               </ul>
             </div>
@@ -460,13 +466,13 @@
             <div class="flex items-center space-x-4">
               <!-- Donate Button -->
               <a
-              href="/doneer"
-              class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-              data-lang-key="nav-donate"
-              aria-label="Doneer nu aan de ASHE Foundation"
-            >
-              Doneer
-            </a>
+                href="/doneer"
+                class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                data-lang-key="nav-donate"
+                aria-label="Doneer nu aan de ASHE Foundation"
+              >
+                Doneer
+              </a>
 
               <!-- Language Toggler -->
               <div
@@ -807,13 +813,13 @@
               moeilijke periode heen te komen.
             </p>
             <a
-            href="/doneer"
-            class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-            data-lang-key="nav-donate"
-            aria-label="Doneer nu aan de ASHE Foundation"
-          >
-            Doneer
-          </a>
+              href="/doneer"
+              class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+              data-lang-key="nav-donate"
+              aria-label="Doneer nu aan de ASHE Foundation"
+            >
+              Doneer
+            </a>
           </div>
 
           <!-- Share Section -->
@@ -889,7 +895,8 @@
               <button
                 id="instagram-copy"
                 class="text-terracotta hover:text-terracotta-dark flex items-center transition group relative"
-                aria-label="Kopiëren voor Instagram"
+                aria-label="Kopieer tekst voor Instagram post"
+                title="Klik om tekst te kopiëren voor Instagram"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -902,12 +909,12 @@
                   />
                 </svg>
 
-                <!-- Tooltip for copy state -->
                 <span
                   id="instagram-tooltip"
                   class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-dark text-white px-3 py-1 rounded text-sm opacity-0 transition-opacity duration-300 pointer-events-none whitespace-nowrap"
+                  data-lang-key="instagram-copied-tooltip"
                 >
-                  Gekopieerd naar klembord!
+                  Tekst gekopieerd! Plak in Instagram
                 </span>
               </button>
             </div>
@@ -1201,6 +1208,7 @@ Lees meer op: https://ashefoundation.nl/blog
                       name="email"
                       class="w-full px-4 py-3 border border-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-terracotta"
                       placeholder="jouw@email.nl"
+                      data-lang-key="newsletter-email-placeholder"
                       required
                       aria-required="true"
                       autocomplete="email"
@@ -1221,6 +1229,7 @@ Lees meer op: https://ashefoundation.nl/blog
                       name="name"
                       class="w-full px-4 py-3 border border-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-terracotta"
                       placeholder="Jouw naam"
+                      data-lang-key="newsletter-name-placeholder"
                       required
                       aria-required="true"
                       autocomplete="name"
@@ -1666,8 +1675,6 @@ Lees meer op: https://ashefoundation.nl/blog
     </div>
 
     <!-- Load JavaScript Files -->
-    <script src="./js/translations.js" defer></script>
-    <script src="./js/main.js" defer></script>
-    <script src="./js/modals.js" defer></script>
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

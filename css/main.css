@@ -1,16 +1,16 @@
 /* Base Styles - for index page */
 :root {
-  --color-terracotta: #E07A5F;
-  --color-terracotta-dark: #C45D41;
-  --color-terracotta-light: #FF8A70;
-  --color-green: #57CC99;
-  --color-green-light: #80ED99;
-  --color-green-dark: #38A169;
-  --color-yellow: #F9C846;
-  --color-yellow-light: #FFE066;
-  --color-dark: #403D39;
-  --color-light: #FFF1E6;
-  --color-gray: #A7B39A;
+  --color-terracotta: #e07a5f;
+  --color-terracotta-dark: #c45d41;
+  --color-terracotta-light: #ff8a70;
+  --color-green: #57cc99;
+  --color-green-light: #80ed99;
+  --color-green-dark: #38a169;
+  --color-yellow: #f9c846;
+  --color-yellow-light: #ffe066;
+  --color-dark: #403d39;
+  --color-light: #fff1e6;
+  --color-gray: #a7b39a;
 
   /* Spacing variables */
   --spacing-sm: 0.5rem;
@@ -74,7 +74,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background-color: #403D39; /* Fallback color while image loads */
+  background-color: #403d39; /* Fallback color while image loads */
   color: white;
   position: relative;
   overflow: hidden;
@@ -96,13 +96,13 @@ body {
 
 /* Continue with existing styles... */
 /* Add will-change to improve GPU rendering */
-.hero-section, 
+.hero-section,
 [data-bg*="waterproject"] {
   will-change: background-image;
 }
 
 /* Add will-change to improve GPU rendering */
-.hero-section, 
+.hero-section,
 [data-bg*="waterproject"] {
   will-change: background-image;
 }
@@ -114,11 +114,13 @@ body {
   left: 0;
   right: 0;
   height: 10px;
-  background: linear-gradient(90deg,
-      var(--color-yellow) 33%,
-      var(--color-green) 33%,
-      var(--color-green) 66%,
-      var(--color-terracotta) 66%);
+  background: linear-gradient(
+    90deg,
+    var(--color-yellow) 33%,
+    var(--color-green) 33%,
+    var(--color-green) 66%,
+    var(--color-terracotta) 66%
+  );
   z-index: 1;
 }
 
@@ -169,7 +171,12 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   border-top: 5px solid;
-  border-image: linear-gradient(to right, var(--color-terracotta), var(--color-yellow)) 1;
+  border-image: linear-gradient(
+      to right,
+      var(--color-terracotta),
+      var(--color-yellow)
+    )
+    1;
 }
 
 .stat-card:hover {
@@ -198,7 +205,12 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   border-bottom: 5px solid;
-  border-image: linear-gradient(to right, var(--color-green), var(--color-yellow)) 1;
+  border-image: linear-gradient(
+      to right,
+      var(--color-green),
+      var(--color-yellow)
+    )
+    1;
 }
 
 .story-card:hover {
@@ -215,7 +227,12 @@ body {
   transition: all 0.3s ease;
   height: 100%;
   border-top: 4px solid;
-  border-image: linear-gradient(to right, var(--color-terracotta), var(--color-yellow)) 1;
+  border-image: linear-gradient(
+      to right,
+      var(--color-terracotta),
+      var(--color-yellow)
+    )
+    1;
 }
 
 .team-card:hover {
@@ -470,9 +487,11 @@ select:focus {
 .card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0.7));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.7)
+  );
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -481,9 +500,11 @@ select:focus {
 }
 
 .content-card:hover .card-overlay {
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.8));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.8)
+  );
 }
 
 /* Content toggle for read more/less */
@@ -503,9 +524,8 @@ select:focus {
 
 /* Hero Section for watwedoen page */
 .watwedoen .hero-section {
-  background-image: linear-gradient(to bottom,
-      rgba(64, 61, 57, 0.5),
-      rgba(224, 122, 95, 0.4)),
+  background-image:
+    linear-gradient(to bottom, rgba(64, 61, 57, 0.5), rgba(224, 122, 95, 0.4)),
     url("/img/Kangai.webp");
 }
 
@@ -513,9 +533,8 @@ select:focus {
 .wiewijzijn .hero-section,
 .contact .hero-section,
 .projecten .hero-section {
-  background-image: linear-gradient(to bottom,
-      rgba(64, 61, 57, 0.5),
-      rgba(224, 122, 95, 0.4)),
+  background-image:
+    linear-gradient(to bottom, rgba(64, 61, 57, 0.5), rgba(224, 122, 95, 0.4)),
     url("/img/team-banner.webp");
 }
 
@@ -574,7 +593,9 @@ select:focus {
 
 /* Project Cards */
 .project-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .project-card:hover {
@@ -594,7 +615,9 @@ select:focus {
 
 /* Info Cards */
 .info-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .info-card:hover {
@@ -606,9 +629,8 @@ select:focus {
 
 /* Hero Section for Water Project page */
 .water-project .hero-section {
-  background-image: linear-gradient(to bottom,
-      rgba(64, 61, 57, 0.5),
-      rgba(224, 122, 95, 0.4)),
+  background-image:
+    linear-gradient(to bottom, rgba(64, 61, 57, 0.5), rgba(224, 122, 95, 0.4)),
     url("/img/hero-image.webp");
 }
 
@@ -620,7 +642,9 @@ select:focus {
 
 /* Step Cards */
 .step-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .step-card:hover {
@@ -657,9 +681,8 @@ select:focus {
 
 /* Hero Section for Naserian page */
 .naserian-story .hero-section {
-  background-image: linear-gradient(to bottom,
-      rgba(64, 61, 57, 0.5),
-      rgba(224, 122, 95, 0.4)),
+  background-image:
+    linear-gradient(to bottom, rgba(64, 61, 57, 0.5), rgba(224, 122, 95, 0.4)),
     url("/img/naserianwinkel.webp");
   background-size: cover;
   background-position: center;
@@ -669,9 +692,8 @@ select:focus {
 
 /* Hero Section for Neema page */
 .neema-story .hero-section {
-  background-image: linear-gradient(to bottom,
-      rgba(64, 61, 57, 0.5),
-      rgba(224, 122, 95, 0.4)),
+  background-image:
+    linear-gradient(to bottom, rgba(64, 61, 57, 0.5), rgba(224, 122, 95, 0.4)),
     url("/img/naserianwinkel.webp");
 }
 
@@ -746,7 +768,6 @@ select:focus {
 
 /* Mobile optimizations */
 @media (max-width: 768px) {
-
   .nav-link,
   button,
   .btn-primary,
@@ -790,7 +811,6 @@ select:focus {
 
 /* Print styles */
 @media print {
-
   header,
   footer,
   nav,
@@ -892,12 +912,9 @@ select {
 
 /* Homepage-specific hero with Maasai image */
 .home-hero-section {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.4),
-    rgba(224, 122, 95, 0.3)
-  ),
-  url("/img/maasai-water-view.webp");
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(224, 122, 95, 0.3)),
+    url("/img/maasai-water-view.webp");
   background-size: cover;
   background-position: center;
   color: white;
@@ -968,7 +985,7 @@ select {
     margin-bottom: 16px !important;
     display: flex !important;
   }
-  
+
   /* Laptop styling for indicators */
   .carousel-indicators button,
   .carousel-indicator {
@@ -980,7 +997,7 @@ select {
 
 /* Lazy loading styles */
 .lazy-background {
-  background-color: #403D39; /* Fallback color while image loads */
+  background-color: #403d39; /* Fallback color while image loads */
   transition: background-color 0.3s ease;
 }
 
@@ -1002,30 +1019,30 @@ select {
     word-break: break-all;
     overflow-wrap: break-word;
   }
-  
+
   /* Ensure bank account numbers wrap properly */
   .bank-details-container .font-semibold {
     font-size: 0.9rem;
     word-break: break-all;
     line-height: 1.4;
   }
-  
+
   /* Fix the bank details cards on mobile */
   .bg-light.p-8 {
     padding: 1rem !important;
   }
-  
+
   /* Make bank details responsive */
   .py-3.border-b {
     flex-direction: column;
     align-items: flex-start !important;
     gap: 0.5rem;
   }
-  
+
   .py-3.border-b .font-medium {
     font-size: 0.9rem;
   }
-  
+
   .py-3.border-b .font-semibold {
     font-size: 0.85rem;
     color: var(--color-terracotta);
@@ -1038,7 +1055,7 @@ select {
   .bank-details-container .text-lg {
     font-size: 1rem !important;
   }
-  
+
   /* Ensure donorbox iframe is responsive */
   iframe[name="donorbox"] {
     min-width: 280px !important;
@@ -1052,26 +1069,26 @@ select {
   .payment-methods-title {
     font-size: 1rem !important;
   }
-  
+
   /* Fix payment method grid items */
   [role="list"] [role="listitem"] {
     padding: 0.75rem 0.5rem !important;
   }
-  
+
   [role="list"] [role="listitem"] .font-medium {
     font-size: 0.75rem !important;
     line-height: 1.2;
     text-align: center;
     word-break: break-word;
   }
-  
+
   /* Make the payment method icons smaller */
   [role="list"] [role="listitem"] .w-12.h-12 {
     width: 2rem !important;
     height: 2rem !important;
     margin-bottom: 0.25rem !important;
   }
-  
+
   [role="list"] [role="listitem"] .w-12.h-12 svg {
     width: 1rem !important;
     height: 1rem !important;
@@ -1084,7 +1101,7 @@ select {
   [role="list"] [role="listitem"] .font-medium {
     font-size: 0.7rem !important;
   }
-  
+
   /* Reduce grid gap */
   .grid.grid-cols-2.gap-4 {
     gap: 0.5rem !important;

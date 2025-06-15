@@ -4,8 +4,8 @@
   "main": "tailwind.config.js",
   "scripts": {
     "serve": "node --no-deprecation node_modules/.bin/http-server . -o",
-    "prettier": "npx prettier --write **/*.html",
-    "dev": "npm run serve",
+    "prettier": "npx prettier --write \"**/*.{html,js,css,json}\" --ignore-path .gitignore",
+    "dev": "vite",
     "build:tailwind-utils": "node ./node_modules/.bin/tailwindcss -i ./src/tailwind-utils.css -o ./temp-tailwind-utils.css --minify",
     "append-to-main": "echo '/* Tailwind Utilities - Auto-generated */' >> ./css/main.css && cat ./temp-tailwind-utils.css >> ./css/main.css && rm ./temp-tailwind-utils.css",
     "build:css": "npm run build:tailwind-utils && npm run append-to-main"
@@ -21,6 +21,7 @@
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^4.1.5",
+    "vite": "^6.3.5",
     "webpack-bundle-analyzer": "^4.10.1"
   },
   "dependencies": {

@@ -195,14 +195,20 @@
     <link rel="stylesheet" href="/css/main.css" />
 
     <!-- Google Tag Manager -->
-    <script src="./js/gtm-consent-mode.js"></script>
-    <script src="./js/gtm.js"></script>
+    <script type="module" src="/src/js/gtm.js"></script>
+    <script type="module" src="/src/js/gtm-consent-mode.js"></script>
   </head>
   <body class="min-h-screen">
-     <!-- Google Tag Manager (noscript) -->
-     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDTTVCKD"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MDTTVCKD"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+
     <!-- Skip to content link for accessibility -->
     <a
       href="#main-content"
@@ -362,13 +368,13 @@
                 </li>
                 <li class="pt-2">
                   <a
-                  href="/doneer"
-                  class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-                  data-lang-key="nav-donate"
-                  aria-label="Doneer nu aan de ASHE Foundation"
-                >
-                  Doneer
-                </a>
+                    href="/doneer"
+                    class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                    data-lang-key="nav-donate"
+                    aria-label="Doneer nu aan de ASHE Foundation"
+                  >
+                    Doneer
+                  </a>
                 </li>
               </ul>
             </div>
@@ -456,13 +462,13 @@
             <div class="flex items-center space-x-4">
               <!-- Donate Button -->
               <a
-              href="/doneer"
-              class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-              data-lang-key="nav-donate"
-              aria-label="Doneer nu aan de ASHE Foundation"
-            >
-              Doneer
-            </a>
+                href="/doneer"
+                class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                data-lang-key="nav-donate"
+                aria-label="Doneer nu aan de ASHE Foundation"
+              >
+                Doneer
+              </a>
 
               <!-- Language Toggler -->
               <div
@@ -855,6 +861,7 @@
                       name="email"
                       class="w-full px-4 py-3 border border-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-terracotta"
                       placeholder="jouw@email.nl"
+                      data-lang-key="newsletter-email-placeholder"
                       required
                       aria-required="true"
                       autocomplete="email"
@@ -873,6 +880,7 @@
                       type="text"
                       id="name"
                       name="name"
+                      data-lang-key="newsletter-name-placeholder"
                       class="w-full px-4 py-3 border border-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-terracotta"
                       placeholder="Jouw naam"
                       required
@@ -971,13 +979,13 @@
           </p>
           <div class="flex flex-wrap justify-center gap-4">
             <a
-            href="/doneer"
-            class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-            data-lang-key="nav-donate"
-            aria-label="Doneer nu aan de ASHE Foundation"
-          >
-            Doneer
-          </a>
+              href="/doneer"
+              class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+              data-lang-key="nav-donate"
+              aria-label="Doneer nu aan de ASHE Foundation"
+            >
+              Doneer
+            </a>
             <a
               href="/projecten"
               class="py-3 px-8 bg-transparent border-2 border-white text-white hover:bg-white hover:text-terracotta font-semibold rounded-full shadow-md transition-all transform hover:scale-105"
@@ -1365,8 +1373,6 @@
     </div>
 
     <!-- Load JavaScript Files -->
-    <script src="./js/translations.js" defer></script>
-    <script src="./js/main.js" defer></script>
-    <script src="./js/modals.js" defer></script>
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

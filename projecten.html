@@ -197,13 +197,19 @@
     <link rel="stylesheet" href="/css/main.css" />
 
     <!-- Google Tag Manager -->
-    <script src="./js/gtm-consent-mode.js"></script>
-    <script src="./js/gtm.js"></script>
+    <script type="module" src="/src/js/gtm.js"></script>
+    <script type="module" src="/src/js/gtm-consent-mode.js"></script>
   </head>
   <body class="min-h-screen">
-     <!-- Google Tag Manager (noscript) -->
-     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDTTVCKD"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MDTTVCKD"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- Skip to content link for accessibility -->
     <a
       href="#main-content"
@@ -363,13 +369,13 @@
                 </li>
                 <li class="pt-2">
                   <a
-                  href="/doneer"
-                  class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-                  data-lang-key="nav-donate"
-                  aria-label="Doneer nu aan de ASHE Foundation"
-                >
-                  Doneer
-                </a>
+                    href="/doneer"
+                    class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                    data-lang-key="nav-donate"
+                    aria-label="Doneer nu aan de ASHE Foundation"
+                  >
+                    Doneer
+                  </a>
                 </li>
               </ul>
             </div>
@@ -456,13 +462,13 @@
             <div class="flex items-center space-x-4">
               <!-- Donate Button -->
               <a
-              href="/doneer"
-              class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-              data-lang-key="nav-donate"
-              aria-label="Doneer nu aan de ASHE Foundation"
-            >
-              Doneer
-            </a>
+                href="/doneer"
+                class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                data-lang-key="nav-donate"
+                aria-label="Doneer nu aan de ASHE Foundation"
+              >
+                Doneer
+              </a>
 
               <!-- Language Toggler -->
               <div
@@ -596,26 +602,26 @@
           <div class="relative">
             <!-- Left Navigation Arrow -->
             <button
-            id="prev"
-            class="projecten-nav-button absolute top-1/2 left-0 -translate-y-1/2 bg-terracotta hover:bg-terracotta-light text-white p-2 rounded-full z-10 flex items-center justify-center w-10 h-10"
-            aria-label="Vorige project"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
+              id="prev"
+              class="projecten-nav-button absolute top-1/2 left-0 -translate-y-1/2 bg-terracotta hover:bg-terracotta-light text-white p-2 rounded-full z-10 flex items-center justify-center w-10 h-10"
+              aria-label="Vorige project"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
 
             <!-- Projects Container (Carousel Items) -->
             <div class="overflow-hidden">
@@ -903,26 +909,26 @@
 
             <!-- Right Navigation Arrow -->
             <button
-            id="next"
-            class="projecten-nav-button absolute top-1/2 right-0 -translate-y-1/2 bg-terracotta hover:bg-terracotta-light text-white p-2 rounded-full z-10 flex items-center justify-center w-10 h-10"
-            aria-label="Volgende project"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
+              id="next"
+              class="projecten-nav-button absolute top-1/2 right-0 -translate-y-1/2 bg-terracotta hover:bg-terracotta-light text-white p-2 rounded-full z-10 flex items-center justify-center w-10 h-10"
+              aria-label="Volgende project"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -1109,7 +1115,86 @@
 
           <!-- Blog Cards Grid -->
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Blog Card 1: Real News Item -->
+            <!-- Blog Card 1: New Blog -->
+            <div
+              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
+              role="article"
+              aria-labelledby="new-blog-title"
+            >
+              <img
+                src="img/kidswater2-400w.webp"
+                alt="Water is leven – maar niet voor iedereen"
+                class="w-full h-48 object-cover object-[50%_20%] rounded-t-lg"
+                width="800"
+                height="1200"
+                loading="lazy"
+                srcset="
+                  img/kidswater2-400w.webp 400w,
+                  img/kidswater2-800w.webp 800w
+                "
+                sizes="(max-width: 768px) 100vw, 320px"
+              />
+              <div class="p-6">
+                <div class="flex items-center text-sm text-gray-500 mb-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <time datetime="2025-06-01" data-lang-key="blog-date-june"
+                    >1 juni 2025</time
+                  >
+                </div>
+                <h3
+                  id="new-blog-title"
+                  class="text-xl font-bold text-terracotta mb-3"
+                  data-lang-key="water-is-life-title"
+                >
+                  Water is leven – maar niet voor iedereen
+                </h3>
+                <p
+                  class="text-gray-600 mb-4"
+                  data-lang-key="water-is-life-desc"
+                >
+                  De impact van armoede en uitsluiting. Lees hoe de Maasai
+                  gemeenschap dagelijks vecht voor schoon water.
+                </p>
+
+                <a
+                  href="/blog2.html"
+                  class="text-terracotta font-medium hover:underline inline-flex items-center"
+                  aria-label="Lees meer over Water is leven – maar niet voor iedereen"
+                  data-lang-key="read-more"
+                >
+                  Lees meer
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 ml-1"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Blog Card 2: Drought Blog (moved) -->
             <div
               class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
               role="article"
@@ -1117,7 +1202,7 @@
             >
               <img
                 src="img/kidswater-400w.webp"
-                alt="Droogte in Tanzania - Maasai gemeenschap bij uitgedroogde watervoorziening"
+                alt="Extreme droogte in Tanzania treft Maasai gemeenschap zwaar"
                 class="w-full h-48 object-cover"
                 width="400"
                 height="192"
@@ -1145,88 +1230,29 @@
                       d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                     />
                   </svg>
-                  <time datetime="2025-03-20">1 mei 2025</time>
+                  <time datetime="2025-05-01" data-lang-key="blog-date-may"
+                    >1 mei 2025</time
+                  >
                 </div>
                 <h3
                   id="drought-title"
                   class="text-xl font-bold text-terracotta mb-3"
-                  data-lang-key="drought-title"
+                  data-lang-key="drought-blog-title"
                 >
                   Extreme droogte in Tanzania treft Maasai gemeenschap zwaar
                 </h3>
-                <p class="text-gray-600 mb-4" data-lang-key="drought-text">
+                <p class="text-gray-600 mb-4" data-lang-key="drought-blog-desc">
                   De aanhoudende droogte in Tanzania heeft ernstige gevolgen
-                  voor de Maasai gemeenschap in Loolera. De watervoorzieningen
-                  kunnen de groeiende vraag niet meer aan.
+                  voor de Maasai gemeenschap in Loolera.
                 </p>
+
                 <a
                   href="/blog.html"
                   class="text-terracotta font-medium hover:underline inline-flex items-center"
-                  data-lang-key="read-more"
                   aria-label="Lees meer over de extreme droogte in Tanzania"
+                  data-lang-key="read-more"
                 >
                   Lees meer
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Blog Card 2: Newsletter Signup -->
-            <div
-              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
-              role="article"
-              aria-labelledby="newsletter-title"
-            >
-              <div
-                class="w-full h-48 bg-gradient-to-r from-green-light to-green flex items-center justify-center"
-                aria-hidden="true"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-24 w-24 text-white opacity-70"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-              </div>
-              <div class="p-6">
-                <h3
-                  id="newsletter-title"
-                  class="text-xl font-bold text-terracotta mb-3"
-                  data-lang-key="newsletter-title"
-                >
-                  Blijf op de hoogte
-                </h3>
-                <p class="text-gray-600 mb-4" data-lang-key="newsletter-text">
-                  Schrijf je in voor onze nieuwsbrief en ontvang regelmatig
-                  updates over onze projecten en de impact die we samen maken.
-                </p>
-                <a
-                  href="/contact"
-                  class="text-terracotta font-medium hover:underline inline-flex items-center"
-                  data-lang-key="subscribe-newsletter"
-                  aria-label="Aanmelden voor de ASHE Foundation nieuwsbrief"
-                >
-                  Aanmelden voor nieuwsbrief
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5 ml-1"
@@ -1720,8 +1746,6 @@
     </div>
 
     <!-- Load JavaScript Files -->
-    <script src="./js/translations.js" defer></script>
-    <script src="./js/main.js" defer></script>
-    <script src="./js/modals.js" defer></script>
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

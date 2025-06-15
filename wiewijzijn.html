@@ -176,13 +176,19 @@
     <link rel="stylesheet" href="./css/main.css" />
 
     <!-- Google Tag Manager -->
-    <script src="./js/gtm-consent-mode.js"></script>
-    <script src="./js/gtm.js"></script>
+    <script type="module" src="/src/js/gtm.js"></script>
+    <script type="module" src="/src/js/gtm-consent-mode.js"></script>
   </head>
   <body class="min-h-screen">
-     <!-- Google Tag Manager (noscript) -->
-     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDTTVCKD"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MDTTVCKD"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- Skip to content link for accessibility -->
     <a
       href="#main-content"
@@ -342,13 +348,13 @@
                 </li>
                 <li class="pt-2">
                   <a
-                  href="/doneer"
-                  class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-                  data-lang-key="nav-donate"
-                  aria-label="Doneer nu aan de ASHE Foundation"
-                >
-                  Doneer
-                </a>
+                    href="/doneer"
+                    class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                    data-lang-key="nav-donate"
+                    aria-label="Doneer nu aan de ASHE Foundation"
+                  >
+                    Doneer
+                  </a>
                 </li>
               </ul>
             </div>
@@ -435,13 +441,13 @@
             <div class="flex items-center space-x-4">
               <!-- Donate Button -->
               <a
-              href="/doneer"
-              class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-              data-lang-key="nav-donate"
-              aria-label="Doneer nu aan de ASHE Foundation"
-            >
-              Doneer
-            </a>
+                href="/doneer"
+                class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                data-lang-key="nav-donate"
+                aria-label="Doneer nu aan de ASHE Foundation"
+              >
+                Doneer
+              </a>
 
               <!-- Language Toggler -->
               <div
@@ -567,7 +573,8 @@
               data-lang-key="board-description"
             >
               Het bestuur van Ashe Foundation bestaat uit drie leden en zijn
-              gezamenlijk bevoegd.<br />
+              gezamenlijk bevoegd. Daarnaast werken we nauw samen met toegewijde
+              teamleden en lokale partners.<br />
               Er worden geen financiële uitkeringen gedaan aan de bestuurders
               van Ashe Foundation.<br /><br />
               Alle donaties aan Ashe Foundation worden slechts gebruikt voor de
@@ -662,6 +669,7 @@
                       src="/img/rox-144w.webp"
                       alt="Roxane Root"
                       class="mx-auto rounded-full w-36 h-36 shadow-lg mb-6"
+                      style="object-position: center 80%; transform: scale(0.9)"
                       width="144"
                       height="144"
                       loading="lazy"
@@ -978,7 +986,7 @@
               </div>
             </div>
 
-            <!-- Carousel Controls - Now correctly positioned OUTSIDE the carousel-inner but still inside the carousel container -->
+            <!-- Carousel Controls -->
             <button
               class="carousel-control carousel-control-prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-terracotta hover:bg-terracotta-light rounded-full p-2 shadow-lg z-10"
               id="carousel-prev"
@@ -1793,8 +1801,6 @@
     </div>
 
     <!-- Load JavaScript Files -->
-    <script src="./js/translations.js" defer></script>
-    <script src="./js/main.js" defer></script>
-    <script src="./js/modals.js" defer></script>
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

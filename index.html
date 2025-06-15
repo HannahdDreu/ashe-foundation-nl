@@ -56,9 +56,30 @@
     <link rel="preload" href="/css/main.css" as="style" />
 
     <!-- Page-specific preloads -->
-<link rel="preload" href="/img/maasai-water-view-800w.webp" as="image" type="image/webp" media="(max-width: 800px)" fetchpriority="high" />
-<link rel="preload" href="/img/maasai-water-view-1200w.webp" as="image" type="image/webp" media="(min-width: 801px) and (max-width: 1200px)" fetchpriority="high" />
-<link rel="preload" href="/img/maasai-water-view.webp" as="image" type="image/webp" media="(min-width: 1201px)" fetchpriority="high" />
+    <link
+      rel="preload"
+      href="/img/maasai-water-view-800w.webp"
+      as="image"
+      type="image/webp"
+      media="(max-width: 800px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="/img/maasai-water-view-1200w.webp"
+      as="image"
+      type="image/webp"
+      media="(min-width: 801px) and (max-width: 1200px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="/img/maasai-water-view.webp"
+      as="image"
+      type="image/webp"
+      media="(min-width: 1201px)"
+      fetchpriority="high"
+    />
 
     <link
       rel="preload"
@@ -243,13 +264,19 @@
     <link rel="stylesheet" href="./css/main.css" />
 
     <!-- Google Tag Manager -->
-    <script src="./js/gtm-consent-mode.js"></script>
-    <script src="./js/gtm.js"></script>
+    <script type="module" src="/src/js/gtm.js"></script>
+    <script type="module" src="/src/js/gtm-consent-mode.js"></script>
   </head>
   <body class="min-h-screen">
-     <!-- Google Tag Manager (noscript) -->
-     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDTTVCKD"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MDTTVCKD"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- Skip to content link for accessibility -->
     <a
       href="#main-content"
@@ -410,13 +437,13 @@
                 </li>
                 <li class="pt-2">
                   <a
-                  href="/doneer"
-                  class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-                  data-lang-key="nav-donate"
-                  aria-label="Doneer nu aan de ASHE Foundation"
-                >
-                  Doneer
-                </a>
+                    href="/doneer"
+                    class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                    data-lang-key="nav-donate"
+                    aria-label="Doneer nu aan de ASHE Foundation"
+                  >
+                    Doneer
+                  </a>
                 </li>
               </ul>
             </div>
@@ -505,13 +532,13 @@
             <div class="flex items-center space-x-4">
               <!-- Donate Button -->
               <a
-              href="/doneer"
-              class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-              data-lang-key="nav-donate"
-              aria-label="Doneer nu aan de ASHE Foundation"
-            >
-              Doneer
-            </a>
+                href="/doneer"
+                class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                data-lang-key="nav-donate"
+                aria-label="Doneer nu aan de ASHE Foundation"
+              >
+                Doneer
+              </a>
 
               <!-- Language Toggler -->
               <div
@@ -1126,13 +1153,13 @@
               </div>
               <div class="mt-6 text-center">
                 <a
-                href="/doneer"
-                class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-                data-lang-key="nav-donate"
-                aria-label="Doneer nu aan de ASHE Foundation"
-              >
-                Doneer
-              </a>
+                  href="/doneer"
+                  class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                  data-lang-key="nav-donate"
+                  aria-label="Doneer nu aan de ASHE Foundation"
+                >
+                  Doneer
+                </a>
               </div>
             </div>
           </div>
@@ -1532,13 +1559,13 @@
                   <div class="flex items-center mb-2">
                     <span class="text-yellow-400 mr-2 text-xl">👉</span>
                     <a
-                    href="/doneer"
-                    class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-                    data-lang-key="nav-donate"
-                    aria-label="Doneer nu aan de ASHE Foundation"
-                  >
-                    Doneer
-                  </a>
+                      href="/doneer"
+                      class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                      data-lang-key="nav-donate"
+                      aria-label="Doneer nu aan de ASHE Foundation"
+                    >
+                      Doneer
+                    </a>
                   </div>
                   <p class="text-white text-center">
                     and make a difference for thousands of Maasai.
@@ -2109,8 +2136,6 @@
     </div>
 
     <!-- Load JavaScript Files -->
-    <script src="./js/translations.js" defer></script>
-    <script src="./js/main.js" defer></script>
-    <script src="./js/modals.js" defer></script>
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

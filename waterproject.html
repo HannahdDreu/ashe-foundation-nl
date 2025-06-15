@@ -201,13 +201,19 @@
     <link rel="stylesheet" href="/css/main.css" />
 
     <!-- Google Tag Manager -->
-    <script src="./js/gtm-consent-mode.js"></script>
-    <script src="./js/gtm.js"></script>
+    <script type="module" src="/src/js/gtm.js"></script>
+    <script type="module" src="/src/js/gtm-consent-mode.js"></script>
   </head>
   <body class="min-h-screen water-project">
-     <!-- Google Tag Manager (noscript) -->
-     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDTTVCKD"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MDTTVCKD"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- Skip to content link for accessibility -->
     <a
       href="#main-content"
@@ -367,13 +373,13 @@
                 </li>
                 <li class="pt-2">
                   <a
-                  href="/doneer"
-                  class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-                  data-lang-key="nav-donate"
-                  aria-label="Doneer nu aan de ASHE Foundation"
-                >
-                  Doneer
-                </a>
+                    href="/doneer"
+                    class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                    data-lang-key="nav-donate"
+                    aria-label="Doneer nu aan de ASHE Foundation"
+                  >
+                    Doneer
+                  </a>
                 </li>
               </ul>
             </div>
@@ -461,13 +467,13 @@
             <div class="flex items-center space-x-4">
               <!-- Donate Button -->
               <a
-              href="/doneer"
-              class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-              data-lang-key="nav-donate"
-              aria-label="Doneer nu aan de ASHE Foundation"
-            >
-              Doneer
-            </a>
+                href="/doneer"
+                class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                data-lang-key="nav-donate"
+                aria-label="Doneer nu aan de ASHE Foundation"
+              >
+                Doneer
+              </a>
 
               <!-- Language Toggler -->
               <div
@@ -855,8 +861,7 @@
                     class="inline-block w-3 h-3 bg-yellow rounded-full mr-3 flex-shrink-0 mt-1.5"
                   ></span>
                   <span data-lang-key="cost-cta-2"
-                    >Doneer 50 euro en voorzie 30 mensen van schoon
-                    water.</span
+                    >Doneer 50 euro en voorzie 30 mensen van schoon water.</span
                   >
                 </p>
               </div>
@@ -899,11 +904,24 @@
               </h3>
 
               <!-- Progress Bar -->
-              <div class="mb-6" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="65% van het doel bereikt">
+              <div
+                class="mb-6"
+                role="progressbar"
+                aria-valuenow="65"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="65% van het doel bereikt"
+              >
                 <div class="w-full bg-gray-200 rounded-full h-4">
-                  <div class="bg-terracotta h-4 rounded-full progress-bar" style="width: 0%"></div>
+                  <div
+                    class="bg-terracotta h-4 rounded-full progress-bar"
+                    style="width: 0%"
+                  ></div>
                 </div>
-                <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
+                <script
+                  src="https://donorbox.org/widget.js"
+                  paypalExpress="false"
+                ></script>
                 <iframe
                   height="93px"
                   width="100%"
@@ -1516,8 +1534,6 @@
     </div>
 
     <!-- Load JavaScript Files -->
-    <script src="./js/translations.js" defer></script>
-    <script src="./js/main.js" defer></script>
-    <script src="./js/modals.js" defer></script>
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

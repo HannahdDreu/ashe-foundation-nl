@@ -1,5 +1,5 @@
 // Translations data
-const translations = {
+export const translations = {
   nl: {
     // GENERAL
     // Navigation
@@ -25,7 +25,8 @@ const translations = {
 
     // Cookie banner
     "cookie-title": "Cookies op deze website",
-    "cookie-text-part1": "Wij gebruiken cookies om jou de beste ervaring op onze website te geven. In",
+    "cookie-text-part1":
+      "Wij gebruiken cookies om jou de beste ervaring op onze website te geven. In",
     "cookie-text-part2": "onze privacy verklaring",
     "cookie-text-part3": "lees je meer over de cookies die wij gebruiken.",
     "cookie-agree": "Ik ga akkoord",
@@ -33,7 +34,8 @@ const translations = {
 
     // INDEX FILE
     // Hero section
-    "hero-title": "\"Een positieve impact op iemands leven creëert een dynamiek van wederzijdse dankbaarheid.\" - Ashe Foundation",
+    "hero-title":
+      '"Een positieve impact op iemands leven creëert een dynamiek van wederzijdse dankbaarheid." - Ashe Foundation',
     "hero-subtitle":
       "Wij werken aan een wereld waarin de Maasai gemeenschap kansen heeft om het goede leven en het eigen geluk na te streven.",
     "hero-btn-projects": "Ontdek onze projecten",
@@ -117,7 +119,8 @@ const translations = {
     "become-donor": "Word donateur",
 
     // WATWEDOEN PAGE
-    "hero-title-1": "Ashe Foundation versterkt de bestaanszekerheid van de Maasai in Tanzania",
+    "hero-title-1":
+      "Ashe Foundation versterkt de bestaanszekerheid van de Maasai in Tanzania",
     "discover-title": "Ontdek wat wij doen",
     "mission-card-title": "Onze missie",
     "mission-card-desc":
@@ -171,7 +174,7 @@ const translations = {
       "Samen werken wij aan een betere toekomst voor de Maasai gemeenschap",
     "board-title": "Het bestuur",
     "board-description":
-      "Het bestuur van Ashe Foundation bestaat uit drie leden en zijn gezamenlijk bevoegd.<br />Er worden geen financiële uitkeringen gedaan aan de bestuurders van Ashe Foundation.<br /><br />Alle donaties aan Ashe Foundation worden slechts gebruikt voor de missie van Ashe Foundation.",
+      "Het bestuur van Ashe Foundation bestaat uit drie leden en zijn gezamenlijk bevoegd. Daarnaast werken we nauw samen met toegewijde teamleden en lokale partners.<br />Er worden geen financiële uitkeringen gedaan aan de bestuurders, teamleden of lokale partners van Ashe Foundation.<br /><br />Alle donaties aan Ashe Foundation worden slechts gebruikt voor de missie van Ashe Foundation.",
     "member-amy-name": "Amory Berkenveld - Oropi",
     "member-amy-title": "Oprichter en voorzitter",
     "member-amy-bio":
@@ -180,7 +183,8 @@ const translations = {
     "member-roxane-title": "Secretaris",
     "member-roxane-bio":
       "Met een achtergrond in het secretariaat zal Roxane Root binnen Ashe Foundation de functie van secretaris vervullen. Zij zal ondersteuning bieden bij vergaderingen, waarin de op te nemen projecten besproken worden en bestuursbesluiten genomen worden.",
-    "member-roxane-full-bio-2": "Deze vergaderingen zullen genotuleerd worden. In de basis hoort deze taak bij de secretaris. Roxane is heel erg dankbaar dat zij op deze manier kan bijdragen aan de welzijn van de maasai gemeenschap in Tanzania.",
+    "member-roxane-full-bio-2":
+      "Deze vergaderingen zullen genotuleerd worden. In de basis hoort deze taak bij de secretaris. Roxane is heel erg dankbaar dat zij op deze manier kan bijdragen aan de welzijn van de maasai gemeenschap in Tanzania.",
     "member-hannah-name": "Hannah de Dreu",
     "member-hannah-title": "Penningmeester",
     "member-hannah-bio":
@@ -203,7 +207,8 @@ const translations = {
       "Als voorzitter werk ik nauw samen met onze partners, bestuursleden en vrijwilligers om ervoor te zorgen dat onze missie wordt verwezenlijkt: het creëren van een wereld waarin de Maasai gemeenschap kansen heeft om het goede leven en het eigen geluk na te streven.",
     "member-roxane-full-bio-1":
       "Met een achtergrond in het secretariaat zal Roxane Root binnen Ashe Foundation de functie van secretaris vervullen. Zij zal ondersteuning bieden bij vergaderingen, waarin de op te nemen projecten besproken worden en bestuursbesluiten genomen worden. Deze vergaderingen zullen genotuleerd worden en Roxane zal deze taak als secretaris op zich nemen.",
-      "member-roxane-full-bio-2": "Deze vergaderingen zullen genotuleerd worden. In de basis hoort deze taak bij de secretaris. Roxane is heel erg dankbaar dat zij op deze manier kan bijdragen aan de welzijn van de maasai gemeenschap in Tanzania.",
+    "member-roxane-full-bio-2":
+      "Deze vergaderingen zullen genotuleerd worden. In de basis hoort deze taak bij de secretaris. Roxane is heel erg dankbaar dat zij op deze manier kan bijdragen aan de welzijn van de maasai gemeenschap in Tanzania.",
     "member-hannah-full-bio-2":
       "Met mijn achtergrond in operations en digitale projecten ondersteun ik Ashe Foundation als penningmeester en beheer ik de website. Bij mijn huidige werk, bij een Insuretech houd ik me bezig met procesoptimalisatie en development, en die kennis zet ik met plezier ook voor de stichting in.",
     "member-hannah-full-bio-3":
@@ -284,6 +289,17 @@ const translations = {
       "Tijdens een recente dorpsvergadering in Loolera hebben gemeenschapsleiders en inwoners nieuwe prioriteiten vastgesteld voor lokale ontwikkelingsprojecten.",
     "view-all-news": "Bekijk alle nieuwsberichten",
 
+    // Blog cards on projects page
+    "blog-date-june": "1 juni 2025",
+    "blog-date-may": "1 mei 2025",
+    "water-is-life-title": "Water is leven – maar niet voor iedereen",
+    "water-is-life-desc":
+      "De impact van armoede en uitsluiting. Lees hoe de Maasai gemeenschap dagelijks vecht voor schoon water.",
+    "drought-blog-title":
+      "Extreme droogte in Tanzania treft Maasai gemeenschap zwaar",
+    "drought-blog-desc":
+      "De aanhoudende droogte in Tanzania heeft ernstige gevolgen voor de Maasai gemeenschap in Loolera.",
+
     // New Project CardS
     "suggest-project": "Idee voor een project?",
     "suggest-project-description":
@@ -299,6 +315,8 @@ const translations = {
     "coming-soon-text":
       "We werken hard aan nieuwe projecten en updates. Volg ons op social media voor de meest actuele informatie en verhalen uit Tanzania.",
     "follow-social-media": "Volg ons op social media",
+    "newsletter-email-placeholder": "jouw@email.nl",
+    "newsletter-name-placeholder": "Jouw naam",
 
     // CONTACT PAGE
     "contact-title": "Neem contact met ons op",
@@ -328,7 +346,7 @@ const translations = {
       "Ik geef toestemming aan ASHE Foundation om mijn gegevens te gebruiken voor het versturen van nieuwsbrieven en informatie over campagnes en activiteiten. Voor meer informatie zie onze privacyverklaring.",
     "newsletter-submit": "Inschrijven",
     "newsletter-privacy-notice":
-      "Je kunt je op elk moment uitschrijven via de link onderaan elke e-mail. Door je aan te melden stem je ermee in dat wij je persoonlijke gegevens verwerken zoals beschreven in onze <a href=\"/privacystatement.html\" class=\"text-terracotta hover:underline\" target=\"_blank\" rel=\"noopener\" aria-label=\"Bekijk onze privacyverklaring (opent in nieuw tabblad)\">privacyverklaring</a>.",
+      'Je kunt je op elk moment uitschrijven via de link onderaan elke e-mail. Door je aan te melden stem je ermee in dat wij je persoonlijke gegevens verwerken zoals beschreven in onze <a href="/privacystatement.html" class="text-terracotta hover:underline" target="_blank" rel="noopener" aria-label="Bekijk onze privacyverklaring (opent in nieuw tabblad)">privacyverklaring</a>.',
     "get-involved": "Word onderdeel van onze missie",
     "get-involved-text":
       "Help ons de bestaanszekerheid van de Maasai gemeenschap te versterken. Samen kunnen we een blijvende impact maken.",
@@ -421,7 +439,8 @@ const translations = {
       "Na twee maanden draait de winkel goed. Naserian heeft een stabiel inkomen en kan haar kinderen naar school sturen.",
     "naserian-photo-gallery": "Foto's van de winkel",
     "naserian-gallery-img1-caption": "De nieuwe winkel",
-    "naserian-gallery-img2-caption": "Naserian met een aantal van haar kinderen",
+    "naserian-gallery-img2-caption":
+      "Naserian met een aantal van haar kinderen",
     "naserian-gallery-img3-caption": "De kleding in de winkel",
     "naserian-impact-title": "De impact van het project",
     "naserian-impact-1-title": "Mensen uit de armoede geholpen",
@@ -517,72 +536,131 @@ const translations = {
     "neema-name": "Neema",
 
     // Blog content
+    "drought-title":
+      "Extreme droogte in Tanzania treft Maasai gemeenschap zwaar",
+    category: "Klimaatverandering",
+    "blog-intro":
+      "Terwijl de wereld zich richt op klimaatverandering, voltrekt zich in het binnenland van Tanzania een stille ramp. De aanhoudende droogte heeft verwoestende gevolgen voor de Maasai-gemeenschappen, die afhankelijk zijn van veeteelt voor hun levensonderhoud.",
+    "climate-change-title": "Klimaatverandering en extreme weersomstandigheden",
+    "climate-change-text":
+      "Tanzania heeft in 2024 het heetste jaar ooit geregistreerd, met ongekend hoge nachttemperaturen (bron: Down to Earth). Hoewel sommige gebieden te maken kregen met overstromingen, blijven andere regio's, zoals het binnenland, kampen met ernstige droogte.",
+    "drought-landscape-caption":
+      "Verdroogd landschap in het binnenland van Tanzania, 2025",
+    "impact-maasai-title": "Impact op de Maasai-gemeenschappen",
+    "impact-maasai-text1":
+      "De Maasai, bekend om hun nomadische veeteelt, worden zwaar getroffen. Veel vee is gestorven door gebrek aan water en voedsel, wat leidt tot voedselonzekerheid en armoede. Volgens de UNDP proberen Maasai-gemeenschappen hun graslanden te herstellen door inheemse planten te gebruiken.",
+    "impact-maasai-text2":
+      "In het dorp Loolera, waar ASHE Foundation actief is, heeft de watervoorziening het bijzonder moeilijk om aan de groeiende vraag te voldoen. Vele families moeten nu urenlange tochten maken om aan schoon drinkwater te komen. De situatie verslechtert met de dag, vooral voor kwetsbare groepen zoals kinderen, ouderen en zwangere vrouwen.",
+    "maasai-quote":
+      '"We hebben nog nooit zo\'n droogte meegemaakt. Onze dieren sterven en onze kinderen hebben niet genoeg water. We moeten elke dag verder lopen om water te vinden."',
+    "maasai-quote-attribution": "— Naserian, lokale Maasai-vrouw uit Loolera",
+    "sustainable-solutions-title": "Duurzame oplossingen en veerkracht",
+    "sustainable-solutions-text1":
+      "Ondanks de enorme uitdagingen tonen de Maasai veerkracht. Door herstel van graslanden met inheemse planten en kleinschalige irrigatie-initiatieven wordt geprobeerd de effecten van de droogte tegen te gaan. Dit soort projecten bewijst dat lokale kennis essentieel is voor klimaataanpassing.",
+    "sustainable-solutions-text2":
+      "ASHE Foundation werkt nauw samen met lokale partners en gemeenschapsleiders om duurzame oplossingen te implementeren die zowel onmiddellijke hulp bieden als langetermijnveerkracht opbouwen.",
+    "water-project-title": "Project Water: Een levensreddend initiatief",
+    "water-project-text1":
+      'Als antwoord op deze crisis heeft ASHE Foundation het "Project Water" gelanceerd. Dit project is gericht op het verbeteren van de waterinfrastructuur in Loolera en omgeving, waardoor ongeveer 10.000 Maasai toegang krijgen tot schoon drinkwater.',
+    "water-project-text2":
+      "Het project omvat het aanleggen van waterpunten, het boren van waterputten en het installeren van duurzame pompsystemen. Daarnaast worden lokale gemeenschapsleden opgeleid in waterbeheer en -onderhoud, zodat het project op lange termijn zelfvoorzienend kan zijn.",
+    "how-help-title": "Hoe u kunt helpen",
+    "how-help-intro":
+      "ASHE Foundation zet zich actief in om de Maasai-gemeenschappen te ondersteunen door:",
+    "how-help-point1": "Het aanleggen van waterinfrastructuur",
+    "how-help-point2": "Het aanleggen van watervoorzieningen",
+    "how-help-point3": "Het bieden van noodhulp in tijden van crisis",
+    "how-help-text1":
+      "Uw donatie kan een direct verschil maken. Samen kunnen we werken aan een duurzamere en veerkrachtigere toekomst voor de Maasai in Tanzania.",
+    "how-help-text2":
+      "Met slechts 5 euro kunt u al 3 mensen voorzien van schoon drinkwater! Uw hulp is hard nodig!",
+    "be-part-solution": "Word deel van de oplossing",
+    "be-part-solution-text":
+      "Samen kunnen we de Maasai-gemeenschap in Tanzania helpen door deze moeilijke periode heen te komen.",
+    "donate-water-project": "Doneer nu voor Project Water",
+    "share-article": "Deel dit artikel",
+    "share-linkedin": "Delen op LinkedIn",
+    "share-instagram": "Delen op Instagram",
+    "share-facebook": "Delen op Facebook",
+    "share-twitter": "Delen op Twitter/X",
+    "related-articles": "Gerelateerde artikelen",
+    "naserian-shop-title": "Naserian's Winkel: Een succesverhaal",
+    "naserian-shop-desc":
+      "Hoe het openen van een winkel het leven van Naserian en haar gemeenschap heeft verbeterd.",
+    "neema-dream-title": "Neema's Droom: Van visie naar werkelijkheid",
+    "neema-dream-desc":
+      "Het inspirerende verhaal van Neema en hoe ze haar droom van een eigen winkel realiseerde.",
+    "back-to-projects": "Terug naar Projecten",
+    "instagram-copied-tooltip": "Tekst gekopieerd! Plak in Instagram",
 
-    // Blog Page Translations - Dutch
-"drought-title": "Extreme droogte in Tanzania treft Maasai gemeenschap zwaar",
-"category": "Klimaatverandering",
-"blog-intro": "Terwijl de wereld zich richt op klimaatverandering, voltrekt zich in het binnenland van Tanzania een stille ramp. De aanhoudende droogte heeft verwoestende gevolgen voor de Maasai-gemeenschappen, die afhankelijk zijn van veeteelt voor hun levensonderhoud.",
-"climate-change-title": "Klimaatverandering en extreme weersomstandigheden",
-"climate-change-text": "Tanzania heeft in 2024 het heetste jaar ooit geregistreerd, met ongekend hoge nachttemperaturen (bron: Down to Earth). Hoewel sommige gebieden te maken kregen met overstromingen, blijven andere regio's, zoals het binnenland, kampen met ernstige droogte.",
-"drought-landscape-caption": "Verdroogd landschap in het binnenland van Tanzania, 2025",
-"impact-maasai-title": "Impact op de Maasai-gemeenschappen",
-"impact-maasai-text1": "De Maasai, bekend om hun nomadische veeteelt, worden zwaar getroffen. Veel vee is gestorven door gebrek aan water en voedsel, wat leidt tot voedselonzekerheid en armoede. Volgens de UNDP proberen Maasai-gemeenschappen hun graslanden te herstellen door inheemse planten te gebruiken.",
-"impact-maasai-text2": "In het dorp Loolera, waar ASHE Foundation actief is, heeft de watervoorziening het bijzonder moeilijk om aan de groeiende vraag te voldoen. Vele families moeten nu urenlange tochten maken om aan schoon drinkwater te komen. De situatie verslechtert met de dag, vooral voor kwetsbare groepen zoals kinderen, ouderen en zwangere vrouwen.",
-"maasai-quote": "\"We hebben nog nooit zo'n droogte meegemaakt. Onze dieren sterven en onze kinderen hebben niet genoeg water. We moeten elke dag verder lopen om water te vinden.\"",
-"maasai-quote-attribution": "— Naserian, lokale Maasai-vrouw uit Loolera",
-"sustainable-solutions-title": "Duurzame oplossingen en veerkracht",
-"sustainable-solutions-text1": "Ondanks de enorme uitdagingen tonen de Maasai veerkracht. Door herstel van graslanden met inheemse planten en kleinschalige irrigatie-initiatieven wordt geprobeerd de effecten van de droogte tegen te gaan. Dit soort projecten bewijst dat lokale kennis essentieel is voor klimaataanpassing.",
-"sustainable-solutions-text2": "ASHE Foundation werkt nauw samen met lokale partners en gemeenschapsleiders om duurzame oplossingen te implementeren die zowel onmiddellijke hulp bieden als langetermijnveerkracht opbouwen.",
-"water-project-title": "Project Water: Een levensreddend initiatief",
-"water-project-text1": "Als antwoord op deze crisis heeft ASHE Foundation het \"Project Water\" gelanceerd. Dit project is gericht op het verbeteren van de waterinfrastructuur in Loolera en omgeving, waardoor ongeveer 10.000 Maasai toegang krijgen tot schoon drinkwater.",
-"water-project-text2": "Het project omvat het aanleggen van waterpunten, het boren van waterputten en het installeren van duurzame pompsystemen. Daarnaast worden lokale gemeenschapsleden opgeleid in waterbeheer en -onderhoud, zodat het project op lange termijn zelfvoorzienend kan zijn.",
-"how-help-title": "Hoe u kunt helpen",
-"how-help-intro": "ASHE Foundation zet zich actief in om de Maasai-gemeenschappen te ondersteunen door:",
-"how-help-point1": "Het aanleggen van waterinfrastructuur",
-"how-help-point2": "Het aanleggen van watervoorzieningen",
-"how-help-point3": "Het bieden van noodhulp in tijden van crisis",
-"how-help-text1": "Uw donatie kan een direct verschil maken. Samen kunnen we werken aan een duurzamere en veerkrachtigere toekomst voor de Maasai in Tanzania.",
-"how-help-text2": "Met slechts 5 euro kunt u al 3 mensen voorzien van schoon drinkwater! Uw hulp is hard nodig!",
-"be-part-solution": "Word deel van de oplossing",
-"be-part-solution-text": "Samen kunnen we de Maasai-gemeenschap in Tanzania helpen door deze moeilijke periode heen te komen.",
-"donate-water-project": "Doneer nu voor Project Water",
-"share-article": "Deel dit artikel",
-"share-linkedin": "Delen op LinkedIn",
-"share-instagram": "Delen op Instagram",
-"share-facebook": "Delen op Facebook",
-"share-twitter": "Delen op Twitter/X",
-"related-articles": "Gerelateerde artikelen",
-"naserian-shop-title": "Naserian's Winkel: Een succesverhaal",
-"naserian-shop-desc": "Hoe het openen van een winkel het leven van Naserian en haar gemeenschap heeft verbeterd.",
-"neema-dream-title": "Neema's Droom: Van visie naar werkelijkheid",
-"neema-dream-desc": "Het inspirerende verhaal van Neema en hoe ze haar droom van een eigen winkel realiseerde.",
-"back-to-projects": "Terug naar Projecten",
+    // BLOG - Poverty Impact Article
+    "blog-poverty-title": "De impact van armoede en uitsluiting",
+    "blog-date": "14 juni 2025",
+    "blog-category": "Klimaatverandering",
+    "blog-poverty-intro": "De impact van armoede en uitsluiting",
+    "blog-poverty-paragraph1":
+      "De Maasai behoren tot de oorspronkelijke bevolkingsgroepen van Tanzania. Als semi-nomadisch volk leven zij al generaties lang dicht bij de natuur. Maar als 'minority' staan zij sociaal, economisch en politiek vaak aan de zijlijn. Grondrechten worden geschonden, hun leefgebieden worden kleiner en overheidssteun is minimaal. De gevolgen? Structurele armoede, weinig infrastructuur en geen toegang tot basisvoorzieningen zoals schoon water.",
 
-// DONATE PAGE
-"donate-hero-title": "Help de Maasai gemeenschap",
-"donate-hero-subtitle": "Jouw donatie maakt direct verschil voor duizenden mensen in Tanzania",
-"donation-form-title": "Doneer online",
-"donation-form-subtitle": "Kies het bedrag dat bij je past. Elke bijdrage, groot of klein, maakt verschil.",
-"bank-transfer-title": "Of doneer via bankoverschrijving",
-"bank-transfer-subtitle": "Liever direct overmaken? Gebruik onderstaande gegevens voor uw donatie.",
-"bank-details-title": "Bankgegevens ASHE Foundation",
-"bank-name-label": "Banknaam:",
-"account-number-label": "Rekeningnummer:",
-"account-holder-label": "Rekeninghouder:",
-"bic-label": "BIC/SWIFT:",
-"bank-transfer-note": "Vergeet niet: Vermeld bij uw overschrijving uw naam en e-mailadres zodat wij u een donatiebewijs kunnen toesturen voor de belastingdienst.",
-"anbi-info-title": "Fiscaal aftrekbaar doneren",
-"anbi-status-title": "Erkende ANBI Status",
-"anbi-status-text": "Als erkende ANBI stichting voldoen wij aan strenge eisen voor transparantie en effectiviteit. Dit betekent dat uw donaties fiscaal aftrekbaar zijn.",
-"anbi-benefit-1": "Donaties zijn fiscaal aftrekbaar van uw belasting",
-"anbi-benefit-2": "100% van uw donatie gaat naar onze projecten",
-"anbi-benefit-3": "Volledige transparantie in onze financiële rapportage",
-"payment-methods-title": "Betaalmogelijkheden",
-"payment-ideal": "iDEAL",
-"payment-bank": "Bankoverschrijving",
-"payment-recurring": "Periodieke Gift",
-"payment-paypal": "PayPal",
-"secure-payment": "Alle betalingen worden veilig verwerkt via Donorbox",
+    "blog-water-struggle-title":
+      "In het droge binnenland van Tanzania is schoon water een dagelijks gevecht",
+    "blog-water-struggle-text":
+      "Terwijl wij in Nederland zonder na te denken de kraan opendraaien, ziet de realiteit er voor de Maasai-gemeenschappen in het binnenland van Tanzania heel anders uit. In dorpen als Loolera en Lembapuli is toegang tot schoon drinkwater geen vanzelfsprekendheid, maar een dagelijkse strijd.",
+
+    "blog-women-burden-title": "Vrouwen en kinderen dragen de last",
+    "blog-women-burden-text":
+      "Elke ochtend lopen vrouwen en kinderen kilometers om water te halen. Niet alleen is dat water vaak vervuild, het kost ook enorm veel tijd en energie. Watertekorten beïnvloeden niet alleen de gezondheid, maar ook onderwijs, landbouw en economische kansen.",
+
+    "blog-water-rights-title": "Waterinfrastructuur als mensenrecht",
+    "blog-water-rights-text":
+      "Stichting Ashe Foundation zet zich samen met lokale partners in voor duurzame wateroplossingen in de regio. Met relatief eenvoudige middelen – zoals regenwateropvang, watertanks en leidingsystemen – kunnen we een wereld van verschil maken. Het verbeteren van de waterinfrastructuur betekent niet alleen schoner water, maar ook:",
+
+    "blog-benefit-education": "meer tijd voor onderwijs",
+    "blog-benefit-health": "minder ziektes",
+    "blog-benefit-economy": "economische ontwikkeling",
+    "blog-benefit-equality": "meer gelijkheid en waardigheid",
+
+    "blog-together-title": "Samen maken we het verschil",
+    "blog-together-text":
+      "Jij kunt helpen. Met een donatie steun je direct projecten die het leven van de Maasai-gemeenschappen structureel verbeteren. Geen luxe, maar mensenrechten.",
+
+    // Related articles
+    "related-articles": "Gerelateerde artikelen",
+    "related-drought-title":
+      "Extreme droogte in Tanzania treft Maasai gemeenschap",
+    "related-drought-desc":
+      "Lees hoe de aanhoudende droogte de Maasai treft en wat ASHE Foundation doet om schoon water te bieden.",
+    "read-more": "Lees meer",
+
+    // DONATE PAGE
+    "donate-hero-title": "Help de Maasai gemeenschap",
+    "donate-hero-subtitle":
+      "Jouw donatie maakt direct verschil voor duizenden mensen in Tanzania",
+    "donation-form-title": "Doneer online",
+    "donation-form-subtitle":
+      "Kies het bedrag dat bij je past. Elke bijdrage, groot of klein, maakt verschil.",
+    "bank-transfer-title": "Of doneer via bankoverschrijving",
+    "bank-transfer-subtitle":
+      "Liever direct overmaken? Gebruik onderstaande gegevens voor uw donatie.",
+    "bank-details-title": "Bankgegevens ASHE Foundation",
+    "bank-name-label": "Banknaam:",
+    "account-number-label": "Rekeningnummer:",
+    "account-holder-label": "Rekeninghouder:",
+    "bic-label": "BIC/SWIFT:",
+    "bank-transfer-note":
+      "Vergeet niet: Vermeld bij uw overschrijving uw naam en e-mailadres zodat wij u een donatiebewijs kunnen toesturen voor de belastingdienst.",
+    "anbi-info-title": "Fiscaal aftrekbaar doneren",
+    "anbi-status-title": "Erkende ANBI Status",
+    "anbi-status-text":
+      "Als erkende ANBI stichting voldoen wij aan strenge eisen voor transparantie en effectiviteit. Dit betekent dat uw donaties fiscaal aftrekbaar zijn.",
+    "anbi-benefit-1": "Donaties zijn fiscaal aftrekbaar van uw belasting",
+    "anbi-benefit-2": "100% van uw donatie gaat naar onze projecten",
+    "anbi-benefit-3": "Volledige transparantie in onze financiële rapportage",
+    "payment-methods-title": "Betaalmogelijkheden",
+    "payment-ideal": "iDEAL",
+    "payment-bank": "Bankoverschrijving",
+    "payment-recurring": "Periodieke Gift",
+    "payment-paypal": "PayPal",
+    "secure-payment": "Alle betalingen worden veilig verwerkt via Donorbox",
 
     // Financial page translations
     "financial-title": "Jaarverslag en Jaarrekeningen",
@@ -629,118 +707,173 @@ const translations = {
     "contact-us": "Neem contact op",
 
     //Privacyverklaring
-"privacy-title": "Privacyverklaring",
-"privacy-intro": "Stichting Ashe Foundation, gevestigd aan Rietgras 3, 8043 KJ Zwolle, is verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring.",
-"privacy-contact-title": "Contactgegevens",
-"privacy-contact-content": "Website: https://ashefoundation.nl<br>Adres: Rietgras 3, 8043 KJ Zwolle<br>Telefoon: +31 6 29314363<br>E-mail: info@ashefoundation.nl",
-"privacy-data-title": "Persoonsgegevens die wij verwerken",
-"privacy-data-intro": "Wij verwerken jouw persoonsgegevens omdat je gebruik maakt van onze diensten of omdat je deze zelf aan ons verstrekt. Het gaat om de volgende gegevens:",
-"privacy-sensitive-title": "Bijzondere en/of gevoelige persoonsgegevens",
-"privacy-sensitive-content": "Onze website of diensten hebben niet de intentie gegevens te verzamelen over bezoekers jonger dan 16 jaar, tenzij ze toestemming hebben van ouders of voogd. Kun je aantonen dat wij onbedoeld gegevens van een minderjarige hebben verwerkt, neem dan contact met ons op via info@ashefoundation.nl, dan verwijderen wij die gegevens.",
-"privacy-purpose-title": "Met welk doel en op basis van welke grondslag verwerken wij persoonsgegevens?",
-"privacy-purpose-intro": "Wij verwerken persoonsgegevens voor de volgende doelen:",
-"privacy-newsletters-title": "Nieuwsbrieven",
-"privacy-newsletters-content": "Als je je inschrijft voor onze nieuwsbrief, gebruiken we jouw naam en e-mailadres om je via een emailmarketingsoftware op de hoogte te houden van onze activiteiten. Die voldoet aan de Europese privacywetgeving (GDPR). Je kunt je altijd afmelden via de afmeldlink onderaan elke mail.",
-"privacy-retention-title": "Bewaartermijn persoonsgegevens",
-"privacy-retention-content": "Wij bewaren je persoonsgegevens niet langer dan nodig is voor het doel waarvoor ze zijn verzameld. Voor donateurs gelden fiscale bewaartermijnen van 7 jaar.",
-"privacy-sharing-title": "Delen van persoonsgegevens met derden",
-"privacy-sharing-content": "Wij delen persoonsgegevens alleen met derden als dit nodig is voor de uitvoering van onze dienstverlening (zoals voor e-mailmarketing) of om te voldoen aan wettelijke verplichtingen. Met verwerkers sluiten wij verwerkersovereenkomsten.",
-"privacy-cookies-title": "Cookies",
-"privacy-cookies-content": "Onze website gebruikt alleen functionele en analytische cookies die geen inbreuk maken op je privacy. Deze cookies zorgen dat de website goed werkt en helpen ons om de website te verbeteren. Je kunt je afmelden voor cookies via de instellingen van je browser.",
-"privacy-rights-title": "Jouw rechten",
-"privacy-rights-intro": "Je hebt recht op:",
-"privacy-rights-request": "Stuur je verzoek naar info@ashefoundation.nl. Om misbruik te voorkomen vragen wij je een kopie van je ID mee te sturen, waarbij je BSN, pasfoto en MRZ onleesbaar maakt.",
-"privacy-rights-complaint": "Je kunt ook een klacht indienen bij de Autoriteit Persoonsgegevens.",
-"privacy-security-title": "Beveiliging",
-"privacy-security-content": "Wij nemen passende technische en organisatorische maatregelen om je gegevens te beschermen tegen verlies, misbruik of onbevoegde toegang.",
-"privacy-disclaimer-title": "Disclaimer",
-"privacy-disclaimer-content": "Stichting Ashe Foundation besteedt grote zorg aan de inhoud van deze website. Toch kunnen er fouten voorkomen of kunnen pagina's tijdelijk niet beschikbaar zijn. Wij aanvaarden geen aansprakelijkheid voor directe of indirecte schade als gevolg van het gebruik van de website of de daarop gepubliceerde informatie. Inhoud kan op elk moment zonder aankondiging worden aangepast.",
-"privacy-data-point1": "Voor- en achternaam",
-"privacy-data-point2": "Geboortedatum",
-"privacy-data-point3": "Geboorteplaats",
-"privacy-data-point4": "Adresgegevens",
-"privacy-data-point5": "Telefoonnummer",
-"privacy-data-point6": "E-mailadres",
-"privacy-data-point7": "Gegevens over jouw activiteiten op onze website",
-"privacy-data-point8": "Bankrekeningnummer (bij donaties of betalingen)",
-"privacy-purpose-point1": "Het verwerken van donaties en betalingen",
-"privacy-purpose-point2": "Het verzenden van onze nieuwsbrieven via een mailmarketingsoftware bedrijf",
-"privacy-purpose-point3": "Je te kunnen bellen of e-mailen indien nodig voor onze dienstverlening",
-"privacy-purpose-point4": "Je te informeren over (wijzigingen in) onze activiteiten en projecten",
-"privacy-purpose-point5": "Analyse van websitegedrag ter verbetering van onze website",
-"privacy-purpose-point6": "Voldoen aan wettelijke verplichtingen, zoals de fiscale bewaarplicht",
-"privacy-rights-point1": "Inzage in je gegevens",
-"privacy-rights-point2": "Correctie of verwijdering/gegevenswissing",
-"privacy-rights-point3": "Intrekking van toestemming",
-"privacy-rights-point4": "Bezwaar tegen verwerking",
-"privacy-rights-point5": "Gegevensoverdraagbaarheid",
+    "privacy-title": "Privacyverklaring",
+    "privacy-intro":
+      "Stichting Ashe Foundation, gevestigd aan Rietgras 3, 8043 KJ Zwolle, is verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring.",
+    "privacy-contact-title": "Contactgegevens",
+    "privacy-contact-content":
+      "Website: https://ashefoundation.nl<br>Adres: Rietgras 3, 8043 KJ Zwolle<br>Telefoon: +31 6 29314363<br>E-mail: info@ashefoundation.nl",
+    "privacy-data-title": "Persoonsgegevens die wij verwerken",
+    "privacy-data-intro":
+      "Wij verwerken jouw persoonsgegevens omdat je gebruik maakt van onze diensten of omdat je deze zelf aan ons verstrekt. Het gaat om de volgende gegevens:",
+    "privacy-sensitive-title": "Bijzondere en/of gevoelige persoonsgegevens",
+    "privacy-sensitive-content":
+      "Onze website of diensten hebben niet de intentie gegevens te verzamelen over bezoekers jonger dan 16 jaar, tenzij ze toestemming hebben van ouders of voogd. Kun je aantonen dat wij onbedoeld gegevens van een minderjarige hebben verwerkt, neem dan contact met ons op via info@ashefoundation.nl, dan verwijderen wij die gegevens.",
+    "privacy-purpose-title":
+      "Met welk doel en op basis van welke grondslag verwerken wij persoonsgegevens?",
+    "privacy-purpose-intro":
+      "Wij verwerken persoonsgegevens voor de volgende doelen:",
+    "privacy-newsletters-title": "Nieuwsbrieven",
+    "privacy-newsletters-content":
+      "Als je je inschrijft voor onze nieuwsbrief, gebruiken we jouw naam en e-mailadres om je via een emailmarketingsoftware op de hoogte te houden van onze activiteiten. Die voldoet aan de Europese privacywetgeving (GDPR). Je kunt je altijd afmelden via de afmeldlink onderaan elke mail.",
+    "privacy-retention-title": "Bewaartermijn persoonsgegevens",
+    "privacy-retention-content":
+      "Wij bewaren je persoonsgegevens niet langer dan nodig is voor het doel waarvoor ze zijn verzameld. Voor donateurs gelden fiscale bewaartermijnen van 7 jaar.",
+    "privacy-sharing-title": "Delen van persoonsgegevens met derden",
+    "privacy-sharing-content":
+      "Wij delen persoonsgegevens alleen met derden als dit nodig is voor de uitvoering van onze dienstverlening (zoals voor e-mailmarketing) of om te voldoen aan wettelijke verplichtingen. Met verwerkers sluiten wij verwerkersovereenkomsten.",
+    "privacy-cookies-title": "Cookies",
+    "privacy-cookies-content":
+      "Onze website gebruikt alleen functionele en analytische cookies die geen inbreuk maken op je privacy. Deze cookies zorgen dat de website goed werkt en helpen ons om de website te verbeteren. Je kunt je afmelden voor cookies via de instellingen van je browser.",
+    "privacy-rights-title": "Jouw rechten",
+    "privacy-rights-intro": "Je hebt recht op:",
+    "privacy-rights-request":
+      "Stuur je verzoek naar info@ashefoundation.nl. Om misbruik te voorkomen vragen wij je een kopie van je ID mee te sturen, waarbij je BSN, pasfoto en MRZ onleesbaar maakt.",
+    "privacy-rights-complaint":
+      "Je kunt ook een klacht indienen bij de Autoriteit Persoonsgegevens.",
+    "privacy-security-title": "Beveiliging",
+    "privacy-security-content":
+      "Wij nemen passende technische en organisatorische maatregelen om je gegevens te beschermen tegen verlies, misbruik of onbevoegde toegang.",
+    "privacy-disclaimer-title": "Disclaimer",
+    "privacy-disclaimer-content":
+      "Stichting Ashe Foundation besteedt grote zorg aan de inhoud van deze website. Toch kunnen er fouten voorkomen of kunnen pagina's tijdelijk niet beschikbaar zijn. Wij aanvaarden geen aansprakelijkheid voor directe of indirecte schade als gevolg van het gebruik van de website of de daarop gepubliceerde informatie. Inhoud kan op elk moment zonder aankondiging worden aangepast.",
+    "privacy-data-point1": "Voor- en achternaam",
+    "privacy-data-point2": "Geboortedatum",
+    "privacy-data-point3": "Geboorteplaats",
+    "privacy-data-point4": "Adresgegevens",
+    "privacy-data-point5": "Telefoonnummer",
+    "privacy-data-point6": "E-mailadres",
+    "privacy-data-point7": "Gegevens over jouw activiteiten op onze website",
+    "privacy-data-point8": "Bankrekeningnummer (bij donaties of betalingen)",
+    "privacy-purpose-point1": "Het verwerken van donaties en betalingen",
+    "privacy-purpose-point2":
+      "Het verzenden van onze nieuwsbrieven via een mailmarketingsoftware bedrijf",
+    "privacy-purpose-point3":
+      "Je te kunnen bellen of e-mailen indien nodig voor onze dienstverlening",
+    "privacy-purpose-point4":
+      "Je te informeren over (wijzigingen in) onze activiteiten en projecten",
+    "privacy-purpose-point5":
+      "Analyse van websitegedrag ter verbetering van onze website",
+    "privacy-purpose-point6":
+      "Voldoen aan wettelijke verplichtingen, zoals de fiscale bewaarplicht",
+    "privacy-rights-point1": "Inzage in je gegevens",
+    "privacy-rights-point2": "Correctie of verwijdering/gegevenswissing",
+    "privacy-rights-point3": "Intrekking van toestemming",
+    "privacy-rights-point4": "Bezwaar tegen verwerking",
+    "privacy-rights-point5": "Gegevensoverdraagbaarheid",
 
-// Terms and Conditions Translations
-"terms-title": "Algemene Voorwaarden",
-"terms-intro": "U doneert aan onderstaande ontvangende partij:",
-"terms-recipient": "Stichting Ashe foundation Nederland, statutair gevestigd te Zwolle, kantoorhoudende te Zwolle aan het Rietgras 3, postcode 8043 KJ Zwolle, ingeschreven in het handelsregister van de Kamer van Koophandel onder nummer 92102123, hierna verder te noemen: Ashe Foundation.",
-"terms-definitions-title": "Artikel 1. Definities (alfabetisch)",
-"terms-def-1": "1.1. Donatie: Een door de gevende partij aan Ashe Foundation geschonken geldbedrag",
-"terms-def-2": "1.2. Donatieformulier: Middel om online een donatie te doen aan Ashe Foundation",
-"terms-def-3": "1.3. Gevende partij: De natuurlijke- of rechtspersoon die middels een elektronische machtiging, via de website van Ashe Foundation, een donatie doet aan Ashe Foundation, of zich aanmeldt als regelmatige sponsor/donateur",
-"terms-def-4": "1.4. Statuten: Ashe Foundation heeft als doel de sociaal economische positie van de Masai in Tanzania versterken",
-"terms-def-5": "1.5. Online doneren: Het geven van geld middels een elektronisch betaalsysteem of via een elektronische machtiging via de website van Ashe Foundation aan Ashe Foundation",
-"terms-def-6": "1.6. Ontvangende partij: De rechtspersoon Ashe Foundation die op basis van de overeenkomst een donatie ontvangt welke gebruikt wordt ten behoeve van de uitvoering van de statuten",
-"terms-def-7": "1.7. Overeenkomst: De overeenkomst op afstand tussen ontvangende partij en gevende partij",
-"terms-def-8": "1.8. Overeenkomst op afstand: Een overeenkomst waarbij in het kader van een door de ontvangende partij georganiseerd systeem voor doneren tot het sluiten van de overeenkomst uitsluitend gebruik gemaakt wordt van één of meer technieken voor communicatie op afstand",
-"terms-applicability-title": "Artikel 2. Toepasselijkheid",
-"terms-app-1": "2.1. Deze algemene voorwaarden zijn van toepassing op elke online donatie aan Ashe Foundation",
-"terms-app-2": "2.2. De gevende partij stemt, door online te doneren, in met deze algemene voorwaarden",
-"terms-app-3": "2.3. Ashe Foundation behoudt zich het recht voor om de algemene voorwaarden tussentijds te kunnen wijzigen",
-"terms-rights-receiving-title": "Artikel 3. Rechten ontvangende partij, Ashe Foundation",
-"terms-rights-rec-1": "3.1. Online donaties komen volledig ten goede aan Ashe Foundation",
-"terms-rights-rec-2": "3.2. Ashe Foundation is binnen haar statuten volledig vrij in het bestemmen van deze online donaties, rekening houdend met de eventuele wensen van de donateur met betrekking tot specifieke projecten",
-"terms-rights-rec-3": "3.3. Het eigendom van het gedoneerde bedrag gaat over op Ashe Foundation nadat het gedoneerde bedrag op de bankrekening van Ashe Foundation is bijgeschreven",
-"terms-rights-rec-4": "3.4. Aansprakelijkheid: Ashe Foundation aanvaardt geen aansprakelijkheid voor schade aan de zijde van de gevende partij als gevolg van de door de gevende partij gedane donatie. De gevende partij vrijwaart Ashe Foundation voor alle aanspraken van derden voor schade geleden door die derden als gevolg van de donatie van de gevende partij aan Ashe Foundation",
-"terms-rights-giving-title": "Artikel 4. Rechten gevende partij",
-"terms-rights-giving-1": "4.1. De gevende partij heeft het recht informatie te verkrijgen over de voortgang van de projecten van Ashe Foundation",
-"terms-obligations-ashe-title": "Artikel 5. Plichten Ashe Foundation",
-"terms-obligations-ashe-1": "5.1. Ashe Foundation verplicht zich de ontvangen bedragen te besteden overeenkomstig de statuten",
-"terms-obligations-ashe-2": "5.2. Ashe Foundation neemt passende technische en organisatorische maatregelen ter beveiliging van de communicatie, de persoonsgegevens, de elektronische overdracht van data en online donaties en zorgt voor een veilige web- omgeving. Het betreft hier een inspanningsverplichting. Ashe Foundation aanvaardt geen aansprakelijkheid uit hoofde van deze verplichting",
-"terms-obligations-ashe-3": "5.3. Alle personen die namens Ashe Foundation bevoegd zijn van de persoonsgegevens kennis te kunnen nemen, zijn gehouden aan geheimhouding van deze gegevens",
-"terms-obligations-giving-title": "Artikel 6. Plichten gevende partij",
-"terms-obligations-giving-1": "6.1. Om een overeenkomst te sluiten met ontvangende partij moet gevende partij tenminste 18 jaren oud zijn. Door het aangaan van een overeenkomst verklaart de gevende partij dat hij aan deze leeftijdsgrens voldoet",
-"terms-obligations-giving-2": "6.2. Gevende partij die onder de 18 jaren oud is kan een online donatie of een online aanmelding als vaste sponsor/donateur alleen doen in bijzijn van en met goedkeuring van een ouder of voogd",
-"terms-obligations-giving-3": "6.3. De gevende partij geeft zijn correcte identiteitsgegevens op",
-"terms-obligations-giving-4": "6.4. De gevende partij verricht uitsluitend donaties met middelen waarover hij/zij mag beschikken en waarover hij/zij zeggenschap heeft",
-"terms-personal-data-title": "Artikel 7. Verwerking persoonsgegevens",
-"terms-personal-data-1": "7.1. Ashe Foundation verwerkt de door de gevende partij aan Ashe Foundation verstrekte persoonsgegevens in overeenstemming met alle (wettelijke) voorschriften betreffende de te verwerken gegevens, daaronder in het bijzonder begrepen de voorschriften bij of krachtens de Wet Bescherming Persoonsgegevens gesteld",
-"terms-personal-data-2": "7.2. Deze persoonsgegevens worden door Ashe Foundation verwerkt ten behoeve van het aangaan van donateurschappen, voor de aanvaarding en afwikkeling van overige begunstigingen, voor het informeren over de voortgang van de projecten, alsmede om te kunnen voldoen aan wettelijke verplichtingen",
-"terms-personal-data-3": "7.3. De gevende partij heeft het recht te controleren of de door Ashe Foundation geregistreerde gegevens juist zijn, het recht op correctie, indien de gegevens niet juist blijken te zijn, en het recht op verwijdering van de geregistreerde gegevens",
-"terms-final-provisions-title": "Artikel 8. Slotbepalingen",
-"terms-final-provisions-1": "8.1. De disclaimer en de privacy verklaring die Ashe Foundation hanteert zijn onverkort van toepassing",
-"terms-final-provisions-2": "8.2. Partijen verklaren dat Nederlands recht van toepassing is",
+    // Terms and Conditions Translations
+    "terms-title": "Algemene Voorwaarden",
+    "terms-intro": "U doneert aan onderstaande ontvangende partij:",
+    "terms-recipient":
+      "Stichting Ashe foundation Nederland, statutair gevestigd te Zwolle, kantoorhoudende te Zwolle aan het Rietgras 3, postcode 8043 KJ Zwolle, ingeschreven in het handelsregister van de Kamer van Koophandel onder nummer 92102123, hierna verder te noemen: Ashe Foundation.",
+    "terms-definitions-title": "Artikel 1. Definities (alfabetisch)",
+    "terms-def-1":
+      "1.1. Donatie: Een door de gevende partij aan Ashe Foundation geschonken geldbedrag",
+    "terms-def-2":
+      "1.2. Donatieformulier: Middel om online een donatie te doen aan Ashe Foundation",
+    "terms-def-3":
+      "1.3. Gevende partij: De natuurlijke- of rechtspersoon die middels een elektronische machtiging, via de website van Ashe Foundation, een donatie doet aan Ashe Foundation, of zich aanmeldt als regelmatige sponsor/donateur",
+    "terms-def-4":
+      "1.4. Statuten: Ashe Foundation heeft als doel de sociaal economische positie van de Masai in Tanzania versterken",
+    "terms-def-5":
+      "1.5. Online doneren: Het geven van geld middels een elektronisch betaalsysteem of via een elektronische machtiging via de website van Ashe Foundation aan Ashe Foundation",
+    "terms-def-6":
+      "1.6. Ontvangende partij: De rechtspersoon Ashe Foundation die op basis van de overeenkomst een donatie ontvangt welke gebruikt wordt ten behoeve van de uitvoering van de statuten",
+    "terms-def-7":
+      "1.7. Overeenkomst: De overeenkomst op afstand tussen ontvangende partij en gevende partij",
+    "terms-def-8":
+      "1.8. Overeenkomst op afstand: Een overeenkomst waarbij in het kader van een door de ontvangende partij georganiseerd systeem voor doneren tot het sluiten van de overeenkomst uitsluitend gebruik gemaakt wordt van één of meer technieken voor communicatie op afstand",
+    "terms-applicability-title": "Artikel 2. Toepasselijkheid",
+    "terms-app-1":
+      "2.1. Deze algemene voorwaarden zijn van toepassing op elke online donatie aan Ashe Foundation",
+    "terms-app-2":
+      "2.2. De gevende partij stemt, door online te doneren, in met deze algemene voorwaarden",
+    "terms-app-3":
+      "2.3. Ashe Foundation behoudt zich het recht voor om de algemene voorwaarden tussentijds te kunnen wijzigen",
+    "terms-rights-receiving-title":
+      "Artikel 3. Rechten ontvangende partij, Ashe Foundation",
+    "terms-rights-rec-1":
+      "3.1. Online donaties komen volledig ten goede aan Ashe Foundation",
+    "terms-rights-rec-2":
+      "3.2. Ashe Foundation is binnen haar statuten volledig vrij in het bestemmen van deze online donaties, rekening houdend met de eventuele wensen van de donateur met betrekking tot specifieke projecten",
+    "terms-rights-rec-3":
+      "3.3. Het eigendom van het gedoneerde bedrag gaat over op Ashe Foundation nadat het gedoneerde bedrag op de bankrekening van Ashe Foundation is bijgeschreven",
+    "terms-rights-rec-4":
+      "3.4. Aansprakelijkheid: Ashe Foundation aanvaardt geen aansprakelijkheid voor schade aan de zijde van de gevende partij als gevolg van de door de gevende partij gedane donatie. De gevende partij vrijwaart Ashe Foundation voor alle aanspraken van derden voor schade geleden door die derden als gevolg van de donatie van de gevende partij aan Ashe Foundation",
+    "terms-rights-giving-title": "Artikel 4. Rechten gevende partij",
+    "terms-rights-giving-1":
+      "4.1. De gevende partij heeft het recht informatie te verkrijgen over de voortgang van de projecten van Ashe Foundation",
+    "terms-obligations-ashe-title": "Artikel 5. Plichten Ashe Foundation",
+    "terms-obligations-ashe-1":
+      "5.1. Ashe Foundation verplicht zich de ontvangen bedragen te besteden overeenkomstig de statuten",
+    "terms-obligations-ashe-2":
+      "5.2. Ashe Foundation neemt passende technische en organisatorische maatregelen ter beveiliging van de communicatie, de persoonsgegevens, de elektronische overdracht van data en online donaties en zorgt voor een veilige web- omgeving. Het betreft hier een inspanningsverplichting. Ashe Foundation aanvaardt geen aansprakelijkheid uit hoofde van deze verplichting",
+    "terms-obligations-ashe-3":
+      "5.3. Alle personen die namens Ashe Foundation bevoegd zijn van de persoonsgegevens kennis te kunnen nemen, zijn gehouden aan geheimhouding van deze gegevens",
+    "terms-obligations-giving-title": "Artikel 6. Plichten gevende partij",
+    "terms-obligations-giving-1":
+      "6.1. Om een overeenkomst te sluiten met ontvangende partij moet gevende partij tenminste 18 jaren oud zijn. Door het aangaan van een overeenkomst verklaart de gevende partij dat hij aan deze leeftijdsgrens voldoet",
+    "terms-obligations-giving-2":
+      "6.2. Gevende partij die onder de 18 jaren oud is kan een online donatie of een online aanmelding als vaste sponsor/donateur alleen doen in bijzijn van en met goedkeuring van een ouder of voogd",
+    "terms-obligations-giving-3":
+      "6.3. De gevende partij geeft zijn correcte identiteitsgegevens op",
+    "terms-obligations-giving-4":
+      "6.4. De gevende partij verricht uitsluitend donaties met middelen waarover hij/zij mag beschikken en waarover hij/zij zeggenschap heeft",
+    "terms-personal-data-title": "Artikel 7. Verwerking persoonsgegevens",
+    "terms-personal-data-1":
+      "7.1. Ashe Foundation verwerkt de door de gevende partij aan Ashe Foundation verstrekte persoonsgegevens in overeenstemming met alle (wettelijke) voorschriften betreffende de te verwerken gegevens, daaronder in het bijzonder begrepen de voorschriften bij of krachtens de Wet Bescherming Persoonsgegevens gesteld",
+    "terms-personal-data-2":
+      "7.2. Deze persoonsgegevens worden door Ashe Foundation verwerkt ten behoeve van het aangaan van donateurschappen, voor de aanvaarding en afwikkeling van overige begunstigingen, voor het informeren over de voortgang van de projecten, alsmede om te kunnen voldoen aan wettelijke verplichtingen",
+    "terms-personal-data-3":
+      "7.3. De gevende partij heeft het recht te controleren of de door Ashe Foundation geregistreerde gegevens juist zijn, het recht op correctie, indien de gegevens niet juist blijken te zijn, en het recht op verwijdering van de geregistreerde gegevens",
+    "terms-final-provisions-title": "Artikel 8. Slotbepalingen",
+    "terms-final-provisions-1":
+      "8.1. De disclaimer en de privacy verklaring die Ashe Foundation hanteert zijn onverkort van toepassing",
+    "terms-final-provisions-2":
+      "8.2. Partijen verklaren dat Nederlands recht van toepassing is",
 
-//COOKIE SETTINGS
-"privacy-cookie-management-title": "Cookie instellingen beheren",
-"privacy-cookie-management-intro": "Je kunt hieronder op elk moment je cookie-instellingen aanpassen of alle cookies verwijderen.",
-"privacy-cookie-preferences": "Cookie voorkeuren",
-"privacy-cookies-necessary": "Noodzakelijke cookies",
-"privacy-cookies-necessary-desc": "Deze cookies zijn nodig om de website te laten functioneren.",
-"privacy-cookies-analytics": "Analytische cookies",
-"privacy-cookies-analytics-desc": "Deze cookies helpen ons inzicht te krijgen in hoe bezoekers onze website gebruiken.",
-"privacy-cookies-marketing": "Marketing cookies",
-"privacy-cookies-marketing-desc": "Deze cookies helpen ons relevante advertenties te tonen.",
-"privacy-cookies-save": "Voorkeuren opslaan",
-"privacy-cookies-revoke": "Alle cookies verwijderen",
-"cookie-preferences": "Voorkeuren aanpassen",
-"cookie-modal-title": "Cookievoorkeuren",
-"cookie-modal-intro": "Bij het weigeren van cookies kan het voorkomen dat bepaalde functionaliteiten binnen de website niet werken zoals bedoeld. Mocht je van gedachten veranderen, dan kan je eenvoudig -op ieder moment, en per categorie- cookies toestaan of weigeren.",
-"cookie-necessary": "Noodzakelijke cookies",
-"cookie-necessary-desc": "Deze cookies zijn nodig om de website te laten functioneren.",
-"cookie-analytics": "Analytische cookies",
-"cookie-analytics-desc": "Deze cookies helpen ons inzicht te krijgen in hoe bezoekers onze website gebruiken.",
-"cookie-marketing": "Marketing cookies",
-"cookie-marketing-desc": "Deze cookies helpen ons relevante advertenties te tonen.",
-"cookie-save": "Opslaan",
-"cookie-cancel": "Annuleren",
-
-
+    //COOKIE SETTINGS
+    "privacy-cookie-management-title": "Cookie instellingen beheren",
+    "privacy-cookie-management-intro":
+      "Je kunt hieronder op elk moment je cookie-instellingen aanpassen of alle cookies verwijderen.",
+    "privacy-cookie-preferences": "Cookie voorkeuren",
+    "privacy-cookies-necessary": "Noodzakelijke cookies",
+    "privacy-cookies-necessary-desc":
+      "Deze cookies zijn nodig om de website te laten functioneren.",
+    "privacy-cookies-analytics": "Analytische cookies",
+    "privacy-cookies-analytics-desc":
+      "Deze cookies helpen ons inzicht te krijgen in hoe bezoekers onze website gebruiken.",
+    "privacy-cookies-marketing": "Marketing cookies",
+    "privacy-cookies-marketing-desc":
+      "Deze cookies helpen ons relevante advertenties te tonen.",
+    "privacy-cookies-save": "Voorkeuren opslaan",
+    "privacy-cookies-revoke": "Alle cookies verwijderen",
+    "cookie-preferences": "Voorkeuren aanpassen",
+    "cookie-modal-title": "Cookievoorkeuren",
+    "cookie-modal-intro":
+      "Bij het weigeren van cookies kan het voorkomen dat bepaalde functionaliteiten binnen de website niet werken zoals bedoeld. Mocht je van gedachten veranderen, dan kan je eenvoudig -op ieder moment, en per categorie- cookies toestaan of weigeren.",
+    "cookie-necessary": "Noodzakelijke cookies",
+    "cookie-necessary-desc":
+      "Deze cookies zijn nodig om de website te laten functioneren.",
+    "cookie-analytics": "Analytische cookies",
+    "cookie-analytics-desc":
+      "Deze cookies helpen ons inzicht te krijgen in hoe bezoekers onze website gebruiken.",
+    "cookie-marketing": "Marketing cookies",
+    "cookie-marketing-desc":
+      "Deze cookies helpen ons relevante advertenties te tonen.",
+    "cookie-save": "Opslaan",
+    "cookie-cancel": "Annuleren",
   },
 
   en: {
@@ -768,7 +901,8 @@ const translations = {
 
     // Cookie banner
     "cookie-title": "Cookies on this website",
-    "cookie-text-part1": "We use cookies to give you the best experience on our website. In",
+    "cookie-text-part1":
+      "We use cookies to give you the best experience on our website. In",
     "cookie-text-part2": "our privacy statement",
     "cookie-text-part3": "you can read more about the cookies we use.",
     "cookie-agree": "I agree",
@@ -776,7 +910,8 @@ const translations = {
 
     // INDEX FILE
     // Hero section
-    "hero-title": "\"A positive impact on someone's life creates a dynamic of mutual gratitude.\" - Ashe Foundation",
+    "hero-title":
+      '"A positive impact on someone\'s life creates a dynamic of mutual gratitude." - Ashe Foundation',
     "hero-subtitle":
       "We work towards a world where the Maasai community has opportunities to pursue a good life and their own happiness.",
     "hero-btn-projects": "Discover our projects",
@@ -859,7 +994,8 @@ const translations = {
     "become-donor": "Become a donor",
 
     // WATWEDOEN PAGE
-    "hero-title-1": "Ashe Foundation strengthens the livelihood security of the Maasai in Tanzania",
+    "hero-title-1":
+      "Ashe Foundation strengthens the livelihood security of the Maasai in Tanzania",
     "discover-title": "Discover what we do",
     "mission-card-title": "Our mission",
     "mission-card-desc":
@@ -913,7 +1049,7 @@ const translations = {
       "Together we work for a better future for the Maasai community",
     "board-title": "The board",
     "board-description":
-      "The board of Ashe Foundation consists of three members who are jointly authorized.<br />No financial payments are made to the directors of Ashe Foundation.<br /><br />All donations to Ashe Foundation are only used for the mission of Ashe Foundation.",
+      "The board of Ashe Foundation consists of three members who are jointly authorized. In addition, we work closely with dedicated team members and local partners.<br />No financial payments are made to the directors, team members, or local partners of Ashe Foundation.<br /><br />All donations to Ashe Foundation are only used for the mission of Ashe Foundation.",
 
     "member-amy-name": "Amory Berkenveld - Oropi",
     "member-amy-title": "Founder and Chairperson",
@@ -1027,6 +1163,17 @@ const translations = {
       "During a recent village meeting in Loolera, community leaders and residents established new priorities for local development projects.",
     "view-all-news": "View all news",
 
+    // Blog cards on projects page
+    "blog-date-june": "June 1, 2025",
+    "blog-date-may": "May 1, 2025",
+    "water-is-life-title": "Water is life – but not for everyone",
+    "water-is-life-desc":
+      "The impact of poverty and exclusion. Read how the Maasai community fights daily for clean water.",
+    "drought-blog-title":
+      "Extreme drought in Tanzania severely affects Maasai community",
+    "drought-blog-desc":
+      "The ongoing drought in Tanzania has serious consequences for the Maasai community in Loolera.",
+
     // New Project Card
     "suggest-project": "Project idea?",
     "suggest-project-description":
@@ -1042,6 +1189,8 @@ const translations = {
     "coming-soon-text":
       "We're working hard on new projects and updates. Follow us on social media for the most current information and stories from Tanzania.",
     "follow-social-media": "Follow us on social media",
+    "newsletter-email-placeholder": "your@email.com",
+    "newsletter-name-placeholder": "Your name",
 
     // CONTACT PAGE
     "contact-title": "Contact us",
@@ -1071,7 +1220,7 @@ const translations = {
       "I give permission to ASHE Foundation to use my data for sending newsletters and information about campaigns and activities. For more information see our privacy statement.",
     "newsletter-submit": "Subscribe",
     "newsletter-privacy-notice":
-      "You can unsubscribe at any time via the link at the bottom of each email. By signing up, you agree that we process your personal data as described in our <a href=\"/privacystatement.html\" class=\"text-terracotta hover:underline\" target=\"_blank\" rel=\"noopener\" aria-label=\"View our privacy statement (opens in a new tab)\">privacy statement</a>.",
+      'You can unsubscribe at any time via the link at the bottom of each email. By signing up, you agree that we process your personal data as described in our <a href="/privacystatement.html" class="text-terracotta hover:underline" target="_blank" rel="noopener" aria-label="View our privacy statement (opens in a new tab)">privacy statement</a>.',
     "get-involved": "Become part of our mission",
     "get-involved-text":
       "Help us strengthen the livelihood of the Maasai community. Together we can make a lasting impact.",
@@ -1236,8 +1385,7 @@ const translations = {
     "impact-2-text":
       "Neema is now an independent entrepreneur with her own business in the community.",
     "impact-3-title": "People reached",
-    "impact-3-text":
-      "Local residents now have access to affordable groceries.",
+    "impact-3-text": "Local residents now have access to affordable groceries.",
 
     // Next steps section
     "what-next-title": "What's next?",
@@ -1261,70 +1409,131 @@ const translations = {
     // BLOG content
 
     // Blog Page Translations - English
-"drought-title": "Extreme drought in Tanzania severely affects Maasai community",
-"category": "Climate Change",
-"blog-intro": "While the world focuses on climate change, a silent disaster is unfolding in the interior of Tanzania. The ongoing drought has devastating consequences for the Maasai communities, who depend on livestock for their livelihood.",
-"climate-change-title": "Climate change and extreme weather conditions",
-"climate-change-text": "Tanzania recorded its hottest year ever in 2024, with unprecedented high night temperatures (source: Down to Earth). While some areas have experienced flooding, other regions, like the interior, continue to struggle with severe drought.",
-"drought-landscape-caption": "Dried landscape in the interior of Tanzania, 2025",
-"impact-maasai-title": "Impact on Maasai communities",
-"impact-maasai-text1": "The Maasai, known for their nomadic cattle herding, are severely affected. Many livestock have died due to lack of water and food, leading to food insecurity and poverty. According to the UNDP, Maasai communities are trying to restore their grasslands using indigenous plants.",
-"impact-maasai-text2": "In the village of Loolera, where ASHE Foundation is active, the water supply is particularly struggling to meet the growing demand. Many families now have to make hours-long journeys to access clean drinking water. The situation worsens by the day, especially for vulnerable groups such as children, the elderly, and pregnant women.",
-"maasai-quote": "\"We have never experienced such a drought. Our animals are dying and our children don't have enough water. We have to walk further every day to find water.\"",
-"maasai-quote-attribution": "— Naserian, local Maasai woman from Loolera",
-"sustainable-solutions-title": "Sustainable solutions and resilience",
-"sustainable-solutions-text1": "Despite the enormous challenges, the Maasai show resilience. Through restoration of grasslands with indigenous plants and small-scale irrigation initiatives, attempts are being made to counteract the effects of the drought. These types of projects prove that local knowledge is essential for climate adaptation.",
-"sustainable-solutions-text2": "ASHE Foundation works closely with local partners and community leaders to implement sustainable solutions that provide both immediate help and build long-term resilience.",
-"water-project-title": "Project Water: A life-saving initiative",
-"water-project-text1": "In response to this crisis, ASHE Foundation has launched \"Project Water\". This project aims to improve the water infrastructure in Loolera and surroundings, providing approximately 10,000 Maasai with access to clean drinking water.",
-"water-project-text2": "The project includes establishing water points, drilling wells, and installing sustainable pump systems. Additionally, local community members are trained in water management and maintenance, ensuring the project can be self-sufficient in the long term.",
-"how-help-title": "How you can help",
-"how-help-intro": "ASHE Foundation is actively committed to supporting Maasai communities by:",
-"how-help-point1": "Developing water infrastructure",
-"how-help-point2": "Establishing water facilities",
-"how-help-point3": "Providing emergency aid in times of crisis",
-"how-help-text1": "Your donation can make a direct difference. Together we can work towards a more sustainable and resilient future for the Maasai in Tanzania.",
-"how-help-text2": "With just 5 euros, you can already provide 3 people with clean drinking water! Your help is urgently needed!",
-"be-part-solution": "Become part of the solution",
-"be-part-solution-text": "Together we can help the Maasai community in Tanzania through this difficult period.",
-"donate-water-project": "Donate now for Project Water",
-"share-article": "Share this article",
-"share-linkedin": "Share on LinkedIn",
-"share-instagram": "Share on Instagram",
-"share-facebook": "Share on Facebook",
-"share-twitter": "Share on Twitter/X",
-"related-articles": "Related articles",
-"naserian-shop-title": "Naserian's Shop: A success story",
-"naserian-shop-desc": "How opening a shop improved the life of Naserian and her community.",
-"neema-dream-title": "Neema's Dream: From vision to reality",
-"neema-dream-desc": "The inspiring story of Neema and how she realized her dream of owning a shop.",
-"back-to-projects": "Back to Projects",
+    "drought-title":
+      "Extreme drought in Tanzania severely affects Maasai community",
+    category: "Climate Change",
+    "blog-intro":
+      "While the world focuses on climate change, a silent disaster is unfolding in the interior of Tanzania. The ongoing drought has devastating consequences for the Maasai communities, who depend on livestock for their livelihood.",
+    "climate-change-title": "Climate change and extreme weather conditions",
+    "climate-change-text":
+      "Tanzania recorded its hottest year ever in 2024, with unprecedented high night temperatures (source: Down to Earth). While some areas have experienced flooding, other regions, like the interior, continue to struggle with severe drought.",
+    "drought-landscape-caption":
+      "Dried landscape in the interior of Tanzania, 2025",
+    "impact-maasai-title": "Impact on Maasai communities",
+    "impact-maasai-text1":
+      "The Maasai, known for their nomadic cattle herding, are severely affected. Many livestock have died due to lack of water and food, leading to food insecurity and poverty. According to the UNDP, Maasai communities are trying to restore their grasslands using indigenous plants.",
+    "impact-maasai-text2":
+      "In the village of Loolera, where ASHE Foundation is active, the water supply is particularly struggling to meet the growing demand. Many families now have to make hours-long journeys to access clean drinking water. The situation worsens by the day, especially for vulnerable groups such as children, the elderly, and pregnant women.",
+    "maasai-quote":
+      '"We have never experienced such a drought. Our animals are dying and our children don\'t have enough water. We have to walk further every day to find water."',
+    "maasai-quote-attribution": "— Naserian, local Maasai woman from Loolera",
+    "sustainable-solutions-title": "Sustainable solutions and resilience",
+    "sustainable-solutions-text1":
+      "Despite the enormous challenges, the Maasai show resilience. Through restoration of grasslands with indigenous plants and small-scale irrigation initiatives, attempts are being made to counteract the effects of the drought. These types of projects prove that local knowledge is essential for climate adaptation.",
+    "sustainable-solutions-text2":
+      "ASHE Foundation works closely with local partners and community leaders to implement sustainable solutions that provide both immediate help and build long-term resilience.",
+    "water-project-title": "Project Water: A life-saving initiative",
+    "water-project-text1":
+      'In response to this crisis, ASHE Foundation has launched "Project Water". This project aims to improve the water infrastructure in Loolera and surroundings, providing approximately 10,000 Maasai with access to clean drinking water.',
+    "water-project-text2":
+      "The project includes establishing water points, drilling wells, and installing sustainable pump systems. Additionally, local community members are trained in water management and maintenance, ensuring the project can be self-sufficient in the long term.",
+    "how-help-title": "How you can help",
+    "how-help-intro":
+      "ASHE Foundation is actively committed to supporting Maasai communities by:",
+    "how-help-point1": "Developing water infrastructure",
+    "how-help-point2": "Establishing water facilities",
+    "how-help-point3": "Providing emergency aid in times of crisis",
+    "how-help-text1":
+      "Your donation can make a direct difference. Together we can work towards a more sustainable and resilient future for the Maasai in Tanzania.",
+    "how-help-text2":
+      "With just 5 euros, you can already provide 3 people with clean drinking water! Your help is urgently needed!",
+    "be-part-solution": "Become part of the solution",
+    "be-part-solution-text":
+      "Together we can help the Maasai community in Tanzania through this difficult period.",
+    "donate-water-project": "Donate now for Project Water",
+    "share-article": "Share this article",
+    "share-linkedin": "Share on LinkedIn",
+    "share-instagram": "Share on Instagram",
+    "share-facebook": "Share on Facebook",
+    "share-twitter": "Share on Twitter/X",
+    "related-articles": "Related articles",
+    "naserian-shop-title": "Naserian's Shop: A success story",
+    "naserian-shop-desc":
+      "How opening a shop improved the life of Naserian and her community.",
+    "neema-dream-title": "Neema's Dream: From vision to reality",
+    "neema-dream-desc":
+      "The inspiring story of Neema and how she realized her dream of owning a shop.",
+    "back-to-projects": "Back to Projects",
+    "instagram-copied-tooltip": "Text copied! Paste in Instagram",
 
-// DONATE PAGE
-"donate-hero-title": "Help the Maasai community",
-"donate-hero-subtitle": "Your donation makes a direct difference for thousands of people in Tanzania",
-"donation-form-title": "Donate online",
-"donation-form-subtitle": "Choose the amount that suits you. Every contribution, big or small, makes a difference.",
-"bank-transfer-title": "Or donate via bank transfer",
-"bank-transfer-subtitle": "Prefer to transfer directly? Use the details below for your donation.",
-"bank-details-title": "ASHE Foundation Bank Details",
-"bank-name-label": "Bank name:",
-"account-number-label": "Account number:",
-"account-holder-label": "Account holder:",
-"bic-label": "BIC/SWIFT:",
-"bank-transfer-note": "Don't forget: Include your name and email address with your transfer so we can send you a donation receipt for tax purposes.",
-"anbi-info-title": "Tax-deductible donations",
-"anbi-status-title": "Recognized ANBI Status",
-"anbi-status-text": "As a recognized ANBI foundation, we meet strict requirements for transparency and effectiveness. This means your donations are tax-deductible.",
-"anbi-benefit-1": "Donations are tax-deductible from your taxes",
-"anbi-benefit-2": "100% of your donation goes to our projects",
-"anbi-benefit-3": "Full transparency in our financial reporting",
-"payment-methods-title": "Payment options",
-"payment-ideal": "iDEAL",
-"payment-bank": "Bank transfer",
-"payment-recurring": "Recurring gift",
-"payment-paypal": "PayPal",
-"secure-payment": "All payments are securely processed via Donorbox",
+    // BLOG - Poverty Impact Article
+    "blog-poverty-title": "The impact of poverty and exclusion",
+    "blog-date": "June 14, 2025",
+    "blog-category": "Climate Change",
+    "blog-poverty-intro": "The impact of poverty and exclusion",
+    "blog-poverty-paragraph1":
+      "The Maasai belong to the indigenous populations of Tanzania. As a semi-nomadic people, they have lived close to nature for generations. But as a 'minority', they often stand on the sidelines socially, economically and politically. Land rights are violated, their living areas are shrinking and government support is minimal. The consequences? Structural poverty, little infrastructure and no access to basic services such as clean water.",
+
+    "blog-water-struggle-title":
+      "In the dry interior of Tanzania, clean water is a daily struggle",
+    "blog-water-struggle-text":
+      "While we in the Netherlands turn on the tap without thinking, the reality looks very different for the Maasai communities in the interior of Tanzania. In villages like Loolera and Lembapuli, access to clean drinking water is not a given, but a daily struggle.",
+
+    "blog-women-burden-title": "Women and children bear the burden",
+    "blog-women-burden-text":
+      "Every morning, women and children walk kilometers to fetch water. Not only is that water often contaminated, it also costs enormous amounts of time and energy. Water shortages affect not only health, but also education, agriculture and economic opportunities.",
+
+    "blog-water-rights-title": "Water infrastructure as a human right",
+    "blog-water-rights-text":
+      "ASHE Foundation works together with local partners for sustainable water solutions in the region. With relatively simple means – such as rainwater harvesting, water tanks and pipeline systems – we can make a world of difference. Improving water infrastructure means not only cleaner water, but also:",
+
+    "blog-benefit-education": "more time for education",
+    "blog-benefit-health": "fewer diseases",
+    "blog-benefit-economy": "economic development",
+    "blog-benefit-equality": "more equality and dignity",
+
+    "blog-together-title": "Together we make the difference",
+    "blog-together-text":
+      "You can help. With a donation you directly support projects that structurally improve the lives of the Maasai communities. Not luxury, but human rights.",
+
+    // Related articles
+    "related-articles": "Related articles",
+    "related-drought-title":
+      "Extreme drought in Tanzania severely affects Maasai community",
+    "related-drought-desc":
+      "Read how the ongoing drought affects the Maasai and what ASHE Foundation does to provide clean water.",
+    "read-more": "Read more",
+
+    // DONATE PAGE
+    "donate-hero-title": "Help the Maasai community",
+    "donate-hero-subtitle":
+      "Your donation makes a direct difference for thousands of people in Tanzania",
+    "donation-form-title": "Donate online",
+    "donation-form-subtitle":
+      "Choose the amount that suits you. Every contribution, big or small, makes a difference.",
+    "bank-transfer-title": "Or donate via bank transfer",
+    "bank-transfer-subtitle":
+      "Prefer to transfer directly? Use the details below for your donation.",
+    "bank-details-title": "ASHE Foundation Bank Details",
+    "bank-name-label": "Bank name:",
+    "account-number-label": "Account number:",
+    "account-holder-label": "Account holder:",
+    "bic-label": "BIC/SWIFT:",
+    "bank-transfer-note":
+      "Don't forget: Include your name and email address with your transfer so we can send you a donation receipt for tax purposes.",
+    "anbi-info-title": "Tax-deductible donations",
+    "anbi-status-title": "Recognized ANBI Status",
+    "anbi-status-text":
+      "As a recognized ANBI foundation, we meet strict requirements for transparency and effectiveness. This means your donations are tax-deductible.",
+    "anbi-benefit-1": "Donations are tax-deductible from your taxes",
+    "anbi-benefit-2": "100% of your donation goes to our projects",
+    "anbi-benefit-3": "Full transparency in our financial reporting",
+    "payment-methods-title": "Payment options",
+    "payment-ideal": "iDEAL",
+    "payment-bank": "Bank transfer",
+    "payment-recurring": "Recurring gift",
+    "payment-paypal": "PayPal",
+    "secure-payment": "All payments are securely processed via Donorbox",
 
     // Financial page translations
     "financial-title": "Annual Report and Financial Statements",
@@ -1367,119 +1576,178 @@ const translations = {
       "We strive to respond to your comment or complaint as quickly as possible, but in any case within two weeks of receipt. All comments and complaints are registered and treated confidentially.",
     "contact-us": "Contact us",
 
+    //Privacystatement
 
-  //Privacystatement
+    // Add these to the translations.js file in the en section
+    "privacy-title": "Privacy Statement",
+    "privacy-intro":
+      "Stichting Ashe Foundation, located at Rietgras 3, 8043 KJ Zwolle, is responsible for the processing of personal data as described in this privacy statement.",
+    "privacy-contact-title": "Contact Details",
+    "privacy-contact-content":
+      "Website: https://ashefoundation.nl<br>Address: Rietgras 3, 8043 KJ Zwolle<br>Phone: +31 6 29314363<br>Email: info@ashefoundation.nl",
+    "privacy-data-title": "Personal Data We Process",
+    "privacy-data-intro":
+      "We process your personal data because you use our services or because you provide them to us yourself. This concerns the following data:",
+    "privacy-sensitive-title": "Special and/or Sensitive Personal Data",
+    "privacy-sensitive-content":
+      "Our website and services do not intend to collect data about visitors under 16 years of age, unless they have permission from parents or guardians. If you can demonstrate that we have collected personal data about a minor without consent, please contact us at info@ashefoundation.nl, and we will delete that information.",
+    "privacy-purpose-title":
+      "For What Purpose and on What Basis Do We Process Personal Data?",
+    "privacy-purpose-intro":
+      "We process personal data for the following purposes:",
+    "privacy-purpose-point1": "Processing donations and payments",
+    "privacy-purpose-point2":
+      "Sending our newsletters via an email marketing software company",
+    "privacy-purpose-point3":
+      "Being able to call or email you if necessary for our services",
+    "privacy-purpose-point4":
+      "Informing you about (changes in) our activities and projects",
+    "privacy-purpose-point5":
+      "Analysis of website behavior to improve our website",
+    "privacy-purpose-point6":
+      "Complying with legal obligations, such as fiscal retention requirements",
+    "privacy-newsletters-title": "Newsletters",
+    "privacy-newsletters-content":
+      "If you subscribe to our newsletter, we use your name and email address to keep you informed about our activities via an email marketing software. This software complies with European privacy legislation (GDPR). You can always unsubscribe via the unsubscribe link at the bottom of each email.",
+    "privacy-retention-title": "Retention Period of Personal Data",
+    "privacy-retention-content":
+      "We do not store your personal data longer than necessary for the purpose for which it was collected. For donors, fiscal retention periods of 7 years apply.",
+    "privacy-sharing-title": "Sharing Personal Data with Third Parties",
+    "privacy-sharing-content":
+      "We only share personal data with third parties if this is necessary for the execution of our services (such as for email marketing) or to comply with legal obligations. We enter into processor agreements with processors.",
+    "privacy-cookies-title": "Cookies",
+    "privacy-cookies-content":
+      "Our website only uses functional and analytical cookies that do not infringe on your privacy. These cookies ensure that the website works properly and help us improve the website. You can opt out of cookies through your browser settings.",
+    "privacy-rights-title": "Your Rights",
+    "privacy-rights-intro": "You have the right to:",
+    "privacy-rights-request":
+      "Send your request to info@ashefoundation.nl. To prevent misuse, we ask you to provide a copy of your ID with your request, where you've made your BSN (Social Security Number), photo, and MRZ (Machine Readable Zone) unreadable.",
+    "privacy-rights-complaint":
+      "You can also file a complaint with the Dutch Data Protection Authority.",
+    "privacy-security-title": "Security",
+    "privacy-security-content":
+      "We take appropriate technical and organizational measures to protect your data against loss, misuse, or unauthorized access.",
+    "privacy-disclaimer-title": "Disclaimer",
+    "privacy-disclaimer-content":
+      "Stichting Ashe Foundation takes great care with the content of this website. However, errors may occur or pages may be temporarily unavailable. We accept no liability for direct or indirect damage resulting from the use of the website or the information published on it. Content may be changed at any time without notice.",
+    "privacy-data-point1": "First and last name",
+    "privacy-data-point2": "Date of birth",
+    "privacy-data-point3": "Place of birth",
+    "privacy-data-point4": "Address details",
+    "privacy-data-point5": "Phone number",
+    "privacy-data-point6": "Email address",
+    "privacy-data-point7": "Information about your activities on our website",
+    "privacy-data-point8": "Bank account number (for donations or payments)",
+    "privacy-rights-point1": "Access to your data",
+    "privacy-rights-point2": "Correction or deletion/erasure of data",
+    "privacy-rights-point3": "Withdrawal of consent",
+    "privacy-rights-point4": "Objection to processing",
+    "privacy-rights-point5": "Data portability",
 
-  // Add these to the translations.js file in the en section
-"privacy-title": "Privacy Statement",
-"privacy-intro": "Stichting Ashe Foundation, located at Rietgras 3, 8043 KJ Zwolle, is responsible for the processing of personal data as described in this privacy statement.",
-"privacy-contact-title": "Contact Details",
-"privacy-contact-content": "Website: https://ashefoundation.nl<br>Address: Rietgras 3, 8043 KJ Zwolle<br>Phone: +31 6 29314363<br>Email: info@ashefoundation.nl",
-"privacy-data-title": "Personal Data We Process",
-"privacy-data-intro": "We process your personal data because you use our services or because you provide them to us yourself. This concerns the following data:",
-"privacy-sensitive-title": "Special and/or Sensitive Personal Data",
-"privacy-sensitive-content": "Our website and services do not intend to collect data about visitors under 16 years of age, unless they have permission from parents or guardians. If you can demonstrate that we have collected personal data about a minor without consent, please contact us at info@ashefoundation.nl, and we will delete that information.",
-"privacy-purpose-title": "For What Purpose and on What Basis Do We Process Personal Data?",
-"privacy-purpose-intro": "We process personal data for the following purposes:",
-"privacy-purpose-point1": "Processing donations and payments",
-"privacy-purpose-point2": "Sending our newsletters via an email marketing software company",
-"privacy-purpose-point3": "Being able to call or email you if necessary for our services",
-"privacy-purpose-point4": "Informing you about (changes in) our activities and projects",
-"privacy-purpose-point5": "Analysis of website behavior to improve our website",
-"privacy-purpose-point6": "Complying with legal obligations, such as fiscal retention requirements",
-"privacy-newsletters-title": "Newsletters",
-"privacy-newsletters-content": "If you subscribe to our newsletter, we use your name and email address to keep you informed about our activities via an email marketing software. This software complies with European privacy legislation (GDPR). You can always unsubscribe via the unsubscribe link at the bottom of each email.",
-"privacy-retention-title": "Retention Period of Personal Data",
-"privacy-retention-content": "We do not store your personal data longer than necessary for the purpose for which it was collected. For donors, fiscal retention periods of 7 years apply.",
-"privacy-sharing-title": "Sharing Personal Data with Third Parties",
-"privacy-sharing-content": "We only share personal data with third parties if this is necessary for the execution of our services (such as for email marketing) or to comply with legal obligations. We enter into processor agreements with processors.",
-"privacy-cookies-title": "Cookies",
-"privacy-cookies-content": "Our website only uses functional and analytical cookies that do not infringe on your privacy. These cookies ensure that the website works properly and help us improve the website. You can opt out of cookies through your browser settings.",
-"privacy-rights-title": "Your Rights",
-"privacy-rights-intro": "You have the right to:",
-"privacy-rights-request": "Send your request to info@ashefoundation.nl. To prevent misuse, we ask you to provide a copy of your ID with your request, where you've made your BSN (Social Security Number), photo, and MRZ (Machine Readable Zone) unreadable.",
-"privacy-rights-complaint": "You can also file a complaint with the Dutch Data Protection Authority.",
-"privacy-security-title": "Security",
-"privacy-security-content": "We take appropriate technical and organizational measures to protect your data against loss, misuse, or unauthorized access.",
-"privacy-disclaimer-title": "Disclaimer",
-"privacy-disclaimer-content": "Stichting Ashe Foundation takes great care with the content of this website. However, errors may occur or pages may be temporarily unavailable. We accept no liability for direct or indirect damage resulting from the use of the website or the information published on it. Content may be changed at any time without notice.",
-"privacy-data-point1": "First and last name",
-"privacy-data-point2": "Date of birth",
-"privacy-data-point3": "Place of birth",
-"privacy-data-point4": "Address details",
-"privacy-data-point5": "Phone number",
-"privacy-data-point6": "Email address",
-"privacy-data-point7": "Information about your activities on our website",
-"privacy-data-point8": "Bank account number (for donations or payments)",
-"privacy-rights-point1": "Access to your data",
-"privacy-rights-point2": "Correction or deletion/erasure of data",
-"privacy-rights-point3": "Withdrawal of consent",
-"privacy-rights-point4": "Objection to processing",
-"privacy-rights-point5": "Data portability",
+    // Terms and Conditions Translations - English
+    "terms-title": "Terms and Conditions",
+    "terms-intro": "You donate to the receiving party below:",
+    "terms-recipient":
+      "Stichting Ashe Foundation Nederland, statutorily established in Zwolle, office located at Rietgras 3, postal code 8043 KJ Zwolle, registered in the trade register of the Chamber of Commerce under number 92102123, hereinafter referred to as: Ashe Foundation.",
+    "terms-definitions-title": "Article 1. Definitions (alphabetical)",
+    "terms-def-1":
+      "1.1. Donation: An amount of money donated by the giving party to Ashe Foundation",
+    "terms-def-2":
+      "1.2. Donation form: Means to make an online donation to Ashe Foundation",
+    "terms-def-3":
+      "1.3. Giving party: The natural or legal person who, by means of an electronic authorization, via the website of Ashe Foundation, makes a donation to Ashe Foundation, or registers as a regular sponsor/donor",
+    "terms-def-4":
+      "1.4. Statutes: Ashe Foundation aims to strengthen the socio-economic position of the Maasai in Tanzania",
+    "terms-def-5":
+      "1.5. Online donating: Giving money by means of an electronic payment system or via an electronic authorization via the website of Ashe Foundation to Ashe Foundation",
+    "terms-def-6":
+      "1.6. Receiving party: The legal entity Ashe Foundation that receives a donation based on the agreement, which is used for the implementation of the statutes",
+    "terms-def-7":
+      "1.7. Agreement: The distance agreement between receiving party and giving party",
+    "terms-def-8":
+      "1.8. Distance agreement: An agreement whereby, within the framework of a system for distance donation organized by the receiving party, exclusively one or more techniques for distance communication are used to conclude the agreement",
+    "terms-applicability-title": "Article 2. Applicability",
+    "terms-app-1":
+      "2.1. These general terms and conditions apply to every online donation to Ashe Foundation",
+    "terms-app-2":
+      "2.2. The giving party agrees to these general terms and conditions by donating online",
+    "terms-app-3":
+      "2.3. Ashe Foundation reserves the right to change the general terms and conditions in the interim",
+    "terms-rights-receiving-title":
+      "Article 3. Rights of receiving party, Ashe Foundation",
+    "terms-rights-rec-1": "3.1. Online donations fully benefit Ashe Foundation",
+    "terms-rights-rec-2":
+      "3.2. Ashe Foundation is completely free within its statutes to allocate these online donations, taking into account the possible wishes of the donor with regard to specific projects",
+    "terms-rights-rec-3":
+      "3.3. Ownership of the donated amount transfers to Ashe Foundation after the donated amount has been credited to Ashe Foundation's bank account",
+    "terms-rights-rec-4":
+      "3.4. Liability: Ashe Foundation accepts no liability for damage on the part of the giving party as a result of the donation made by the giving party. The giving party indemnifies Ashe Foundation against all claims from third parties for damage suffered by those third parties as a result of the donation from the giving party to Ashe Foundation",
+    "terms-rights-giving-title": "Article 4. Rights of giving party",
+    "terms-rights-giving-1":
+      "4.1. The giving party has the right to obtain information about the progress of Ashe Foundation's projects",
+    "terms-obligations-ashe-title": "Article 5. Obligations of Ashe Foundation",
+    "terms-obligations-ashe-1":
+      "5.1. Ashe Foundation undertakes to spend the received amounts in accordance with the statutes",
+    "terms-obligations-ashe-2":
+      "5.2. Ashe Foundation takes appropriate technical and organizational measures to secure communication, personal data, electronic data transfer and online donations, and ensures a secure web environment. This concerns a best efforts obligation. Ashe Foundation accepts no liability under this obligation",
+    "terms-obligations-ashe-3":
+      "5.3. All persons who are authorized on behalf of Ashe Foundation to access personal data are bound to confidentiality of this data",
+    "terms-obligations-giving-title": "Article 6. Obligations of giving party",
+    "terms-obligations-giving-1":
+      "6.1. To enter into an agreement with the receiving party, the giving party must be at least 18 years old. By entering into an agreement, the giving party declares that they meet this age limit",
+    "terms-obligations-giving-2":
+      "6.2. A giving party under 18 years of age can only make an online donation or register as a regular sponsor/donor in the presence of and with the approval of a parent or guardian",
+    "terms-obligations-giving-3":
+      "6.3. The giving party provides their correct identity data",
+    "terms-obligations-giving-4":
+      "6.4. The giving party only makes donations with means over which they have control and authority",
+    "terms-personal-data-title": "Article 7. Processing of personal data",
+    "terms-personal-data-1":
+      "7.1. Ashe Foundation processes the personal data provided by the giving party to Ashe Foundation in accordance with all (legal) regulations concerning the data to be processed, including in particular the regulations under or pursuant to the Personal Data Protection Act",
+    "terms-personal-data-2":
+      "7.2. These personal data are processed by Ashe Foundation for the purpose of entering into donorships, for the acceptance and settlement of other benefactions, for informing about the progress of the projects, as well as to be able to comply with legal obligations",
+    "terms-personal-data-3":
+      "7.3. The giving party has the right to check whether the data registered by Ashe Foundation are correct, the right to correction if the data appear to be incorrect, and the right to deletion of the registered data",
+    "terms-final-provisions-title": "Article 8. Final provisions",
+    "terms-final-provisions-1":
+      "8.1. The disclaimer and privacy statement used by Ashe Foundation apply in full",
+    "terms-final-provisions-2": "8.2. Parties declare that Dutch law applies",
 
-// Terms and Conditions Translations - English
-"terms-title": "Terms and Conditions",
-"terms-intro": "You donate to the receiving party below:",
-"terms-recipient": "Stichting Ashe Foundation Nederland, statutorily established in Zwolle, office located at Rietgras 3, postal code 8043 KJ Zwolle, registered in the trade register of the Chamber of Commerce under number 92102123, hereinafter referred to as: Ashe Foundation.",
-"terms-definitions-title": "Article 1. Definitions (alphabetical)",
-"terms-def-1": "1.1. Donation: An amount of money donated by the giving party to Ashe Foundation",
-"terms-def-2": "1.2. Donation form: Means to make an online donation to Ashe Foundation",
-"terms-def-3": "1.3. Giving party: The natural or legal person who, by means of an electronic authorization, via the website of Ashe Foundation, makes a donation to Ashe Foundation, or registers as a regular sponsor/donor",
-"terms-def-4": "1.4. Statutes: Ashe Foundation aims to strengthen the socio-economic position of the Maasai in Tanzania",
-"terms-def-5": "1.5. Online donating: Giving money by means of an electronic payment system or via an electronic authorization via the website of Ashe Foundation to Ashe Foundation",
-"terms-def-6": "1.6. Receiving party: The legal entity Ashe Foundation that receives a donation based on the agreement, which is used for the implementation of the statutes",
-"terms-def-7": "1.7. Agreement: The distance agreement between receiving party and giving party",
-"terms-def-8": "1.8. Distance agreement: An agreement whereby, within the framework of a system for distance donation organized by the receiving party, exclusively one or more techniques for distance communication are used to conclude the agreement",
-"terms-applicability-title": "Article 2. Applicability",
-"terms-app-1": "2.1. These general terms and conditions apply to every online donation to Ashe Foundation",
-"terms-app-2": "2.2. The giving party agrees to these general terms and conditions by donating online",
-"terms-app-3": "2.3. Ashe Foundation reserves the right to change the general terms and conditions in the interim",
-"terms-rights-receiving-title": "Article 3. Rights of receiving party, Ashe Foundation",
-"terms-rights-rec-1": "3.1. Online donations fully benefit Ashe Foundation",
-"terms-rights-rec-2": "3.2. Ashe Foundation is completely free within its statutes to allocate these online donations, taking into account the possible wishes of the donor with regard to specific projects",
-"terms-rights-rec-3": "3.3. Ownership of the donated amount transfers to Ashe Foundation after the donated amount has been credited to Ashe Foundation's bank account",
-"terms-rights-rec-4": "3.4. Liability: Ashe Foundation accepts no liability for damage on the part of the giving party as a result of the donation made by the giving party. The giving party indemnifies Ashe Foundation against all claims from third parties for damage suffered by those third parties as a result of the donation from the giving party to Ashe Foundation",
-"terms-rights-giving-title": "Article 4. Rights of giving party",
-"terms-rights-giving-1": "4.1. The giving party has the right to obtain information about the progress of Ashe Foundation's projects",
-"terms-obligations-ashe-title": "Article 5. Obligations of Ashe Foundation",
-"terms-obligations-ashe-1": "5.1. Ashe Foundation undertakes to spend the received amounts in accordance with the statutes",
-"terms-obligations-ashe-2": "5.2. Ashe Foundation takes appropriate technical and organizational measures to secure communication, personal data, electronic data transfer and online donations, and ensures a secure web environment. This concerns a best efforts obligation. Ashe Foundation accepts no liability under this obligation",
-"terms-obligations-ashe-3": "5.3. All persons who are authorized on behalf of Ashe Foundation to access personal data are bound to confidentiality of this data",
-"terms-obligations-giving-title": "Article 6. Obligations of giving party",
-"terms-obligations-giving-1": "6.1. To enter into an agreement with the receiving party, the giving party must be at least 18 years old. By entering into an agreement, the giving party declares that they meet this age limit",
-"terms-obligations-giving-2": "6.2. A giving party under 18 years of age can only make an online donation or register as a regular sponsor/donor in the presence of and with the approval of a parent or guardian",
-"terms-obligations-giving-3": "6.3. The giving party provides their correct identity data",
-"terms-obligations-giving-4": "6.4. The giving party only makes donations with means over which they have control and authority",
-"terms-personal-data-title": "Article 7. Processing of personal data",
-"terms-personal-data-1": "7.1. Ashe Foundation processes the personal data provided by the giving party to Ashe Foundation in accordance with all (legal) regulations concerning the data to be processed, including in particular the regulations under or pursuant to the Personal Data Protection Act",
-"terms-personal-data-2": "7.2. These personal data are processed by Ashe Foundation for the purpose of entering into donorships, for the acceptance and settlement of other benefactions, for informing about the progress of the projects, as well as to be able to comply with legal obligations",
-"terms-personal-data-3": "7.3. The giving party has the right to check whether the data registered by Ashe Foundation are correct, the right to correction if the data appear to be incorrect, and the right to deletion of the registered data",
-"terms-final-provisions-title": "Article 8. Final provisions",
-"terms-final-provisions-1": "8.1. The disclaimer and privacy statement used by Ashe Foundation apply in full",
-"terms-final-provisions-2": "8.2. Parties declare that Dutch law applies",
-
-//COOKIE SETTINGS
-"privacy-cookie-management-title": "Manage Cookie Settings",
-"privacy-cookie-management-intro": "You can adjust your cookie settings or remove all cookies at any time below.",
-"privacy-cookie-preferences": "Cookie preferences",
-"privacy-cookies-necessary": "Necessary cookies",
-"privacy-cookies-necessary-desc": "These cookies are needed for the website to function properly.",
-"privacy-cookies-analytics": "Analytics cookies",
-"privacy-cookies-analytics-desc": "These cookies help us gain insight into how visitors use our website.",
-"privacy-cookies-marketing": "Marketing cookies",
-"privacy-cookies-marketing-desc": "These cookies help us display relevant advertisements.",
-"privacy-cookies-save": "Save preferences",
-"privacy-cookies-revoke": "Remove all cookies",
-"cookie-modal-title": "Cookie preferences",
-"cookie-modal-intro": "When rejecting cookies, certain functionalities within the website may not work as intended. If you change your mind, you can easily allow or reject cookies - at any time, and per category.",
-"cookie-necessary": "Necessary cookies",
-"cookie-necessary-desc": "These cookies are needed for the website to function properly.",
-"cookie-analytics": "Analytics cookies",
-"cookie-analytics-desc": "These cookies help us gain insight into how visitors use our website.",
-"cookie-marketing": "Marketing cookies",
-"cookie-marketing-desc": "These cookies help us display relevant advertisements.",
-"cookie-save": "Save",
-"cookie-cancel": "Cancel",
-"cookie-preferences": "Adjust preferences",
+    //COOKIE SETTINGS
+    "privacy-cookie-management-title": "Manage Cookie Settings",
+    "privacy-cookie-management-intro":
+      "You can adjust your cookie settings or remove all cookies at any time below.",
+    "privacy-cookie-preferences": "Cookie preferences",
+    "privacy-cookies-necessary": "Necessary cookies",
+    "privacy-cookies-necessary-desc":
+      "These cookies are needed for the website to function properly.",
+    "privacy-cookies-analytics": "Analytics cookies",
+    "privacy-cookies-analytics-desc":
+      "These cookies help us gain insight into how visitors use our website.",
+    "privacy-cookies-marketing": "Marketing cookies",
+    "privacy-cookies-marketing-desc":
+      "These cookies help us display relevant advertisements.",
+    "privacy-cookies-save": "Save preferences",
+    "privacy-cookies-revoke": "Remove all cookies",
+    "cookie-modal-title": "Cookie preferences",
+    "cookie-modal-intro":
+      "When rejecting cookies, certain functionalities within the website may not work as intended. If you change your mind, you can easily allow or reject cookies - at any time, and per category.",
+    "cookie-necessary": "Necessary cookies",
+    "cookie-necessary-desc":
+      "These cookies are needed for the website to function properly.",
+    "cookie-analytics": "Analytics cookies",
+    "cookie-analytics-desc":
+      "These cookies help us gain insight into how visitors use our website.",
+    "cookie-marketing": "Marketing cookies",
+    "cookie-marketing-desc":
+      "These cookies help us display relevant advertisements.",
+    "cookie-save": "Save",
+    "cookie-cancel": "Cancel",
+    "cookie-preferences": "Adjust preferences",
   },
 };
+
+// Make translations globally available
+if (typeof window !== "undefined") {
+  window.translations = translations;
+}
