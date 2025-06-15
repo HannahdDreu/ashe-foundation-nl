@@ -227,35 +227,34 @@ export const LanguageManager = (function () {
     }
   }
 
-  function updateFooterLinks(lang) {
-    try {
+// Updated Footer link updates with language-specific URLs
+function updateFooterLinks(lang) {
+  try {
+    // Update privacy link URL based on language
+    const privacyLinks = document.querySelectorAll('[data-lang-key="footer-privacy"]');
+    privacyLinks.forEach(link => {
       if (lang === "nl") {
-        safeQuerySelectorAll(".footer-privacy-nl, .footer-terms-nl").forEach(
-          (el) => {
-            el.classList.remove("hidden");
-          },
-        );
-        safeQuerySelectorAll(".footer-privacy-en, .footer-terms-en").forEach(
-          (el) => {
-            el.classList.add("hidden");
-          },
-        );
+        link.href = "/privacystatement.html";
       } else {
-        safeQuerySelectorAll(".footer-privacy-en, .footer-terms-en").forEach(
-          (el) => {
-            el.classList.remove("hidden");
-          },
-        );
-        safeQuerySelectorAll(".footer-privacy-nl, .footer-terms-nl").forEach(
-          (el) => {
-            el.classList.add("hidden");
-          },
-        );
+        link.href = "/privacystatement.html?lang=en";
       }
-    } catch (e) {
-      console.error("Error updating footer links:", e);
-    }
+    });
+
+    // Update terms link URL based on language  
+    const termsLinks = document.querySelectorAll('[data-lang-key="footer-terms"]');
+    termsLinks.forEach(link => {
+      if (lang === "nl") {
+        link.href = "/algemenevoorwaarden.html";
+      } else {
+        link.href = "/algemenevoorwaarden.html?lang=en";
+      }
+    });
+
+    console.log(`Footer links updated for language: ${lang}`);
+  } catch (e) {
+    console.error("Error updating footer links:", e);
   }
+}
 
   function updateReadMoreButtons(lang) {
     try {
