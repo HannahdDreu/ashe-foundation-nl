@@ -299,6 +299,7 @@ export const translations = {
       "Extreme droogte in Tanzania treft Maasai gemeenschap zwaar",
     "drought-blog-desc":
       "De aanhoudende droogte in Tanzania heeft ernstige gevolgen voor de Maasai gemeenschap in Loolera.",
+      "blog-water-women-desc": "Ontdek hoe ons waterproject het leven van Maasai-vrouwen verandert door water dichterbij te brengen.",
 
     // New Project CardS
     "suggest-project": "Idee voor een project?",
@@ -622,6 +623,23 @@ export const translations = {
     "blog-together-title": "Samen maken we het verschil",
     "blog-together-text":
       "Jij kunt helpen. Met een donatie steun je direct projecten die het leven van de Maasai-gemeenschappen structureel verbeteren. Geen luxe, maar mensenrechten.",
+
+    // BLOG - Water halen: een vrouwenzaak
+    "blog-water-women-title": "Water halen: een vrouwenzaak – en waarom dat ertoe doet bij de Maasai",
+    "blog-date-july": "14 juli 2025",
+    "blog-category-gender": "Waterproject",
+    "blog-water-women-intro": "Bij de Maasai-gemeenschappen in Tanzania zijn de rollen tussen mannen en vrouwen al generaties lang duidelijk verdeeld. In deze traditioneel georganiseerde samenleving houden mannen zich bezig met het hoeden van vee en het nemen van belangrijke beslissingen binnen de gemeenschap. Vrouwen zijn verantwoordelijk voor het huishouden, de zorg voor de kinderen én – cruciaal – het halen van water.",
+    "water-women-caption1": "Een Maasai vrouw bereidt zich voor op de dagelijkse tocht om water te halen met behulp van ezels",
+    "blog-water-women-paragraph1": "Water halen is geen kleine taak. Vrouwen en meisjes leggen vaak kilometerslange tochten af naar de dichtstbijzijnde waterbron. Daarbij maken ze gebruik van ezels om de zware jerrycans met water te vervoeren. Hoewel de ezels het fysieke werk deels verlichten, blijft het een tijdrovende en vermoeiende taak, vaak onder de brandende zon en in onveilige omstandigheden.",
+    "blog-water-project-changes-title": "Een waterproject dat levens verandert",
+    "blog-water-project-changes-text": "Juist daarom is het waterproject dat we samen met de Maasai-gemeenschappen in Loolera en Lembapuli uitvoeren zo belangrijk. Het doel is simpel, maar de impact is groot: door toegang tot veilig en schoon water dichter bij huis te brengen, verandert er veel. Voor de hele gemeenschap – maar in het bijzonder voor vrouwen en meisjes.",
+    "water-women-caption2": "De gemeenschap komt samen bij het waterpunt - een cruciale plek voor sociale interactie en overleving",
+    "blog-water-women-paragraph2": "Doordat zij nu niet meer uren hoeven te lopen naar een verre bron, wordt hun dagelijkse last letterlijk verlicht. Het verhoogt hun veiligheid – ze hoeven niet meer door afgelegen gebieden te trekken – en het geeft hen meer tijd voor andere belangrijke activiteiten: school, werk, rust.",
+    "blog-from-burden-to-strength-title": "Van last naar kracht",
+    "blog-from-burden-to-strength-text1": "Dit project doet meer dan alleen water brengen. Het raakt aan diepgewortelde structuren en geeft vrouwen ruimte en kracht om een actievere rol te spelen binnen hun gemeenschap. Het biedt kansen voor meisjes om langer op school te blijven en voor vrouwen om economische activiteiten op te starten.",
+    "blog-from-burden-to-strength-text2": "In een gemeenschap waar water halen lang als vanzelfsprekend tot het takenpakket van vrouwen behoorde, verandert dit project de verhoudingen langzaam maar zeker. Water is leven, zeggen ze in Afrika. En dat klopt. Maar voor de Maasai-vrouwen betekent water ook vrijheid, veiligheid en een stap richting gelijkwaardigheid.",
+    "support-water-project": "Steun het waterproject",
+    "support-water-project-text": "Help ons meer waterpunten aan te leggen en geef Maasai-vrouwen hun tijd, veiligheid en waardigheid terug.",
 
     // Related articles
     "related-articles": "Gerelateerde artikelen",
@@ -1173,6 +1191,7 @@ export const translations = {
       "Extreme drought in Tanzania severely affects Maasai community",
     "drought-blog-desc":
       "The ongoing drought in Tanzania has serious consequences for the Maasai community in Loolera.",
+      "blog-water-women-desc": "Discover how our water project transforms the lives of Maasai women by bringing water closer to home.",
 
     // New Project Card
     "suggest-project": "Project idea?",
@@ -1406,8 +1425,6 @@ export const translations = {
       '"I am eternally grateful to the Ashe foundation. All thanks to Gods glory!Ashe Naleng!"',
     "neema-name": "Neema",
 
-    // BLOG content
-
     // Blog Page Translations - English
     "drought-title":
       "Extreme drought in Tanzania severely affects Maasai community",
@@ -1495,6 +1512,23 @@ export const translations = {
     "blog-together-title": "Together we make the difference",
     "blog-together-text":
       "You can help. With a donation you directly support projects that structurally improve the lives of the Maasai communities. Not luxury, but human rights.",
+
+      // BLOG - Water halen: een vrouwenzaak
+    "blog-water-women-title": "Fetching water: a woman's task – and why it matters for the Maasai",
+    "blog-date-july": "July 14, 2025",
+    "blog-category-gender": "Waterproject",
+    "blog-water-women-intro": "In Maasai communities in Tanzania, the roles between men and women have been clearly divided for generations. In this traditionally organized society, men are responsible for herding cattle and making important decisions within the community. Women are responsible for the household, caring for children and – crucially – fetching water.",
+    "water-women-caption1": "A Maasai woman prepares for the daily journey to fetch water with the help of donkeys",
+    "blog-water-women-paragraph1": "Fetching water is no small task. Women and girls often walk for kilometers to the nearest water source. They use donkeys to transport the heavy jerry cans of water. Although the donkeys partially relieve the physical burden, it remains a time-consuming and exhausting task, often under the burning sun and in unsafe conditions.",
+    "blog-water-project-changes-title": "A water project that changes lives",
+    "blog-water-project-changes-text": "This is precisely why the water project we are implementing together with the Maasai communities in Loolera and Lembapuli is so important. The goal is simple, but the impact is significant: by bringing access to safe and clean water closer to home, much changes. For the entire community – but especially for women and girls.",
+    "water-women-caption2": "The community gathers at the water point - a crucial place for social interaction and survival",
+    "blog-water-women-paragraph2": "Because they no longer have to walk for hours to a distant source, their daily burden is literally lightened. It increases their safety – they no longer have to travel through remote areas – and it gives them more time for other important activities: school, work, rest.",
+    "blog-from-burden-to-strength-title":"From burden to strength",
+    "blog-from-burden-to-strength-text1": "This project does more than just bring water. It touches on deeply rooted structures and gives women space and strength to play a more active role within their community. It offers opportunities for girls to stay in school longer and for women to start economic activities.",
+    "blog-from-burden-to-strength-text2": "In a community where fetching water has long been taken for granted as part of women's tasks, this project is slowly but surely changing the dynamics. Water is life, they say in Africa. And that's true. But for Maasai women, water also means freedom, safety, and a step towards equality.",
+    "support-water-project": "Support the water project",
+    "support-water-project-text": "Help us create more water points and give Maasai women back their time, safety, and dignity.",
 
     // Related articles
     "related-articles": "Related articles",
