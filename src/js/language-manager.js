@@ -227,34 +227,38 @@ export const LanguageManager = (function () {
     }
   }
 
-// Updated Footer link updates with language-specific URLs
-function updateFooterLinks(lang) {
-  try {
-    // Update privacy link URL based on language
-    const privacyLinks = document.querySelectorAll('[data-lang-key="footer-privacy"]');
-    privacyLinks.forEach(link => {
-      if (lang === "nl") {
-        link.href = "/privacystatement.html";
-      } else {
-        link.href = "/privacystatement.html?lang=en";
-      }
-    });
+  // Updated Footer link updates with language-specific URLs
+  function updateFooterLinks(lang) {
+    try {
+      // Update privacy link URL based on language
+      const privacyLinks = document.querySelectorAll(
+        '[data-lang-key="footer-privacy"]',
+      );
+      privacyLinks.forEach((link) => {
+        if (lang === "nl") {
+          link.href = "/privacystatement.html";
+        } else {
+          link.href = "/privacystatement.html?lang=en";
+        }
+      });
 
-    // Update terms link URL based on language  
-    const termsLinks = document.querySelectorAll('[data-lang-key="footer-terms"]');
-    termsLinks.forEach(link => {
-      if (lang === "nl") {
-        link.href = "/algemenevoorwaarden.html";
-      } else {
-        link.href = "/algemenevoorwaarden.html?lang=en";
-      }
-    });
+      // Update terms link URL based on language
+      const termsLinks = document.querySelectorAll(
+        '[data-lang-key="footer-terms"]',
+      );
+      termsLinks.forEach((link) => {
+        if (lang === "nl") {
+          link.href = "/algemenevoorwaarden.html";
+        } else {
+          link.href = "/algemenevoorwaarden.html?lang=en";
+        }
+      });
 
-    console.log(`Footer links updated for language: ${lang}`);
-  } catch (e) {
-    console.error("Error updating footer links:", e);
+      console.log(`Footer links updated for language: ${lang}`);
+    } catch (e) {
+      console.error("Error updating footer links:", e);
+    }
   }
-}
 
   function updateReadMoreButtons(lang) {
     try {

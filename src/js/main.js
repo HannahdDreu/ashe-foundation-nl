@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // UI Components
     initMobileMenu();
     initTeamCarousel();
-    initProjectsCarousel(); 
+    initProjectsCarousel();
     initLazyLoading();
-    initVideoPlayer(); 
+    initVideoPlayer();
     initModals();
 
     // Initialize team modals for "Who We Are" page

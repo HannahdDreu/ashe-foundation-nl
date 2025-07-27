@@ -917,7 +917,7 @@ body.projecten .carousel-indicators,
 body.projecten .carousel-control {
   display: flex !important;
   visibility: visible !important;
-  background-color: #E07A5F !important;
+  background-color: #e07a5f !important;
   width: 40px !important;
   height: 40px !important;
   border-radius: 50% !important;
@@ -952,14 +952,14 @@ body.projecten .carousel-control {
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 1.5rem !important;
   }
-  
+
   /* Basic team card styling */
   .wiewijzijn .team-card,
   #team-carousel .team-card {
     height: auto !important;
     width: 100% !important;
   }
-  
+
   /* Reset carousel structure */
   .wiewijzijn .carousel-item,
   #team-carousel .carousel-item {
@@ -1018,13 +1018,13 @@ body.projecten .carousel-control {
   display: flex !important;
   width: 40px !important;
   height: 40px !important;
-  background-color: #E07A5F !important;
+  background-color: #e07a5f !important;
   border-radius: 50% !important;
   position: absolute !important;
   top: 50% !important;
   transform: translateY(-50%) !important;
   z-index: 30 !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
 }
 
 .projecten .carousel-control:hover {
@@ -1054,7 +1054,7 @@ body.projecten .carousel-control {
     height: 10px !important;
     margin: 0 6px !important;
   }
-  
+
   /* But still hide on project pages */
   .projecten .carousel-indicators {
     display: none !important;
@@ -1142,13 +1142,13 @@ body.projecten .carousel-control {
     display: flex;
     transition: transform 0.5s ease;
   }
-  
+
   #team-carousel .carousel-inner:not(.carousel-inner-mobile) .carousel-item {
     min-width: 100%;
     flex-shrink: 0;
     display: block;
   }
-  
+
   /* Force 3-column grid layout for desktop team cards */
   #team-carousel .carousel-item .grid,
   .wiewijzijn .carousel-item .grid {
@@ -1157,14 +1157,14 @@ body.projecten .carousel-control {
     gap: 1.5rem !important;
     width: 100% !important;
   }
-  
+
   /* Show desktop indicators for team */
   #team-carousel .carousel-indicators {
     display: flex !important;
     justify-content: center;
     margin-top: 1rem;
   }
-  
+
   /* Ensure team cards maintain proper size on desktop */
   #team-carousel .team-card,
   .wiewijzijn .team-card {
@@ -1173,7 +1173,7 @@ body.projecten .carousel-control {
     max-width: none;
     width: 100%;
   }
-  
+
   /* Fix any flex issues that might stretch cards */
   #team-carousel .carousel-item > div,
   .wiewijzijn .carousel-item > div {
@@ -1190,21 +1190,21 @@ body.projecten .carousel-control {
   .carousel-indicators {
     display: none !important;
   }
-  
+
   /* Make arrow buttons more prominent on mobile */
   .carousel-control {
     width: 44px;
     height: 44px;
     z-index: 30;
   }
-  
+
   /* Adjust team card padding for mobile */
   .team-card {
     padding: 1.5rem 1rem;
     margin: 0 auto;
     max-width: 320px;
   }
-  
+
   /* Ensure proper spacing */
   #team-carousel {
     padding-bottom: 2rem;
@@ -1236,18 +1236,18 @@ body.projecten .carousel-control {
     text-align: center;
     min-height: auto;
   }
-  
+
   .team-card h3 {
     font-size: 1.125rem;
     line-height: 1.4;
     margin-bottom: 0.5rem;
   }
-  
+
   .team-card p {
     font-size: 0.875rem;
     line-height: 1.5;
   }
-  
+
   .read-more-btn {
     margin-top: 1rem;
     justify-content: center;
@@ -1260,16 +1260,16 @@ body.projecten .carousel-control {
     background-color: var(--color-light);
     padding: 2rem 1rem;
   }
-  
+
   .team-card.pattern-accent svg {
     margin: 0 auto 1rem;
   }
-  
+
   .team-card.pattern-accent h3,
   .team-card.pattern-accent p {
     text-align: center;
   }
-  
+
   .team-card.pattern-accent a {
     margin: 1rem auto 0;
     display: inline-flex;

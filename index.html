@@ -599,15 +599,16 @@
         <div class="absolute inset-0 z-0">
           <picture>
             <source
-              media="(max-width: 800px)"
-              srcset="/img/maasai-water-view-800w.webp"
-            />
-            <source
-              media="(max-width: 1200px)"
-              srcset="/img/maasai-water-view-1200w.webp"
+              type="image/webp"
+              srcset="
+                /img/maasai-water-view-800w.webp   800w,
+                /img/maasai-water-view-1200w.webp 1200w,
+                /img/maasai-water-view-1920w.webp 1920w
+              "
+              sizes="100vw"
             />
             <img
-              src="/img/maasai-water-view.webp"
+              src="/img/maasai-water-view-1920w.webp"
               alt=""
               class="w-full h-full object-cover"
               fetchpriority="high"
@@ -615,9 +616,9 @@
               decoding="async"
               width="1200"
               height="800"
-              sizes="100vw"
             />
           </picture>
+
           <!-- Gradient overlay -->
           <div
             class="absolute inset-0 bg-gradient-to-b from-black/50 via-dark/40 to-terracotta/40"
@@ -1174,8 +1175,11 @@
       >
         <!-- Dutch version (visible by default) -->
         <div id="water-project-nl" class="relative w-full">
-            <div class="relative min-h-[500px] md:min-h-[600px] bg-cover bg-center"
-            style="background-image: url('img/waterproject-nl-graph.webp');"
+          <div
+            class="relative min-h-[500px] md:min-h-[600px] bg-cover bg-center"
+            style="
+              background-image: url(&quot;img/waterproject-nl-graph.webp&quot;);
+            "
             role="img"
             aria-label="Achtergrondafbeelding van het waterproject in Tanzania"
           >
