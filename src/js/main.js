@@ -11,6 +11,7 @@ import { initFinancieelPage } from "./pages/financieel.js";
 import { initNewsletterSignup } from "./newsletter.js";
 import { initSocialShare } from "./social.js";
 import { boostInitialPerformance } from "./performance.js";
+import { initProjectsCarousel } from "./ui/projects-carousel.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Initializing application modules...");
@@ -24,8 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // UI Components
     initMobileMenu();
     initTeamCarousel();
+    initProjectsCarousel(); 
     initLazyLoading();
-    initVideoPlayer(); // ✅ This should now work
+    initVideoPlayer(); 
     initModals();
 
     // Initialize team modals for "Who We Are" page

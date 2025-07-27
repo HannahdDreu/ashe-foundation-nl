@@ -926,7 +926,6 @@ select {
   z-index: 1000 !important; /* Higher than your nav's z-index of 100 */
 }
 
-/* Add this CSS to your main.css file */
 
 /* Base styles for carousel indicators */
 .carousel-indicators {
@@ -971,9 +970,18 @@ select {
 
 /* Device-specific positioning */
 @media (max-width: 768px) {
-  /* Hide on mobile devices */
+  /* Show indicators on mobile but adjust styling */
   .carousel-indicators {
-    display: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .carousel-indicator {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0 8px !important;
   }
 }
 
@@ -1005,12 +1013,27 @@ select {
   background-color: transparent;
 }
 
-/* Hide projecten navigation buttons on mobile */
+/* Style projecten navigation buttons for mobile */
 @media (max-width: 768px) {
   .projecten-nav-button {
+    display: flex !important;
+    width: 40px !important;
+    height: 40px !important;
+    background-color: #E07A5F !important;
+    border-radius: 50% !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 30 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
+  }
+  
+  /* Hide the bottom dot indicators on mobile */
+  .carousel-indicators {
     display: none !important;
   }
 }
+
 
 /* Donate page specific mobile fixes */
 @media (max-width: 768px) {
@@ -1107,3 +1130,252 @@ select {
     gap: 0.5rem !important;
   }
 }
+
+/* Team Carousel Mobile Styles */
+
+/* Mobile carousel container */
+.carousel-inner-mobile {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.carousel-inner-mobile::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* Mobile carousel slides */
+.carousel-inner-mobile > div {
+  flex-shrink: 0;
+  width: 100%;
+  scroll-snap-align: center;
+  padding: 0 1rem;
+}
+
+/* Arrow buttons styling - same for mobile and desktop */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30;
+  width: 40px;
+  height: 40px;
+  background-color: #e07a5f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.carousel-control:hover {
+  background-color: #ff8a70;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-control-prev {
+  left: 1rem;
+}
+
+.carousel-control-next {
+  right: 1rem;
+}
+
+/* Desktop carousel indicators - orange theme */
+.carousel-indicator {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50%;
+  background-color: rgba(224, 122, 95, 0.3) !important; /* Light orange */
+  transition: all 0.2s ease;
+  border: none !important;
+  padding: 0 !important;
+  cursor: pointer;
+  margin: 0 4px !important;
+}
+
+.carousel-indicator.active {
+  background-color: #e07a5f !important; /* Full orange */
+  transform: scale(1.2);
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+  /* Ensure desktop carousel keeps original structure */
+  .carousel-inner:not(.carousel-inner-mobile) {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-inner:not(.carousel-inner-mobile) .carousel-item {
+    min-width: 100%;
+    flex-shrink: 0;
+    display: block; /* Ensure proper display */
+  }
+  
+  /* Force 3-column grid layout for desktop team cards */
+  .carousel-item .grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Show desktop indicators */
+  .carousel-indicators {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  /* Ensure team cards maintain proper size on desktop */
+  .team-card {
+    padding: 2rem;
+    height: auto;
+    max-width: none;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 1024px) {
+  /* Hide desktop indicators on mobile - no bottom dots */
+  .carousel-indicator,
+  .carousel-indicators {
+    display: none !important;
+  }
+  
+  /* Make arrow buttons more prominent on mobile */
+  .carousel-control {
+    width: 44px;
+    height: 44px;
+    z-index: 30;
+  }
+  
+  /* Adjust team card padding for mobile */
+  .team-card {
+    padding: 1.5rem 1rem;
+    margin: 0 auto;
+    max-width: 320px;
+  }
+  
+  /* Ensure proper spacing */
+  #team-carousel {
+    padding-bottom: 2rem;
+  }
+}
+
+/* Remove any small screen hiding of controls - we want them visible */
+@media (max-width: 640px) {
+  .carousel-control {
+    display: flex !important; /* Force show on small screens */
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Team member images - make them consistent */
+.team-card img {
+  width: 144px;
+  height: 144px;
+  object-fit: cover;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Improve team card layout on mobile */
+@media (max-width: 768px) {
+  .team-card {
+    text-align: center;
+    min-height: auto;
+  }
+  
+  .team-card h3 {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  .team-card p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  .read-more-btn {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+}
+
+/* Smooth transitions for carousel switching */
+.carousel {
+  transition: all 0.3s ease;
+}
+
+/* Fix for volunteer card in mobile view */
+@media (max-width: 1024px) {
+  .team-card.pattern-accent {
+    background-color: var(--color-light);
+    padding: 2rem 1rem;
+  }
+  
+  .team-card.pattern-accent svg {
+    margin: 0 auto 1rem;
+  }
+  
+  .team-card.pattern-accent h3,
+  .team-card.pattern-accent p {
+    text-align: center;
+  }
+  
+  .team-card.pattern-accent a {
+    margin: 1rem auto 0;
+    display: inline-flex;
+  }
+}
+
+/* Additional desktop fixes to ensure 3-column layout */
+@media (min-width: 1025px) {
+  /* Force the carousel items to display properly */
+  .carousel-item {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  /* Ensure grid layout is properly applied */
+  .carousel-item > div[class*="grid"] {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Reset any mobile-specific transforms */
+  .carousel-inner-mobile {
+    display: flex !important;
+  }
+  
+  /* Make sure the carousel container doesn't interfere */
+  #team-carousel .carousel {
+    position: relative;
+  }
+}[class*="grid"] {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Reset any mobile-specific transforms */
+  .carousel-inner-mobile {
+    display: flex !important;
+  }
+  
+  /* Make sure the carousel container doesn't interfere */
+  #team-carousel .carousel {
+    position: relative;
+  }
