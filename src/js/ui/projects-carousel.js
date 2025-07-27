@@ -11,7 +11,7 @@ export function initProjectsCarousel() {
   const nextButton = document.getElementById("next");
   const indicatorsContainer = document.querySelector(".carousel-indicators");
 
-  if (!carousel || !prevButton || !nextButton || !indicatorsContainer) {
+  if (!carousel || !prevButton || !nextButton) {
     console.log("Carousel elements not found");
     return;
   }
@@ -22,29 +22,17 @@ export function initProjectsCarousel() {
 
   console.log("Found", totalCards, "project cards");
 
-  // Create proper carousel indicators matching your CSS
+  // NEVER create indicators - we only want orange arrows
   function createIndicators() {
-    indicatorsContainer.innerHTML = "";
-    for (let i = 0; i < totalCards; i++) {
-      const indicator = document.createElement("button");
-      indicator.className = `carousel-indicator ${i === 0 ? "active" : ""}`;
-      indicator.setAttribute("aria-label", `Ga naar project ${i + 1}`);
-      indicator.addEventListener("click", () => goToSlide(i));
-      indicatorsContainer.appendChild(indicator);
+    if (indicatorsContainer) {
+      indicatorsContainer.innerHTML = "";
+      console.log("Indicators container cleared - no dots will be created");
     }
-    console.log("Created", totalCards, "proper carousel indicators");
   }
 
-  // Update indicators to match your CSS classes
+  // No need to update indicators since we don't create any
   function updateIndicators() {
-    const indicators = indicatorsContainer.querySelectorAll("button");
-    indicators.forEach((indicator, index) => {
-      if (index === currentIndex) {
-        indicator.className = "carousel-indicator active";
-      } else {
-        indicator.className = "carousel-indicator";
-      }
-    });
+    // Do nothing - we don't want any indicators
   }
 
   // Go to specific slide
@@ -92,7 +80,7 @@ export function initProjectsCarousel() {
   });
 
   // Initialize
-  createIndicators();
+  createIndicators(); // This will clear any existing dots
   updateCarousel();
 
   // Handle window resize
@@ -132,5 +120,5 @@ export function initProjectsCarousel() {
     isDragging = false;
   });
 
-  console.log("Projects carousel initialized with", totalCards, "cards");
+  console.log("Projects carousel initialized with ONLY orange arrows - no dots");
 }
