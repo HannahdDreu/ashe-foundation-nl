@@ -35,9 +35,7 @@ body {
 
 .site-logo {
   height: 90px;
-  /* Reduced from 90px */
   width: auto;
-  /* Maintain aspect ratio */
   transition: transform 0.3s ease;
 }
 
@@ -92,13 +90,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-/* Continue with existing styles... */
-/* Add will-change to improve GPU rendering */
-.hero-section,
-[data-bg*="waterproject"] {
-  will-change: background-image;
 }
 
 /* Add will-change to improve GPU rendering */
@@ -316,12 +307,10 @@ select:focus {
 /* Improve text contrast for accessibility */
 .text-gray-300 {
   color: #d1d5db;
-  /* Brighter for better contrast on dark backgrounds */
 }
 
 .text-gray-500 {
   color: #6b7280;
-  /* Darker for better contrast */
 }
 
 /* Timeline styles */
@@ -511,13 +500,11 @@ select:focus {
 .content-toggle {
   overflow: hidden;
   max-height: 200px;
-  /* Default collapsed height */
   transition: max-height 0.5s ease;
 }
 
 .content-toggle.expanded {
   max-height: 1000px;
-  /* Expanded height - large enough to fit content */
 }
 
 /* Page-specific overrides */
@@ -558,8 +545,8 @@ select:focus {
 }
 
 .modal-content {
-  background-color: var(--color-light);
-  margin: 10% auto;
+  background-color: #fff;
+  margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
@@ -569,6 +556,8 @@ select:focus {
   transform: translateY(-20px);
   transition: transform 0.3s ease;
   position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .modal.show .modal-content {
@@ -677,7 +666,7 @@ select:focus {
   opacity: 0.2;
 }
 
-/* Nesarian PAGE */
+/* Nasarian PAGE */
 
 /* Hero Section for Naserian page */
 .naserian-story .hero-section {
@@ -695,17 +684,6 @@ select:focus {
   background-image:
     linear-gradient(to bottom, rgba(64, 61, 57, 0.5), rgba(224, 122, 95, 0.4)),
     url("/img/naserianwinkel.webp");
-}
-
-/* Additional Modal Styles for Team Members */
-.modal-content {
-  background-color: #fff;
-  /* Change from #fff1e6 to white for team modals */
-  margin: 5% auto;
-  /* Decrease from 10% to 5% for better positioning */
-  max-height: 90vh;
-  /* Limit height and enable scrolling for long content */
-  overflow-y: auto;
 }
 
 /* Read More Button Styles */
@@ -730,7 +708,6 @@ select:focus {
 #julia-modal .modal-content,
 #kangai-modal .modal-content {
   padding: 2rem;
-  /* More padding for team modals */
 }
 
 /* Base styles */
@@ -773,13 +750,10 @@ select:focus {
   .btn-primary,
   .btn-secondary {
     padding: 0.75rem 1rem;
-    /* Larger tap target */
     min-height: 44px;
-    /* Apple's recommended minimum */
     min-width: 44px;
   }
 
-  /* Reduce excessive margin/padding on mobile */
   .story-card,
   .team-card,
   .stat-card {
@@ -787,7 +761,6 @@ select:focus {
     margin-bottom: 1rem;
   }
 
-  /* Adjust text sizes for mobile */
   h1 {
     font-size: 2rem !important;
   }
@@ -801,7 +774,6 @@ select:focus {
 @media (max-width: 480px) {
   body {
     font-size: 16px;
-    /* Base font size for better readability */
   }
 
   p {
@@ -847,28 +819,24 @@ footer a img[alt="ASHE Foundation Logo"],
 footer .inline-block img {
   height: auto;
   width: 150px;
-  /* Set a fixed width that shows the full logo */
   max-width: 100%;
   object-fit: contain;
-  /* Ensures the entire image is visible */
   padding: 4px;
   background-color: transparent;
   border-radius: 4px;
 }
 
-/* Fix the ANBI logo display in footer - bigger while maintaining fit */
+/* Fix the ANBI logo display in footer */
 footer .anbi-logo img,
 footer a img[alt*="anbi"],
 footer a img[alt*="ANBI"],
 footer img[title="ANBI"] {
   height: auto;
   max-height: 65px;
-  /* Increased from 56px */
   width: auto;
   max-width: 100%;
   object-fit: contain;
   padding: 3px;
-  /* Reduced padding to allow more room for the image */
   background-color: white;
   border-radius: 4px;
 }
@@ -923,10 +891,81 @@ select {
 
 /* Ensure graph modal appears above everything else including the navbar */
 #graph-modal {
-  z-index: 1000 !important; /* Higher than your nav's z-index of 100 */
+  z-index: 1000 !important;
 }
 
+/* EMERGENCY FIXES - VERY SPECIFIC SELECTORS */
 
+/* PROJECT PAGE - FORCE ORANGE ARROWS ONLY, NO DOTS */
+/* Hide ALL dot indicators on project pages */
+.projecten .carousel-indicators,
+.projecten .carousel-indicators button,
+.projecten .carousel-indicator,
+body.projecten .carousel-indicators,
+.projecten [class*="indicator"],
+.projecten .bg-orange-500,
+.projecten .bg-rose-600 {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Force orange arrows to show on project pages - ALL SCREEN SIZES */
+.projecten .carousel-control,
+.projecten .carousel-control-prev,
+.projecten .carousel-control-next,
+body.projecten .carousel-control {
+  display: flex !important;
+  visibility: visible !important;
+  background-color: #E07A5F !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 50 !important;
+  border: none !important;
+  cursor: pointer !important;
+  color: white !important;
+}
+
+.projecten .carousel-control:hover {
+  background-color: #ff8a70 !important;
+}
+
+/* Make sure arrows are positioned correctly */
+.projecten .carousel-control-prev {
+  left: 1rem !important;
+}
+
+.projecten .carousel-control-next {
+  right: 1rem !important;
+}
+
+/* RESET TEAM PAGE - REMOVE PROBLEMATIC OVERRIDES */
+@media (min-width: 1025px) {
+  /* Simple grid setup - let the existing HTML structure work */
+  .wiewijzijn .grid,
+  #team-carousel .grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Basic team card styling */
+  .wiewijzijn .team-card,
+  #team-carousel .team-card {
+    height: auto !important;
+    width: 100% !important;
+  }
+  
+  /* Reset carousel structure */
+  .wiewijzijn .carousel-item,
+  #team-carousel .carousel-item {
+    width: 100% !important;
+  }
+}
 /* Base styles for carousel indicators */
 .carousel-indicators {
   display: flex;
@@ -945,7 +984,7 @@ select {
   margin: 0 5px !important;
   opacity: 0.9;
   background-color: #ffffff !important;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); /* Add shadow for visibility */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   border: none !important;
   padding: 0 !important;
   border-radius: 50%;
@@ -965,187 +1004,77 @@ select {
 .project-card a,
 .project-card button {
   position: relative !important;
-  z-index: 25 !important; /* Higher than indicators */
+  z-index: 25 !important;
 }
 
-/* Device-specific positioning */
+/* PROJECT PAGE SPECIFIC STYLES */
+/* Hide dots on project page desktop - use arrows instead */
+.projecten .carousel-indicators {
+  display: none !important;
+}
+
+/* Show orange arrows on project page for all screen sizes */
+.projecten .carousel-control {
+  display: flex !important;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #E07A5F !important;
+  border-radius: 50% !important;
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 30 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
+}
+
+.projecten .carousel-control:hover {
+  background-color: #ff8a70 !important;
+}
+
+/* Device-specific positioning for OTHER pages (not projects) */
 @media (max-width: 768px) {
-  /* Show indicators on mobile but adjust styling */
-  .carousel-indicators {
-    display: flex !important;
-    justify-content: center !important;
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
-  }
-  
-  .carousel-indicator {
-    width: 12px !important;
-    height: 12px !important;
-    margin: 0 8px !important;
+  /* Hide dot indicators on mobile for all carousels except team */
+  .carousel-indicators:not(.team-indicators) {
+    display: none !important;
   }
 }
 
 @media (min-width: 769px) {
-  /* Original position for desktop */
-  .carousel-indicators {
-    position: static !important; /* Return to original flow position */
+  /* Desktop indicators positioning for non-project pages */
+  .carousel-indicators:not(.team-indicators) {
+    position: static !important;
     margin-top: 8px !important;
     margin-bottom: 16px !important;
     display: flex !important;
   }
 
-  /* Laptop styling for indicators */
   .carousel-indicators button,
   .carousel-indicator {
     width: 10px !important;
     height: 10px !important;
     margin: 0 6px !important;
   }
-}
-
-/* Lazy loading styles */
-.lazy-background {
-  background-color: #403d39; /* Fallback color while image loads */
-  transition: background-color 0.3s ease;
-}
-
-.lazy-background.loaded {
-  background-color: transparent;
-}
-
-/* Style projecten navigation buttons for mobile */
-@media (max-width: 768px) {
-  .projecten-nav-button {
-    display: flex !important;
-    width: 40px !important;
-    height: 40px !important;
-    background-color: #E07A5F !important;
-    border-radius: 50% !important;
-    position: absolute !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    z-index: 30 !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
-  }
   
-  /* Hide the bottom dot indicators on mobile */
-  .carousel-indicators {
+  /* But still hide on project pages */
+  .projecten .carousel-indicators {
     display: none !important;
   }
 }
 
-
-/* Donate page specific mobile fixes */
-@media (max-width: 768px) {
-  /* Fix bank details section on mobile */
-  .bank-details-container {
-    word-break: break-all;
-    overflow-wrap: break-word;
-  }
-
-  /* Ensure bank account numbers wrap properly */
-  .bank-details-container .font-semibold {
-    font-size: 0.9rem;
-    word-break: break-all;
-    line-height: 1.4;
-  }
-
-  /* Fix the bank details cards on mobile */
-  .bg-light.p-8 {
-    padding: 1rem !important;
-  }
-
-  /* Make bank details responsive */
-  .py-3.border-b {
-    flex-direction: column;
-    align-items: flex-start !important;
-    gap: 0.5rem;
-  }
-
-  .py-3.border-b .font-medium {
-    font-size: 0.9rem;
-  }
-
-  .py-3.border-b .font-semibold {
-    font-size: 0.85rem;
-    color: var(--color-terracotta);
-  }
-}
-
-/* Additional mobile fixes for donate page */
-@media (max-width: 480px) {
-  /* Extra small screens - make text even smaller if needed */
-  .bank-details-container .text-lg {
-    font-size: 1rem !important;
-  }
-
-  /* Ensure donorbox iframe is responsive */
-  iframe[name="donorbox"] {
-    min-width: 280px !important;
-    width: 100% !important;
-  }
-}
-
-/* Fix payment methods section on mobile */
-@media (max-width: 768px) {
-  /* Make payment method cards smaller text on mobile */
-  .payment-methods-title {
-    font-size: 1rem !important;
-  }
-
-  /* Fix payment method grid items */
-  [role="list"] [role="listitem"] {
-    padding: 0.75rem 0.5rem !important;
-  }
-
-  [role="list"] [role="listitem"] .font-medium {
-    font-size: 0.75rem !important;
-    line-height: 1.2;
-    text-align: center;
-    word-break: break-word;
-  }
-
-  /* Make the payment method icons smaller */
-  [role="list"] [role="listitem"] .w-12.h-12 {
-    width: 2rem !important;
-    height: 2rem !important;
-    margin-bottom: 0.25rem !important;
-  }
-
-  [role="list"] [role="listitem"] .w-12.h-12 svg {
-    width: 1rem !important;
-    height: 1rem !important;
-  }
-}
-
-/* Extra small screens */
-@media (max-width: 480px) {
-  /* Even smaller text for very small screens */
-  [role="list"] [role="listitem"] .font-medium {
-    font-size: 0.7rem !important;
-  }
-
-  /* Reduce grid gap */
-  .grid.grid-cols-2.gap-4 {
-    gap: 0.5rem !important;
-  }
-}
-
-/* Team Carousel Mobile Styles */
-
-/* Mobile carousel container */
+/* TEAM CAROUSEL - ORANGE THEMED */
+/* Team carousel mobile container */
 .carousel-inner-mobile {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .carousel-inner-mobile::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  display: none;
 }
 
 /* Mobile carousel slides */
@@ -1156,7 +1085,7 @@ select {
   padding: 0 1rem;
 }
 
-/* Arrow buttons styling - same for mobile and desktop */
+/* Team arrow buttons - orange theme */
 .carousel-control {
   position: absolute;
   top: 50%;
@@ -1188,12 +1117,12 @@ select {
   right: 1rem;
 }
 
-/* Desktop carousel indicators - orange theme */
+/* Team carousel indicators - orange theme */
 .carousel-indicator {
   width: 8px !important;
   height: 8px !important;
   border-radius: 50%;
-  background-color: rgba(224, 122, 95, 0.3) !important; /* Light orange */
+  background-color: rgba(224, 122, 95, 0.3) !important;
   transition: all 0.2s ease;
   border: none !important;
   padding: 0 !important;
@@ -1202,47 +1131,59 @@ select {
 }
 
 .carousel-indicator.active {
-  background-color: #e07a5f !important; /* Full orange */
+  background-color: #e07a5f !important;
   transform: scale(1.2);
 }
 
-/* Desktop styles */
+/* Desktop team carousel styles */
 @media (min-width: 1025px) {
-  /* Ensure desktop carousel keeps original structure */
-  .carousel-inner:not(.carousel-inner-mobile) {
+  /* Force proper desktop layout for team carousel */
+  #team-carousel .carousel-inner:not(.carousel-inner-mobile) {
     display: flex;
     transition: transform 0.5s ease;
   }
   
-  .carousel-inner:not(.carousel-inner-mobile) .carousel-item {
+  #team-carousel .carousel-inner:not(.carousel-inner-mobile) .carousel-item {
     min-width: 100%;
     flex-shrink: 0;
-    display: block; /* Ensure proper display */
+    display: block;
   }
   
   /* Force 3-column grid layout for desktop team cards */
-  .carousel-item .grid {
+  #team-carousel .carousel-item .grid,
+  .wiewijzijn .carousel-item .grid {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 1.5rem !important;
+    width: 100% !important;
   }
   
-  /* Show desktop indicators */
-  .carousel-indicators {
+  /* Show desktop indicators for team */
+  #team-carousel .carousel-indicators {
     display: flex !important;
     justify-content: center;
     margin-top: 1rem;
   }
   
   /* Ensure team cards maintain proper size on desktop */
-  .team-card {
+  #team-carousel .team-card,
+  .wiewijzijn .team-card {
     padding: 2rem;
     height: auto;
     max-width: none;
+    width: 100%;
+  }
+  
+  /* Fix any flex issues that might stretch cards */
+  #team-carousel .carousel-item > div,
+  .wiewijzijn .carousel-item > div {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
   }
 }
 
-/* Mobile styles */
+/* Mobile team carousel styles */
 @media (max-width: 1024px) {
   /* Hide desktop indicators on mobile - no bottom dots */
   .carousel-indicator,
@@ -1273,7 +1214,7 @@ select {
 /* Remove any small screen hiding of controls - we want them visible */
 @media (max-width: 640px) {
   .carousel-control {
-    display: flex !important; /* Force show on small screens */
+    display: flex !important;
     width: 40px;
     height: 40px;
   }
@@ -1313,11 +1254,6 @@ select {
   }
 }
 
-/* Smooth transitions for carousel switching */
-.carousel {
-  transition: all 0.3s ease;
-}
-
 /* Fix for volunteer card in mobile view */
 @media (max-width: 1024px) {
   .team-card.pattern-accent {
@@ -1340,42 +1276,97 @@ select {
   }
 }
 
-/* Additional desktop fixes to ensure 3-column layout */
-@media (min-width: 1025px) {
-  /* Force the carousel items to display properly */
-  .carousel-item {
-    width: 100%;
-    flex-shrink: 0;
+/* Lazy loading styles */
+.lazy-background {
+  background-color: #403d39;
+  transition: background-color 0.3s ease;
+}
+
+.lazy-background.loaded {
+  background-color: transparent;
+}
+
+/* Donate page specific mobile fixes */
+@media (max-width: 768px) {
+  .bank-details-container {
+    word-break: break-all;
+    overflow-wrap: break-word;
   }
-  
-  /* Ensure grid layout is properly applied */
-  .carousel-item > div[class*="grid"] {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 1.5rem !important;
+
+  .bank-details-container .font-semibold {
+    font-size: 0.9rem;
+    word-break: break-all;
+    line-height: 1.4;
   }
-  
-  /* Reset any mobile-specific transforms */
-  .carousel-inner-mobile {
-    display: flex !important;
+
+  .bg-light.p-8 {
+    padding: 1rem !important;
   }
-  
-  /* Make sure the carousel container doesn't interfere */
-  #team-carousel .carousel {
-    position: relative;
+
+  .py-3.border-b {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 0.5rem;
   }
-}[class*="grid"] {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 1.5rem !important;
+
+  .py-3.border-b .font-medium {
+    font-size: 0.9rem;
   }
-  
-  /* Reset any mobile-specific transforms */
-  .carousel-inner-mobile {
-    display: flex !important;
+
+  .py-3.border-b .font-semibold {
+    font-size: 0.85rem;
+    color: var(--color-terracotta);
   }
-  
-  /* Make sure the carousel container doesn't interfere */
-  #team-carousel .carousel {
-    position: relative;
+}
+
+/* Additional mobile fixes for donate page */
+@media (max-width: 480px) {
+  .bank-details-container .text-lg {
+    font-size: 1rem !important;
   }
+
+  iframe[name="donorbox"] {
+    min-width: 280px !important;
+    width: 100% !important;
+  }
+}
+
+/* Fix payment methods section on mobile */
+@media (max-width: 768px) {
+  .payment-methods-title {
+    font-size: 1rem !important;
+  }
+
+  [role="list"] [role="listitem"] {
+    padding: 0.75rem 0.5rem !important;
+  }
+
+  [role="list"] [role="listitem"] .font-medium {
+    font-size: 0.75rem !important;
+    line-height: 1.2;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  [role="list"] [role="listitem"] .w-12.h-12 {
+    width: 2rem !important;
+    height: 2rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  [role="list"] [role="listitem"] .w-12.h-12 svg {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  [role="list"] [role="listitem"] .font-medium {
+    font-size: 0.7rem !important;
+  }
+
+  .grid.grid-cols-2.gap-4 {
+    gap: 0.5rem !important;
+  }
+}
