@@ -903,6 +903,45 @@ export const translations = {
       "Deze cookies helpen ons relevante advertenties te tonen.",
     "cookie-save": "Opslaan",
     "cookie-cancel": "Annuleren",
+
+    // MAMA PENDO PROJECT PAGE
+    "mama-pendo-story-title": "Mama Pendo's Verhaal",
+    "mama-pendo-story-subtitle": "Een nieuwe winkel voor traditionele kookolie",
+    "meet-mama-pendo": "Maak kennis met Mama Pendo",
+    "mama-pendo-intro":
+      "Mama Pendo is een jonge vrouw van begin dertig met zes kleine kinderen. Haar leven nam een tragische wending toen haar man plotseling overleed. Sindsdien woont ze met haar kinderen bij de broer van haar overleden man. Maar zelfs samen komen ze nauwelijks rond. Te vaak is er niet genoeg eten. Haar kinderen gaan niet naar school, omdat er simpelweg geen geld is voor schoolgeld.",
+    "mama-pendo-dream":
+      "Toch draagt Mama Pendo een droom in haar hart: ze wil een betere toekomst opbouwen voor haar kinderen. Haar idee is om een kleine winkel te beginnen waar ze traditionele Tanzaniaanse kookolie verkoopt — gemaakt van onder andere koeienvet en zonnebloemen. Deze olie is een basisproduct in haar gemeenschap en de winkel zou een duurzame bron van inkomsten betekenen voor haar gezin.",
+    "mama-pendo-hope":
+      "Met jouw steun kan Mama Pendo de eerste stap zetten richting onafhankelijkheid. Een winkel betekent eten op tafel, onderwijs voor haar kinderen en hoop op een betere toekomst.",
+
+    // Traditional cooking oil section
+    "traditional-cooking-oil": "Traditionele Tanzaniaanse Kookolie",
+    "oil-description":
+      "De kookolie die Mama Pendo wil verkopen is een traditioneel product dat al generaties lang wordt gemaakt in Tanzania. Deze olie, gemaakt van koeienvet en zonnebloemen, is een essentieel ingredient in veel lokale gerechten.",
+
+    // Expected impact section
+    "expected-impact-title": "Verwachte impact van het project",
+    "mama-pendo-impact-1-title": "Mensen uit de armoede geholpen",
+    "mama-pendo-impact-1-text":
+      "Mama Pendo en haar zes kinderen krijgen een kans op een betere toekomst",
+    "mama-pendo-impact-2-title": "Vrouw als zelfstandige ondernemer",
+    "mama-pendo-impact-2-text":
+      "Mama Pendo wordt een zelfstandige ondernemer met haar eigen bedrijf",
+    "mama-pendo-impact-3-title": "Mensen bereikt",
+    "mama-pendo-impact-3-text":
+      "Lokale gemeenschap profiteert van toegang tot traditionele kookolie",
+
+    // How you can help section
+    "how-you-can-help-title": "Hoe jij kunt helpen",
+    "how-you-can-help-text":
+      "Samen kunnen we Mama Pendo helpen haar droom waar te maken. Met jouw steun kan zij de eerste stap zetten richting onafhankelijkheid. Een winkel betekent eten op tafel, onderwijs voor haar kinderen en hoop op een betere toekomst.",
+    "support-mama-pendo": "Steun Mama Pendo",
+
+    // Project card for projects page
+    "mama-pendo-project": "Mama Pendo's Winkel",
+    "mama-pendo-project-description":
+      "Een alleenstaande moeder van zes kinderen droomt van een eigen winkel voor traditionele Tanzaniaanse kookolie. Help haar een stabiel inkomen op te bouwen.",
   },
 
   en: {
@@ -1800,6 +1839,45 @@ export const translations = {
     "cookie-save": "Save",
     "cookie-cancel": "Cancel",
     "cookie-preferences": "Adjust preferences",
+
+    // MAMA PENDO PROJECT PAGE
+    "mama-pendo-story-title": "Mama Pendo's Story",
+    "mama-pendo-story-subtitle": "A new shop for traditional cooking oil",
+    "meet-mama-pendo": "Meet Mama Pendo",
+    "mama-pendo-intro":
+      "Mama Pendo is a young woman in her early thirties with six small children. Her life took a tragic turn when her husband suddenly passed away. Since then, she has been living with her children at her deceased husband's brother's place. But even together, they barely make ends meet. Too often there isn't enough food. Her children don't go to school because there simply isn't money for school fees.",
+    "mama-pendo-dream":
+      "Yet Mama Pendo carries a dream in her heart: she wants to build a better future for her children. Her idea is to start a small shop where she sells traditional Tanzanian cooking oil — made from ingredients like cow fat and sunflowers. This oil is a basic product in her community and the shop would mean a sustainable source of income for her family.",
+    "mama-pendo-hope":
+      "With your support, Mama Pendo can take the first step towards independence. A shop means food on the table, education for her children, and hope for a better future.",
+
+    // Traditional cooking oil section
+    "traditional-cooking-oil": "Traditional Tanzanian Cooking Oil",
+    "oil-description":
+      "The cooking oil that Mama Pendo wants to sell is a traditional product that has been made in Tanzania for generations. This oil, made from cow fat and sunflowers, is an essential ingredient in many local dishes.",
+
+    // Expected impact section
+    "expected-impact-title": "Expected impact of the project",
+    "mama-pendo-impact-1-title": "People lifted out of poverty",
+    "mama-pendo-impact-1-text":
+      "Mama Pendo and her six children get a chance at a better future",
+    "mama-pendo-impact-2-title": "Woman as independent entrepreneur",
+    "mama-pendo-impact-2-text":
+      "Mama Pendo becomes an independent entrepreneur with her own business",
+    "mama-pendo-impact-3-title": "People reached",
+    "mama-pendo-impact-3-text":
+      "Local community benefits from access to traditional cooking oil",
+
+    // How you can help section
+    "how-you-can-help-title": "How you can help",
+    "how-you-can-help-text":
+      "Together we can help Mama Pendo make her dream come true. With your support, she can take the first step towards independence. A shop means food on the table, education for her children, and hope for a better future.",
+    "support-mama-pendo": "Support Mama Pendo",
+
+    // Project card for projects page
+    "mama-pendo-project": "Mama Pendo's Shop",
+    "mama-pendo-project-description":
+      "A single mother of six children dreams of her own shop for traditional Tanzanian cooking oil. Help her build a stable income.",
   },
 };
 
