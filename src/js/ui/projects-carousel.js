@@ -120,5 +120,7 @@ export function initProjectsCarousel() {
     isDragging = false;
   });
 
-  console.log("Projects carousel initialized with ONLY orange arrows - no dots");
+  console.log(
+    "Projects carousel initialized with ONLY orange arrows - no dots",
+  );
 }

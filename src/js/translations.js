@@ -942,6 +942,16 @@ export const translations = {
     "mama-pendo-project": "Mama Pendo's Winkel",
     "mama-pendo-project-description":
       "Een alleenstaande moeder van zes kinderen droomt van een eigen winkel voor traditionele Tanzaniaanse kookolie. Help haar een stabiel inkomen op te bouwen.",
+
+    "oil-local-product-title": "Lokaal Product",
+    "oil-local-product-desc":
+      "Volledig gemaakt met lokale ingrediënten die beschikbaar zijn in de gemeenschap",
+    "oil-high-demand-title": "Hoge Vraag",
+    "oil-high-demand-desc":
+      "Essentieel ingredient in traditionele Maasai keuken met constante vraag",
+    "oil-sustainable-income-title": "Duurzaam Inkomen",
+    "oil-sustainable-income-desc":
+      "Zorgt voor stabiele inkomstenstroom voor Mama Pendo en haar gezin",
   },
 
   en: {
@@ -1878,6 +1888,16 @@ export const translations = {
     "mama-pendo-project": "Mama Pendo's Shop",
     "mama-pendo-project-description":
       "A single mother of six children dreams of her own shop for traditional Tanzanian cooking oil. Help her build a stable income.",
+
+    "oil-local-product-title": "Local Product",
+    "oil-local-product-desc":
+      "Completely made with local ingredients available in the community",
+    "oil-high-demand-title": "High Demand",
+    "oil-high-demand-desc":
+      "Essential ingredient in traditional Maasai cuisine with constant demand",
+    "oil-sustainable-income-title": "Sustainable Income",
+    "oil-sustainable-income-desc":
+      "Provides stable income stream for Mama Pendo and her family",
   },
 };
 
