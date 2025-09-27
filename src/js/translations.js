@@ -953,7 +953,7 @@ export const translations = {
     "oil-sustainable-income-desc":
       "Zorgt voor stabiele inkomstenstroom voor Mama Pendo en haar gezin",
 
-    // Blog 4 - Trust article - 
+    // Blog 4 - Trust article -
     "blog-trust-title": "Hoe weet je of een goed doel écht betrouwbaar is?",
     "blog-date-september": "15 september 2025",
     "blog-category-trust": "Transparantie",
@@ -1038,6 +1038,57 @@ export const translations = {
     "video-highlight-3": "De geplande locatie voor de nieuwe waterleiding",
     "video-highlight-4": "Waarom dit project levens zal veranderen",
     "help-after-video": "Help na het zien van deze video",
+
+    // Blog 5 - Small Actions
+    "blog-small-actions-title":
+      "Hoe kleine acties van gewone mensen leiden tot grote verandering",
+    "blog-date-october": "1 oktober 2025",
+    "blog-category-impact": "Impact",
+    "blog-small-actions-desc":
+      "Ontdek hoe kleine bijdragen en acties uitgroeien tot grote verandering. Van een boom planten tot een euro doneren - elk gebaar telt.",
+    "blog-small-actions-intro":
+      "Stel je voor: een meisje in een dorp plant een boom bij haar huis. Het lijkt een klein gebaar – één boom, één tuin. Maar jaren later biedt die boom schaduw voor spelende kinderen, vruchten voor het gezin en zuurstof voor de hele gemeenschap. Wat begon als iets kleins, blijkt een groot verschil te maken. Zo werkt het ook met onze acties.",
+    "small-actions-caption":
+      "Kleine acties groeien uit tot grote verandering in gemeenschappen",
+    "blog-power-small-title": "De kracht van het kleine",
+    "blog-power-small-text":
+      "Vaak denken we dat verandering alleen mogelijk is door grote investeringen of spectaculaire gebaren. Maar de geschiedenis laat zien dat juist kleine acties van gewone mensen de motor zijn achter grote bewegingen. Denk aan:",
+    "blog-power-small-example1":
+      "Een buurtbewoner die een schoonmaakactie start en daarmee tientallen anderen inspireert.",
+    "blog-power-small-example2":
+      "Een student die een petitie begint die uiteindelijk leidt tot nieuw beleid.",
+    "blog-power-small-example3":
+      "Een donateur die een klein bedrag geeft dat, samen met honderden anderen, een waterput mogelijk maakt.",
+    "blog-power-small-conclusion":
+      "Elke druppel lijkt onbeduidend, maar samen vormen ze een oceaan.",
+    "blog-hope-stories-title": "Verhalen die hoop geven",
+    "blog-hope-stories-ashe":
+      "Bij Ashe Foundation zien we dit elke dag. Een voorbeeld: in een Maasai-gemeenschap in Tanzania besloten vrouwen gezamenlijk geld in te zamelen voor een kleine zonne-energie-installatie. Aanvankelijk leek hun spaarkring bescheiden, maar na verloop van tijd konden ze investeren in zonnepanelen die licht en stroom brachten voor de school van hun kinderen. Het begon met muntjes, het eindigde met kansen voor onderwijs.",
+    "community-action-caption":
+      "Samen werken Maasai vrouwen aan projecten die hun gemeenschap vooruit helpen",
+    "blog-hope-stories-donors":
+      "Of neem donateurs in Nederland die elke maand een klein bedrag geven. Eén persoon kan misschien geen hele waterleiding bekostigen, maar samen financieren ze complete infrastructuur. En dat verandert een hele gemeenschap.",
+    "blog-why-small-big-title": "Waarom kleine acties groot worden",
+    "blog-why-small-big-intro":
+      "Er zijn drie belangrijke redenen waarom kleine acties uitgroeien tot grote verandering:",
+    "blog-why-small-big-reason1":
+      "Ze zijn haalbaar. Iedereen kan iets doen, hoe klein ook.",
+    "blog-why-small-big-reason2":
+      "Ze inspireren anderen. Kleine stappen laten zien dat verandering mogelijk is.",
+    "blog-why-small-big-reason3":
+      "Ze stapelen zich op. Duizenden kleine acties worden samen een groot geheel.",
+    "blog-your-role-title": "Jouw rol in het grotere verhaal",
+    "blog-your-role-text":
+      'Misschien denk je: "Wat kan ik nu echt betekenen?" Het antwoord: meer dan je denkt. Elke gift, elke actie, elk gesprek dat je voert, is een stukje van de puzzel. En die puzzel wordt pas compleet als veel mensen hun stukje bijdragen.',
+    "blog-together-difference-title": "Samen maken we het verschil",
+    "blog-together-difference-text":
+      "Een boom planten. Een euro doneren. Een verhaal delen. Het lijkt weinig, maar het is precies wat de wereld nodig heeft. Want echte verandering begint zelden groots – het begint bij gewone mensen die besluiten íets te doen.",
+    "blog-together-difference-closing":
+      "Wil je ook een kleine stap zetten die groot verschil maakt? Bij Ashe Foundation laten we je graag zien hoe jouw bijdrage, klein of groot, verandert in schoon water, gezonde gemeenschappen en nieuwe kansen. Samen schrijven we het verhaal van verandering – en jouw hoofdstuk kan vandaag beginnen.",
+    "blog-cta-small-actions-title": "Begin vandaag met jouw kleine actie",
+    "blog-cta-small-actions-text":
+      "Elke bijdrage, groot of klein, is onderdeel van een groter verhaal van verandering. Samen maken we het verschil voor de Maasai gemeenschap in Tanzania.",
+    "start-your-impact": "Begin met jouw impact",
   },
 
   en: {
@@ -2068,6 +2119,57 @@ export const translations = {
     "video-highlight-3": "The planned location for the new water pipeline",
     "video-highlight-4": "Why this project will change lives",
     "help-after-video": "Help after watching this video",
+
+    // Blog 5 - Small Actions
+    "blog-small-actions-title":
+      "How small actions by ordinary people lead to big change",
+    "blog-date-october": "October 1, 2025",
+    "blog-category-impact": "Impact",
+    "blog-small-actions-desc":
+      "Discover how small contributions and actions grow into big change. From planting a tree to donating a euro - every gesture counts.",
+    "blog-small-actions-intro":
+      "Imagine: a girl in a village plants a tree by her house. It seems like a small gesture – one tree, one garden. But years later, that tree provides shade for playing children, fruit for the family, and oxygen for the entire community. What started as something small turns out to make a big difference. That's how it works with our actions too.",
+    "small-actions-caption":
+      "Small actions grow into big change in communities",
+    "blog-power-small-title": "The power of small",
+    "blog-power-small-text":
+      "Often we think that change is only possible through large investments or spectacular gestures. But history shows that it's precisely small actions by ordinary people that are the engine behind great movements. Think of:",
+    "blog-power-small-example1":
+      "A neighbor who starts a cleanup action and thereby inspires dozens of others.",
+    "blog-power-small-example2":
+      "A student who starts a petition that eventually leads to new policy.",
+    "blog-power-small-example3":
+      "A donor who gives a small amount that, together with hundreds of others, makes a water well possible.",
+    "blog-power-small-conclusion":
+      "Every drop seems insignificant, but together they form an ocean.",
+    "blog-hope-stories-title": "Stories that give hope",
+    "blog-hope-stories-ashe":
+      "At Ashe Foundation, we see this every day. An example: in a Maasai community in Tanzania, women decided to collectively raise money for a small solar energy installation. Initially, their savings circle seemed modest, but over time they were able to invest in solar panels that brought light and electricity to their children's school. It started with coins, it ended with opportunities for education.",
+    "community-action-caption":
+      "Maasai women work together on projects that help their community progress",
+    "blog-hope-stories-donors":
+      "Or take donors in the Netherlands who give a small amount every month. One person may not be able to fund an entire water pipeline, but together they finance complete infrastructure. And that changes an entire community.",
+    "blog-why-small-big-title": "Why small actions become big",
+    "blog-why-small-big-intro":
+      "There are three important reasons why small actions grow into big change:",
+    "blog-why-small-big-reason1":
+      "They are achievable. Everyone can do something, however small.",
+    "blog-why-small-big-reason2":
+      "They inspire others. Small steps show that change is possible.",
+    "blog-why-small-big-reason3":
+      "They stack up. Thousands of small actions become a big whole together.",
+    "blog-your-role-title": "Your role in the bigger story",
+    "blog-your-role-text":
+      'Maybe you think: "What can I really mean?" The answer: more than you think. Every gift, every action, every conversation you have, is a piece of the puzzle. And that puzzle only becomes complete when many people contribute their piece.',
+    "blog-together-difference-title": "Together we make the difference",
+    "blog-together-difference-text":
+      "Plant a tree. Donate a euro. Share a story. It seems little, but it's exactly what the world needs. Because real change rarely starts big – it starts with ordinary people who decide to do something.",
+    "blog-together-difference-closing":
+      "Do you also want to take a small step that makes a big difference? At Ashe Foundation, we'd love to show you how your contribution, small or large, transforms into clean water, healthy communities, and new opportunities. Together we write the story of change – and your chapter can begin today.",
+    "blog-cta-small-actions-title": "Start your small action today",
+    "blog-cta-small-actions-text":
+      "Every contribution, big or small, is part of a bigger story of change. Together we make the difference for the Maasai community in Tanzania.",
+    "start-your-impact": "Start your impact",
   },
 };
 

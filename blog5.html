@@ -1,12 +1,15 @@
 <!doctype html>
 <html lang="nl">
   <head>
-    <title>Nieuws & Actualiteiten - ASHE Foundation</title>
+    <title>
+      Hoe kleine acties van gewone mensen leiden tot grote verandering - ASHE
+      Foundation Blog
+    </title>
 
     <!-- Meta tags for SEO -->
     <meta
       name="description"
-      content="Lees de laatste artikelen van ASHE Foundation over onze projecten in Tanzania, de Maasai gemeenschap en ontwikkelingssamenwerking. Blijf op de hoogte van onze impact."
+      content="Ontdek hoe kleine acties van gewone mensen uitgroeien tot grote verandering. Lees over de kracht van kleine bijdragen en hoe jij impact kunt maken bij Ashe Foundation."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
@@ -14,18 +17,18 @@
     <!-- Open Graph tags for social sharing -->
     <meta
       property="og:title"
-      content="Nieuws & Actualiteiten - ASHE Foundation"
+      content="Hoe kleine acties van gewone mensen leiden tot grote verandering — ASHE Foundation"
     />
     <meta
       property="og:description"
-      content="Ontdek de laatste verhalen over onze projecten, de Maasai gemeenschap en onze impact in Tanzania. Blijf geïnformeerd over ontwikkelingssamenwerking."
+      content="Van een boom planten tot een euro doneren - ontdek hoe kleine acties uitgroeien tot grote verandering in gemeenschappen."
     />
     <meta
       property="og:image"
-      content="https://ashefoundation.nl/img/articles-banner.webp"
+      content="https://ashefoundation.nl/img/small-actions-banner.webp"
     />
-    <meta property="og:url" content="https://ashefoundation.nl/artikelen" />
-    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ashefoundation.nl/blog5" />
+    <meta property="og:type" content="article" />
     <meta property="og:site_name" content="ASHE Foundation" />
 
     <!-- LinkedIn specific tags -->
@@ -36,14 +39,14 @@
     <link
       rel="alternate"
       hreflang="nl"
-      href="https://ashefoundation.nl/artikelen"
+      href="https://ashefoundation.nl/blog5"
     />
     <link
       rel="alternate"
       hreflang="en"
-      href="https://ashefoundation.net/articles"
+      href="https://ashefoundation.net/blog5"
     />
-    <link rel="canonical" href="https://ashefoundation.nl/artikelen" />
+    <link rel="canonical" href="https://ashefoundation.nl/blog5" />
 
     <!-- Common preloads -->
     <link rel="preload" href="/img/flag-us.webp" as="image" type="image/webp" />
@@ -59,7 +62,7 @@
     <!-- Page-specific preloads -->
     <link
       rel="preload"
-      href="/img/team-banner.webp"
+      href="/img/hero-image.webp"
       as="image"
       type="image/webp"
       fetchpriority="high"
@@ -67,7 +70,7 @@
 
     <!-- Critical CSS - Keep minimal essential styles for above-the-fold content -->
     <style>
-      /* Optimized Critical CSS for projecten.html */
+      /* Optimized Critical CSS for waterproject.html */
       body {
         font-family: "Poppins", sans-serif;
         margin: 0;
@@ -76,7 +79,7 @@
         background-color: #fff1e6;
       }
 
-      /* Hero Section for Projects page */
+      /* Hero Section for Water Project page */
       .hero-section {
         background-image:
           linear-gradient(
@@ -84,7 +87,7 @@
             rgba(64, 61, 57, 0.5),
             rgba(224, 122, 95, 0.4)
           ),
-          url("/img/team-banner.webp");
+          url("/img/hero-image.webp");
         background-size: cover;
         background-position: center;
         color: white;
@@ -112,18 +115,19 @@
         font-weight: 600;
       }
 
-      /* Project Cards - only if visible above the fold */
-      .project-card {
-        transition:
-          transform 0.3s ease,
-          box-shadow 0.3s ease;
-        background-color: white;
-        border-radius: 1rem;
-        overflow: hidden;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+      .nav-link {
+        position: relative;
       }
 
-      /* Original critical CSS here */
+      .nav-indicator {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background-color: #e07a5f;
+        transition: width 0.3s ease;
+      }
 
       /* Mobile-specific critical CSS */
       @media (max-width: 768px) {
@@ -131,14 +135,14 @@
           padding: 4rem 0; /* Reduced padding for mobile */
         }
 
-        h1#projects-title {
+        h1#hero-title {
           font-size: 2rem; /* Smaller title on mobile */
           margin-bottom: 0.5rem;
         }
 
-        /* Adjust project cards for mobile */
-        .project-card {
-          min-width: 280px; /* Ensure cards are readable on mobile */
+        /* Adjust image gallery for mobile */
+        .w-full.h-56.object-cover {
+          height: 180px; /* Slightly smaller images on mobile */
         }
       }
     </style>
@@ -147,10 +151,14 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Nieuws & Actualiteiten - ASHE Foundation",
-        "description": "Lees de laatste artikelen van ASHE Foundation over onze projecten in Tanzania, de Maasai gemeenschap en ontwikkelingssamenwerking.",
-        "url": "https://ashefoundation.nl/artikelen",
+        "@type": "BlogPosting",
+        "headline": "Hoe kleine acties van gewone mensen leiden tot grote verandering",
+        "datePublished": "2025-10-01",
+        "dateModified": "2025-10-01",
+        "author": {
+          "@type": "Organization",
+          "name": "ASHE Foundation"
+        },
         "publisher": {
           "@type": "Organization",
           "name": "ASHE Foundation",
@@ -159,15 +167,27 @@
             "url": "https://ashefoundation.nl/img/Untitleddesign.svg"
           }
         },
-        "about": {
-          "@type": "Organization",
-          "name": "ASHE Foundation",
-          "description": "ASHE Foundation werkt aan een wereld waarin de Maasai gemeenschap in Tanzania kansen heeft om het goede leven en het eigen geluk na te streven."
-        }
+        "description": "Ontdek hoe kleine acties van gewone mensen uitgroeien tot grote verandering. Van een boom planten tot een euro doneren - lees over de kracht van kleine bijdragen.",
+        "image": "https://ashefoundation.nl/img/small-actions-banner.webp",
+        "keywords": "kleine acties, grote verandering, impact, Tanzania, Maasai, doneren, gemeenschap, verandering"
       }
     </script>
 
-    <!-- Tailwind CSS with embedded configuration -->
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/webp"
+      href="/img/Untitleddesign.webp"
+      sizes="144x144"
+    />
+
+    <!-- Font import -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
     <script src="https://cdn.tailwindcss.com?minify"></script>
     <script>
       tailwind.config = {
@@ -194,20 +214,6 @@
       };
     </script>
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/webp"
-      href="/img/Untitleddesign.webp"
-      sizes="144x144"
-    />
-
-    <!-- Font import -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- External CSS -->
     <link rel="stylesheet" href="/css/main.css" />
 
@@ -215,7 +221,7 @@
     <script type="module" src="/src/js/gtm.js"></script>
     <script type="module" src="/src/js/gtm-consent-mode.js"></script>
   </head>
-  <body class="min-h-screen">
+  <body class="min-h-screen water-project">
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -225,6 +231,7 @@
         style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
+
     <!-- Skip to content link for accessibility -->
     <a
       href="#main-content"
@@ -306,6 +313,7 @@
                     >
                   </button>
                 </div>
+
                 <!-- Hamburger Menu -->
                 <button
                   data-collapse-toggle="mobile-menu"
@@ -368,9 +376,8 @@
                 <li>
                   <a
                     href="/projecten"
-                    class="block py-2 text-terracotta font-semibold"
+                    class="block py-2 text-dark hover:text-terracotta"
                     data-lang-key="nav-projects"
-                    aria-current="page"
                     >Projecten</a
                   >
                 </li>
@@ -395,6 +402,7 @@
               </ul>
             </div>
           </div>
+
           <!-- Desktop Layout -->
           <div class="hidden lg:flex justify-between items-center">
             <a
@@ -452,13 +460,12 @@
               </a>
               <a
                 href="/projecten"
-                class="text-terracotta font-semibold relative nav-link"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
                 data-lang-key="nav-projects"
-                aria-current="page"
               >
                 Projecten
                 <span
-                  class="absolute left-0 bottom-0 w-full h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
                   aria-hidden="true"
                 ></span>
               </a>
@@ -474,6 +481,7 @@
                 ></span>
               </a>
             </div>
+
             <div class="flex items-center space-x-4">
               <!-- Donate Button -->
               <a
@@ -533,12 +541,12 @@
       </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
-    <main id="main-content">
+    <!-- MAIN -->
+    <main id="main-content" class="bg-terracotta bg-opacity-10 py-12">
       <!-- Hero Section -->
       <section
-        class="hero-section py-20 md:py-28 relative"
-        aria-labelledby="articles-title"
+        class="hero-section py-20 md:py-28 relative mb-12"
+        aria-labelledby="blog-title"
       >
         <!-- Background image container -->
         <div class="absolute inset-0">
@@ -553,6 +561,7 @@
             />
             <img
               src="/img/team-banner-1920w.webp"
+              alt="Kleine acties, grote verandering banner"
               class="w-full h-full object-cover"
               loading="eager"
             />
@@ -563,435 +572,565 @@
             style="
               background-image: linear-gradient(
                 to bottom,
-                rgba(64, 61, 57, 0.5),
-                rgba(224, 122, 95, 0.4)
+                rgba(64, 61, 57, 0.7),
+                rgba(224, 122, 95, 0.6)
               );
             "
           ></div>
         </div>
 
         <!-- Content -->
-        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
           <h1
-            id="articles-title"
+            id="blog-title"
             class="text-4xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto leading-tight text-white"
-            data-lang-key="articles-title"
+            data-lang-key="blog-small-actions-title"
           >
-            Nieuws & Actualiteiten
+            Hoe kleine acties van gewone mensen leiden tot grote verandering
           </h1>
-          <p
-            class="text-xl text-white max-w-3xl mx-auto opacity-90"
-            data-lang-key="articles-subtitle"
-          >
-            Ontdek de laatste verhalen over onze projecten, de Maasai
-            gemeenschap en onze impact in Tanzania
-          </p>
+          <div class="flex items-center space-x-4 text-white text-sm mt-4">
+            <div class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              <time datetime="2025-10-01" data-lang-key="blog-date-october"
+                >1 oktober 2025</time
+              >
+            </div>
+            <span class="hidden md:inline">|</span>
+            <div class="hidden md:flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"
+                />
+              </svg>
+              <span data-lang-key="blog-category-impact">Impact</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Articles Grid Section -->
-      <section class="py-16 bg-white" aria-labelledby="all-articles-title">
-        <div class="max-w-7xl mx-auto px-6">
-          <h2
-            id="all-articles-title"
-            class="text-3xl font-bold text-center mb-12 text-terracotta"
-            data-lang-key="all-articles-title"
+      <!-- Blog Article Container -->
+      <div class="max-w-4xl mx-auto px-6 mb-12">
+        <!-- Main Article Block -->
+        <article class="bg-white p-10 rounded-lg shadow-md">
+          <!-- Introduction -->
+          <p
+            class="text-xl font-medium text-dark leading-relaxed mb-8"
+            data-lang-key="blog-small-actions-intro"
           >
-            Alle nieuwsbrichten
+            Stel je voor: een meisje in een dorp plant een boom bij haar huis.
+            Het lijkt een klein gebaar – één boom, één tuin. Maar jaren later
+            biedt die boom schaduw voor spelende kinderen, vruchten voor het
+            gezin en zuurstof voor de hele gemeenschap. Wat begon als iets
+            kleins, blijkt een groot verschil te maken. Zo werkt het ook met
+            onze acties.
+          </p>
+
+          <!-- First image -->
+          <figure class="my-8 flex flex-col items-center">
+            <img
+              src="/img/small-actions-600w-correct.webp"
+              alt="Kinderen spelen onder een boom in een Maasai dorp"
+              class="w-full md:w-1/2 h-auto rounded-lg shadow-md"
+              loading="lazy"
+              srcset="
+                /img/small-actions-300w-correct.webp   300w,
+                /img/small-actions-600w-correct.webp   600w,
+                /img/small-actions-1200w-correct.webp 1200w
+              "
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+            <figcaption
+              class="text-sm text-gray-500 mt-2 text-center"
+              data-lang-key="small-actions-caption"
+            >
+              Kleine acties groeien uit tot grote verandering in gemeenschappen
+            </figcaption>
+          </figure>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="blog-power-small-title"
+          >
+            De kracht van het kleine
           </h2>
+          <p class="mb-6" data-lang-key="blog-power-small-text">
+            Vaak denken we dat verandering alleen mogelijk is door grote
+            investeringen of spectaculaire gebaren. Maar de geschiedenis laat
+            zien dat juist kleine acties van gewone mensen de motor zijn achter
+            grote bewegingen. Denk aan:
+          </p>
 
-          <!-- Articles Grid - 3 kolommen layout -->
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Article 1: Small Actions Blog - Oktober 2025) -->
-            <div
-              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
-              role="article"
-              aria-labelledby="small-actions-blog-title"
+          <ul class="list-disc list-inside mb-6 text-dark space-y-2">
+            <li data-lang-key="blog-power-small-example1">
+              Een buurtbewoner die een schoonmaakactie start en daarmee
+              tientallen anderen inspireert.
+            </li>
+            <li data-lang-key="blog-power-small-example2">
+              Een student die een petitie begint die uiteindelijk leidt tot
+              nieuw beleid.
+            </li>
+            <li data-lang-key="blog-power-small-example3">
+              Een donateur die een klein bedrag geeft dat, samen met honderden
+              anderen, een waterput mogelijk maakt.
+            </li>
+          </ul>
+
+          <p class="mb-6" data-lang-key="blog-power-small-conclusion">
+            Elke druppel lijkt onbeduidend, maar samen vormen ze een oceaan.
+          </p>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="blog-hope-stories-title"
+          >
+            Verhalen die hoop geven
+          </h2>
+          <p class="mb-6" data-lang-key="blog-hope-stories-ashe">
+            Bij Ashe Foundation zien we dit elke dag. Een voorbeeld: in een
+            Maasai-gemeenschap in Tanzania besloten vrouwen gezamenlijk geld in
+            te zamelen voor een kleine zonne-energie-installatie. Aanvankelijk
+            leek hun spaarkring bescheiden, maar na verloop van tijd konden ze
+            investeren in zonnepanelen die licht en stroom brachten voor de
+            school van hun kinderen. Het begon met muntjes, het eindigde met
+            kansen voor onderwijs.
+          </p>
+
+          <!-- Second image -->
+          <figure class="my-8 flex flex-col items-center">
+            <img
+              src="/img/community-action-600w-natural.webp"
+              alt="Maasai vrouwen werken samen aan een gemeenschapsproject"
+              class="w-full md:w-1/2 h-auto rounded-lg shadow-md"
+              loading="lazy"
+              srcset="
+                /img/community-action-300w-natural.webp   300w,
+                /img/community-action-600w-natural.webp   600w,
+                /img/community-action-1200w-natural.webp 1200w
+              "
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+            <figcaption class="text-sm text-gray-500 mt-2 text-center">
+              Samen werken Maasai vrouwen aan projecten die hun gemeenschap
+              vooruit helpen
+            </figcaption>
+          </figure>
+
+          <p class="mb-6" data-lang-key="blog-hope-stories-donors">
+            Of neem donateurs in Nederland die elke maand een klein bedrag
+            geven. Eén persoon kan misschien geen hele waterleiding bekostigen,
+            maar samen financieren ze complete infrastructuur. En dat verandert
+            een hele gemeenschap.
+          </p>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="blog-why-small-big-title"
+          >
+            Waarom kleine acties groot worden
+          </h2>
+          <p class="mb-4" data-lang-key="blog-why-small-big-intro">
+            Er zijn drie belangrijke redenen waarom kleine acties uitgroeien tot
+            grote verandering:
+          </p>
+
+          <ol class="list-decimal list-inside mb-6 text-dark space-y-2">
+            <li data-lang-key="blog-why-small-big-reason1">
+              <strong>Ze zijn haalbaar.</strong> Iedereen kan iets doen, hoe
+              klein ook.
+            </li>
+            <li data-lang-key="blog-why-small-big-reason2">
+              <strong>Ze inspireren anderen.</strong> Kleine stappen laten zien
+              dat verandering mogelijk is.
+            </li>
+            <li data-lang-key="blog-why-small-big-reason3">
+              <strong>Ze stapelen zich op.</strong> Duizenden kleine acties
+              worden samen een groot geheel.
+            </li>
+          </ol>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="blog-your-role-title"
+          >
+            Jouw rol in het grotere verhaal
+          </h2>
+          <p class="mb-6" data-lang-key="blog-your-role-text">
+            Misschien denk je: "Wat kan ik nu echt betekenen?" Het antwoord:
+            meer dan je denkt. Elke gift, elke actie, elk gesprek dat je voert,
+            is een stukje van de puzzel. En die puzzel wordt pas compleet als
+            veel mensen hun stukje bijdragen.
+          </p>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="blog-together-difference-title"
+          >
+            Samen maken we het verschil
+          </h2>
+          <p class="mb-6" data-lang-key="blog-together-difference-text">
+            Een boom planten. Een euro doneren. Een verhaal delen. Het lijkt
+            weinig, maar het is precies wat de wereld nodig heeft. Want echte
+            verandering begint zelden groots – het begint bij gewone mensen die
+            besluiten íets te doen.
+          </p>
+
+          <p class="mb-6" data-lang-key="blog-together-difference-closing">
+            Wil je ook een kleine stap zetten die groot verschil maakt? Bij Ashe
+            Foundation laten we je graag zien hoe jouw bijdrage, klein of groot,
+            verandert in schoon water, gezonde gemeenschappen en nieuwe kansen.
+            Samen schrijven we het verhaal van verandering – en jouw hoofdstuk
+            kan vandaag beginnen.
+          </p>
+
+          <!-- Call to Action -->
+          <div
+            class="bg-terracotta bg-opacity-10 rounded-lg p-8 my-10 text-center"
+          >
+            <h3
+              class="text-2xl font-bold text-terracotta mb-4"
+              data-lang-key="blog-cta-small-actions-title"
             >
-              <img
-                src="img/small-actions-400w-correct.webp"
-                alt="Hoe kleine acties van gewone mensen leiden tot grote verandering"
-                class="w-full h-48 object-cover object-center"
-                width="400"
-                height="192"
-                loading="lazy"
-                srcset="
-                  img/small-actions-400w-correct.webp 400w,
-                  img/small-actions-800w-correct.webp 800w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-              <div class="p-6">
-                <div class="flex items-center text-sm text-gray-500 mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <time datetime="2025-10-01" data-lang-key="blog-date-october"
-                    >1 oktober 2025</time
-                  >
-                </div>
-                <h3
-                  id="small-actions-blog-title"
-                  class="text-xl font-bold text-terracotta mb-3"
-                  data-lang-key="blog-small-actions-title"
+              Begin vandaag met jouw kleine actie
+            </h3>
+            <p class="mb-6" data-lang-key="blog-cta-small-actions-text">
+              Elke bijdrage, groot of klein, is onderdeel van een groter verhaal
+              van verandering. Samen maken we het verschil voor de Maasai
+              gemeenschap in Tanzania.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="/doneer"
+                class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                data-lang-key="start-your-impact"
+                aria-label="Begin met je impact voor de Maasai gemeenschap"
+              >
+                Begin met jouw impact
+              </a>
+
+              <a
+                href="/projecten"
+                class="py-2 px-5 bg-gray hover:bg-gray-600 text-white rounded-full font-medium transition-colors"
+                data-lang-key="view-projects"
+                aria-label="Bekijk onze projecten"
+              >
+                Bekijk onze projecten
+              </a>
+            </div>
+          </div>
+
+          <!-- Share Section -->
+          <div class="border-t border-b border-gray-200 py-6 my-10">
+            <h3
+              class="text-lg font-semibold mb-4"
+              data-lang-key="share-article"
+            >
+              Deel dit artikel
+            </h3>
+            <div class="flex flex-wrap gap-5">
+              <!-- LinkedIn Share Link -->
+
+              <a
+                href="https://www.linkedin.com/sharing/share-offsite/?url=https://ashefoundation.nl/blog5.html"
+                class="text-terracotta hover:text-terracotta-dark flex items-center transition"
+                aria-label="Deel op LinkedIn"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
                 >
-                  Hoe kleine acties van gewone mensen leiden tot grote
-                  verandering
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Facebook Share Link -->
+
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://ashefoundation.nl/blog5.html"
+                class="text-terracotta hover:text-terracotta-dark flex items-center transition"
+                aria-label="Deel op Facebook"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Twitter/X Share Link -->
+
+              <a
+                href="https://twitter.com/intent/tweet?url=https://ashefoundation.nl/blog5.html&text=Hoe kleine acties van gewone mensen leiden tot grote verandering"
+                class="text-terracotta hover:text-terracotta-dark flex items-center transition"
+                aria-label="Deel op Twitter/X"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Instagram Copy to Clipboard Button -->
+              <button
+                id="instagram-copy"
+                class="text-terracotta hover:text-terracotta-dark flex items-center transition group relative"
+                aria-label="Kopieer tekst voor Instagram post"
+                title="Klik om tekst te kopiëren voor Instagram"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+
+                <!-- Updated Tooltip -->
+                <span
+                  id="instagram-tooltip"
+                  class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-dark text-white px-3 py-1 rounded text-sm opacity-0 transition-opacity duration-300 pointer-events-none whitespace-nowrap"
+                  data-lang-key="instagram-copied-tooltip"
+                >
+                  Tekst gekopieerd! Plak in Instagram
+                </span>
+              </button>
+            </div>
+
+            <!-- Hidden textarea for Instagram copy -->
+            <textarea id="instagram-content" class="sr-only" aria-hidden="true">
+🌱 Hoe kleine acties van gewone mensen leiden tot grote verandering
+
+Een boom planten. Een euro doneren. Een verhaal delen. Het lijkt weinig, maar het is precies wat de wereld nodig heeft.
+
+✨ De kracht van het kleine:
+- Ze zijn haalbaar voor iedereen
+- Ze inspireren anderen  
+- Ze stapelen zich op tot iets groots
+
+Bij Ashe Foundation zien we dit elke dag in Tanzania. Samen schrijven we het verhaal van verandering.
+
+Lees meer: https://ashefoundation.nl/blog5.html
+
+#KleineActies #GroteVerandering #Impact #Tanzania #Maasai #AsheFoundation #Verandering #Samen</textarea
+            >
+          </div>
+
+          <!-- Back to articles Button -->
+          <div class="text-center">
+            <a
+              href="/artikelen"
+              class="inline-block py-3 px-6 bg-terracotta hover:bg-terracotta-light text-white font-medium rounded-full transition-colors duration-300 shadow-md"
+            >
+              <span class="inline-flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span data-lang-key="back-to-articles"
+                  >Terug naar nieuwsberichten</span
+                >
+              </span>
+            </a>
+          </div>
+        </article>
+      </div>
+      <!-- Newsletter Section (from contact page with terracotta background updated) -->
+      <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2
+            id="newsletter-title"
+            class="text-3xl font-bold text-terracotta mb-8 text-center"
+            data-lang-key="newsletter-title"
+          >
+            Blijf op de hoogte
+          </h2>
+          <div class="bg-terracotta bg-opacity-10 rounded-lg p-8 shadow-md">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+              <div>
+                <h3
+                  id="newsletter-subtitle"
+                  class="text-xl font-bold text-terracotta mb-4"
+                  data-lang-key="newsletter-subtitle"
+                >
+                  Schrijf je in voor onze nieuwsbrief
                 </h3>
                 <p
-                  class="text-gray-600 mb-4"
-                  data-lang-key="blog-small-actions-desc"
+                  class="mb-4 text-dark"
+                  data-lang-key="newsletter-description"
                 >
-                  Ontdek hoe kleine bijdragen en acties uitgroeien tot grote
-                  verandering. Van een boom planten tot een euro doneren - elk
-                  gebaar telt.
+                  Ontvang updates over onze projecten, campagnes en acties
+                  direct in je inbox. We houden je graag op de hoogte van onze
+                  voortgang en impact.
                 </p>
-
-                <a
-                  href="/blog5.html"
-                  class="text-terracotta font-medium hover:underline inline-flex items-center"
-                  aria-label="Lees meer over kleine acties die grote verandering brengen"
-                  data-lang-key="read-more"
-                >
-                  Lees meer
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
               </div>
-            </div>
-            <!-- Article 2: Trust Blog (Nieuwste - September 2025) -->
-            <div
-              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
-              role="article"
-              aria-labelledby="trust-blog-title"
-            >
-              <img
-                src="img/transparency-400w.webp"
-                alt="Hoe weet je of een goed doel écht betrouwbaar is?"
-                class="w-full h-48 object-cover object-bottom"
-                width="400"
-                height="192"
-                loading="lazy"
-                srcset="
-                  img/transparency-400w.webp 400w,
-                  img/transparency-800w.webp 800w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-              <div class="p-6">
-                <div class="flex items-center text-sm text-gray-500 mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <time
-                    datetime="2025-09-15"
-                    data-lang-key="blog-date-september"
-                    >15 september 2025</time
-                  >
-                </div>
-                <h3
-                  id="trust-blog-title"
-                  class="text-xl font-bold text-terracotta mb-3"
-                  data-lang-key="blog-trust-title"
-                >
-                  Hoe weet je of een goed doel écht betrouwbaar is?
-                </h3>
-                <p class="text-gray-600 mb-4" data-lang-key="blog-trust-desc">
-                  Praktische tips om betrouwbare goede doelen te herkennen.
-                  Ontdek wat je moet weten over transparantie en impact.
-                </p>
 
-                <a
-                  href="/blog4.html"
-                  class="text-terracotta font-medium hover:underline inline-flex items-center"
-                  aria-label="Lees meer over betrouwbare goede doelen"
-                  data-lang-key="read-more"
+              <div>
+                <form
+                  id="newsletter-form"
+                  class="space-y-4"
+                  aria-labelledby="newsletter-subtitle"
                 >
-                  Lees meer
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
+                  <div
+                    id="newsletter-result"
+                    class="hidden rounded-md p-4 mb-4"
                   >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
+                    <p class="text-sm font-medium"></p>
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-dark font-medium mb-1"
+                      data-lang-key="newsletter-email"
+                    >
+                      E-mailadres
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="w-full px-4 py-3 border border-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-terracotta"
+                      placeholder="jouw@email.nl"
+                      data-lang-key="newsletter-email-placeholder"
+                      required
+                      aria-required="true"
+                      autocomplete="email"
                     />
-                  </svg>
-                </a>
-              </div>
-            </div>
+                  </div>
 
-            <!-- Article 3: Water Women Blog (Juli 2025) -->
-            <div
-              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
-              role="article"
-              aria-labelledby="water-women-blog-title"
-            >
-              <img
-                src="img/water-vrouwen-1-400w.webp"
-                alt="Water halen: een vrouwenzaak — en waarom dat ertoe doet bij de Maasai"
-                class="w-full h-48 object-cover"
-                width="400"
-                height="144"
-                loading="lazy"
-                srcset="
-                  img/water-vrouwen-1-400w.webp 400w,
-                  img/water-vrouwen-1-800w.webp 800w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-              <div class="p-6">
-                <div class="flex items-center text-sm text-gray-500 mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  <div>
+                    <label
+                      for="name"
+                      class="block text-dark font-medium mb-1"
+                      data-lang-key="newsletter-name"
+                    >
+                      Naam
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="w-full px-4 py-3 border border-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-terracotta"
+                      placeholder="Jouw naam"
+                      data-lang-key="newsletter-name-placeholder"
+                      required
+                      aria-required="true"
+                      autocomplete="name"
                     />
-                  </svg>
-                  <time datetime="2025-07-14" data-lang-key="blog-date-july"
-                    >14 juli 2025</time
+                  </div>
+
+                  <div class="flex items-start mt-4">
+                    <input
+                      type="checkbox"
+                      id="newsletter-consent"
+                      name="consent"
+                      class="mt-1 mr-3"
+                      required
+                      aria-required="true"
+                      aria-describedby="consent-description"
+                    />
+                    <label
+                      for="newsletter-consent"
+                      id="consent-description"
+                      class="text-sm text-dark"
+                      data-lang-key="newsletter-consent"
+                    >
+                      Ik geef toestemming aan ASHE Foundation om mijn gegevens
+                      te gebruiken voor het versturen van nieuwsbrieven en
+                      informatie over campagnes en activiteiten. Voor meer
+                      informatie zie onze
+                      <a
+                        href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:33bcb8b3-4519-4414-8fd7-a56de689d200"
+                        class="text-terracotta hover:underline"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Bekijk onze privacyverklaring (opent in nieuw tabblad)"
+                      >
+                        privacyverklaring </a
+                      >.
+                    </label>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="w-full bg-terracotta hover:bg-terracotta-light text-white font-semibold py-3 px-6 rounded-lg shadow-md transition transform hover:scale-105"
+                    data-lang-key="newsletter-submit"
+                    aria-label="Schrijf je in voor onze nieuwsbrief"
                   >
-                </div>
-                <h3
-                  id="water-women-blog-title"
-                  class="text-xl font-bold text-terracotta mb-3"
-                  data-lang-key="blog-water-women-title"
-                >
-                  Water halen: een vrouwenzaak — en waarom dat ertoe doet bij de
-                  Maasai
-                </h3>
+                    Inschrijven
+                  </button>
+                </form>
+
                 <p
-                  class="text-gray-600 mb-4"
-                  data-lang-key="blog-water-women-desc"
+                  class="text-xs text-gray-600 mt-4"
+                  data-lang-key="newsletter-privacy-notice"
                 >
-                  Ontdek hoe ons waterproject het leven van Maasai-vrouwen
-                  verandert door water dichterbij te brengen.
+                  Je kunt je op elk moment uitschrijven via de link onderaan
+                  elke e-mail. Door je aan te melden stem je ermee in dat wij je
+                  persoonlijke gegevens verwerken zoals beschreven in onze
+                  <a
+                    href="/privacystatement.html"
+                    class="text-terracotta hover:underline"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Bekijk onze privacyverklaring (opent in nieuw tabblad)"
+                    >privacyverklaring</a
+                  >.
                 </p>
-
-                <a
-                  href="/blog3.html"
-                  class="text-terracotta font-medium hover:underline inline-flex items-center"
-                  aria-label="Lees meer over Water halen: een vrouwenzaak"
-                  data-lang-key="read-more"
-                >
-                  Lees meer
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Article 4: Water is Life Blog (Juni 2025) -->
-            <div
-              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
-              role="article"
-              aria-labelledby="water-life-blog-title"
-            >
-              <img
-                src="img/kidswater2-400w.webp"
-                alt="Water is leven — maar niet voor iedereen"
-                class="w-full h-48 object-cover"
-                width="400"
-                height="192"
-                loading="lazy"
-                srcset="
-                  img/kidswater2-400w.webp 400w,
-                  img/kidswater2-800w.webp 800w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-              <div class="p-6">
-                <div class="flex items-center text-sm text-gray-500 mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <time datetime="2025-06-01" data-lang-key="blog-date-june"
-                    >1 juni 2025</time
-                  >
-                </div>
-                <h3
-                  id="water-life-blog-title"
-                  class="text-xl font-bold text-terracotta mb-3"
-                  data-lang-key="water-is-life-title"
-                >
-                  Water is leven — maar niet voor iedereen
-                </h3>
-                <p
-                  class="text-gray-600 mb-4"
-                  data-lang-key="water-is-life-desc"
-                >
-                  De impact van armoede en uitsluiting. Lees hoe de Maasai
-                  gemeenschap dagelijks vecht voor schoon water.
-                </p>
-
-                <a
-                  href="/blog2.html"
-                  class="text-terracotta font-medium hover:underline inline-flex items-center"
-                  aria-label="Lees meer over Water is leven — maar niet voor iedereen"
-                  data-lang-key="read-more"
-                >
-                  Lees meer
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Article 5: Drought Blog (Mei 2025) -->
-            <div
-              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
-              role="article"
-              aria-labelledby="drought-article-title"
-            >
-              <img
-                src="img/kidswater-400w.webp"
-                alt="Extreme droogte in Tanzania treft Maasai gemeenschap zwaar"
-                class="w-full h-48 object-cover"
-                width="400"
-                height="192"
-                loading="lazy"
-                srcset="
-                  img/kidswater-400w.webp 400w,
-                  img/kidswater-800w.webp 800w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-              <div class="p-6">
-                <div class="flex items-center text-sm text-gray-500 mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <time datetime="2025-05-01" data-lang-key="blog-date-may"
-                    >1 mei 2025</time
-                  >
-                </div>
-                <h3
-                  id="drought-article-title"
-                  class="text-xl font-bold text-terracotta mb-3"
-                  data-lang-key="drought-blog-title"
-                >
-                  Extreme droogte in Tanzania treft Maasai gemeenschap zwaar
-                </h3>
-                <p class="text-gray-600 mb-4" data-lang-key="drought-blog-desc">
-                  De aanhoudende droogte in Tanzania heeft ernstige gevolgen
-                  voor de Maasai gemeenschap in Loolera.
-                </p>
-
-                <a
-                  href="/blog.html"
-                  class="text-terracotta font-medium hover:underline inline-flex items-center"
-                  aria-label="Lees meer over de extreme droogte in Tanzania"
-                  data-lang-key="read-more"
-                >
-                  Lees meer
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
               </div>
             </div>
           </div>
