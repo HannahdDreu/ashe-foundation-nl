@@ -447,27 +447,27 @@ select:focus {
   .timeline-right {
     left: 0 !important;
   }
-  
+
   /* Make timeline cards more mobile-friendly */
   .timeline-item > div {
     padding: 1rem !important;
     border-radius: 8px !important;
     margin-left: 0 !important;
   }
-  
+
   /* Adjust timeline item content for mobile */
   .timeline-item h3 {
     font-size: 1rem !important;
     margin-bottom: 0.5rem !important;
     line-height: 1.3 !important;
   }
-  
+
   .timeline-item p {
     font-size: 0.875rem !important;
     line-height: 1.4 !important;
     margin-bottom: 0.5rem !important;
   }
-  
+
   /* Date styling */
   .timeline-item .text-gray-500 {
     font-size: 0.75rem !important;
@@ -480,18 +480,18 @@ select:focus {
   .timeline-container::after {
     left: 15px !important;
   }
-  
+
   .timeline-item {
     padding-left: 40px !important;
     padding-right: 10px !important;
   }
-  
+
   .timeline-item::after {
     left: 3px !important;
     width: 18px !important;
     height: 18px !important;
   }
-  
+
   .timeline-item > div {
     padding: 0.75rem !important;
   }

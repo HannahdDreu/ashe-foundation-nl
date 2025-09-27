@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="nl">
   <head>
-    <title>ASHE Foundation - Project Water</title>
+    <title>Nieuws & Actualiteiten - ASHE Foundation</title>
 
     <!-- Meta tags for SEO -->
     <meta
       name="description"
-      content="Ashe Foundation voert een duurzaam waterproject uit in de binnenlanden van Tanzania om de Maasai gemeenschap te voorzien van schoon drinkwater."
+      content="Lees de laatste artikelen van ASHE Foundation over onze projecten in Tanzania, de Maasai gemeenschap en ontwikkelingssamenwerking. Blijf op de hoogte van onze impact."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
@@ -14,31 +14,36 @@
     <!-- Open Graph tags for social sharing -->
     <meta
       property="og:title"
-      content="ASHE Foundation - Project Water in Tanzania"
+      content="Nieuws & Actualiteiten - ASHE Foundation"
     />
     <meta
       property="og:description"
-      content="Help de Maasai gemeenschap in Tanzania met toegang tot schoon water via de ASHE Foundation's waterproject."
+      content="Ontdek de laatste verhalen over onze projecten, de Maasai gemeenschap en onze impact in Tanzania. Blijf geïnformeerd over ontwikkelingssamenwerking."
     />
     <meta
       property="og:image"
-      content="https://ashefoundation.nl/img/gallery-1.webp"
+      content="https://ashefoundation.nl/img/articles-banner.webp"
     />
-    <meta property="og:url" content="https://ashefoundation.nl/waterproject" />
+    <meta property="og:url" content="https://ashefoundation.nl/artikelen" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ASHE Foundation" />
+
+    <!-- LinkedIn specific tags -->
+    <meta property="linkedin:owner" content="ASHE Foundation" />
+    <meta property="linkedin:card" content="summary_large_image" />
 
     <!-- Language detection meta tags -->
     <link
       rel="alternate"
       hreflang="nl"
-      href="https://ashefoundation.nl/waterproject"
+      href="https://ashefoundation.nl/artikelen"
     />
     <link
       rel="alternate"
       hreflang="en"
-      href="https://ashefoundation.net/waterproject"
+      href="https://ashefoundation.net/articles"
     />
-    <link rel="canonical" href="https://ashefoundation.nl/waterproject" />
+    <link rel="canonical" href="https://ashefoundation.nl/artikelen" />
 
     <!-- Common preloads -->
     <link rel="preload" href="/img/flag-us.webp" as="image" type="image/webp" />
@@ -54,7 +59,7 @@
     <!-- Page-specific preloads -->
     <link
       rel="preload"
-      href="/img/hero-image.webp"
+      href="/img/team-banner.webp"
       as="image"
       type="image/webp"
       fetchpriority="high"
@@ -62,7 +67,7 @@
 
     <!-- Critical CSS - Keep minimal essential styles for above-the-fold content -->
     <style>
-      /* Optimized Critical CSS for waterproject.html */
+      /* Optimized Critical CSS for projecten.html */
       body {
         font-family: "Poppins", sans-serif;
         margin: 0;
@@ -71,7 +76,7 @@
         background-color: #fff1e6;
       }
 
-      /* Hero Section for Water Project page */
+      /* Hero Section for Projects page */
       .hero-section {
         background-image:
           linear-gradient(
@@ -79,7 +84,7 @@
             rgba(64, 61, 57, 0.5),
             rgba(224, 122, 95, 0.4)
           ),
-          url("/img/hero-image.webp");
+          url("/img/team-banner.webp");
         background-size: cover;
         background-position: center;
         color: white;
@@ -107,19 +112,18 @@
         font-weight: 600;
       }
 
-      .nav-link {
-        position: relative;
+      /* Project Cards - only if visible above the fold */
+      .project-card {
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        background-color: white;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
       }
 
-      .nav-indicator {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        height: 1px;
-        background-color: #e07a5f;
-        transition: width 0.3s ease;
-      }
+      /* Original critical CSS here */
 
       /* Mobile-specific critical CSS */
       @media (max-width: 768px) {
@@ -127,14 +131,14 @@
           padding: 4rem 0; /* Reduced padding for mobile */
         }
 
-        h1#hero-title {
+        h1#projects-title {
           font-size: 2rem; /* Smaller title on mobile */
           margin-bottom: 0.5rem;
         }
 
-        /* Adjust image gallery for mobile */
-        .w-full.h-56.object-cover {
-          height: 180px; /* Slightly smaller images on mobile */
+        /* Adjust project cards for mobile */
+        .project-card {
+          min-width: 280px; /* Ensure cards are readable on mobile */
         }
       }
     </style>
@@ -143,34 +147,27 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "NGO",
-        "name": "ASHE Foundation",
-        "url": "https://ashefoundation.nl/waterproject",
-        "logo": "https://ashefoundation.nl/img/Untitleddesign.svg",
-        "description": "Ashe Foundation werkt aan een duurzaam waterproject in Tanzania om de Maasai gemeenschap te voorzien van schoon drinkwater.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "Netherlands"
+        "@type": "CollectionPage",
+        "name": "Nieuws & Actualiteiten - ASHE Foundation",
+        "description": "Lees de laatste artikelen van ASHE Foundation over onze projecten in Tanzania, de Maasai gemeenschap en ontwikkelingssamenwerking.",
+        "url": "https://ashefoundation.nl/artikelen",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ASHE Foundation",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://ashefoundation.nl/img/Untitleddesign.svg"
+          }
         },
-        "sameAs": ["https://ashefoundation.net/waterproject"]
+        "about": {
+          "@type": "Organization",
+          "name": "ASHE Foundation",
+          "description": "ASHE Foundation werkt aan een wereld waarin de Maasai gemeenschap in Tanzania kansen heeft om het goede leven en het eigen geluk na te streven."
+        }
       }
     </script>
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/webp"
-      href="/img/Untitleddesign.webp"
-      sizes="144x144"
-    />
-
-    <!-- Font import -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Stylesheets -->
+    <!-- Tailwind CSS with embedded configuration -->
     <script src="https://cdn.tailwindcss.com?minify"></script>
     <script>
       tailwind.config = {
@@ -197,6 +194,20 @@
       };
     </script>
 
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/webp"
+      href="/img/Untitleddesign.webp"
+      sizes="144x144"
+    />
+
+    <!-- Font import -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- External CSS -->
     <link rel="stylesheet" href="/css/main.css" />
 
@@ -204,7 +215,7 @@
     <script type="module" src="/src/js/gtm.js"></script>
     <script type="module" src="/src/js/gtm-consent-mode.js"></script>
   </head>
-  <body class="min-h-screen water-project">
+  <body class="min-h-screen">
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -295,7 +306,6 @@
                     >
                   </button>
                 </div>
-
                 <!-- Hamburger Menu -->
                 <button
                   data-collapse-toggle="mobile-menu"
@@ -358,8 +368,9 @@
                 <li>
                   <a
                     href="/projecten"
-                    class="block py-2 text-dark hover:text-terracotta"
+                    class="block py-2 text-terracotta font-semibold"
                     data-lang-key="nav-projects"
+                    aria-current="page"
                     >Projecten</a
                   >
                 </li>
@@ -384,7 +395,6 @@
               </ul>
             </div>
           </div>
-
           <!-- Desktop Layout -->
           <div class="hidden lg:flex justify-between items-center">
             <a
@@ -442,12 +452,13 @@
               </a>
               <a
                 href="/projecten"
-                class="text-dark hover:text-terracotta font-medium relative nav-link"
+                class="text-terracotta font-semibold relative nav-link"
                 data-lang-key="nav-projects"
+                aria-current="page"
               >
                 Projecten
                 <span
-                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  class="absolute left-0 bottom-0 w-full h-1 bg-terracotta transition-all duration-300 nav-indicator"
                   aria-hidden="true"
                 ></span>
               </a>
@@ -463,7 +474,6 @@
                 ></span>
               </a>
             </div>
-
             <div class="flex items-center space-x-4">
               <!-- Donate Button -->
               <a
@@ -522,27 +532,28 @@
         </div>
       </nav>
     </header>
-    <!-- MAIN -->
+
+    <!-- MAIN CONTENT -->
     <main id="main-content">
       <!-- Hero Section -->
       <section
         class="hero-section py-20 md:py-28 relative"
-        aria-labelledby="hero-title"
+        aria-labelledby="articles-title"
       >
         <!-- Background image container -->
         <div class="absolute inset-0">
           <picture>
             <source
               media="(max-width: 640px)"
-              srcset="/img/water-project-banner-640w.webp"
+              srcset="/img/articles-banner-640w.webp"
             />
             <source
               media="(max-width: 1024px)"
-              srcset="/img/water-project-banner-1024w.webp"
+              srcset="/img/articles-banner-1024w.webp"
             />
             <img
-              src="/img/water-project-banner-1920w.webp"
-              alt="Water project banner"
+              src="/img/articles-banner-1920w.webp"
+              alt="Artikelen banner"
               class="w-full h-full object-cover"
               loading="eager"
             />
@@ -563,201 +574,99 @@
         <!-- Content -->
         <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
           <h1
-            id="hero-title"
-            class="text-4xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto leading-tight"
-            data-lang-key="project-water-title"
+            id="articles-title"
+            class="text-4xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto leading-tight text-white"
+            data-lang-key="articles-title"
           >
-            Project Water
+            Nieuws & Actualiteiten
           </h1>
           <p
             class="text-xl text-white max-w-3xl mx-auto opacity-90"
-            data-lang-key="project-water-subtitle"
+            data-lang-key="articles-subtitle"
           >
-            Een duurzaam waterproject in de binnenlanden van Tanzania
+            Ontdek de laatste verhalen over onze projecten, de Maasai
+            gemeenschap en onze impact in Tanzania
           </p>
         </div>
       </section>
 
-      <!-- Image Row Section -->
-      <section class="py-12 bg-white" aria-label="Beelden van het waterproject">
+      <!-- Articles Grid Section -->
+      <section class="py-16 bg-white" aria-labelledby="all-articles-title">
         <div class="max-w-7xl mx-auto px-6">
-          <!-- Image Row Container -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <!-- Image 1 -->
+          <h2
+            id="all-articles-title"
+            class="text-3xl font-bold text-center mb-12 text-terracotta"
+            data-lang-key="all-articles-title"
+          >
+            Alle Artikelen
+          </h2>
+
+          <!-- Articles Grid - 3 kolommen layout -->
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article 1: Trust Blog (Nieuwste - September 2025) -->
             <div
-              class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
+              role="article"
+              aria-labelledby="trust-blog-title"
             >
               <img
-                src="img/gallery-1-600w.webp"
-                alt="Maasai vrouwen halen water uit een lokale bron"
-                class="w-full h-56 object-cover"
-                width="300"
-                height="224"
+                src="img/transparency-400w.webp"
+                alt="Hoe weet je of een goed doel écht betrouwbaar is?"
+                class="w-full h-48 object-cover object-bottom"
+                width="400"
+                height="192"
                 loading="lazy"
                 srcset="
-                  img/gallery-1-300w.webp   300w,
-                  img/gallery-1-600w.webp   600w,
-                  img/gallery-1-1200w.webp 1200w
+                  img/transparency-400w.webp 400w,
+                  img/transparency-800w.webp 800w
                 "
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end"
-              >
-                <p
-                  class="text-white p-4 text-lg font-medium"
-                  data-lang-key="gallery-img1"
-                >
-                  Water halen
-                </p>
-              </div>
-            </div>
-
-            <!-- Image 2 -->
-            <div
-              class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
-            >
-              <img
-                src="img/gallery-2-600w.webp"
-                alt="Bestaande watervoorziening in het Maasai gebied"
-                class="w-full h-56 object-cover"
-                width="300"
-                height="224"
-                loading="lazy"
-                srcset="
-                  img/gallery-2-300w.webp   300w,
-                  img/gallery-2-600w.webp   600w,
-                  img/gallery-2-1200w.webp 1200w
-                "
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end"
-              >
-                <p
-                  class="text-white p-4 text-lg font-medium"
-                  data-lang-key="gallery-img2"
-                >
-                  Watervoorziening
-                </p>
-              </div>
-            </div>
-
-            <!-- Image 3 -->
-            <div
-              class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
-            >
-              <img
-                src="img/gallery-3-600w.webp"
-                alt="Groep Maasai mannen in hun gemeenschap"
-                class="w-full h-56 object-cover"
-                width="300"
-                height="224"
-                loading="lazy"
-                srcset="
-                  img/gallery-3-300w.webp   300w,
-                  img/gallery-3-600w.webp   600w,
-                  img/gallery-3-1200w.webp 1200w
-                "
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end"
-              >
-                <p
-                  class="text-white p-4 text-lg font-medium"
-                  data-lang-key="gallery-img3"
-                >
-                  Maasai gemeenschap
-                </p>
-              </div>
-            </div>
-
-            <!-- Image 4 -->
-            <div
-              class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
-            >
-              <img
-                src="img/gallery-4-600w.webp"
-                alt="Droog landschap in Tanzania tijdens een periode van droogte"
-                class="w-full h-56 object-cover"
-                width="300"
-                height="224"
-                loading="lazy"
-                srcset="
-                  img/gallery-4-300w.webp   300w,
-                  img/gallery-4-600w.webp   600w,
-                  img/gallery-4-1200w.webp 1200w
-                "
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end"
-              >
-                <p
-                  class="text-white p-4 text-lg font-medium"
-                  data-lang-key="gallery-img4"
-                >
-                  Droogte
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Problem Section -->
-      <section
-        class="py-16 bg-light text-dark relative overflow-hidden"
-        aria-labelledby="problem-title"
-      >
-        <div
-          class="absolute inset-0 opacity-5 pattern-accent"
-          aria-hidden="true"
-        ></div>
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-          <div class="grid md:grid-cols-2 gap-12 items-start">
-            <!-- Left Column: Problem Information -->
-            <div>
-              <h2
-                id="problem-title"
-                class="text-3xl font-bold text-terracotta mb-6 relative inline-block"
-                data-lang-key="problem-title"
-              >
-                Het probleem
-                <span
-                  class="absolute bottom-0 left-0 w-full h-1 bg-terracotta"
-                  aria-hidden="true"
-                ></span>
-              </h2>
-              <p class="text-dark mb-6" data-lang-key="problem-text">
-                De inwoners van Loolera en Lembapuli hebben onvoldoende schoon
-                (drink)water. Hier brengt Ashe Foundation verandering in.
-              </p>
-
-              <h3
-                id="goal-title"
-                class="text-2xl font-bold text-terracotta mb-4 mt-10"
-                data-lang-key="goal-title"
-              >
-                Ons doel
-              </h3>
-              <p class="text-dark mb-6" data-lang-key="goal-text">
-                Dit project heeft als doel om voldoende schoon en veilig
-                drinkwater toegankelijk te maken voor de gemeenschap in Loolera
-                en Lambapuli.
-              </p>
-
-              <div class="mt-8">
-                <a
-                  href="#donation-section"
-                  class="py-3 px-6 bg-yellow hover:bg-yellow-light text-dark rounded-full font-medium transition-colors hover:scale-105 transform inline-flex items-center"
-                  aria-label="Help nu met het waterproject"
-                >
-                  <span data-lang-key="help-now">Help nu</span>
+              <div class="p-6">
+                <div class="flex items-center text-sm text-gray-500 mb-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-2"
+                    class="h-4 w-4 mr-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <time
+                    datetime="2025-09-15"
+                    data-lang-key="blog-date-september"
+                    >15 september 2025</time
+                  >
+                </div>
+                <h3
+                  id="trust-blog-title"
+                  class="text-xl font-bold text-terracotta mb-3"
+                  data-lang-key="blog-trust-title"
+                >
+                  Hoe weet je of een goed doel écht betrouwbaar is?
+                </h3>
+                <p class="text-gray-600 mb-4" data-lang-key="blog-trust-desc">
+                  Praktische tips om betrouwbare goede doelen te herkennen.
+                  Ontdek wat je moet weten over transparantie en impact.
+                </p>
+
+                <a
+                  href="/blog4.html"
+                  class="text-terracotta font-medium hover:underline inline-flex items-center"
+                  aria-label="Lees meer over betrouwbare goede doelen"
+                  data-lang-key="read-more"
+                >
+                  Lees meer
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 ml-1"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                     aria-hidden="true"
@@ -772,110 +681,72 @@
               </div>
             </div>
 
-            <!-- Right Column: Simple Vertical Images -->
-            <div class="relative h-96">
-              <!-- First image (left) -->
-              <div class="absolute left-0 top-0 w-1/2 h-4/5">
-                <img
-                  src="img/waterproject1-250w.webp"
-                  alt="Maasai woman with child"
-                  class="w-full h-full object-cover rounded-lg shadow-lg border-4 border-white"
-                  width="250"
-                  height="400"
-                  loading="lazy"
-                  srcset="
-                    img/waterproject1-250w.webp 250w,
-                    img/waterproject1-500w.webp 500w
-                  "
-                  sizes="(max-width: 768px) 150px, 250px"
-                />
-              </div>
-
-              <!-- Second image (right) -->
-              <div class="absolute right-0 bottom-0 w-1/2 h-4/5">
-                <img
-                  src="img/waterproject2-250w.webp"
-                  alt="Masaai man bij waterbron"
-                  class="w-full h-full object-cover rounded-lg shadow-lg border-4 border-white"
-                  width="250"
-                  height="400"
-                  loading="lazy"
-                  srcset="
-                    img/waterproject2-250w.webp 250w,
-                    img/waterproject2-500w.webp 500w
-                  "
-                  sizes="(max-width: 768px) 150px, 250px"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- What Is Needed Section  -->
-      <section
-        class="py-16 bg-white relative overflow-hidden"
-        aria-labelledby="cost-title"
-      >
-        <div
-          class="absolute -top-40 -right-40 w-80 h-80 rounded-full bg-yellow opacity-10"
-          aria-hidden="true"
-        ></div>
-        <div
-          class="absolute -bottom-24 -left-24 w-64 h-64 rounded-full bg-green opacity-10"
-          aria-hidden="true"
-        ></div>
-
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-          <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2
-                id="cost-title"
-                class="text-3xl font-bold text-terracotta mb-6 relative inline-block"
-                data-lang-key="cost-title"
-              >
-                Wat is er nodig?
-                <span
-                  class="absolute bottom-0 left-0 w-full h-1 bg-yellow"
-                  aria-hidden="true"
-                ></span>
-              </h2>
-              <p class="text-dark mb-6" data-lang-key="cost-text">
-                Om de waterleidingen te kunnen kopen en laten aanleggen is in
-                totaal 15.000 euro nodig. En jouw hulp is daarbij hard nodig!
-              </p>
-
-              <!-- Updated part with bullet points -->
-              <div class="text-terracotta font-bold text-xl mb-10">
-                <p class="mb-2 flex items-start">
-                  <span
-                    class="inline-block w-3 h-3 bg-yellow rounded-full mr-3 flex-shrink-0 mt-1.5"
-                  ></span>
-                  <span data-lang-key="cost-cta-1"
-                    >Doneer nu 5 euro en voorzie 3 mensen van schoon
-                    water.</span
-                  >
-                </p>
-                <p class="flex items-start">
-                  <span
-                    class="inline-block w-3 h-3 bg-yellow rounded-full mr-3 flex-shrink-0 mt-1.5"
-                  ></span>
-                  <span data-lang-key="cost-cta-2"
-                    >Doneer 50 euro en voorzie 30 mensen van schoon water.</span
-                  >
-                </p>
-              </div>
-
-              <div>
-                <a
-                  href="#donation-section"
-                  class="btn-primary inline-flex items-center"
-                  aria-label="Doneer nu voor het waterproject"
-                >
-                  <span data-lang-key="donate-button">Doneer nu</span>
+            <!-- Article 2: Water Women Blog (Juli 2025) -->
+            <div
+              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
+              role="article"
+              aria-labelledby="water-women-blog-title"
+            >
+              <img
+                src="img/water-vrouwen-1-400w.webp"
+                alt="Water halen: een vrouwenzaak — en waarom dat ertoe doet bij de Maasai"
+                class="w-full h-48 object-cover"
+                width="400"
+                height="144"
+                loading="lazy"
+                srcset="
+                  img/water-vrouwen-1-400w.webp 400w,
+                  img/water-vrouwen-1-800w.webp 800w
+                "
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              />
+              <div class="p-6">
+                <div class="flex items-center text-sm text-gray-500 mb-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-2"
+                    class="h-4 w-4 mr-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <time datetime="2025-07-14" data-lang-key="blog-date-july"
+                    >14 juli 2025</time
+                  >
+                </div>
+                <h3
+                  id="water-women-blog-title"
+                  class="text-xl font-bold text-terracotta mb-3"
+                  data-lang-key="blog-water-women-title"
+                >
+                  Water halen: een vrouwenzaak — en waarom dat ertoe doet bij de
+                  Maasai
+                </h3>
+                <p
+                  class="text-gray-600 mb-4"
+                  data-lang-key="blog-water-women-desc"
+                >
+                  Ontdek hoe ons waterproject het leven van Maasai-vrouwen
+                  verandert door water dichterbij te brengen.
+                </p>
+
+                <a
+                  href="/blog3.html"
+                  class="text-terracotta font-medium hover:underline inline-flex items-center"
+                  aria-label="Lees meer over Water halen: een vrouwenzaak"
+                  data-lang-key="read-more"
+                >
+                  Lees meer
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 ml-1"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                     aria-hidden="true"
@@ -890,439 +761,160 @@
               </div>
             </div>
 
-            <!-- Impact Visualization - This part remains exactly the same -->
+            <!-- Article 3: Water is Life Blog (Juni 2025) -->
             <div
-              class="bg-light p-6 rounded-lg shadow-md"
-              aria-labelledby="impact-title-donate"
+              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
+              role="article"
+              aria-labelledby="water-life-blog-title"
             >
-              <h3
-                id="impact-title-donate"
-                class="text-xl font-bold text-terracotta mb-4 text-center"
-                data-lang-key="impact-title-donate"
-              >
-                Impact van je donatie
-              </h3>
-
-              <!-- Progress Bar -->
-              <div
-                class="mb-6"
-                role="progressbar"
-                aria-valuenow="65"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                aria-label="65% van het doel bereikt"
-              >
-                <div class="w-full bg-gray-200 rounded-full h-4">
-                  <div
-                    class="bg-terracotta h-4 rounded-full progress-bar"
-                    style="width: 0%"
-                  ></div>
+              <img
+                src="img/kidswater2-400w.webp"
+                alt="Water is leven — maar niet voor iedereen"
+                class="w-full h-48 object-cover"
+                width="400"
+                height="192"
+                loading="lazy"
+                srcset="
+                  img/kidswater2-400w.webp 400w,
+                  img/kidswater2-800w.webp 800w
+                "
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              />
+              <div class="p-6">
+                <div class="flex items-center text-sm text-gray-500 mb-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <time datetime="2025-06-01" data-lang-key="blog-date-june"
+                    >1 juni 2025</time
+                  >
                 </div>
-                <script
-                  src="https://donorbox.org/widget.js"
-                  paypalExpress="false"
-                ></script>
-                <iframe
-                  height="93px"
-                  width="100%"
-                  src="https://donorbox.org/embed/ashe-foundation?donation_meter_color=%23e07a5f&only_donation_meter=true"
-                  style="
-                    max-width: 100%;
-                    min-width: 250px;
-                    min-height: 90px;
-                    max-height: none !important;
-                  "
-                  seamless="seamless"
-                  name="donorbox"
-                  title="Donation form for Water Project"
-                  frameborder="0"
-                  scrolling="no"
-                  data-donorbox-id="DonorBox-frame-1"
+                <h3
+                  id="water-life-blog-title"
+                  class="text-xl font-bold text-terracotta mb-3"
+                  data-lang-key="water-is-life-title"
                 >
-                </iframe>
-              </div>
-
-              <!-- Impact Stats -->
-              <div class="grid grid-cols-2 gap-4 text-center">
-                <div class="bg-white p-4 rounded-lg">
-                  <p class="text-3xl font-bold text-terracotta">10,000+</p>
-                  <p
-                    class="text-dark font-medium"
-                    data-lang-key="maasai-residents"
-                  >
-                    Maasai inwoners
-                  </p>
-                </div>
-                <div class="bg-white p-4 rounded-lg">
-                  <p class="text-3xl font-bold text-dark">5 km</p>
-                  <p
-                    class="text-dark font-medium"
-                    data-lang-key="new-water-pipe"
-                  >
-                    Nieuwe waterleiding
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- How We'll Do It Section  -->
-      <section class="py-16 bg-light" aria-labelledby="how-title">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="text-center mb-12">
-            <h2
-              id="how-title"
-              class="text-3xl font-bold text-terracotta mb-4 relative inline-block"
-              data-lang-key="how-title"
-            >
-              Hoe gaan we dit doen?
-              <span
-                class="absolute bottom-0 left-0 w-full h-1 bg-yellow"
-                aria-hidden="true"
-              ></span>
-            </h2>
-          </div>
-
-          <div class="grid md:grid-cols-3 gap-8">
-            <!-- Step 1 -->
-            <div
-              class="bg-white rounded-lg shadow-md p-6 border-t-4 border-terracotta step-card"
-              aria-labelledby="step1-title"
-            >
-              <div
-                class="bg-terracotta text-white step-number"
-                aria-hidden="true"
-              >
-                1
-              </div>
-              <h3
-                id="step1-title"
-                class="text-xl font-bold text-terracotta mb-3 text-center"
-                data-lang-key="step1-title"
-              >
-                Huidige situatie
-              </h3>
-              <p class="text-dark" data-lang-key="how-text">
-                Loolera en Lembapuli zijn aanliggende dorpen in het binnenland
-                van Tanzania waar meer dan 10.000 maasai families met hun
-                veeteelt wonen. In beide dorpen is onvoldoende schoon
-                (drink)water aanwezig.
-              </p>
-            </div>
-
-            <!-- Step 2 -->
-            <div
-              class="bg-white rounded-lg shadow-md p-6 border-t-4 border-green step-card"
-              aria-labelledby="step2-title"
-            >
-              <div class="bg-green text-white step-number" aria-hidden="true">
-                2
-              </div>
-              <h3
-                id="step2-title"
-                class="text-xl font-bold text-green mb-3 text-center"
-                data-lang-key="step2-title"
-              >
-                Het probleem
-              </h3>
-              <p class="text-dark" data-lang-key="how-text-2">
-                Dit betekent dat de vrouwen in de maasai gemeenschap 's nachts
-                hun watertanks moeten vullen, zodat ze voldoende water kunnen
-                halen voor hun families. De vrouwen die te laat zijn, die vinden
-                de hond in de pot; er is geen schoon (drink)water voor de
-                families. Hierdoor wijken ze uit naar vervuild water. Daarnaast
-                betekent het tekort ook dat er te weinig schoon water aanwezig
-                is in het ziekenhuis van beide dorpen met alle gevolgen van
-                dien.
-              </p>
-            </div>
-
-            <!-- Step 3 -->
-            <div
-              class="bg-white rounded-lg shadow-md p-6 border-t-4 border-yellow step-card"
-              aria-labelledby="step3-title"
-            >
-              <div class="bg-yellow text-white step-number" aria-hidden="true">
-                3
-              </div>
-              <h3
-                id="step3-title"
-                class="text-xl font-bold text-yellow mb-3 text-center"
-                data-lang-key="step3-title"
-              >
-                Onze oplossing
-              </h3>
-              <p class="text-dark" data-lang-key="how-text-3">
-                Ashe Foundation gaat met dit initiatief de waterinfrastructuur
-                aanpakken. Dit betekent concreet dat er nieuwe waterleidingen
-                geplaatst worden van een berg die op 5km afstand van Loolera
-                ligt. Hierdoor stroomt voldoende schoon water van de berg naar
-                het water verzamelpunt. Dit heeft grote impact op alle ruim
-                10.000 maasai families. Nieuw aangelegde waterleidingen betekent
-                schoon (drink) water voor iedereen! Dit doen we met lokale
-                experts, zodat het onderhoud ook lokaal gedragen kan worden en
-                dit project duurzaam is voor de toekomst
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Quote Section -->
-      <section
-        class="py-16 bg-white quote-section"
-        aria-label="Citaat van Amy, oprichter ASHE Foundation"
-      >
-        <div class="max-w-5xl mx-auto px-6 text-center">
-          <div class="bg-light rounded-xl p-8 shadow-md relative">
-            <svg
-              class="absolute top-0 left-0 w-16 h-16 text-terracotta opacity-20 -translate-x-6 -translate-y-6 quote-mark"
-              fill="currentColor"
-              viewBox="0 0 32 32"
-              aria-hidden="true"
-            >
-              <path
-                d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
-              ></path>
-            </svg>
-            <div class="relative z-10">
-              <blockquote>
+                  Water is leven — maar niet voor iedereen
+                </h3>
                 <p
-                  class="text-xl md:text-2xl text-dark italic mb-6"
-                  data-lang-key="quote-text"
+                  class="text-gray-600 mb-4"
+                  data-lang-key="water-is-life-desc"
                 >
-                  "Sinds ik weer in Nederland ben verbaast het me hoe
-                  vanzelfsprekend ik het weer ben gaan vinden dat ik gewoon mijn
-                  kraan open kan doen en dat daar schoon water uitkomt. Een
-                  vanzelfsprekenheid die ik door mijn leven in Tanzania meer ben
-                  gaan waarderen."
+                  De impact van armoede en uitsluiting. Lees hoe de Maasai
+                  gemeenschap dagelijks vecht voor schoon water.
                 </p>
-                <cite
-                  class="font-bold text-terracotta"
-                  data-lang-key="quote-author"
+
+                <a
+                  href="/blog2.html"
+                  class="text-terracotta font-medium hover:underline inline-flex items-center"
+                  aria-label="Lees meer over Water is leven — maar niet voor iedereen"
+                  data-lang-key="read-more"
                 >
-                  Amy, oprichter Ashe Foundation
-                </cite>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Video Section - Plaats tussen Quote Section en Donation Form Section -->
-      <section
-        class="py-16 bg-white relative overflow-hidden"
-        aria-labelledby="video-title"
-      >
-        <div
-          class="absolute -top-20 -left-20 w-40 h-40 rounded-full bg-green opacity-10"
-          aria-hidden="true"
-        ></div>
-        <div
-          class="absolute -bottom-32 -right-32 w-56 h-56 rounded-full bg-yellow opacity-10"
-          aria-hidden="true"
-        ></div>
-
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-          <div class="text-center mb-12">
-            <h2
-              id="video-title"
-              class="text-3xl font-bold text-terracotta mb-4 relative inline-block"
-              data-lang-key="video-section-title"
-            >
-              Bekijk ons waterproject
-              <span
-                class="absolute bottom-0 left-0 w-full h-1 bg-green"
-                aria-hidden="true"
-              ></span>
-            </h2>
-            <p
-              class="text-dark max-w-3xl mx-auto"
-              data-lang-key="video-section-subtitle"
-            >
-              Zie met eigen ogen hoe wij samen met de Maasai gemeenschap werken
-              aan schoon drinkwater
-            </p>
-          </div>
-
-          <div class="grid lg:grid-cols-2 gap-12 items-start">
-            <!-- Video Container -->
-            <div class="relative flex justify-center">
-              <div
-                class="relative rounded-xl overflow-hidden shadow-2xl bg-dark w-full max-w-xs max-h-[32rem]"
-                style="aspect-ratio: 9/16"
-              >
-                <!-- Video Element -->
-                <video
-                  class="w-full h-full object-cover"
-                  poster="/img/water-project-video-poster.webp"
-                  preload="metadata"
-                  controls
-                  aria-label="Video over het waterproject in Tanzania"
-                >
-                  <source src="/video/water-project.m4v" type="video/mp4" />
-                  <p data-lang-key="video-not-supported">
-                    Je browser ondersteunt deze video niet.
-                    <a
-                      href="/video/water-project.m4v"
-                      class="text-terracotta hover:underline"
-                    >
-                      Download de video hier
-                    </a>
-                  </p>
-                </video>
-
-                <!-- Play Button Overlay (Optional - alleen als je custom styling wilt) -->
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-center justify-center pointer-events-none opacity-80 hover:opacity-0 transition-opacity duration-300"
-                  id="video-overlay"
-                >
-                  <button
-                    class="play-btn bg-terracotta hover:bg-terracotta-light text-white rounded-full p-4 transition-all transform hover:scale-110 shadow-lg pointer-events-auto"
-                    aria-label="Speel video af"
+                  Lees meer
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 ml-1"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-8 w-8"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                      />
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </button>
-                </div>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
 
-            <!-- Video Description -->
-            <div class="space-y-6">
-              <h3
-                class="text-2xl font-bold text-terracotta"
-                data-lang-key="video-description-title"
-              >
-                Een kijkje ter plaatse
-              </h3>
-
-              <p class="text-dark" data-lang-key="video-description-text1">
-                In deze video neemt Amory je mee naar Tanzania, waar je de
-                Maasai gemeenschap kunt ontmoeten en de uitdagingen rond water
-                met eigen ogen kunt zien. Van de dagelijkse tocht naar water tot
-                de hoop op een duurzame oplossing.
-              </p>
-
-              <p class="text-dark" data-lang-key="video-description-text2">
-                Ontdek hoe jouw donatie direct impact heeft op het leven van de
-                mensen in Loolera en Lembapuli, en zie waarom dit waterproject
-                zo belangrijk is voor de toekomst van de gemeenschap.
-              </p>
-
-              <!-- Video Highlights -->
-              <div class="space-y-3">
-                <h4
-                  class="font-semibold text-dark"
-                  data-lang-key="video-highlights-title"
-                >
-                  In deze video zie je:
-                </h4>
-                <ul class="space-y-2">
-                  <li class="flex items-start">
-                    <span class="text-green mr-2 mt-1" aria-hidden="true"
-                      >✓</span
-                    >
-                    <span data-lang-key="video-highlight-1"
-                      >De huidige watersituatie in de dorpen</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <span class="text-green mr-2 mt-1" aria-hidden="true"
-                      >✓</span
-                    >
-                    <span data-lang-key="video-highlight-2"
-                      >Gesprekken met lokale Maasai families</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <span class="text-green mr-2 mt-1" aria-hidden="true"
-                      >✓</span
-                    >
-                    <span data-lang-key="video-highlight-3"
-                      >De geplande locatie voor de nieuwe waterleiding</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <span class="text-green mr-2 mt-1" aria-hidden="true"
-                      >✓</span
-                    >
-                    <span data-lang-key="video-highlight-4"
-                      >Waarom dit project levens zal veranderen</span
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Donation Form Section -->
-      <section
-        id="donation-section"
-        class="py-16 bg-light"
-        aria-labelledby="donate-title"
-      >
-        <div class="max-w-4xl mx-auto px-6">
-          <div class="text-center mb-8">
-            <h2
-              id="donate-title"
-              class="text-3xl font-bold text-terracotta mb-4 relative inline-block"
-              data-lang-key="donate-title"
+            <!-- Article 4: Drought Blog (Mei 2025) -->
+            <div
+              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
+              role="article"
+              aria-labelledby="drought-article-title"
             >
-              Doneer voor schoon drinkwater
-              <span
-                class="absolute bottom-0 left-0 w-full h-1 bg-green"
-                aria-hidden="true"
-              ></span>
-            </h2>
-            <p class="text-dark max-w-3xl mx-auto" data-lang-key="donate-text">
-              Jouw bijdrage maakt direct verschil voor de Maasai gemeenschap in
-              Tanzania
-            </p>
-          </div>
+              <img
+                src="img/kidswater-400w.webp"
+                alt="Extreme droogte in Tanzania treft Maasai gemeenschap zwaar"
+                class="w-full h-48 object-cover"
+                width="400"
+                height="192"
+                loading="lazy"
+                srcset="
+                  img/kidswater-400w.webp 400w,
+                  img/kidswater-800w.webp 800w
+                "
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              />
+              <div class="p-6">
+                <div class="flex items-center text-sm text-gray-500 mb-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <time datetime="2025-05-01" data-lang-key="blog-date-may"
+                    >1 mei 2025</time
+                  >
+                </div>
+                <h3
+                  id="drought-article-title"
+                  class="text-xl font-bold text-terracotta mb-3"
+                  data-lang-key="drought-blog-title"
+                >
+                  Extreme droogte in Tanzania treft Maasai gemeenschap zwaar
+                </h3>
+                <p class="text-gray-600 mb-4" data-lang-key="drought-blog-desc">
+                  De aanhoudende droogte in Tanzania heeft ernstige gevolgen
+                  voor de Maasai gemeenschap in Loolera.
+                </p>
 
-          <!-- Embedded Donation Form -->
-          <div style="display: flex; justify-content: center">
-            <script src="https://donorbox.org/widget.js"></script>
-            <iframe
-              src="https://donorbox.org/embed/ashe-foundation?hide_donation_meter=true"
-              name="donorbox"
-              title="Donation form for Water Project"
-              allow="payment"
-              style="
-                max-width: 500px;
-                min-width: 250px;
-                height: 900px;
-                width: 100%;
-                max-height: none !important;
-                margin: 0 auto;
-                border: none;
-                overflow: hidden;
-              "
-            ></iframe>
+                <a
+                  href="/blog.html"
+                  class="text-terracotta font-medium hover:underline inline-flex items-center"
+                  aria-label="Lees meer over de extreme droogte in Tanzania"
+                  data-lang-key="read-more"
+                >
+                  Lees meer
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 ml-1"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

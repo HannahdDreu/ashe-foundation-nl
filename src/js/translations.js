@@ -592,7 +592,7 @@ export const translations = {
     "neema-dream-title": "Neema's Droom: Van visie naar werkelijkheid",
     "neema-dream-desc":
       "Het inspirerende verhaal van Neema en hoe ze haar droom van een eigen winkel realiseerde.",
-    "back-to-projects": "Terug naar Projecten",
+    "back-to-projects": "Terug naar nieuwsberichen",
     "instagram-copied-tooltip": "Tekst gekopieerd! Plak in Instagram",
 
     // BLOG - Poverty Impact Article
@@ -952,6 +952,92 @@ export const translations = {
     "oil-sustainable-income-title": "Duurzaam Inkomen",
     "oil-sustainable-income-desc":
       "Zorgt voor stabiele inkomstenstroom voor Mama Pendo en haar gezin",
+
+    // Blog 4 - Trust article - ALLE vertalingen
+    "blog-trust-title": "Hoe weet je of een goed doel écht betrouwbaar is?",
+    "blog-date-september": "15 september 2025",
+    "blog-category-trust": "Transparantie",
+    "blog-trust-desc":
+      "Praktische tips om betrouwbare goede doelen te herkennen. Ontdek wat je moet weten over transparantie en impact.",
+    "blog-trust-intro":
+      'Stel je voor: je ziet een indrukwekkende foto van een kind met een jerrycan water in de brandende zon. Het goede doel belooft: "Met jouw gift verander je dit leven." Je voelt de neiging om meteen te doneren -- want wie wil er nu niet helpen? Maar ergens vraag je je af: komt mijn geld wel echt terecht waar het nodig is?',
+    "blog-trust-paragraph1":
+      "Die twijfel is heel normaal. Iedereen wil dat zijn bijdrage écht verschil maakt. In deze blog nemen we je mee in het verhaal van hoe je zelf kunt ontdekken of een goed doel betrouwbaar is. Geen droge checklist, maar een gids die je helpt om met een gerust hart te geven.",
+    "transparency-caption":
+      "Transparantie is de basis van vertrouwen tussen donateurs en goede doelen",
+    "blog-transparency-title": "Transparantie: een open boek",
+    "blog-transparency-text":
+      "Stel je voor dat je iemand ontmoet die je om geld vraagt, maar niets vertelt over wie hij is of wat hij met het geld gaat doen. Je zou waarschijnlijk niet meteen je portemonnee trekken. Dat geldt ook voor goede doelen. Een betrouwbaar doel is een open boek: ze laten zien wie ze zijn, welke projecten ze doen en wat het oplevert.",
+    "blog-transparency-example":
+      'Denk aan een stichting die niet alleen zegt: "We helpen dorpen in Tanzania," maar ook laat zien hoeveel waterputten er al zijn gebouwd, wie de lokale partners zijn en wat de impact was voor gezinnen. Dat geeft vertrouwen.',
+    "blog-anbi-title": "Keurmerken: een soort APK voor goede doelen",
+    "blog-anbi-text":
+      'In Nederland heb je gelukkig extra houvast. Een organisatie met een ANBI-status laat zien dat ze door de "keuring" zijn gekomen. Zie het maar als een APK: er wordt onafhankelijk gecontroleerd of alles klopt -- van de financiën tot de manier van besturen.',
+    "blog-anbi-meaning":
+      'Een goed doel dat dit keurmerk heeft, vertelt daarmee: "Je hoeft ons niet alleen op ons woord te geloven, er is ook echt naar ons gekeken."',
+    "governance-caption": "Goed bestuur zorgt voor balans en verantwoording",
+    "blog-governance-title": "Wie houdt er toezicht?",
+    "blog-governance-text":
+      "Een mooi verhaal is één ding, maar wie kijkt er mee? Een goed doel laat zien dat er niet één persoon alles beslist, maar dat er een bestuur is dat elkaar in balans houdt. Net zoals een sportteam beter presteert als er meerdere coaches zijn, werkt een goed doel het beste met verschillende ogen en handen die mee sturen.",
+    "blog-finances-title": "Waar gaat je euro heen?",
+    "blog-finances-text":
+      'Iedereen vraagt het zich af: hoeveel van mijn gift gaat écht naar het doel? Het antwoord is meestal genuanceerder dan "100% naar de kinderen" -- want ook projectbegeleiding, trainingen en administratie kosten geld. Een betrouwbaar goed doel laat dit ook aan de hand van het financieel jaarverslag duidelijk zien.',
+    "blog-finances-clarity":
+      "Op deze manier weet je dat je geld niet verdwijnt, maar slim wordt besteed.",
+    "blog-impact-title": "Impact: laat het zien!",
+    "blog-impact-text":
+      'De meest overtuigende bewijzen komen uit de praktijk. Denk aan verhalen van een gemeenschap die nu schoon drinkwater heeft, mét cijfers: "300 gezinnen hebben dagelijks toegang tot veilig water." Het mooiste is als een organisatie ook eerlijk vertelt wat niet werkte, en wat ze daarvan geleerd hebben. Dat maakt ze niet zwakker, maar juist betrouwbaarder.',
+    "blog-red-flags-title": "Rode vlaggen: wanneer opletten?",
+    "blog-red-flags-intro":
+      "Er zijn natuurlijk ook signalen die je waakzaam maken. Bijvoorbeeld als er:",
+    "blog-red-flags-list-item1":
+      "geen jaarverslagen of cijfers te vinden zijn,",
+    "blog-red-flags-list-item2": "vage beloften gedaan worden zonder bewijs,",
+    "blog-red-flags-list-item3":
+      "of als er druk wordt gezet om snel te doneren.",
+    "blog-red-flags-advice":
+      "Zie je dit? Dan is het slim om nog even verder te kijken voor je besluit te geven.",
+    "blog-conclusion-title": "Geef met vertrouwen",
+    "blog-conclusion-text":
+      "Doneren is eigenlijk een beetje zoals een zaadje planten. Je wilt weten of de grond vruchtbaar is, of er zorg is voor water en zonlicht -- en of er iemand kijkt of de plant echt groeit. Een betrouwbaar goed doel laat je dat allemaal zien. Zo kun jij met een gerust hart geven, en weet je dat jouw bijdrage echt wortel schiet en uitgroeit tot iets groots.",
+    "blog-cta-title": "Wil je meer weten hoe Ashe Foundation werkt?",
+    "blog-cta-text":
+      "Wij laten je graag zien hoe elke euro wordt besteed en welke impact we samen maken in de Maasai-gemeenschappen van Tanzania. Want vertrouwen begint met openheid -- en samen maken we het verschil.",
+    "view-financials": "Bekijk onze financiën",
+    "view-projects": "Bekijk onze projecten",
+    "water-project-transparency-title":
+      "Zo zorgen wij voor transparantie in ons waterproject",
+    "water-project-transparency-desc":
+      "Bekijk hoe wij elke euro verantwoorden in ons waterproject voor de Maasai gemeenschap.",
+    "back-to-articles": "Terug naar nieuwsberichen",
+
+    // Artikelen pagina vertalingen
+    "articles-title": "Nieuws & Actualiteiten",
+    "articles-subtitle":
+      "Ontdek de laatste verhalen over onze projecten, de Maasai gemeenschap en onze impact in Tanzania",
+    "all-articles": "Alle Artikelen",
+    "articles-description":
+      "Van projectupdates tot inzichten over ontwikkelingssamenwerking",
+    "more-articles-coming":
+      "Meer artikelen worden binnenkort toegevoegd. Volg ons op social media voor de laatste updates!",
+
+    "video-section-title": "Bekijk ons waterproject",
+    "video-section-subtitle":
+      "Zie met je eigen ogen hoe wij samen met de Maasai gemeenschap werken aan schoon drinkwater",
+    "video-not-supported":
+      "Je browser ondersteunt deze video niet. Download de video hier",
+    "video-credits": "Video gemaakt door Amory Berkenveld - Oropi",
+    "video-description-title": "Een kijkje ter plaatse",
+    "video-description-text1":
+      "In deze video neemt Amory je mee naar Tanzania, waar je de Maasai gemeenschap kunt ontmoeten en de uitdagingen rond water met eigen ogen kunt zien. Van de dagelijkse tocht naar water tot de hoop op een duurzame oplossing.",
+    "video-description-text2":
+      "Ontdek hoe jouw donatie direct impact heeft op het leven van de mensen in Loolera en Lembapuli, en zie waarom dit waterproject zo belangrijk is voor de toekomst van de gemeenschap.",
+    "video-highlights-title": "In deze video zie je:",
+    "video-highlight-1": "De huidige watersituatie in de dorpen",
+    "video-highlight-2": "Gesprekken met lokale Maasai families",
+    "video-highlight-3": "De geplande locatie voor de nieuwe waterleiding",
+    "video-highlight-4": "Waarom dit project levens zal veranderen",
+    "help-after-video": "Help na het zien van deze video",
   },
 
   en: {
@@ -1541,7 +1627,7 @@ export const translations = {
     "neema-dream-title": "Neema's Dream: From vision to reality",
     "neema-dream-desc":
       "The inspiring story of Neema and how she realized her dream of owning a shop.",
-    "back-to-projects": "Back to Projects",
+    "back-to-projects": "Back to news articles",
     "instagram-copied-tooltip": "Text copied! Paste in Instagram",
 
     // BLOG - Poverty Impact Article
@@ -1898,6 +1984,90 @@ export const translations = {
     "oil-sustainable-income-title": "Sustainable Income",
     "oil-sustainable-income-desc":
       "Provides stable income stream for Mama Pendo and her family",
+
+    // Blog 4
+    "blog-trust-title": "How do you know if a charity is truly trustworthy?",
+    "blog-date-september": "September 15, 2025",
+    "blog-category-trust": "Transparency",
+    "blog-trust-desc":
+      "Practical tips to recognize trustworthy charities. Discover what you need to know about transparency and impact.",
+    "blog-trust-intro":
+      "Imagine: you see an impressive photo of a child with a water jerrycan in the blazing sun. The charity promises: \"With your gift, you will change this life.\" You feel the urge to donate immediately -- because who doesn't want to help? But somewhere you wonder: does my money really end up where it's needed?",
+    "blog-trust-paragraph1":
+      "That doubt is completely normal. Everyone wants their contribution to really make a difference. In this blog, we take you through the story of how you can discover for yourself whether a charity is trustworthy. Not a dry checklist, but a guide that helps you give with peace of mind.",
+    "transparency-caption":
+      "Transparency is the foundation of trust between donors and charities",
+    "blog-transparency-title": "Transparency: an open book",
+    "blog-transparency-text":
+      "Imagine meeting someone who asks you for money, but tells you nothing about who they are or what they're going to do with the money. You probably wouldn't immediately reach for your wallet. The same applies to charities. A trustworthy organization is an open book: they show who they are, what projects they do, and what the results are.",
+    "blog-transparency-example":
+      'Think of a foundation that doesn\'t just say: "We help villages in Tanzania," but also shows how many water wells have been built, who the local partners are, and what the impact was for families. That builds trust.',
+    "blog-anbi-title": "Quality marks: like an MOT for charities",
+    "blog-anbi-text":
+      'In the Netherlands, you fortunately have extra support. An organization with ANBI status shows that they have passed the "inspection." Think of it as an MOT: it is independently checked whether everything is correct -- from finances to the way of governance.',
+    "blog-anbi-meaning":
+      'A charity that has this quality mark is saying: "You don\'t have to believe us just on our word, someone has actually looked at us."',
+    "governance-caption": "Good governance ensures balance and accountability",
+    "blog-governance-title": "Who provides oversight?",
+    "blog-governance-text":
+      "A beautiful story is one thing, but who is watching? A good charity shows that there isn't one person deciding everything, but that there is a board that keeps each other in balance. Just like a sports team performs better when there are multiple coaches, a charity works best with different eyes and hands helping to steer.",
+    "blog-finances-title": "Where does your euro go?",
+    "blog-finances-text":
+      'Everyone wonders: how much of my gift really goes to the cause? The answer is usually more nuanced than "100% to the children" -- because project management, training, and administration also cost money. A trustworthy charity also clearly shows this through their financial annual report.',
+    "blog-finances-clarity":
+      "This way you know that your money doesn't disappear, but is spent wisely.",
+    "blog-impact-title": "Impact: show it!",
+    "blog-impact-text":
+      "The most convincing evidence comes from practice. Think of stories of a community that now has clean drinking water, with numbers: \"300 families have daily access to safe water.\" The best part is when an organization also honestly tells what didn't work, and what they learned from it. That doesn't make them weaker, but actually more trustworthy.",
+    "blog-red-flags-title": "Red flags: when to be careful?",
+    "blog-red-flags-intro":
+      "There are of course also signals that make you alert. For example, if there are:",
+    "blog-red-flags-advice":
+      "Do you see this? Then it's smart to look a little further before you decide to give.",
+    "blog-conclusion-title": "Give with confidence",
+    "blog-conclusion-text":
+      "Donating is actually a bit like planting a seed. You want to know if the soil is fertile, if there is care for water and sunlight -- and if someone is watching to see if the plant really grows. A trustworthy charity shows you all of that. So you can give with peace of mind, and know that your contribution really takes root and grows into something great.",
+    "blog-cta-title": "Want to know more about how Ashe Foundation works?",
+    "blog-cta-text":
+      "We'd love to show you how every euro is spent and what impact we make together in the Maasai communities of Tanzania. Because trust begins with openness -- and together we make the difference.",
+    "view-financials": "View our finances",
+    "view-projects": "View our projects",
+    "water-project-transparency-title":
+      "How we ensure transparency in our water project",
+    "water-project-transparency-desc":
+      "See how we account for every euro in our water project for the Maasai community.",
+    "back-to-articles": "Back to news articles",
+
+    // Articles page vertalingen
+    "articles-title": "News & Updates",
+    "articles-subtitle":
+      "Discover the latest stories about our projects, the Maasai community and our impact in Tanzania",
+    "all-articles": "All Articles",
+    "articles-description":
+      "From project updates to insights about development cooperation",
+    "more-articles-coming":
+      "More articles will be added soon. Follow us on social media for the latest updates!",
+    "blog-red-flags-list-item1": "no annual reports or figures can be found,",
+    "blog-red-flags-list-item2": "vague promises are made without evidence,",
+    "blog-red-flags-list-item3": "or if pressure is applied to donate quickly.",
+
+    "video-section-title": "Watch our water project",
+    "video-section-subtitle":
+      "See with your own eyes how we work together with the Maasai community for clean drinking water",
+    "video-not-supported":
+      "Your browser does not support this video. Download the video here",
+    "video-credits": "Video created by Amory Berkenveld - Oropi",
+    "video-description-title": "A look on location",
+    "video-description-text1":
+      "In this video, Amory takes you to Tanzania, where you can meet the Maasai community and see the water challenges with your own eyes. From the daily journey to fetch water to the hope for a sustainable solution.",
+    "video-description-text2":
+      "Discover how your donation directly impacts the lives of people in Loolera and Lembapuli, and see why this water project is so important for the future of the community.",
+    "video-highlights-title": "In this video you see:",
+    "video-highlight-1": "The current water situation in the villages",
+    "video-highlight-2": "Conversations with local Maasai families",
+    "video-highlight-3": "The planned location for the new water pipeline",
+    "video-highlight-4": "Why this project will change lives",
+    "help-after-video": "Help after watching this video",
   },
 };
 
