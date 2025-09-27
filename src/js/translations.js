@@ -953,7 +953,7 @@ export const translations = {
     "oil-sustainable-income-desc":
       "Zorgt voor stabiele inkomstenstroom voor Mama Pendo en haar gezin",
 
-    // Blog 4 - Trust article - ALLE vertalingen
+    // Blog 4 - Trust article - 
     "blog-trust-title": "Hoe weet je of een goed doel écht betrouwbaar is?",
     "blog-date-september": "15 september 2025",
     "blog-category-trust": "Transparantie",
@@ -1015,7 +1015,7 @@ export const translations = {
     "articles-title": "Nieuws & Actualiteiten",
     "articles-subtitle":
       "Ontdek de laatste verhalen over onze projecten, de Maasai gemeenschap en onze impact in Tanzania",
-    "all-articles": "Alle Artikelen",
+    "all-articles-title": "Alle nieuwsberichten",
     "articles-description":
       "Van projectupdates tot inzichten over ontwikkelingssamenwerking",
     "more-articles-coming":
@@ -2042,7 +2042,7 @@ export const translations = {
     "articles-title": "News & Updates",
     "articles-subtitle":
       "Discover the latest stories about our projects, the Maasai community and our impact in Tanzania",
-    "all-articles": "All Articles",
+    "all-articles-title": "All news articles",
     "articles-description":
       "From project updates to insights about development cooperation",
     "more-articles-coming":
