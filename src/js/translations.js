@@ -86,6 +86,9 @@ export const translations = {
     "neema-text":
       "Als alleenstaande moeder van vijf kinderen droomde Neema van een eigen winkel. Met hulp van de Ashe Foundation is die droom werkelijkheid geworden, waarmee haar gezin nu zelfstandig kan leven.",
     "read-more": "Lees meer",
+    "mama-pendo-title": "Mama Pendo's Winkel",
+    "mama-pendo-text":
+      "Mama Pendo, een weduwe met zes kinderen, heeft haar eigen winkel geopend. Met een kleine startinvestering creëert ze nu een stabiele inkomstenbron en een inspirerend voorbeeld voor andere vrouwen.",
 
     // Current project section
     "water-give": "Geef water. Geef leven.",
@@ -906,7 +909,18 @@ export const translations = {
 
     // MAMA PENDO PROJECT PAGE
     "mama-pendo-story-title": "Mama Pendo's Verhaal",
-    "mama-pendo-story-subtitle": "Een nieuwe winkel voor traditionele kookolie",
+    "mama-pendo-story-subtitle": "Een succesvol voltooide droom",
+    "mama-pendo-success-title": "Een nieuw begin voor mama Pendo!",
+    "mama-pendo-success-intro":
+      "Dankzij de steun van onze geweldige donateurs heeft mama Pendo, een weduwe met zes kinderen, eindelijk weer uitzicht op een toekomst vol hoop. Jarenlang streed ze alleen om haar gezin te onderhouden. Nu start ze dankzij onze donateurs haar eigen winkel!",
+    "mama-pendo-success-business":
+      "Met een kleine startinvestering en begeleiding van de Ashe Foundation, kan mama Pendo haar ondernemerschap ontwikkelen. Ze leert hoe ze haar inkomsten kan beheren, klanten kan aantrekken en haar bedrijf stap voor stap kan laten groeien. Zo creëert ze niet alleen een stabiele bron van inkomen voor haar gezin, maar ook een inspirerend voorbeeld voor andere vrouwen in haar gemeenschap.",
+    "mama-pendo-success-impact":
+      "Onderzoek toont aan dat wanneer je één vrouw helpt, een hele gemeenschap verandert. Vrouwen investeren hun kennis en inkomen in hun kinderen, familie en buren. Waardoor de impact generaties lang voelbaar blijft. Mama Pendo's succes is daar een prachtig voorbeeld van.",
+    "mama-pendo-success-future":
+      "Maar we zijn er nog niet. Er zijn nog zoveel vrouwen, gezinnen en dorpen in de Maasai-regio die een kans verdienen op een beter bestaan.",
+    "mama-pendo-success-cta":
+      "Steun ook onze andere projecten en help ons om op een duurzame en blijvende manier het verschil te maken voor de Maasai in Tanzania.",
     "meet-mama-pendo": "Maak kennis met Mama Pendo",
     "mama-pendo-intro":
       "Mama Pendo is een jonge vrouw van begin dertig met zes kleine kinderen. Haar leven nam een tragische wending toen haar man plotseling overleed. Sindsdien woont ze met haar kinderen bij de broer van haar overleden man. Maar zelfs samen komen ze nauwelijks rond. Te vaak is er niet genoeg eten. Haar kinderen gaan niet naar school, omdat er simpelweg geen geld is voor schoolgeld.",
@@ -918,7 +932,7 @@ export const translations = {
     // Traditional cooking oil section
     "traditional-cooking-oil": "Traditionele Tanzaniaanse Kookolie",
     "oil-description":
-      "De kookolie die Mama Pendo wil verkopen is een traditioneel product dat al generaties lang wordt gemaakt in Tanzania. Deze olie, gemaakt van koeienvet en zonnebloemen, is een essentieel ingredient in veel lokale gerechten.",
+      "De kookolie die Mama Pendo verkoopt is een traditioneel product dat al generaties lang wordt gemaakt in Tanzania. Deze olie, gemaakt van koeienvet en zonnebloemen, is een essentieel ingredient in veel lokale gerechten.",
 
     // Expected impact section
     "expected-impact-title": "Verwachte impact van het project",
@@ -941,8 +955,7 @@ export const translations = {
     // Project card for projects page
     "mama-pendo-project": "Mama Pendo's Winkel",
     "mama-pendo-project-description":
-      "Een alleenstaande moeder van zes kinderen droomt van een eigen winkel voor traditionele Tanzaniaanse kookolie. Help haar een stabiel inkomen op te bouwen.",
-
+      "Dankzij de steun van donateurs heeft mama Pendo, een weduwe met zes kinderen, haar eigen winkel geopend. Ze bouwt nu een stabiel inkomen op voor haar gezin.",
     "oil-local-product-title": "Lokaal Product",
     "oil-local-product-desc":
       "Volledig gemaakt met lokale ingrediënten die beschikbaar zijn in de gemeenschap",
@@ -1177,6 +1190,9 @@ export const translations = {
     "neema-text":
       "As a single mother of five children, Neema dreamed of having her own shop. With the help of the Ashe Foundation, that dream has come true, allowing her family to live independently.",
     "read-more": "Read more",
+    "mama-pendo-title": "Mama Pendo's Shop",
+    "mama-pendo-text":
+      "Mama Pendo, a widow with six children, has opened her own shop. With a small starting investment, she now creates a stable source of income and an inspiring example for other women.",
 
     // Current project section
     "water-give": "Give water. Give life.",
@@ -1989,7 +2005,18 @@ export const translations = {
 
     // MAMA PENDO PROJECT PAGE
     "mama-pendo-story-title": "Mama Pendo's Story",
-    "mama-pendo-story-subtitle": "A new shop for traditional cooking oil",
+    "mama-pendo-story-subtitle": "A successfully completed dream",
+    "mama-pendo-success-title": "A new beginning for Mama Pendo!",
+    "mama-pendo-success-intro":
+      "Thanks to the support of our wonderful donors, Mama Pendo, a widow with six children, finally has hope for the future. For years she struggled alone to support her family. Now, thanks to our donors, she's starting her own shop!",
+    "mama-pendo-success-business":
+      "With a small starting investment and guidance from the Ashe Foundation, Mama Pendo can develop her entrepreneurship. She learns how to manage her income, attract customers, and grow her business step by step. This way she creates not only a stable source of income for her family, but also an inspiring example for other women in her community.",
+    "mama-pendo-success-impact":
+      "Research shows that when you help one woman, an entire community changes. Women invest their knowledge and income in their children, family, and neighbors. The impact remains tangible for generations. Mama Pendo's success is a beautiful example of this.",
+    "mama-pendo-success-future":
+      "But we're not there yet. There are still so many women, families, and villages in the Maasai region who deserve a chance at a better life.",
+    "mama-pendo-success-cta":
+      "Support our other projects too and help us make a sustainable and lasting difference for the Maasai in Tanzania.",
     "meet-mama-pendo": "Meet Mama Pendo",
     "mama-pendo-intro":
       "Mama Pendo is a young woman in her early thirties with six small children. Her life took a tragic turn when her husband suddenly passed away. Since then, she has been living with her children at her deceased husband's brother's place. But even together, they barely make ends meet. Too often there isn't enough food. Her children don't go to school because there simply isn't money for school fees.",
@@ -2001,7 +2028,7 @@ export const translations = {
     // Traditional cooking oil section
     "traditional-cooking-oil": "Traditional Tanzanian Cooking Oil",
     "oil-description":
-      "The cooking oil that Mama Pendo wants to sell is a traditional product that has been made in Tanzania for generations. This oil, made from cow fat and sunflowers, is an essential ingredient in many local dishes.",
+      "The cooking oil that Mama Pendo sells is a traditional product that has been made in Tanzania for generations. This oil, made from cow fat and sunflowers, is an essential ingredient in many local dishes.",
 
     // Expected impact section
     "expected-impact-title": "Expected impact of the project",
@@ -2024,8 +2051,7 @@ export const translations = {
     // Project card for projects page
     "mama-pendo-project": "Mama Pendo's Shop",
     "mama-pendo-project-description":
-      "A single mother of six children dreams of her own shop for traditional Tanzanian cooking oil. Help her build a stable income.",
-
+      "Thanks to donor support, mama Pendo, a widow with six children, has opened her own shop. She is now building a stable income for her family.",
     "oil-local-product-title": "Local Product",
     "oil-local-product-desc":
       "Completely made with local ingredients available in the community",

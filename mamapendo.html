@@ -574,62 +574,102 @@
       </section>
 
       <!-- Main Story Section -->
-      <section class="py-16 bg-white" aria-labelledby="mama-pendo-story">
+      <section class="py-16 bg-white" aria-labelledby="project-enkishon-title">
         <div class="max-w-7xl mx-auto px-6">
           <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <!-- Image placeholder - will need actual image -->
             <div
-              class="overflow-hidden relative rounded-xl shadow-lg max-w-md mx-auto lg:mx-0"
+              class="overflow-hidden relative rounded-xl shadow-lg max-w-md mx-auto"
             >
-              <img
-                src="img/mama-pendo-portrait-600w.webp"
-                alt="Mama Pendo met Amy"
-                class="w-full h-auto object-cover"
-                width="600"
-                height="400"
-                loading="lazy"
-                srcset="
-                  img/mama-pendo-portrait-300w.webp   300w,
-                  img/mama-pendo-portrait-600w.webp   600w,
-                  img/mama-pendo-portrait-1200w.webp 1200w
-                "
-                sizes="(max-width: 768px) 100vw, 600px"
-              />
+              <video
+                controls
+                preload="metadata"
+                poster="img/mama-pendo-portrait-600w.webp"
+                class="w-full h-auto max-h-[600px] object-contain"
+                aria-label="Video van Naserian's winkel"
+              >
+                <source src="/video/mama-pendo.mp4" type="video/mp4" />
+                Je browser ondersteunt geen video. / Your browser does not
+                support video playback.
+              </video>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-center justify-center pointer-events-none opacity-80 hover:opacity-0 transition-opacity duration-300"
+              >
+                <button
+                  class="w-16 h-16 bg-terracotta rounded-full flex items-center justify-center play-btn pointer-events-auto"
+                  aria-label="Speel video af"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
-
             <div>
               <h2
                 id="mama-pendo-story"
                 class="text-3xl font-bold text-terracotta mb-6"
-                data-lang-key="meet-mama-pendo"
+                data-lang-key="mama-pendo-success-title"
               >
-                Maak kennis met Mama Pendo
+                Een nieuw begin voor mama Pendo!
               </h2>
               <div class="text-dark space-y-4">
-                <p data-lang-key="mama-pendo-intro">
-                  Mama Pendo is een jonge vrouw van begin dertig met zes kleine
-                  kinderen. Haar leven nam een tragische wending toen haar man
-                  plotseling overleed. Sindsdien woont ze met haar kinderen bij
-                  de broer van haar overleden man. Maar zelfs samen komen ze
-                  nauwelijks rond. Te vaak is er niet genoeg eten. Haar kinderen
-                  gaan niet naar school, omdat er simpelweg geen geld is voor
-                  schoolgeld.
+                <p data-lang-key="mama-pendo-success-intro">
+                  Dankzij de steun van onze geweldige donateurs heeft mama
+                  Pendo, een weduwe met zes kinderen, eindelijk weer uitzicht op
+                  een toekomst vol hoop. Jarenlang streed ze alleen om haar
+                  gezin te onderhouden. Nu start ze dankzij onze donateurs haar
+                  eigen winkel!
                 </p>
 
-                <p data-lang-key="mama-pendo-dream">
-                  Toch draagt Mama Pendo een droom in haar hart: ze wil een
-                  betere toekomst opbouwen voor haar kinderen. Haar idee is om
-                  een kleine winkel te beginnen waar ze traditionele
-                  Tanzaniaanse kookolie verkoopt — gemaakt van onder andere
-                  koeienvet en zonnebloemen. Deze olie is een basisproduct in
-                  haar gemeenschap en de winkel zou een duurzame bron van
-                  inkomsten betekenen voor haar gezin.
+                <p data-lang-key="mama-pendo-success-business">
+                  Met een kleine startinvestering en begeleiding van de Ashe
+                  Foundation, kan mama Pendo haar ondernemerschap ontwikkelen.
+                  Ze leert hoe ze haar inkomsten kan beheren, klanten kan
+                  aantrekken en haar bedrijf stap voor stap kan laten groeien.
+                  Zo creëert ze niet alleen een stabiele bron van inkomen voor
+                  haar gezin, maar ook een inspirerend voorbeeld voor andere
+                  vrouwen in haar gemeenschap.
                 </p>
 
-                <p data-lang-key="mama-pendo-hope">
-                  Met jouw steun kan Mama Pendo de eerste stap zetten richting
-                  onafhankelijkheid. Een winkel betekent eten op tafel,
-                  onderwijs voor haar kinderen en hoop op een betere toekomst.
+                <p data-lang-key="mama-pendo-success-impact">
+                  Onderzoek toont aan dat wanneer je één vrouw helpt, een hele
+                  gemeenschap verandert. Vrouwen investeren hun kennis en
+                  inkomen in hun kinderen, familie en buren. Waardoor de impact
+                  generaties lang voelbaar blijft. Mama Pendo's succes is daar
+                  een prachtig voorbeeld van.
+                </p>
+
+                <p data-lang-key="mama-pendo-success-future">
+                  Maar we zijn er nog niet. Er zijn nog zoveel vrouwen, gezinnen
+                  en dorpen in de Maasai-regio die een kans verdienen op een
+                  beter bestaan.
+                </p>
+
+                <p
+                  class="font-semibold text-terracotta"
+                  data-lang-key="mama-pendo-success-cta"
+                >
+                  Steun ook onze andere projecten en help ons om op een duurzame
+                  en blijvende manier het verschil te maken voor de Maasai in
+                  Tanzania.
                 </p>
               </div>
             </div>

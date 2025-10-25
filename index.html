@@ -814,8 +814,67 @@
             </p>
           </header>
 
-          <div class="grid lg:grid-cols-2 gap-8">
-            <!-- Story 1: Naserian -->
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Story 1: Mama Pendo -->
+            <div class="story-card" aria-labelledby="mama-pendo-title">
+              <div class="overflow-hidden relative">
+                <img
+                  src="img/mama-pendo-portrait-600w.webp"
+                  alt="Mama Pendo met haar nieuwe winkel voor traditionele kookolie"
+                  class="w-full h-60 object-cover object-top"
+                  width="600"
+                  height="240"
+                  loading="lazy"
+                  srcset="
+                    img/mama-pendo-portrait-400w.webp 400w,
+                    img/mama-pendo-portrait-800w.webp 800w
+                  "
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6"
+                  aria-hidden="true"
+                ></div>
+              </div>
+              <div class="p-6">
+                <h3
+                  id="mama-pendo-title"
+                  class="text-xl font-bold text-terracotta mb-3"
+                  data-lang-key="mama-pendo-title"
+                >
+                  Mama Pendo's Winkel
+                </h3>
+                <p class="text-dark mb-4" data-lang-key="mama-pendo-text">
+                  Mama Pendo, een weduwe met zes kinderen, heeft haar eigen
+                  winkel geopend. Met een kleine startinvestering creëert ze nu
+                  een stabiele inkomstenbron en een inspirerend voorbeeld voor
+                  andere vrouwen.
+                </p>
+
+                <a
+                  href="/mamapendo"
+                  class="inline-flex items-center text-green font-medium hover:underline"
+                  data-lang-key="read-more"
+                  aria-label="Lees meer over Mama Pendo's winkel"
+                >
+                  Lees meer
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 ml-1"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- Story 2: Naserian -->
             <div class="story-card" aria-labelledby="naserian-title">
               <div class="overflow-hidden relative">
                 <img
@@ -849,6 +908,7 @@
                   kunnen openen. Deze mijlpaal geeft haar een stabiel inkomen en
                   verandert het leven van haar gezin fundamenteel.
                 </p>
+
                 <a
                   href="/naserian"
                   class="inline-flex items-center text-green font-medium hover:underline"
@@ -873,7 +933,7 @@
               </div>
             </div>
 
-            <!-- Story 2: Neema -->
+            <!-- Story 3: Neema -->
             <div class="story-card" aria-labelledby="neema-title">
               <div class="overflow-hidden relative">
                 <img
@@ -908,6 +968,7 @@
                   werkelijkheid geworden, waarmee haar gezin nu zelfstandig kan
                   leven.
                 </p>
+
                 <a
                   href="/neema"
                   class="inline-flex items-center text-green font-medium hover:underline"
