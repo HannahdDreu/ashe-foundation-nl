@@ -928,6 +928,22 @@ export const translations = {
       "Toch draagt Mama Pendo een droom in haar hart: ze wil een betere toekomst opbouwen voor haar kinderen. Haar idee is om een kleine winkel te beginnen waar ze traditionele Tanzaniaanse kookolie verkoopt — gemaakt van onder andere koeienvet en zonnebloemen. Deze olie is een basisproduct in haar gemeenschap en de winkel zou een duurzame bron van inkomsten betekenen voor haar gezin.",
     "mama-pendo-hope":
       "Met jouw steun kan Mama Pendo de eerste stap zetten richting onafhankelijkheid. Een winkel betekent eten op tafel, onderwijs voor haar kinderen en hoop op een betere toekomst.",
+    // How to Continue section
+    "mama-pendo-what-next-title": "Hoe nu verder?",
+    "mama-pendo-what-next-text":
+      "We blijven op deze pagina updates geven over Mama Pendo's winkel. Ook blijft Mama Pendo begeleiding krijgen van Ashe Foundation om haar onderneming succesvol te houden. De begeleiding bestaat dan voornamelijk uit het adviseren over het inkopen van de traditionele kookolie en de langetermijnvisie voor haar winkel.",
+    "mama-pendo-back-to-projects": "Terug naar projecten",
+    "mama-pendo-support-more-projects": "Steun meer projecten",
+
+    // Help More People section
+    "mama-pendo-help-more-title": "Help Meer Mensen",
+    "mama-pendo-help-more-text":
+      "Met jouw steun kunnen we meer vrouwen zoals Mama Pendo helpen. Samen maken we een blijvende impact op de levens van de Maasai gemeenschap.",
+    "mama-pendo-donate-here": "Doneer hier",
+    "mama-pendo-see-other-projects": "Bekijk andere projecten",
+    "mama-pendo-quote":
+      '"Dankzij deze winkel kan ik nu voor mijn zes kinderen zorgen en ze naar school sturen. Ik ben zo dankbaar voor de steun die ik heb ontvangen. Ashe!"',
+    "mama-pendo-name": "Mama Pendo",
 
     // Traditional cooking oil section
     "traditional-cooking-oil": "Traditionele Tanzaniaanse Kookolie",
@@ -2024,6 +2040,22 @@ export const translations = {
       "Yet Mama Pendo carries a dream in her heart: she wants to build a better future for her children. Her idea is to start a small shop where she sells traditional Tanzanian cooking oil — made from ingredients like cow fat and sunflowers. This oil is a basic product in her community and the shop would mean a sustainable source of income for her family.",
     "mama-pendo-hope":
       "With your support, Mama Pendo can take the first step towards independence. A shop means food on the table, education for her children, and hope for a better future.",
+    // How to Continue section
+    "mama-pendo-what-next-title": "What's next?",
+    "mama-pendo-what-next-text":
+      "We will continue to provide updates about Mama Pendo's shop on this page. Mama Pendo will also continue to receive guidance from the Ashe Foundation to keep her business successful. The guidance will mainly consist of advising on purchasing traditional cooking oil and the long-term vision for her shop.",
+    "mama-pendo-back-to-projects": "Back to projects",
+    "mama-pendo-support-more-projects": "Support more projects",
+
+    // Help More People section
+    "mama-pendo-help-more-title": "Help More People",
+    "mama-pendo-help-more-text":
+      "With your support, we can help more women like Mama Pendo. Together we make a lasting impact on the lives of the Maasai community.",
+    "mama-pendo-donate-here": "Donate here",
+    "mama-pendo-see-other-projects": "View other projects",
+    "mama-pendo-quote":
+      '"Thanks to this shop, I can now take care of my six children and send them to school. I am so grateful for the support I have received. Ashe!"',
+    "mama-pendo-name": "Mama Pendo",
 
     // Traditional cooking oil section
     "traditional-cooking-oil": "Traditional Tanzanian Cooking Oil",
