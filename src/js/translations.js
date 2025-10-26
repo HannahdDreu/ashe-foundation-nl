@@ -982,7 +982,7 @@ export const translations = {
     "oil-sustainable-income-desc":
       "Zorgt voor stabiele inkomstenstroom voor Mama Pendo en haar gezin",
 
-    // Blog 4 - Trust article -
+    // Blog 4
     "blog-trust-title": "Hoe weet je of een goed doel écht betrouwbaar is?",
     "blog-date-september": "15 september 2025",
     "blog-category-trust": "Transparantie",
@@ -1039,6 +1039,49 @@ export const translations = {
     "water-project-transparency-desc":
       "Bekijk hoe wij elke euro verantwoorden in ons waterproject voor de Maasai gemeenschap.",
     "back-to-articles": "Terug naar nieuwsberichen",
+
+    // Blog 6
+    "blog-maasai-title":
+      "Wie zijn de Maasai? Een inkijk in cultuur en tradities",
+    "blog-date-november": "1 november 2025",
+    "blog-category-culture": "Cultuur",
+    "blog-maasai-intro":
+      "Wanneer je door de uitgestrekte savannes van Kenia en Tanzania reist, is de kans groot dat je de kleurrijke kleding en gracieuze houding van de Maasai tegenkomt. Deze gemeenschap, bekend om hun rode shuka's (doeken) en indrukwekkende sprongen tijdens traditionele dansen, behoort tot de meest herkenbare volkeren van Afrika. Maar achter het iconische beeld schuilt een rijke cultuur en eeuwenoude tradities die het waard zijn om beter te leren kennen.",
+    "maasai-traditional-caption":
+      "Maasai in traditionele rode shuka's, een symbool van kracht en bescherming",
+    "blog-origin-habitat-title": "Oorsprong en leefgebied",
+    "blog-origin-habitat-text":
+      "De Maasai behoren tot de Nilotische volkeren en wonen voornamelijk in Zuid-Kenia en Noord-Tanzania. Hun bestaan is nauw verweven met het land: de uitgestrekte vlaktes, waar hun vee graast, vormen het hart van hun cultuur. Voor de Maasai zijn koeien niet alleen een bron van voedsel, maar ook een symbool van rijkdom, status en verbondenheid.",
+    "blog-cattle-role-title": "De rol van vee in het dagelijks leven",
+    "blog-cattle-role-text":
+      "Koeien spelen een centrale rol in het leven van de Maasai. Melk en vlees vormen basisvoedsel, terwijl koeienhuiden en mest praktische toepassingen hebben, zoals voor huizenbouw en brandstof. Maar vee is meer dan levensonderhoud: het is ook een betaalmiddel bij huwelijken en een manier om respect te verdienen binnen de gemeenschap.",
+    "blog-clothing-appearance-title": "Kleding en uiterlijk",
+    "blog-clothing-appearance-text":
+      "Wie de Maasai ziet, herkent hen vaak meteen aan hun felrode shuka's, sieraden en kralenwerk. Rood wordt gezien als een kleur die kracht en bescherming symboliseert. Het sieraden maken – vaak door vrouwen – is een kunstvorm die verhalen vertelt: kralen geven informatie over leeftijd, sociale status en bijzondere gebeurtenissen in iemands leven.",
+    "blog-rituals-traditions-title": "Rituelen en tradities",
+    "blog-rituals-traditions-text":
+      "De Maasai zijn een gemeenschap waarin rituelen en tradities een belangrijke rol spelen. Zo markeren overgangsrituelen de overgang van kindertijd naar volwassenheid. Dansen en zang zijn onmisbaar bij feesten, ceremonies en ontmoetingen. De beroemde sprongdans, adumu, waarbij jonge mannen om de beurt zo hoog mogelijk springen, staat symbool voor kracht en uithoudingsvermogen.",
+    "blog-community-structure-title": "Gemeenschapsgevoel en structuur",
+    "blog-community-structure-text":
+      "Het leven bij de Maasai draait om gemeenschap. Besluiten worden vaak samen genomen, en ouderen hebben een belangrijke rol als raadgevers. Het idee van samenleven en samen zorgen, versterkt door wederzijdse afhankelijkheid, maakt de gemeenschap sterk en veerkrachtig.",
+    "blog-changes-challenges-title": "Veranderingen en uitdagingen",
+    "blog-changes-challenges-text":
+      "Hoewel de Maasai veel tradities hebben behouden, verandert hun manier van leven onder invloed van de moderne wereld. Toegang tot onderwijs, gezondheidszorg en economische kansen brengen nieuwe mogelijkheden, maar soms ook spanningen met oude gebruiken. Toch blijft hun trots en identiteit sterk verankerd in hun cultuur.",
+    "blog-respect-future-title": "Respect voor cultuur en toekomst",
+    "blog-respect-future-text":
+      "De Maasai vormen een inspirerend voorbeeld van hoe traditie en moderniteit naast elkaar kunnen bestaan. Hun kleurrijke aanwezigheid is niet alleen een symbool van Oost-Afrika, maar ook een herinnering aan het belang van identiteit, gemeenschap en veerkracht.",
+    "blog-discover-cooperation":
+      "Wil je meer ontdekken over hoe Ashe Foundation samenwerkt met Maasai-gemeenschappen? We delen graag verhalen van de mensen zelf en laten zien hoe traditie en ontwikkeling hand in hand kunnen gaan.",
+    "blog-cta-maasai-title": "Steun de Maasai gemeenschap",
+    "blog-cta-maasai-text":
+      "Help ons bij het behouden van tradities terwijl we werken aan betere toegang tot onderwijs, gezondheidszorg en schoon water voor de Maasai gemeenschappen in Tanzania.",
+    "support-maasai": "Steun de Maasai",
+    "related-articles": "Gerelateerde artikelen",
+    "water-project-title-short":
+      "Water voor Loolera en Lembapuli: ons belangrijkste project",
+    "share-article": "Deel dit artikel",
+    "blog-maasai-desc":
+      "Ontdek de rijke cultuur en tradities van de Maasai in Oost-Afrika. Leer over hun dagelijks leven, rituelen, en hoe zij traditie combineren met moderne uitdagingen.",
 
     // Artikelen pagina vertalingen
     "articles-title": "Nieuws & Actualiteiten",
@@ -2146,6 +2189,49 @@ export const translations = {
     "water-project-transparency-desc":
       "See how we account for every euro in our water project for the Maasai community.",
     "back-to-articles": "Back to news articles",
+
+    // Blog 6
+    "blog-maasai-title":
+      "Who are the Maasai? An insight into culture and traditions",
+    "blog-date-november": "November 1, 2025",
+    "blog-category-culture": "Culture",
+    "blog-maasai-intro":
+      "When you travel through the vast savannas of Kenya and Tanzania, you're likely to encounter the colorful clothing and graceful posture of the Maasai. This community, known for their red shukas (cloths) and impressive jumps during traditional dances, is among the most recognizable peoples of Africa. But behind the iconic image lies a rich culture and ancient traditions worth getting to know better.",
+    "maasai-traditional-caption":
+      "Maasai in traditional red shukas, a symbol of strength and protection",
+    "blog-origin-habitat-title": "Origin and habitat",
+    "blog-origin-habitat-text":
+      "The Maasai belong to the Nilotic peoples and live mainly in southern Kenya and northern Tanzania. Their existence is closely intertwined with the land: the vast plains where their cattle graze form the heart of their culture. For the Maasai, cows are not just a source of food, but also a symbol of wealth, status, and connection.",
+    "blog-cattle-role-title": "The role of cattle in daily life",
+    "blog-cattle-role-text":
+      "Cattle play a central role in Maasai life. Milk and meat form basic food, while cowhides and dung have practical applications such as for house building and fuel. But cattle are more than sustenance: they are also a means of payment in marriages and a way to earn respect within the community.",
+    "blog-clothing-appearance-title": "Clothing and appearance",
+    "blog-clothing-appearance-text":
+      "Those who see the Maasai often recognize them immediately by their bright red shukas, jewelry, and beadwork. Red is seen as a color that symbolizes strength and protection. Jewelry making – often by women – is an art form that tells stories: beads provide information about age, social status, and special events in someone's life.",
+    "blog-rituals-traditions-title": "Rituals and traditions",
+    "blog-rituals-traditions-text":
+      "The Maasai are a community where rituals and traditions play an important role. Rites of passage mark the transition from childhood to adulthood. Dancing and singing are indispensable at parties, ceremonies, and gatherings. The famous jumping dance, adumu, where young men take turns jumping as high as possible, symbolizes strength and endurance.",
+    "blog-community-structure-title": "Community feeling and structure",
+    "blog-community-structure-text":
+      "Life among the Maasai revolves around community. Decisions are often made together, and elders have an important role as advisors. The idea of living together and caring together, strengthened by mutual dependence, makes the community strong and resilient.",
+    "blog-changes-challenges-title": "Changes and challenges",
+    "blog-changes-challenges-text":
+      "Although the Maasai have preserved many traditions, their way of life is changing under the influence of the modern world. Access to education, healthcare, and economic opportunities bring new possibilities, but sometimes also tensions with old customs. Nevertheless, their pride and identity remain strongly anchored in their culture.",
+    "blog-respect-future-title": "Respect for culture and future",
+    "blog-respect-future-text":
+      "The Maasai form an inspiring example of how tradition and modernity can coexist. Their colorful presence is not only a symbol of East Africa, but also a reminder of the importance of identity, community, and resilience.",
+    "blog-discover-cooperation":
+      "Want to discover more about how Ashe Foundation works with Maasai communities? We're happy to share stories from the people themselves and show how tradition and development can go hand in hand.",
+    "blog-cta-maasai-title": "Support the Maasai community",
+    "blog-cta-maasai-text":
+      "Help us preserve traditions while working towards better access to education, healthcare, and clean water for the Maasai communities in Tanzania.",
+    "support-maasai": "Support the Maasai",
+    "related-articles": "Related articles",
+    "water-project-title-short":
+      "Water for Loolera and Lembapuli: our main project",
+    "share-article": "Share this article",
+    "blog-maasai-desc":
+      "Discover the rich culture and traditions of the Maasai in East Africa. Learn about their daily life, rituals, and how they combine tradition with modern challenges.",
 
     // Articles page vertalingen
     "articles-title": "News & Updates",
