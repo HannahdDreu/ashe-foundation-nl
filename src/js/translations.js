@@ -1049,6 +1049,7 @@ export const translations = {
       "Wanneer je door de uitgestrekte savannes van Kenia en Tanzania reist, is de kans groot dat je de kleurrijke kleding en gracieuze houding van de Maasai tegenkomt. Deze gemeenschap, bekend om hun rode shuka's (doeken) en indrukwekkende sprongen tijdens traditionele dansen, behoort tot de meest herkenbare volkeren van Afrika. Maar achter het iconische beeld schuilt een rijke cultuur en eeuwenoude tradities die het waard zijn om beter te leren kennen.",
     "maasai-traditional-caption":
       "Maasai in traditionele rode shuka's, een symbool van kracht en bescherming",
+    "maasai-cattle-caption": "Vee is centraal in het leven van de Maasai, zowel economisch als cultureel",
     "blog-origin-habitat-title": "Oorsprong en leefgebied",
     "blog-origin-habitat-text":
       "De Maasai behoren tot de Nilotische volkeren en wonen voornamelijk in Zuid-Kenia en Noord-Tanzania. Hun bestaan is nauw verweven met het land: de uitgestrekte vlaktes, waar hun vee graast, vormen het hart van hun cultuur. Voor de Maasai zijn koeien niet alleen een bron van voedsel, maar ook een symbool van rijkdom, status en verbondenheid.",
@@ -2199,6 +2200,7 @@ export const translations = {
       "When you travel through the vast savannas of Kenya and Tanzania, you're likely to encounter the colorful clothing and graceful posture of the Maasai. This community, known for their red shukas (cloths) and impressive jumps during traditional dances, is among the most recognizable peoples of Africa. But behind the iconic image lies a rich culture and ancient traditions worth getting to know better.",
     "maasai-traditional-caption":
       "Maasai in traditional red shukas, a symbol of strength and protection",
+    "maasai-cattle-caption": "Cattle are central to the lives of the Maasai, both economically and culturally",
     "blog-origin-habitat-title": "Origin and habitat",
     "blog-origin-habitat-text":
       "The Maasai belong to the Nilotic peoples and live mainly in southern Kenya and northern Tanzania. Their existence is closely intertwined with the land: the vast plains where their cattle graze form the heart of their culture. For the Maasai, cows are not just a source of food, but also a symbol of wealth, status, and connection.",
