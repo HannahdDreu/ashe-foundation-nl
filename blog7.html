@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="nl">
   <head>
-    <title>Nieuws & Actualiteiten - ASHE Foundation</title>
+    <title>
+      Een dag in het leven van een Maasai-vrouw - ASHE Foundation Blog
+    </title>
 
     <!-- Meta tags for SEO -->
     <meta
       name="description"
-      content="Lees de laatste artikelen van ASHE Foundation over onze projecten in Tanzania, de Maasai gemeenschap en ontwikkelingssamenwerking. Blijf op de hoogte van onze impact."
+      content="Ontdek het dagelijks leven van een Maasai-vrouw: van vroege ochtend tot late avond. Een kijkje in haar verantwoordelijkheden, kracht en verbondenheid met familie en gemeenschap."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
@@ -14,19 +16,20 @@
     <!-- Open Graph tags for social sharing -->
     <meta
       property="og:title"
-      content="Nieuws & Actualiteiten - ASHE Foundation"
+      content="Een dag in het leven van een Maasai-vrouw — ASHE Foundation"
     />
     <meta
       property="og:description"
-      content="Ontdek de laatste verhalen over onze projecten, de Maasai gemeenschap en onze impact in Tanzania. Blijf geïnformeerd over ontwikkelingssamenwerking."
+      content="Volg een Maasai-vrouw door haar dag en ontdek haar kracht, veerkracht en centrale rol in het gezin en de gemeenschap."
     />
     <meta
       property="og:image"
-      content="https://ashefoundation.nl/img/articles-banner.webp"
+      content="https://ashefoundation.nl/img/maasai-woman-banner.webp"
     />
-    <meta property="og:url" content="https://ashefoundation.nl/artikelen" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="ASHE Foundation" />
+    <meta
+      property="og:url"
+      content="https://ashefoundation.nl/blog-maasai-woman"
+    />
 
     <!-- LinkedIn specific tags -->
     <meta property="linkedin:owner" content="ASHE Foundation" />
@@ -36,14 +39,14 @@
     <link
       rel="alternate"
       hreflang="nl"
-      href="https://ashefoundation.nl/artikelen"
+      href="https://ashefoundation.nl/blog-maasai-woman"
     />
     <link
       rel="alternate"
       hreflang="en"
-      href="https://ashefoundation.net/articles"
+      href="https://ashefoundation.net/blog-maasai-woman"
     />
-    <link rel="canonical" href="https://ashefoundation.nl/artikelen" />
+    <link rel="canonical" href="https://ashefoundation.nl/blog-maasai-woman" />
 
     <!-- Common preloads -->
     <link rel="preload" href="/img/flag-us.webp" as="image" type="image/webp" />
@@ -59,15 +62,41 @@
     <!-- Page-specific preloads -->
     <link
       rel="preload"
-      href="/img/team-banner.webp"
+      href="/img/maasai-hero.webp"
       as="image"
       type="image/webp"
       fetchpriority="high"
     />
 
-    <!-- Critical CSS - Keep minimal essential styles for above-the-fold content -->
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Een dag in het leven van een Maasai-vrouw",
+        "datePublished": "2025-12-01",
+        "dateModified": "2025-12-01",
+        "author": {
+          "@type": "Organization",
+          "name": "ASHE Foundation"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "ASHE Foundation",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://ashefoundation.nl/img/Untitleddesign.svg"
+          }
+        },
+        "description": "Ontdek het dagelijks leven van een Maasai-vrouw: van vroege ochtend tot late avond. Een kijkje in haar verantwoordelijkheden, kracht en verbondenheid met familie en gemeenschap.",
+        "image": "https://ashefoundation.nl/img/maasai-woman-banner.webp",
+        "keywords": "Maasai-vrouw, dagelijks leven, Tanzania, Kenia, water, familie, gemeenschap, tradities, kralenwerk, veerkracht"
+      }
+    </script>
+
+    <!-- Critical CSS -->
     <style>
-      /* Optimized Critical CSS for projecten.html */
+      /* Optimized Critical CSS for waterproject.html */
       body {
         font-family: "Poppins", sans-serif;
         margin: 0;
@@ -76,7 +105,7 @@
         background-color: #fff1e6;
       }
 
-      /* Hero Section for Projects page */
+      /* Hero Section for Water Project page */
       .hero-section {
         background-image:
           linear-gradient(
@@ -84,7 +113,7 @@
             rgba(64, 61, 57, 0.5),
             rgba(224, 122, 95, 0.4)
           ),
-          url("/img/team-banner.webp");
+          url("/img/hero-image.webp");
         background-size: cover;
         background-position: center;
         color: white;
@@ -112,18 +141,19 @@
         font-weight: 600;
       }
 
-      /* Project Cards - only if visible above the fold */
-      .project-card {
-        transition:
-          transform 0.3s ease,
-          box-shadow 0.3s ease;
-        background-color: white;
-        border-radius: 1rem;
-        overflow: hidden;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+      .nav-link {
+        position: relative;
       }
 
-      /* Original critical CSS here */
+      .nav-indicator {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background-color: #e07a5f;
+        transition: width 0.3s ease;
+      }
 
       /* Mobile-specific critical CSS */
       @media (max-width: 768px) {
@@ -131,43 +161,33 @@
           padding: 4rem 0; /* Reduced padding for mobile */
         }
 
-        h1#projects-title {
+        h1#hero-title {
           font-size: 2rem; /* Smaller title on mobile */
           margin-bottom: 0.5rem;
         }
 
-        /* Adjust project cards for mobile */
-        .project-card {
-          min-width: 280px; /* Ensure cards are readable on mobile */
+        /* Adjust image gallery for mobile */
+        .w-full.h-56.object-cover {
+          height: 180px; /* Slightly smaller images on mobile */
         }
       }
     </style>
 
-    <!-- Structured Data JSON-LD -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Nieuws & Actualiteiten - ASHE Foundation",
-        "description": "Lees de laatste artikelen van ASHE Foundation over onze projecten in Tanzania, de Maasai gemeenschap en ontwikkelingssamenwerking.",
-        "url": "https://ashefoundation.nl/artikelen",
-        "publisher": {
-          "@type": "Organization",
-          "name": "ASHE Foundation",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://ashefoundation.nl/img/Untitleddesign.svg"
-          }
-        },
-        "about": {
-          "@type": "Organization",
-          "name": "ASHE Foundation",
-          "description": "ASHE Foundation werkt aan een wereld waarin de Maasai gemeenschap in Tanzania kansen heeft om het goede leven en het eigen geluk na te streven."
-        }
-      }
-    </script>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/webp"
+      href="/img/Untitleddesign.webp"
+      sizes="144x144"
+    />
 
-    <!-- Tailwind CSS with embedded configuration -->
+    <!-- Font import -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
     <script src="https://cdn.tailwindcss.com?minify"></script>
     <script>
       tailwind.config = {
@@ -194,20 +214,6 @@
       };
     </script>
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/webp"
-      href="/img/Untitleddesign.webp"
-      sizes="144x144"
-    />
-
-    <!-- Font import -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- External CSS -->
     <link rel="stylesheet" href="/css/main.css" />
 
@@ -215,7 +221,7 @@
     <script type="module" src="/src/js/gtm.js"></script>
     <script type="module" src="/src/js/gtm-consent-mode.js"></script>
   </head>
-  <body class="min-h-screen">
+  <body class="min-h-screen water-project">
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -225,6 +231,7 @@
         style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
+
     <!-- Skip to content link for accessibility -->
     <a
       href="#main-content"
@@ -306,6 +313,7 @@
                     >
                   </button>
                 </div>
+
                 <!-- Hamburger Menu -->
                 <button
                   data-collapse-toggle="mobile-menu"
@@ -368,9 +376,8 @@
                 <li>
                   <a
                     href="/projecten"
-                    class="block py-2 text-terracotta font-semibold"
+                    class="block py-2 text-dark hover:text-terracotta"
                     data-lang-key="nav-projects"
-                    aria-current="page"
                     >Projecten</a
                   >
                 </li>
@@ -395,6 +402,7 @@
               </ul>
             </div>
           </div>
+
           <!-- Desktop Layout -->
           <div class="hidden lg:flex justify-between items-center">
             <a
@@ -452,13 +460,12 @@
               </a>
               <a
                 href="/projecten"
-                class="text-terracotta font-semibold relative nav-link"
+                class="text-dark hover:text-terracotta font-medium relative nav-link"
                 data-lang-key="nav-projects"
-                aria-current="page"
               >
                 Projecten
                 <span
-                  class="absolute left-0 bottom-0 w-full h-1 bg-terracotta transition-all duration-300 nav-indicator"
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-terracotta transition-all duration-300 nav-indicator"
                   aria-hidden="true"
                 ></span>
               </a>
@@ -474,6 +481,7 @@
                 ></span>
               </a>
             </div>
+
             <div class="flex items-center space-x-4">
               <!-- Donate Button -->
               <a
@@ -533,624 +541,349 @@
       </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
-    <main id="main-content">
-      <!-- Hero Section -->
+    <!-- MAIN -->
+    <main id="main-content" class="min-h-screen">
+      <!-- Hero Section for Blog Page -->
       <section
-        class="hero-section py-20 md:py-28 relative"
-        aria-labelledby="articles-title"
+        class="hero-section relative h-96 flex items-center justify-center"
       >
-        <!-- Background image container -->
-        <div class="absolute inset-0">
-          <picture>
-            <source
-              media="(max-width: 640px)"
-              srcset="/img/team-banner-640w.webp"
-            />
-            <source
-              media="(max-width: 1024px)"
-              srcset="/img/team-banner-1024w.webp"
-            />
-            <img
-              src="/img/team-banner-1920w.webp"
-              class="w-full h-full object-cover"
-              loading="eager"
-            />
-          </picture>
-          <!-- Gradient overlay -->
+        <!-- Background overlay -->
+        <div
+          class="absolute inset-0"
+          style="
+            background-image: url(&quot;/img/maasai-woman-hero.webp&quot;);
+            background-size: cover;
+            background-position: center;
+          "
+        >
           <div
             class="absolute inset-0"
             style="
               background-image: linear-gradient(
                 to bottom,
-                rgba(64, 61, 57, 0.5),
-                rgba(224, 122, 95, 0.4)
+                rgba(64, 61, 57, 0.7),
+                rgba(224, 122, 95, 0.6)
               );
             "
           ></div>
         </div>
 
         <!-- Content -->
-        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
           <h1
-            id="articles-title"
+            id="blog-title"
             class="text-4xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto leading-tight text-white"
-            data-lang-key="articles-title"
+            data-lang-key="blog-maasai-woman-title"
           >
-            Nieuws & Actualiteiten
+            Een dag in het leven van een Maasai-vrouw
           </h1>
-          <p
-            class="text-xl text-white max-w-3xl mx-auto opacity-90"
-            data-lang-key="articles-subtitle"
-          >
-            Ontdek de laatste verhalen over onze projecten, de Maasai
-            gemeenschap en onze impact in Tanzania
-          </p>
-        </div>
-      </section>
-
-      <!-- Articles Grid Section -->
-      <section class="py-16 bg-white" aria-labelledby="all-articles-title">
-        <div class="max-w-7xl mx-auto px-6">
-          <h2
-            id="all-articles-title"
-            class="text-3xl font-bold text-center mb-12 text-terracotta"
-            data-lang-key="all-articles-title"
-          >
-            Alle nieuwsbrichten
-          </h2>
-
-          <!-- Articles Grid - 3 kolommen layout -->
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Article: Maasai Blog (December 2025) -->
-            <div
-              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
-              role="article"
-              aria-labelledby="maasai-woman-blog-title"
-            >
-              <img
-                src="img/maasai-woman-morning-600w.webp"
-                alt="Wie zijn de Maasai? Een inkijk in cultuur en tradities"
-                class="w-full h-48 object-cover object-center"
-                width="400"
-                height="192"
-                loading="lazy"
-                srcset="
-                  img/maasai-woman-morning-400w.webp 400w,
-                  img/maasai-woman-morning-800w.webp 800w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-              <div class="p-6">
-                <div class="flex items-center text-sm text-gray-500 mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <time datetime="2025-11-01" data-lang-key="blog-date-december"
-                    >1 december 2025</time
-                  >
-                </div>
-                <h3
-                  id="maasai-woman-blog-title"
-                  class="text-xl font-bold text-terracotta mb-3"
-                  data-lang-key="blog-maasai-woman-title"
-                >
-                  Een dag in het leven van een Maasai-vrouw
-                </h3>
-                <p
-                  class="text-gray-600 mb-4"
-                  data-lang-key="blog-maasai-woman-excerpt"
-                >
-                  Volg een Maasai-vrouw door haar dag en ontdek haar kracht,
-                  veerkracht en centrale rol in het gezin en de gemeenschap.
-                </p>
-
-                <a
-                  href="/blog7.html"
-                  class="text-terracotta font-medium hover:underline inline-flex items-center"
-                  aria-label="Lees meer over een dag in het leven van een Maasai-vrouw"
-                  data-lang-key="read-more"
-                >
-                  Lees meer
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </div>
+          <div class="flex items-center space-x-4 text-white text-sm mt-4">
+            <div class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              <time datetime="2025-12-01" data-lang-key="blog-date-december"
+                >1 december 2025</time
+              >
             </div>
-            <!-- Article: Maasai Blog (November 2025)-->
-            <div
-              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
-              role="article"
-              aria-labelledby="maasai-blog-title"
-            >
-              <img
-                src="img/gallery-4-400w.webp"
-                alt="Wie zijn de Maasai? Een inkijk in cultuur en tradities"
-                class="w-full h-48 object-cover object-center"
-                width="400"
-                height="192"
-                loading="lazy"
-                srcset="
-                  img/gallery-3-400w.webp 400w,
-                  img/gallery-3-800w.webp 800w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-              <div class="p-6">
-                <div class="flex items-center text-sm text-gray-500 mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <time datetime="2025-11-01" data-lang-key="blog-date-november"
-                    >1 november 2025</time
-                  >
-                </div>
-                <h3
-                  id="maasai-blog-title"
-                  class="text-xl font-bold text-terracotta mb-3"
-                  data-lang-key="blog-maasai-title"
-                >
-                  Wie zijn de Maasai? Een inkijk in cultuur en tradities
-                </h3>
-                <p class="text-gray-600 mb-4" data-lang-key="blog-maasai-desc">
-                  Ontdek de rijke cultuur en tradities van de Maasai in
-                  Oost-Afrika. Leer over hun dagelijks leven, rituelen, en hoe
-                  zij traditie combineren met moderne uitdagingen.
-                </p>
-
-                <a
-                  href="/blog-maasai.html"
-                  class="text-terracotta font-medium hover:underline inline-flex items-center"
-                  aria-label="Lees meer over de Maasai cultuur en tradities"
-                  data-lang-key="read-more"
-                >
-                  Lees meer
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <!-- Article 1: Small Actions Blog - Oktober 2025) -->
-            <div
-              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
-              role="article"
-              aria-labelledby="small-actions-blog-title"
-            >
-              <img
-                src="img/small-actions-400w-correct.webp"
-                alt="Hoe kleine acties van gewone mensen leiden tot grote verandering"
-                class="w-full h-48 object-cover object-center"
-                width="400"
-                height="192"
-                loading="lazy"
-                srcset="
-                  img/small-actions-400w-correct.webp 400w,
-                  img/small-actions-800w-correct.webp 800w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-              <div class="p-6">
-                <div class="flex items-center text-sm text-gray-500 mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <time datetime="2025-10-01" data-lang-key="blog-date-october"
-                    >1 oktober 2025</time
-                  >
-                </div>
-                <h3
-                  id="small-actions-blog-title"
-                  class="text-xl font-bold text-terracotta mb-3"
-                  data-lang-key="blog-small-actions-title"
-                >
-                  Hoe kleine acties van gewone mensen leiden tot grote
-                  verandering
-                </h3>
-                <p
-                  class="text-gray-600 mb-4"
-                  data-lang-key="blog-small-actions-desc"
-                >
-                  Ontdek hoe kleine bijdragen en acties uitgroeien tot grote
-                  verandering. Van een boom planten tot een euro doneren - elk
-                  gebaar telt.
-                </p>
-
-                <a
-                  href="/blog5.html"
-                  class="text-terracotta font-medium hover:underline inline-flex items-center"
-                  aria-label="Lees meer over kleine acties die grote verandering brengen"
-                  data-lang-key="read-more"
-                >
-                  Lees meer
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <!-- Article 2: Trust Blog (Nieuwste - September 2025) -->
-            <div
-              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
-              role="article"
-              aria-labelledby="trust-blog-title"
-            >
-              <img
-                src="img/transparency-400w.webp"
-                alt="Hoe weet je of een goed doel écht betrouwbaar is?"
-                class="w-full h-48 object-cover object-bottom"
-                width="400"
-                height="192"
-                loading="lazy"
-                srcset="
-                  img/transparency-400w.webp 400w,
-                  img/transparency-800w.webp 800w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-              <div class="p-6">
-                <div class="flex items-center text-sm text-gray-500 mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <time
-                    datetime="2025-09-15"
-                    data-lang-key="blog-date-september"
-                    >15 september 2025</time
-                  >
-                </div>
-                <h3
-                  id="trust-blog-title"
-                  class="text-xl font-bold text-terracotta mb-3"
-                  data-lang-key="blog-trust-title"
-                >
-                  Hoe weet je of een goed doel écht betrouwbaar is?
-                </h3>
-                <p class="text-gray-600 mb-4" data-lang-key="blog-trust-desc">
-                  Praktische tips om betrouwbare goede doelen te herkennen.
-                  Ontdek wat je moet weten over transparantie en impact.
-                </p>
-
-                <a
-                  href="/blog4.html"
-                  class="text-terracotta font-medium hover:underline inline-flex items-center"
-                  aria-label="Lees meer over betrouwbare goede doelen"
-                  data-lang-key="read-more"
-                >
-                  Lees meer
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Article 3: Water Women Blog (Juli 2025) -->
-            <div
-              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
-              role="article"
-              aria-labelledby="water-women-blog-title"
-            >
-              <img
-                src="img/water-vrouwen-1-400w.webp"
-                alt="Water halen: een vrouwenzaak — en waarom dat ertoe doet bij de Maasai"
-                class="w-full h-48 object-cover"
-                width="400"
-                height="144"
-                loading="lazy"
-                srcset="
-                  img/water-vrouwen-1-400w.webp 400w,
-                  img/water-vrouwen-1-800w.webp 800w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-              <div class="p-6">
-                <div class="flex items-center text-sm text-gray-500 mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <time datetime="2025-07-14" data-lang-key="blog-date-july"
-                    >14 juli 2025</time
-                  >
-                </div>
-                <h3
-                  id="water-women-blog-title"
-                  class="text-xl font-bold text-terracotta mb-3"
-                  data-lang-key="blog-water-women-title"
-                >
-                  Water halen: een vrouwenzaak — en waarom dat ertoe doet bij de
-                  Maasai
-                </h3>
-                <p
-                  class="text-gray-600 mb-4"
-                  data-lang-key="blog-water-women-desc"
-                >
-                  Ontdek hoe ons waterproject het leven van Maasai-vrouwen
-                  verandert door water dichterbij te brengen.
-                </p>
-
-                <a
-                  href="/blog3.html"
-                  class="text-terracotta font-medium hover:underline inline-flex items-center"
-                  aria-label="Lees meer over Water halen: een vrouwenzaak"
-                  data-lang-key="read-more"
-                >
-                  Lees meer
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Article 4: Water is Life Blog (Juni 2025) -->
-            <div
-              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
-              role="article"
-              aria-labelledby="water-life-blog-title"
-            >
-              <img
-                src="img/kidswater2-400w.webp"
-                alt="Water is leven — maar niet voor iedereen"
-                class="w-full h-48 object-cover"
-                width="400"
-                height="192"
-                loading="lazy"
-                srcset="
-                  img/kidswater2-400w.webp 400w,
-                  img/kidswater2-800w.webp 800w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-              <div class="p-6">
-                <div class="flex items-center text-sm text-gray-500 mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <time datetime="2025-06-01" data-lang-key="blog-date-june"
-                    >1 juni 2025</time
-                  >
-                </div>
-                <h3
-                  id="water-life-blog-title"
-                  class="text-xl font-bold text-terracotta mb-3"
-                  data-lang-key="water-is-life-title"
-                >
-                  Water is leven — maar niet voor iedereen
-                </h3>
-                <p
-                  class="text-gray-600 mb-4"
-                  data-lang-key="water-is-life-desc"
-                >
-                  De impact van armoede en uitsluiting. Lees hoe de Maasai
-                  gemeenschap dagelijks vecht voor schoon water.
-                </p>
-
-                <a
-                  href="/blog2.html"
-                  class="text-terracotta font-medium hover:underline inline-flex items-center"
-                  aria-label="Lees meer over Water is leven — maar niet voor iedereen"
-                  data-lang-key="read-more"
-                >
-                  Lees meer
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Article 5: Drought Blog (Mei 2025) -->
-            <div
-              class="bg-light rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:scale-105"
-              role="article"
-              aria-labelledby="drought-article-title"
-            >
-              <img
-                src="img/kidswater-400w.webp"
-                alt="Extreme droogte in Tanzania treft Maasai gemeenschap zwaar"
-                class="w-full h-48 object-cover"
-                width="400"
-                height="192"
-                loading="lazy"
-                srcset="
-                  img/kidswater-400w.webp 400w,
-                  img/kidswater-800w.webp 800w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-              <div class="p-6">
-                <div class="flex items-center text-sm text-gray-500 mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <time datetime="2025-05-01" data-lang-key="blog-date-may"
-                    >1 mei 2025</time
-                  >
-                </div>
-                <h3
-                  id="drought-article-title"
-                  class="text-xl font-bold text-terracotta mb-3"
-                  data-lang-key="drought-blog-title"
-                >
-                  Extreme droogte in Tanzania treft Maasai gemeenschap zwaar
-                </h3>
-                <p class="text-gray-600 mb-4" data-lang-key="drought-blog-desc">
-                  De aanhoudende droogte in Tanzania heeft ernstige gevolgen
-                  voor de Maasai gemeenschap in Loolera.
-                </p>
-
-                <a
-                  href="/blog.html"
-                  class="text-terracotta font-medium hover:underline inline-flex items-center"
-                  aria-label="Lees meer over de extreme droogte in Tanzania"
-                  data-lang-key="read-more"
-                >
-                  Lees meer
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </div>
+            <span class="hidden md:inline">|</span>
+            <div class="hidden md:flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"
+                />
+              </svg>
+              <span data-lang-key="blog-category-culture">Cultuur</span>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Blog Article Container -->
+      <div class="max-w-4xl mx-auto px-6 mb-12">
+        <!-- Main Article Block -->
+        <article class="bg-white p-10 rounded-lg shadow-md">
+          <!-- Introduction -->
+          <p
+            class="text-xl font-medium text-dark leading-relaxed mb-8"
+            data-lang-key="blog-maasai-woman-intro"
+          >
+            Wanneer de zon langzaam boven de savanne verschijnt, begint de dag
+            voor een Maasai-vrouw. Haar leven speelt zich af in het ritme van de
+            natuur, omringd door familie, vee en tradities die van generatie op
+            generatie worden doorgegeven. Het is een leven vol
+            verantwoordelijkheden, maar ook van kracht, verbondenheid en trots.
+          </p>
+
+          <!-- First image -->
+          <figure class="my-8 flex flex-col items-center">
+            <img
+              src="/img/maasai-woman-morning-600w.webp"
+              alt="Maasai vrouw in de vroege ochtend"
+              class="w-full md:w-1/2 h-auto rounded-lg shadow-md"
+              loading="lazy"
+              srcset="
+                /img/maasai-woman-morning-300w.webp   300w,
+                /img/maasai-woman-morning-600w.webp   600w,
+                /img/maasai-woman-morning-1200w.webp 1200w
+              "
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+            <figcaption
+              class="text-sm text-gray-500 mt-2 text-center"
+              data-lang-key="maasai-woman-morning-caption"
+            >
+              Een Maasai-vrouw begint haar dag vroeg met de voorbereidingen voor
+              haar gezin
+            </figcaption>
+          </figure>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="blog-early-morning-title"
+          >
+            Vroege ochtend: zorgen voor het gezin
+          </h2>
+          <p class="mb-6" data-lang-key="blog-early-morning-text">
+            Nog voor het eerste licht is de vrouw al wakker. Ze maakt vuur om
+            thee en pap te bereiden, vaak van maïsmeel. Terwijl de kinderen
+            wakker worden, zorgt ze ervoor dat er eten klaarstaat en dat
+            iedereen zich voorbereidt op de dag. Het huishouden draait in
+            belangrijke mate op haar inzet en energie.
+          </p>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="blog-morning-tasks-title"
+          >
+            Ochtendtaken: water en brandhout
+          </h2>
+          <p class="mb-6" data-lang-key="blog-morning-tasks-text">
+            Na het ontbijt vertrekt ze samen met andere vrouwen of dochters naar
+            de waterbron. Soms is dat dichtbij, maar vaak is het een tocht van
+            kilometers. Ze draagt zware jerrycans op haar rug of hoofd. Daarna
+            verzamelt ze brandhout, onmisbaar om te koken. Deze taken nemen veel
+            tijd in beslag, maar zijn essentieel voor het dagelijks leven.
+          </p>
+
+          <!-- Second image -->
+          <figure class="my-8 flex flex-col items-center">
+            <img
+              src="/img/maasai-woman-water-600w.webp"
+              alt="Maasai vrouwen dragen water"
+              class="w-full md:w-1/2 h-auto rounded-lg shadow-md"
+              loading="lazy"
+              srcset="
+                /img/maasai-woman-water-300w.webp   300w,
+                /img/maasai-woman-water-600w.webp   600w,
+                /img/maasai-woman-water-1200w.webp 1200w
+              "
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+            <figcaption
+              class="text-sm text-gray-500 mt-2 text-center"
+              data-lang-key="maasai-woman-water-caption"
+            >
+              Water halen is een dagelijkse taak die vaak kilometers lopen
+              vereist
+            </figcaption>
+          </figure>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="blog-afternoon-title"
+          >
+            Middag: bouwen, koken en zorgen
+          </h2>
+          <p class="mb-6" data-lang-key="blog-afternoon-text">
+            Terug in het dorp neemt ze de volgende taken op zich: het koken van
+            de maaltijd, het onderhouden van het huis (een traditionele hut,
+            enkaji, gemaakt van klei, hout en mest) en het zorgen voor jonge
+            kinderen. Vaak dragen Maasai-vrouwen hun baby's op de rug, zodat ze
+            hun werk kunnen combineren met de zorg voor hun kinderen.
+          </p>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="blog-social-role-title"
+          >
+            Sociale rol: samen sterker
+          </h2>
+          <p class="mb-6" data-lang-key="blog-social-role-text">
+            Naast de huishoudelijke en zorgtaken speelt de vrouw ook een sociale
+            rol. Ze ontmoet andere vrouwen, helpt bij het maken van kralenwerk
+            en bespreekt gemeenschapszaken. Het maken van sieraden is niet
+            alleen een creatieve uitlaatklep, maar ook een belangrijke bron van
+            inkomen en culturele trots.
+          </p>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="blog-evening-title"
+          >
+            Avond: het gezin bijeen
+          </h2>
+          <p class="mb-6" data-lang-key="blog-evening-text">
+            Wanneer de zon zakt en de koeien door de mannen en jongens terug
+            naar de kraal worden gebracht, bereidt de vrouw de avondmaaltijd.
+            Het gezin verzamelt zich rond het vuur, verhalen worden verteld en
+            liederen gezongen. Het is een moment van verbinding en rust na een
+            dag vol inspanning.
+          </p>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="blog-strength-resilience-title"
+          >
+            Kracht en veerkracht
+          </h2>
+          <p class="mb-6" data-lang-key="blog-strength-resilience-text">
+            Het leven van een Maasai-vrouw is veeleisend, maar toont enorme
+            veerkracht. Haar inzet houdt het gezin en de gemeenschap draaiende.
+            Ze draagt zorg, creëert en verbindt – en vormt daarmee het kloppende
+            hart van de Maasai-cultuur.
+          </p>
+
+          <p class="mb-6" data-lang-key="blog-ashe-cooperation">
+            Wil je weten hoe Ashe Foundation samen met Maasai-vrouwen werkt aan
+            betere toegang tot water en nieuwe kansen? Lees verder op onze
+            website en ontdek hoe kleine veranderingen grote impact hebben in
+            hun dagelijks leven.
+          </p>
+
+          <!-- Call to Action -->
+          <div
+            class="bg-terracotta bg-opacity-10 rounded-lg p-8 my-10 text-center"
+          >
+            <h3
+              class="text-2xl font-bold text-terracotta mb-4"
+              data-lang-key="blog-cta-women-title"
+            >
+              Steun Maasai-vrouwen
+            </h3>
+            <p class="mb-6" data-lang-key="blog-cta-women-text">
+              Help ons bij het verbeteren van toegang tot water en het creëren
+              van nieuwe kansen voor Maasai-vrouwen. Uw steun maakt direct
+              verschil in hun dagelijks leven.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="/doneer"
+                class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                data-lang-key="support-women"
+                aria-label="Steun Maasai-vrouwen"
+              >
+                Steun Maasai-vrouwen
+              </a>
+
+              <a
+                href="/projecten"
+                class="py-2 px-5 bg-gray hover:bg-gray-600 text-white rounded-full font-medium transition-colors"
+                data-lang-key="view-projects"
+                aria-label="Bekijk onze projecten"
+              >
+                Bekijk onze projecten
+              </a>
+            </div>
+          </div>
+
+          <!-- Share Section -->
+          <div class="border-t border-b border-gray-200 py-6 my-10">
+            <h3
+              class="text-lg font-semibold mb-4"
+              data-lang-key="share-article"
+            >
+              Deel dit artikel
+            </h3>
+            <div class="flex flex-wrap gap-5">
+              <!-- LinkedIn Share Link -->
+
+              <a
+                href="https://www.linkedin.com/sharing/share-offsite/?url=https://ashefoundation.nl/blog-maasai-woman.html"
+                class="text-terracotta hover:text-terracotta-dark flex items-center transition"
+                aria-label="Deel op LinkedIn"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Facebook Share Link -->
+
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://ashefoundation.nl/blog-maasai-woman.html"
+                class="text-terracotta hover:text-terracotta-dark flex items-center transition"
+                aria-label="Deel op Facebook"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Twitter/X Share Link -->
+
+              <a
+                href="https://twitter.com/intent/tweet?url=https://ashefoundation.nl/blog-maasai-woman.html&text=Een dag in het leven van een Maasai-vrouw"
+                class="text-terracotta hover:text-terracotta-dark flex items-center transition"
+                aria-label="Deel op Twitter/X"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
     </main>
 
     <!-- FOOTER -->

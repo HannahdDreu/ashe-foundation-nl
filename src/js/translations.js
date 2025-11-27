@@ -1049,7 +1049,8 @@ export const translations = {
       "Wanneer je door de uitgestrekte savannes van Kenia en Tanzania reist, is de kans groot dat je de kleurrijke kleding en gracieuze houding van de Maasai tegenkomt. Deze gemeenschap, bekend om hun rode shuka's (doeken) en indrukwekkende sprongen tijdens traditionele dansen, behoort tot de meest herkenbare volkeren van Afrika. Maar achter het iconische beeld schuilt een rijke cultuur en eeuwenoude tradities die het waard zijn om beter te leren kennen.",
     "maasai-traditional-caption":
       "Maasai in traditionele rode shuka's, een symbool van kracht en bescherming",
-    "maasai-cattle-caption": "Vee is centraal in het leven van de Maasai, zowel economisch als cultureel",
+    "maasai-cattle-caption":
+      "Vee is centraal in het leven van de Maasai, zowel economisch als cultureel",
     "blog-origin-habitat-title": "Oorsprong en leefgebied",
     "blog-origin-habitat-text":
       "De Maasai behoren tot de Nilotische volkeren en wonen voornamelijk in Zuid-Kenia en Noord-Tanzania. Hun bestaan is nauw verweven met het land: de uitgestrekte vlaktes, waar hun vee graast, vormen het hart van hun cultuur. Voor de Maasai zijn koeien niet alleen een bron van voedsel, maar ook een symbool van rijkdom, status en verbondenheid.",
@@ -1083,6 +1084,42 @@ export const translations = {
     "share-article": "Deel dit artikel",
     "blog-maasai-desc":
       "Ontdek de rijke cultuur en tradities van de Maasai in Oost-Afrika. Leer over hun dagelijks leven, rituelen, en hoe zij traditie combineren met moderne uitdagingen.",
+
+    //Blog 7
+    "blog-maasai-woman-title": "Een dag in het leven van een Maasai-vrouw",
+    "blog-date-december": "1 december 2025",
+    "blog-maasai-woman-intro":
+      "Wanneer de zon langzaam boven de savanne verschijnt, begint de dag voor een Maasai-vrouw. Haar leven speelt zich af in het ritme van de natuur, omringd door familie, vee en tradities die van generatie op generatie worden doorgegeven. Het is een leven vol verantwoordelijkheden, maar ook van kracht, verbondenheid en trots.",
+    "blog-early-morning-title": "Vroege ochtend: zorgen voor het gezin",
+    "blog-early-morning-text":
+      "Nog voor het eerste licht is de vrouw al wakker. Ze maakt vuur om thee en pap te bereiden, vaak van maïsmeel. Terwijl de kinderen wakker worden, zorgt ze ervoor dat er eten klaarstaat en dat iedereen zich voorbereidt op de dag. Het huishouden draait in belangrijke mate op haar inzet en energie.",
+    "blog-morning-tasks-title": "Ochtendtaken: water en brandhout",
+    "blog-morning-tasks-text":
+      "Na het ontbijt vertrekt ze samen met andere vrouwen of dochters naar de waterbron. Soms is dat dichtbij, maar vaak is het een tocht van kilometers. Ze draagt zware jerrycans op haar rug of hoofd. Daarna verzamelt ze brandhout, onmisbaar om te koken. Deze taken nemen veel tijd in beslag, maar zijn essentieel voor het dagelijks leven.",
+    "blog-afternoon-title": "Middag: bouwen, koken en zorgen",
+    "blog-afternoon-text":
+      "Terug in het dorp neemt ze de volgende taken op zich: het koken van de maaltijd, het onderhouden van het huis (een traditionele hut, enkaji, gemaakt van klei, hout en mest) en het zorgen voor jonge kinderen. Vaak dragen Maasai-vrouwen hun baby's op de rug, zodat ze hun werk kunnen combineren met de zorg voor hun kinderen.",
+    "blog-social-role-title": "Sociale rol: samen sterker",
+    "blog-social-role-text":
+      "Naast de huishoudelijke en zorgtaken speelt de vrouw ook een sociale rol. Ze ontmoet andere vrouwen, helpt bij het maken van kralenwerk en bespreekt gemeenschapszaken. Het maken van sieraden is niet alleen een creatieve uitlaatklep, maar ook een belangrijke bron van inkomen en culturele trots.",
+    "blog-evening-title": "Avond: het gezin bijeen",
+    "blog-evening-text":
+      "Wanneer de zon zakt en de koeien door de mannen en jongens terug naar de kraal worden gebracht, bereidt de vrouw de avondmaaltijd. Het gezin verzamelt zich rond het vuur, verhalen worden verteld en liederen gezongen. Het is een moment van verbinding en rust na een dag vol inspanning.",
+    "blog-strength-resilience-title": "Kracht en veerkracht",
+    "blog-strength-resilience-text":
+      "Het leven van een Maasai-vrouw is veeleisend, maar toont enorme veerkracht. Haar inzet houdt het gezin en de gemeenschap draaiende. Ze draagt zorg, creëert en verbindt – en vormt daarmee het kloppende hart van de Maasai-cultuur.",
+    "blog-ashe-cooperation":
+      "Wil je weten hoe Ashe Foundation samen met Maasai-vrouwen werkt aan betere toegang tot water en nieuwe kansen? Lees verder op onze website en ontdek hoe kleine veranderingen grote impact hebben in hun dagelijks leven.",
+    "blog-cta-women-title": "Steun Maasai-vrouwen",
+    "blog-cta-women-text":
+      "Help ons bij het verbeteren van toegang tot water en het creëren van nieuwe kansen voor Maasai-vrouwen. Uw steun maakt direct verschil in hun dagelijks leven.",
+    "support-women": "Steun Maasai-vrouwen",
+    "maasai-woman-morning-caption":
+      "Een Maasai-vrouw begint haar dag vroeg met de voorbereidingen voor haar gezin",
+    "maasai-woman-water-caption":
+      "Water halen is een dagelijkse taak die vaak kilometers lopen vereist",
+    "blog-maasai-woman-excerpt":
+      "Volg een Maasai-vrouw door haar dag en ontdek haar kracht, veerkracht en centrale rol in het gezin en de gemeenschap.",
 
     // Artikelen pagina vertalingen
     "articles-title": "Nieuws & Actualiteiten",
@@ -2200,7 +2237,8 @@ export const translations = {
       "When you travel through the vast savannas of Kenya and Tanzania, you're likely to encounter the colorful clothing and graceful posture of the Maasai. This community, known for their red shukas (cloths) and impressive jumps during traditional dances, is among the most recognizable peoples of Africa. But behind the iconic image lies a rich culture and ancient traditions worth getting to know better.",
     "maasai-traditional-caption":
       "Maasai in traditional red shukas, a symbol of strength and protection",
-    "maasai-cattle-caption": "Cattle are central to the lives of the Maasai, both economically and culturally",
+    "maasai-cattle-caption":
+      "Cattle are central to the lives of the Maasai, both economically and culturally",
     "blog-origin-habitat-title": "Origin and habitat",
     "blog-origin-habitat-text":
       "The Maasai belong to the Nilotic peoples and live mainly in southern Kenya and northern Tanzania. Their existence is closely intertwined with the land: the vast plains where their cattle graze form the heart of their culture. For the Maasai, cows are not just a source of food, but also a symbol of wealth, status, and connection.",
@@ -2234,6 +2272,43 @@ export const translations = {
     "share-article": "Share this article",
     "blog-maasai-desc":
       "Discover the rich culture and traditions of the Maasai in East Africa. Learn about their daily life, rituals, and how they combine tradition with modern challenges.",
+
+    //Blog 7
+
+    "blog-maasai-woman-title": "A Day in the Life of a Maasai Woman",
+    "blog-date-december": "December 1, 2025",
+    "blog-maasai-woman-intro":
+      "When the sun slowly rises over the savanna, the day begins for a Maasai woman. Her life unfolds in the rhythm of nature, surrounded by family, livestock, and traditions passed down from generation to generation. It is a life full of responsibilities, but also of strength, connection, and pride.",
+    "blog-early-morning-title": "Early Morning: Caring for the Family",
+    "blog-early-morning-text":
+      "Before the first light, the woman is already awake. She makes fire to prepare tea and porridge, often made from maize meal. As the children wake up, she ensures food is ready and everyone prepares for the day. The household largely depends on her dedication and energy.",
+    "blog-morning-tasks-title": "Morning Tasks: Water and Firewood",
+    "blog-morning-tasks-text":
+      "After breakfast, she departs with other women or daughters to the water source. Sometimes it's nearby, but often it's a journey of kilometers. She carries heavy jerry cans on her back or head. Then she collects firewood, essential for cooking. These tasks take much time but are vital for daily life.",
+    "blog-afternoon-title": "Afternoon: Building, Cooking, and Caring",
+    "blog-afternoon-text":
+      "Back in the village, she takes on the next tasks: cooking meals, maintaining the house (a traditional hut, enkaji, made of clay, wood, and dung), and caring for young children. Maasai women often carry their babies on their backs, allowing them to combine work with childcare.",
+    "blog-social-role-title": "Social Role: Stronger Together",
+    "blog-social-role-text":
+      "Besides household and care duties, the woman plays a social role. She meets other women, helps make beadwork, and discusses community matters. Making jewelry is not only a creative outlet but also an important source of income and cultural pride.",
+    "blog-evening-title": "Evening: Family Gathering",
+    "blog-evening-text":
+      "When the sun sets and the cattle are brought back to the kraal by men and boys, the woman prepares the evening meal. The family gathers around the fire, stories are told and songs sung. It's a moment of connection and rest after a day full of effort.",
+    "blog-strength-resilience-title": "Strength and Resilience",
+    "blog-strength-resilience-text":
+      "The life of a Maasai woman is demanding but shows enormous resilience. Her dedication keeps the family and community running. She provides care, creates, and connects – forming the beating heart of Maasai culture.",
+    "blog-ashe-cooperation":
+      "Want to know how Ashe Foundation works with Maasai women to improve access to water and create new opportunities? Read more on our website and discover how small changes have great impact in their daily lives.",
+    "blog-cta-women-title": "Support Maasai Women",
+    "blog-cta-women-text":
+      "Help us improve access to water and create new opportunities for Maasai women. Your support makes a direct difference in their daily lives.",
+    "support-women": "Support Maasai Women",
+    "maasai-woman-morning-caption":
+      "A Maasai woman starts her day early with preparations for her family",
+    "maasai-woman-water-caption":
+      "Fetching water is a daily task that often requires walking kilometers",
+    "blog-maasai-woman-excerpt":
+      "Follow a Maasai woman through her day and discover her strength, resilience, and central role in family and community.",
 
     // Articles page vertalingen
     "articles-title": "News & Updates",
