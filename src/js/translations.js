@@ -9,6 +9,7 @@ export const translations = {
     "nav-projects": "Projecten",
     "nav-contact": "Contact",
     "nav-donate": "Doneer",
+    "nav-actueel":"Actueel",
 
     // Footer
     "footer-about":
@@ -1210,6 +1211,7 @@ export const translations = {
     "nav-projects": "Projects",
     "nav-contact": "Contact",
     "nav-donate": "Donate",
+    "nav-actueel":"News",
 
     // Footer
     "footer-about":
