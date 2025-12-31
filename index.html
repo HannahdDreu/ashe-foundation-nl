@@ -834,7 +834,70 @@
           </header>
 
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Story 1: Mama Pendo -->
+            <!-- Story 1: Christmas Meal Project (NEWEST) -->
+            <div class="story-card" aria-labelledby="christmas-meal-title">
+              <div class="overflow-hidden relative">
+                <img
+                  src="img/christmas-meal-poster-400w.webp"
+                  alt="Maasai families delen een kerstmaaltijd"
+                  class="w-full h-60 object-cover object-top"
+                  width="600"
+                  height="240"
+                  loading="lazy"
+                  srcset="
+                    img/christmas-meal-poster-400w.webp 400w,
+                    img/christmas-meal-poster-800w.webp 800w
+                  "
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6"
+                  aria-hidden="true"
+                ></div>
+              </div>
+              <div class="p-6">
+                <h3
+                  id="christmas-meal-title"
+                  class="text-xl font-bold text-terracotta mb-3"
+                  data-lang-key="christmas-meal-project"
+                >
+                  Geef een Maaltijd, Deel Kerst
+                </h3>
+                <p
+                  class="text-dark mb-4"
+                  data-lang-key="christmas-meal-project-description"
+                >
+                  Tijdens de kerstperiode hebben we meer dan 5.000 Maasai
+                  voorzien van een voedzame maaltijd. Voor families zonder
+                  voedselzekerheid bracht dit project niet alleen eten, maar ook
+                  hoop en verbondenheid.
+                </p>
+
+                <a
+                  href="/christmas"
+                  class="inline-flex items-center text-green font-medium hover:underline"
+                  data-lang-key="read-more"
+                  aria-label="Lees meer over het kerstproject"
+                >
+                  Lees meer
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 ml-1"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Story 2: Mama Pendo -->
             <div class="story-card" aria-labelledby="mama-pendo-title">
               <div class="overflow-hidden relative">
                 <img
@@ -893,7 +956,8 @@
                 </a>
               </div>
             </div>
-            <!-- Story 2: Naserian -->
+
+            <!-- Story 3: Naserian -->
             <div class="story-card" aria-labelledby="naserian-title">
               <div class="overflow-hidden relative">
                 <img
@@ -933,66 +997,6 @@
                   class="inline-flex items-center text-green font-medium hover:underline"
                   data-lang-key="read-more"
                   aria-label="Lees meer over Naserian's winkel"
-                >
-                  Lees meer
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 ml-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Story 3: Neema -->
-            <div class="story-card" aria-labelledby="neema-title">
-              <div class="overflow-hidden relative">
-                <img
-                  src="img/Neema-banner-600w.webp"
-                  alt="Neema met haar kinderen bij haar nieuwe winkel"
-                  class="w-full h-60 object-cover"
-                  width="600"
-                  height="240"
-                  loading="lazy"
-                  srcset="
-                    img/Neema-banner-600w.webp   600w,
-                    img/Neema-banner-1200w.webp 1200w
-                  "
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6"
-                  aria-hidden="true"
-                ></div>
-              </div>
-              <div class="p-6">
-                <h3
-                  id="neema-title"
-                  class="text-xl font-bold text-terracotta mb-3"
-                  data-lang-key="neema-title"
-                >
-                  Neema's Droom
-                </h3>
-                <p class="text-dark mb-4" data-lang-key="neema-text">
-                  Als alleenstaande moeder van vijf kinderen droomde Neema van
-                  een eigen winkel. Met hulp van de Ashe Foundation is die droom
-                  werkelijkheid geworden, waarmee haar gezin nu zelfstandig kan
-                  leven.
-                </p>
-
-                <a
-                  href="/neema"
-                  class="inline-flex items-center text-green font-medium hover:underline"
-                  data-lang-key="read-more"
-                  aria-label="Lees meer over Neema's droom"
                 >
                   Lees meer
                   <svg
