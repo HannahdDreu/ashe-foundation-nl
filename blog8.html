@@ -1,32 +1,36 @@
 <!doctype html>
 <html lang="nl">
   <head>
-    <title>Water halen: een vrouwenzaak - ASHE Foundation Blog</title>
+    <title>
+      Waarom geven gelukkig maakt: de psychologie van helpen - ASHE Foundation
+      Blog
+    </title>
 
     <!-- Meta tags for SEO -->
     <meta
       name="description"
-      content="Bij de Maasai-gemeenschappen zijn de rollen tussen mannen en vrouwen duidelijk verdeeld. Ontdek hoe ons waterproject levens verandert."
+      content="Ontdek waarom geven gelukkig maakt. Leer over de psychologie achter helpen en hoe kleine bijdragen een groot verschil maken voor jezelf én anderen."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
 
-    <!-- Open Graph tags for social sharing - Updated -->
+    <!-- Open Graph tags for social sharing -->
     <meta
       property="og:title"
-      content="Water halen: een vrouwenzaak – en waarom dat ertoe doet bij de Maasai"
+      content="Waarom geven gelukkig maakt: de psychologie van helpen — ASHE Foundation"
     />
     <meta
       property="og:description"
-      content="Ontdek hoe het waterproject van ASHE Foundation het leven van Maasai-vrouwen in Tanzania verandert door toegang tot schoon water dichterbij te brengen."
+      content="Ontdek waarom mensen die geven zich gelukkiger voelen en hoe kleine bijdragen een groot verschil maken."
     />
     <meta
       property="og:image"
-      content="https://ashefoundation.nl/img/water-vrouwen-hero.webp"
+      content="https://ashefoundation.nl/img/giving-happy-banner.webp"
     />
-    <meta property="og:url" content="https://ashefoundation.nl/blog3" />
-    <meta property="og:type" content="article" />
-    <meta property="og:site_name" content="ASHE Foundation" />
+    <meta
+      property="og:url"
+      content="https://ashefoundation.nl/blog-giving-happy"
+    />
 
     <!-- LinkedIn specific tags -->
     <meta property="linkedin:owner" content="ASHE Foundation" />
@@ -36,14 +40,14 @@
     <link
       rel="alternate"
       hreflang="nl"
-      href="https://ashefoundation.nl/blog3"
+      href="https://ashefoundation.nl/blog-giving-happy"
     />
     <link
       rel="alternate"
       hreflang="en"
-      href="https://ashefoundation.net/blog3"
+      href="https://ashefoundation.net/blog-giving-happy"
     />
-    <link rel="canonical" href="https://ashefoundation.nl/blog3" />
+    <link rel="canonical" href="https://ashefoundation.nl/blog-giving-happy" />
 
     <!-- Common preloads -->
     <link rel="preload" href="/img/flag-us.webp" as="image" type="image/webp" />
@@ -59,13 +63,39 @@
     <!-- Page-specific preloads -->
     <link
       rel="preload"
-      href="/img/hero-image.webp"
+      href="/img/maasai-hero.webp"
       as="image"
       type="image/webp"
       fetchpriority="high"
     />
 
-    <!-- Critical CSS - Keep minimal essential styles for above-the-fold content -->
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Een dag in het leven van een Maasai-vrouw",
+        "datePublished": "2025-12-01",
+        "dateModified": "2025-12-01",
+        "author": {
+          "@type": "Organization",
+          "name": "ASHE Foundation"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "ASHE Foundation",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://ashefoundation.nl/img/Untitleddesign.svg"
+          }
+        },
+        "description": "Ontdek het dagelijks leven van een Maasai-vrouw: van vroege ochtend tot late avond. Een kijkje in haar verantwoordelijkheden, kracht en verbondenheid met familie en gemeenschap.",
+        "image": "https://ashefoundation.nl/img/maasai-woman-banner.webp",
+        "keywords": "Maasai-vrouw, dagelijks leven, Tanzania, Kenia, water, familie, gemeenschap, tradities, kralenwerk, veerkracht"
+      }
+    </script>
+
+    <!-- Critical CSS -->
     <style>
       /* Optimized Critical CSS for waterproject.html */
       body {
@@ -143,31 +173,6 @@
         }
       }
     </style>
-
-    <!-- Structured Data JSON-LD -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": "Water halen: een vrouwenzaak – en waarom dat ertoe doet bij de Maasai",
-        "datePublished": "2025-07-14",
-        "dateModified": "2025-07-14",
-        "author": {
-          "@type": "Organization",
-          "name": "ASHE Foundation"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "ASHE Foundation",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://ashefoundation.nl/img/Untitleddesign.svg"
-          }
-        },
-        "description": "Bij de Maasai-gemeenschappen zijn de rollen tussen mannen en vrouwen duidelijk verdeeld. Ontdek hoe ons waterproject levens verandert.",
-        "image": "https://ashefoundation.nl/img/water-vrouwen-hero.webp"
-      }
-    </script>
 
     <!-- Favicon -->
     <link
@@ -557,31 +562,19 @@
     </header>
 
     <!-- MAIN -->
-    <main id="main-content" class="bg-terracotta bg-opacity-10 py-12">
+    <main id="main-content" class="min-h-screen">
       <!-- Hero Section -->
       <section
-        class="hero-section py-20 md:py-28 relative mb-12"
-        aria-labelledby="blog-title"
+        class="hero-section relative h-96 flex items-center justify-center"
       >
-        <!-- Background image container -->
-        <div class="absolute inset-0">
-          <picture>
-            <source
-              media="(max-width: 640px)"
-              srcset="/img/water-project-banner-640w.webp"
-            />
-            <source
-              media="(max-width: 1024px)"
-              srcset="/img/water-project-banner-1024w.webp"
-            />
-            <img
-              src="/img/water-project-banner-1920w.webp"
-              alt="Water project banner"
-              class="w-full h-full object-cover"
-              loading="eager"
-            />
-          </picture>
-          <!-- Gradient overlay -->
+        <div
+          class="absolute inset-0"
+          style="
+            background-image: url(&quot;/img/giving-happy-hero.webp&quot;);
+            background-size: cover;
+            background-position: center;
+          "
+        >
           <div
             class="absolute inset-0"
             style="
@@ -594,15 +587,13 @@
           ></div>
         </div>
 
-        <!-- Content -->
         <div class="max-w-5xl mx-auto px-6 relative z-10">
           <h1
             id="blog-title"
             class="text-4xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto leading-tight text-white"
-            data-lang-key="blog-water-women-title"
+            data-lang-key="blog-giving-happy-title"
           >
-            Water halen: een vrouwenzaak – en waarom dat ertoe doet bij de
-            Maasai
+            Waarom geven gelukkig maakt: de psychologie van helpen
           </h1>
           <div class="flex items-center space-x-4 text-white text-sm mt-4">
             <div class="flex items-center">
@@ -621,8 +612,8 @@
                   d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                 />
               </svg>
-              <time datetime="2025-07-14" data-lang-key="blog-date-july"
-                >14 juli 2025</time
+              <time datetime="2026-01-01" data-lang-key="blog-date-january"
+                >1 januari 2026</time
               >
             </div>
             <span class="hidden md:inline">|</span>
@@ -642,128 +633,102 @@
                   d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"
                 />
               </svg>
-              <span data-lang-key="blog-category-gender">Waterproject</span>
+              <span data-lang-key="blog-category-psychology">Psychologie</span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Blog Article Container -->
+      <!-- Blog Article -->
       <div class="max-w-4xl mx-auto px-6 mb-12">
-        <!-- Main Article Block -->
         <article class="bg-white p-10 rounded-lg shadow-md">
-          <!-- Introduction -->
           <p
             class="text-xl font-medium text-dark leading-relaxed mb-8"
-            data-lang-key="blog-water-women-intro"
+            data-lang-key="blog-giving-happy-intro"
           >
-            Bij de Maasai-gemeenschappen in Tanzania zijn de rollen tussen
-            mannen en vrouwen al generaties lang duidelijk verdeeld. In deze
-            traditioneel georganiseerde samenleving houden mannen zich bezig met
-            het hoeden van vee en het nemen van belangrijke beslissingen binnen
-            de gemeenschap. Vrouwen zijn verantwoordelijk voor het huishouden,
-            de zorg voor de kinderen én – cruciaal – het halen van water.
-          </p>
-
-          <!-- First image -->
-          <figure class="my-8 flex flex-col items-center">
-            <img
-              src="/img/water-vrouwen-1-600w.webp"
-              alt="Maasai vrouw met ezels bij waterpunt in Tanzania"
-              class="w-full md:w-3/4 h-auto rounded-lg shadow-md"
-              loading="lazy"
-              srcset="
-                /img/water-vrouwen-1-300w.webp   300w,
-                /img/water-vrouwen-1-600w.webp   600w,
-                /img/water-vrouwen-1-1200w.webp 1200w
-              "
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 75vw, 66vw"
-            />
-            <figcaption
-              class="text-sm text-gray-500 mt-2 text-center"
-              data-lang-key="water-women-caption1"
-            >
-              Een Maasai vrouw bereidt zich voor op de dagelijkse tocht om water
-              te halen met behulp van ezels
-            </figcaption>
-          </figure>
-
-          <p class="mb-6" data-lang-key="blog-water-women-paragraph1">
-            Water halen is geen kleine taak. Vrouwen en meisjes leggen vaak
-            kilometerslange tochten af naar de dichtstbijzijnde waterbron.
-            Daarbij maken ze gebruik van ezels om de zware jerrycans met water
-            te vervoeren. Hoewel de ezels het fysieke werk deels verlichten,
-            blijft het een tijdrovende en vermoeiende taak, vaak onder de
-            brandende zon en in onveilige omstandigheden.
+            Geven is iets bijzonders. Het lijkt misschien een simpel gebaar — je
+            doneert een klein bedrag, je helpt iemand verder — maar achter die
+            actie schuilt een fascinerend psychologisch proces. In verschillende
+            onderzoeken blijkt dat mensen die geven, vrijwilligerswerk doen of
+            een goed doel steunen, zich gelukkiger voelen. Maar waarom werkt dit
+            zo?
           </p>
 
           <h2
             class="text-2xl font-bold text-terracotta mb-4 mt-10"
-            data-lang-key="blog-water-project-changes-title"
+            data-lang-key="blog-reward-system-title"
           >
-            Een waterproject dat levens verandert
+            Het beloningssysteem in onze hersenen
           </h2>
-          <p class="mb-6" data-lang-key="blog-water-project-changes-text">
-            Juist daarom is het waterproject dat we samen met de
-            Maasai-gemeenschappen in Loolera en Lembapuli uitvoeren zo
-            belangrijk. Het doel is simpel, maar de impact is groot: door
-            toegang tot veilig en schoon water dichter bij huis te brengen,
-            verandert er veel. Voor de hele gemeenschap – maar in het bijzonder
-            voor vrouwen en meisjes.
-          </p>
-
-          <!-- Second image -->
-          <figure class="my-8 flex flex-col items-center">
-            <img
-              src="/img/water-vrouwen-2-600w.webp"
-              alt="Maasai vrouwen en kinderen verzamelen water met gele jerrycans"
-              class="w-full md:w-3/4 h-auto rounded-lg shadow-md"
-              loading="lazy"
-              srcset="
-                /img/water-vrouwen-2-300w.webp   300w,
-                /img/water-vrouwen-2-600w.webp   600w,
-                /img/water-vrouwen-2-1200w.webp 1200w
-              "
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 75vw, 66vw"
-            />
-            <figcaption
-              class="text-sm text-gray-500 mt-2 text-center"
-              data-lang-key="water-women-caption2"
-            >
-              De gemeenschap komt samen bij het waterpunt - een cruciale plek
-              voor sociale interactie en overleving
-            </figcaption>
-          </figure>
-
-          <p class="mb-6" data-lang-key="blog-water-women-paragraph2">
-            Doordat zij nu niet meer uren hoeven te lopen naar een verre bron,
-            wordt hun dagelijkse last letterlijk verlicht. Het verhoogt hun
-            veiligheid – ze hoeven niet meer door afgelegen gebieden te trekken
-            – en het geeft hen meer tijd voor andere belangrijke activiteiten:
-            school, werk, rust.
+          <p class="mb-6" data-lang-key="blog-reward-system-text">
+            Ten eerste activeert geven het beloningssysteem in onze hersenen.
+            Wanneer we iemand helpen, komt dopamine vrij: dezelfde stof die
+            vrijkomt wanneer we iets bereiken waar we trots op zijn. Daardoor
+            ervaren we een gevoel van voldoening, warmte en positiviteit. Je
+            hoeft daar geen enorme gift voor te doen; zelfs kleine bijdragen,
+            zoals statiegeld doneren of een bericht delen, activeren dit effect.
           </p>
 
           <h2
             class="text-2xl font-bold text-terracotta mb-4 mt-10"
-            data-lang-key="blog-from-burden-to-strength-title"
+            data-lang-key="blog-connection-title"
           >
-            Van last naar kracht
+            Verbinding met anderen
           </h2>
-          <p class="mb-6" data-lang-key="blog-from-burden-to-strength-text1">
-            Dit project doet meer dan alleen water brengen. Het raakt aan
-            diepgewortelde structuren en geeft vrouwen ruimte en kracht om een
-            actievere rol te spelen binnen hun gemeenschap. Het biedt kansen
-            voor meisjes om langer op school te blijven en voor vrouwen om
-            economische activiteiten op te starten.
+          <p class="mb-6" data-lang-key="blog-connection-text">
+            Daarnaast versterkt geven ons gevoel van verbinding. Mensen zijn
+            sociale wezens. We floreren wanneer we deel uitmaken van iets dat
+            groter is dan onszelf. Door een stichting te steunen, voel je je
+            onderdeel van een groter geheel — een beweging richting verbetering.
+            Je draagt bij aan een oplossing en staat niet aan de zijlijn.
           </p>
 
-          <p class="mb-6" data-lang-key="blog-from-burden-to-strength-text2">
-            In een gemeenschap waar water halen lang als vanzelfsprekend tot het
-            takenpakket van vrouwen behoorde, verandert dit project de
-            verhoudingen langzaam maar zeker. Water is leven, zeggen ze in
-            Afrika. En dat klopt. Maar voor de Maasai-vrouwen betekent water ook
-            vrijheid, veiligheid en een stap richting gelijkwaardigheid.
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="blog-meaning-title"
+          >
+            Betekenis vinden
+          </h2>
+          <p class="mb-6" data-lang-key="blog-meaning-text">
+            Ten slotte brengt geven betekenis. In een wereld die snel, druk en
+            soms overweldigend is, zoeken mensen steeds vaker naar manieren om
+            zin te ervaren. Helpen geeft dat gevoel bijna onmiddellijk. Het
+            verbindt wie je bent met wat je belangrijk vindt.
           </p>
+
+          <h2
+            class="text-2xl font-bold text-terracotta mb-4 mt-10"
+            data-lang-key="blog-ashe-experience-title"
+          >
+            Onze ervaring bij Ashe Foundation
+          </h2>
+          <p class="mb-6" data-lang-key="blog-ashe-experience-text">
+            Bij Ashe Foundation zien we dit dagelijks gebeuren. Donateurs
+            vertellen ons vaak dat zij zelf net zo veel winnen als de
+            gemeenschappen die we steunen. Niet financieel, maar in waarde,
+            verbinding en voldoening.
+          </p>
+
+          <figure class="my-8 flex flex-col items-center">
+            <img
+              src="/img/giving-happy-600w.webp"
+              alt="Het geluk van geven"
+              class="w-full md:w-1/2 h-auto rounded-lg shadow-md"
+              loading="lazy"
+              srcset="
+                /img/giving-happy-300w.webp   300w,
+                /img/giving-happy-600w.webp   600w,
+                /img/giving-happy-1200w.webp 1200w
+              "
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+            <figcaption
+              class="text-sm text-gray-500 mt-2 text-center"
+              data-lang-key="giving-happy-caption"
+            >
+              Geven activeert het beloningssysteem in onze hersenen
+            </figcaption>
+          </figure>
 
           <!-- Call to Action -->
           <div
@@ -771,22 +736,30 @@
           >
             <h3
               class="text-2xl font-bold text-terracotta mb-4"
-              data-lang-key="support-water-project"
+              data-lang-key="blog-cta-give-title"
             >
-              Steun het waterproject
+              Ervaar het zelf
             </h3>
-            <p class="mb-6" data-lang-key="support-water-project-text">
-              Help ons meer waterpunten aan te leggen en geef Maasai-vrouwen hun
-              tijd, veiligheid en waardigheid terug.
+            <p class="mb-6" data-lang-key="blog-cta-give-text">
+              Ontdek hoe goed het voelt om bij te dragen aan een betere wereld.
+              Elke bijdrage, hoe klein ook, maakt verschil.
             </p>
-            <a
-              href="/doneer"
-              class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
-              data-lang-key="nav-donate"
-              aria-label="Doneer nu aan de ASHE Foundation"
-            >
-              Doneer
-            </a>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="/doneer"
+                class="py-2 px-5 bg-terracotta hover:bg-terracotta-light text-white rounded-full font-medium transition-colors"
+                data-lang-key="donate-now"
+              >
+                Doneer nu
+              </a>
+              <a
+                href="/projecten"
+                class="py-2 px-5 bg-gray hover:bg-gray-600 text-white rounded-full font-medium transition-colors"
+                data-lang-key="view-projects"
+              >
+                Bekijk onze projecten
+              </a>
+            </div>
           </div>
 
           <!-- Share Section -->
@@ -798,9 +771,8 @@
               Deel dit artikel
             </h3>
             <div class="flex flex-wrap gap-5">
-              <!-- LinkedIn Share Link -->
               <a
-                href="https://www.linkedin.com/sharing/share-offsite/?url=https://ashefoundation.nl/blog3.html"
+                href="https://www.linkedin.com/sharing/share-offsite/?url=https://ashefoundation.nl/blog8.html"
                 class="text-terracotta hover:text-terracotta-dark flex items-center transition"
                 aria-label="Deel op LinkedIn"
                 target="_blank"
@@ -817,10 +789,8 @@
                   />
                 </svg>
               </a>
-
-              <!-- Facebook Share Link -->
               <a
-                href="https://www.facebook.com/sharer/sharer.php?u=https://ashefoundation.nl/blog3.html"
+                href="https://www.facebook.com/sharer/sharer.php?u=https://ashefoundation.nl/blog8.html"
                 class="text-terracotta hover:text-terracotta-dark flex items-center transition"
                 aria-label="Deel op Facebook"
                 target="_blank"
@@ -837,10 +807,8 @@
                   />
                 </svg>
               </a>
-
-              <!-- Twitter/X Share Link -->
               <a
-                href="https://twitter.com/intent/tweet?url=https://ashefoundation.nl/blog3.html&text=Water halen: een vrouwenzaak – en waarom dat ertoe doet bij de Maasai"
+                href="https://twitter.com/intent/tweet?url=https://ashefoundation.nl/blog8.html&text=Waarom geven gelukkig maakt"
                 class="text-terracotta hover:text-terracotta-dark flex items-center transition"
                 aria-label="Deel op Twitter/X"
                 target="_blank"
@@ -857,225 +825,10 @@
                   />
                 </svg>
               </a>
-
-              <!-- Instagram Copy to Clipboard Button -->
-              <button
-                id="instagram-copy"
-                class="text-terracotta hover:text-terracotta-dark flex items-center transition group relative"
-                aria-label="Kopieer tekst voor Instagram post"
-                title="Klik om tekst te kopiëren voor Instagram"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 mr-2"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                  />
-                </svg>
-
-                <!-- Updated Tooltip -->
-                <span
-                  id="instagram-tooltip"
-                  class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-dark text-white px-3 py-1 rounded text-sm opacity-0 transition-opacity duration-300 pointer-events-none whitespace-nowrap"
-                  data-lang-key="instagram-copied-tooltip"
-                >
-                  Tekst gekopieerd! Plak in Instagram
-                </span>
-              </button>
             </div>
-
-            <!-- Hidden textarea for Instagram copy -->
-            <textarea id="instagram-content" class="sr-only" aria-hidden="true">
-💧 Water halen: een vrouwenzaak – en waarom dat ertoe doet bij de Maasai
-
-Voor Maasai-vrouwen betekent water niet alleen leven, maar ook vrijheid, veiligheid en een stap richting gelijkwaardigheid.
-
-Steun ons waterproject en geef vrouwen hun tijd terug!
-
-Lees meer op: https://ashefoundation.nl/blog3.html
-
-#Tanzania #Maasai #WomenEmpowerment #CleanWater #GenderEquality #WaterIsLife #ASHE #NGO #WomensRights</textarea
-            >
-          </div>
-
-          <!-- Back to Projects Button -->
-          <div class="text-center">
-            <a
-              href="/artikelen.html"
-              class="inline-block py-3 px-6 bg-terracotta hover:bg-terracotta-light text-white font-medium rounded-full transition-colors duration-300 shadow-md"
-            >
-              <span class="inline-flex items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 mr-2"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span data-lang-key="back-to-projects"
-                  >Terug naar nieuwsberichen</span
-                >
-              </span>
-            </a>
           </div>
         </article>
       </div>
-
-      <!-- Newsletter Section (from contact page with terracotta background updated) -->
-      <section class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2
-            id="newsletter-title"
-            class="text-3xl font-bold text-terracotta mb-8 text-center"
-            data-lang-key="newsletter-title"
-          >
-            Blijf op de hoogte
-          </h2>
-          <div class="bg-terracotta bg-opacity-10 rounded-lg p-8 shadow-md">
-            <div class="grid md:grid-cols-2 gap-10 items-center">
-              <div>
-                <h3
-                  id="newsletter-subtitle"
-                  class="text-xl font-bold text-terracotta mb-4"
-                  data-lang-key="newsletter-subtitle"
-                >
-                  Schrijf je in voor onze nieuwsbrief
-                </h3>
-                <p
-                  class="mb-4 text-dark"
-                  data-lang-key="newsletter-description"
-                >
-                  Ontvang updates over onze projecten, campagnes en acties
-                  direct in je inbox. We houden je graag op de hoogte van onze
-                  voortgang en impact.
-                </p>
-              </div>
-
-              <div>
-                <form
-                  id="newsletter-form"
-                  class="space-y-4"
-                  aria-labelledby="newsletter-subtitle"
-                >
-                  <div
-                    id="newsletter-result"
-                    class="hidden rounded-md p-4 mb-4"
-                  >
-                    <p class="text-sm font-medium"></p>
-                  </div>
-                  <div>
-                    <label
-                      for="email"
-                      class="block text-dark font-medium mb-1"
-                      data-lang-key="newsletter-email"
-                    >
-                      E-mailadres
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      class="w-full px-4 py-3 border border-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-terracotta"
-                      placeholder="jouw@email.nl"
-                      data-lang-key="newsletter-email-placeholder"
-                      required
-                      aria-required="true"
-                      autocomplete="email"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      for="name"
-                      class="block text-dark font-medium mb-1"
-                      data-lang-key="newsletter-name"
-                    >
-                      Naam
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      class="w-full px-4 py-3 border border-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-terracotta"
-                      placeholder="Jouw naam"
-                      data-lang-key="newsletter-name-placeholder"
-                      required
-                      aria-required="true"
-                      autocomplete="name"
-                    />
-                  </div>
-
-                  <div class="flex items-start mt-4">
-                    <input
-                      type="checkbox"
-                      id="newsletter-consent"
-                      name="consent"
-                      class="mt-1 mr-3"
-                      required
-                      aria-required="true"
-                      aria-describedby="consent-description"
-                    />
-                    <label
-                      for="newsletter-consent"
-                      id="consent-description"
-                      class="text-sm text-dark"
-                      data-lang-key="newsletter-consent"
-                    >
-                      Ik geef toestemming aan ASHE Foundation om mijn gegevens
-                      te gebruiken voor het versturen van nieuwsbrieven en
-                      informatie over campagnes en activiteiten. Voor meer
-                      informatie zie onze
-                      <a
-                        href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:33bcb8b3-4519-4414-8fd7-a56de689d200"
-                        class="text-terracotta hover:underline"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="Bekijk onze privacyverklaring (opent in nieuw tabblad)"
-                      >
-                        privacyverklaring </a
-                      >.
-                    </label>
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="w-full bg-terracotta hover:bg-terracotta-light text-white font-semibold py-3 px-6 rounded-lg shadow-md transition transform hover:scale-105"
-                    data-lang-key="newsletter-submit"
-                    aria-label="Schrijf je in voor onze nieuwsbrief"
-                  >
-                    Inschrijven
-                  </button>
-                </form>
-
-                <p
-                  class="text-xs text-gray-600 mt-4"
-                  data-lang-key="newsletter-privacy-notice"
-                >
-                  Je kunt je op elk moment uitschrijven via de link onderaan
-                  elke e-mail. Door je aan te melden stem je ermee in dat wij je
-                  persoonlijke gegevens verwerken zoals beschreven in onze
-                  <a
-                    href="/privacystatement.html"
-                    class="text-terracotta hover:underline"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Bekijk onze privacyverklaring (opent in nieuw tabblad)"
-                    >privacyverklaring</a
-                  >.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <!-- FOOTER -->

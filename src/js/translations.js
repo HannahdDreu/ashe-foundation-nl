@@ -9,7 +9,7 @@ export const translations = {
     "nav-projects": "Projecten",
     "nav-contact": "Contact",
     "nav-donate": "Doneer",
-    "nav-actueel":"Actueel",
+    "nav-actueel": "Actueel",
 
     // Footer
     "footer-about":
@@ -59,7 +59,7 @@ export const translations = {
     "impact-title": "Onze impact",
     "impact-subtitle":
       "Samen met onze donateurs maken we een meetbaar verschil voor de Maasai gemeenschap in Tanzania",
-    "impact-stat1": "Schoolgang van de kinderen",
+    "impact-stat1": "Maasai aan een kerstmaaltijd geholpen",
     "impact-stat2": "Gezinsleden direct meegeholpen uit de armoede",
     "impact-stat3": "Groei in zelfredzaamheid",
 
@@ -115,6 +115,9 @@ export const translations = {
     "water-project-graph": "Project Water infographic",
     "graph-explanation":
       "Deze infographic toont de huidige status van het waterproject en de benodigde financiering om het doel te bereiken.",
+    "christmas-meal-project": "Geef een Maaltijd, Deel Kerst",
+    "christmas-meal-project-description":
+      "Tijdens de kerstperiode hebben we meer dan 5.000 Maasai voorzien van een voedzame maaltijd. Voor families zonder voedselzekerheid bracht dit project niet alleen eten, maar ook hoop en verbondenheid.",
 
     // Donation section
     "donate-title": "Steun ons werk",
@@ -511,7 +514,7 @@ export const translations = {
     "gallery-img3-caption": "De levensmiddelen in de winkel",
 
     // Impact section
-    "impact-title": "De impact van het project",
+    "impact-title1": "De impact van het project",
     "impact-1-title": "Mensen uit de armoede geholpen",
     "impact-1-text":
       "Neema kan nu haar gezin van vijf kinderen onderhouden en hen naar school sturen.",
@@ -1200,6 +1203,65 @@ export const translations = {
     "blog-cta-small-actions-text":
       "Elke bijdrage, groot of klein, is onderdeel van een groter verhaal van verandering. Samen maken we het verschil voor de Maasai gemeenschap in Tanzania.",
     "start-your-impact": "Begin met jouw impact",
+
+    // Christmas Project Page
+    "christmas-meal-title": "Geef een Maaltijd, Deel Kerst",
+    "christmas-meal-subtitle":
+      "Meer dan 5.000 Maasai geholpen tijdens de kerstperiode",
+    "christmas-success-title": "Met trots kijken wij terug op dit kerstproject",
+    "christmas-success-intro":
+      "Dankzij de steun van onze donateurs hebben wij tijdens de kerstperiode meer dan 5.000 Maasai kunnen voorzien van een voedzame maaltijd.",
+    "christmas-success-food-security":
+      "Voor veel Maasai-families is voedselzekerheid geen vanzelfsprekendheid. Juist tijdens de kerstperiode, waarin samen delen centraal staat, hebben wij ervoor gezorgd dat gezinnen die nauwelijks of geen eten hadden, toch een maaltijd konden delen. Dit bracht niet alleen eten, maar ook hoop, waardigheid en verbondenheid.",
+    "christmas-thanks-title": "Dank aan onze donateurs",
+    "christmas-thanks-text":
+      "Dit succes was niet mogelijk geweest zonder onze donateurs. Jullie betrokkenheid en vrijgevigheid hebben een directe en tastbare impact gehad op duizenden levens. Namens ASHE Foundation en de Maasai-gemeenschappen: hartelijk dank.",
+    "christmas-impact-title": "De impact van het kerstproject",
+    "christmas-impact-1-title": "Maasai families geholpen",
+    "christmas-impact-1-text":
+      "Meer dan 5.000 mensen kregen een voedzame kerstmaaltijd",
+    "christmas-impact-2-title": "Lokaal georganiseerd",
+    "christmas-impact-2-text":
+      "Volledig uitgevoerd samen met de lokale gemeenschap",
+    "christmas-impact-3-title": "Onvergetelijke kerst",
+    "christmas-impact-3-text":
+      "Een kerst vol hoop, waardigheid en verbondenheid",
+    "christmas-help-continue-title": "Help ons blijven helpen",
+    "christmas-help-continue-text":
+      "Helaas blijft de nood hoog om de positie van de Maasai te versterken. Wil je ons helpen om ons werk voort te zetten? Word donateur of steun een van onze projecten en help ons om samen blijvend verschil te maken.",
+    "christmas-together-text":
+      "Samen zorgen we ervoor dat niemand wordt vergeten.",
+    "christmas-donate-button": "Word donateur",
+    "christmas-view-projects": "Bekijk onze projecten",
+    "christmas-back-to-projects": "Terug naar alle projecten",
+
+    //BLOG 8
+    "blog-date-january": "1 januari 2026",
+    "blog-giving-happy-title":
+      "Waarom geven gelukkig maakt: de psychologie van helpen",
+    "blog-giving-happy-excerpt":
+      "Ontdek waarom mensen die geven zich gelukkiger voelen en hoe kleine bijdragen een groot verschil maken voor jezelf én anderen.",
+    "blog-giving-happy-intro":
+      "Geven is iets bijzonders. Het lijkt misschien een simpel gebaar — je doneert een klein bedrag, je helpt iemand verder — maar achter die actie schuilt een fascinerend psychologisch proces. In verschillende onderzoeken blijkt dat mensen die geven, vrijwilligerswerk doen of een goed doel steunen, zich gelukkiger voelen. Maar waarom werkt dit zo?",
+    "blog-reward-system-title": "Het beloningssysteem in onze hersenen",
+    "blog-reward-system-text":
+      "Ten eerste activeert geven het beloningssysteem in onze hersenen. Wanneer we iemand helpen, komt dopamine vrij: dezelfde stof die vrijkomt wanneer we iets bereiken waar we trots op zijn. Daardoor ervaren we een gevoel van voldoening, warmte en positiviteit. Je hoeft daar geen enorme gift voor te doen; zelfs kleine bijdragen, zoals statiegeld doneren of een bericht delen, activeren dit effect.",
+    "blog-connection-title": "Verbinding met anderen",
+    "blog-connection-text":
+      "Daarnaast versterkt geven ons gevoel van verbinding. Mensen zijn sociale wezens. We floreren wanneer we deel uitmaken van iets dat groter is dan onszelf. Door een stichting te steunen, voel je je onderdeel van een groter geheel — een beweging richting verbetering. Je draagt bij aan een oplossing en staat niet aan de zijlijn.",
+    "blog-meaning-title": "Betekenis vinden",
+    "blog-meaning-text":
+      "Ten slotte brengt geven betekenis. In een wereld die snel, druk en soms overweldigend is, zoeken mensen steeds vaker naar manieren om zin te ervaren. Helpen geeft dat gevoel bijna onmiddellijk. Het verbindt wie je bent met wat je belangrijk vindt.",
+    "blog-ashe-experience-title": "Onze ervaring bij Ashe Foundation",
+    "blog-ashe-experience-text":
+      "Bij Ashe Foundation zien we dit dagelijks gebeuren. Donateurs vertellen ons vaak dat zij zelf net zo veel winnen als de gemeenschappen die we steunen. Niet financieel, maar in waarde, verbinding en voldoening.",
+    "blog-cta-give-title": "Ervaar het zelf",
+    "blog-cta-give-text":
+      "Ontdek hoe goed het voelt om bij te dragen aan een betere wereld. Elke bijdrage, hoe klein ook, maakt verschil.",
+    "blog-category-psychology": "Psychologie",
+    "donate-now": "Doneer nu",
+    "giving-happy-caption":
+      "Geven activeert het beloningssysteem in onze hersenen",
   },
 
   en: {
@@ -1211,7 +1273,7 @@ export const translations = {
     "nav-projects": "Projects",
     "nav-contact": "Contact",
     "nav-donate": "Donate",
-    "nav-actueel":"News",
+    "nav-actueel": "News",
 
     // Footer
     "footer-about":
@@ -1261,7 +1323,7 @@ export const translations = {
     "impact-title": "Our impact",
     "impact-subtitle":
       "Together with our donors, we make a measurable difference for the Maasai community in Tanzania",
-    "impact-stat1": "Children's schooling",
+    "impact-stat1": "Maasai helped with a Christmas meal",
     "impact-stat2": "Family members lifted out of poverty",
     "impact-stat3": "Increase in self-sufficiency",
 
@@ -1316,6 +1378,9 @@ export const translations = {
     "water-project-graph": "Water Project Infographic",
     "graph-explanation":
       "This infographic shows the current status of the water project and the required funding to reach the goal.",
+    "christmas-meal-project": "Give a Meal, Share Christmas",
+    "christmas-meal-project-description":
+      "During the Christmas period, we provided more than 5,000 Maasai with a nutritious meal. For families without food security, this project brought not only food, but also hope and connection.",
 
     // Donation section
     "donate-title": "Support our work",
@@ -1615,7 +1680,6 @@ export const translations = {
       "Your contribution makes a direct difference for the Maasai community in Tanzania",
 
     // Naserian page specific
-    // Naserian page specific translations with unique keys
     "naserian-story-title": "Naserian's Story",
     "naserian-story-subtitle":
       "How a small shop gives a family new opportunities",
@@ -1709,7 +1773,7 @@ export const translations = {
     "gallery-img3-caption": "The groceries in the shop",
 
     // Impact section
-    "impact-title": "The impact of the project",
+    "impact-title1": "The impact of the project",
     "impact-1-title": "People helped out of poverty",
     "impact-1-text":
       "Neema can now support her family of five children and send them to school.",
@@ -2393,6 +2457,63 @@ export const translations = {
     "blog-cta-small-actions-text":
       "Every contribution, big or small, is part of a bigger story of change. Together we make the difference for the Maasai community in Tanzania.",
     "start-your-impact": "Start your impact",
+
+    // Christmas Project Page
+    "christmas-meal-title": "Give a Meal, Share Christmas",
+    "christmas-meal-subtitle":
+      "Over 5,000 Maasai helped during the Christmas season",
+    "christmas-success-title": "We proudly look back on this Christmas project",
+    "christmas-success-intro":
+      "Thanks to the support of our donors, we were able to provide over 5,000 Maasai with a nutritious meal during the Christmas season.",
+    "christmas-success-food-security":
+      "For many Maasai families, food security is not a given. Especially during the Christmas season, when sharing is central, we ensured that families who had little or no food could still share a meal. This brought not only food, but also hope, dignity, and connection.",
+    "christmas-thanks-title": "Thanks to our donors",
+    "christmas-thanks-text":
+      "This success would not have been possible without our donors. Your commitment and generosity have had a direct and tangible impact on thousands of lives. On behalf of ASHE Foundation and the Maasai communities: thank you.",
+    "christmas-impact-title": "The impact of the Christmas project",
+    "christmas-impact-1-title": "Maasai families helped",
+    "christmas-impact-1-text":
+      "Over 5,000 people received a nutritious Christmas meal",
+    "christmas-impact-2-title": "Locally organized",
+    "christmas-impact-2-text":
+      "Fully implemented together with the local community",
+    "christmas-impact-3-title": "Unforgettable Christmas",
+    "christmas-impact-3-text":
+      "A Christmas full of hope, dignity, and connection",
+    "christmas-help-continue-title": "Help us continue helping",
+    "christmas-help-continue-text":
+      "Unfortunately, the need remains high to strengthen the position of the Maasai. Would you like to help us continue our work? Become a donor or support one of our projects and help us make a lasting difference together.",
+    "christmas-together-text": "Together we ensure that no one is forgotten.",
+    "christmas-donate-button": "Become a donor",
+    "christmas-view-projects": "View our projects",
+    "christmas-back-to-projects": "Back to all projects",
+
+    //BLOG 8
+    "blog-date-january": "January 1, 2026",
+    "blog-giving-happy-title":
+      "Why giving makes you happy: the psychology of helping",
+    "blog-giving-happy-excerpt":
+      "Discover why people who give feel happier and how small contributions make a big difference for yourself and others.",
+    "blog-giving-happy-intro":
+      "Giving is something special. It may seem like a simple gesture — you donate a small amount, you help someone — but behind that action lies a fascinating psychological process. Various studies show that people who give, volunteer, or support a charity feel happier. But why does this work?",
+    "blog-reward-system-title": "The reward system in our brain",
+    "blog-reward-system-text":
+      "First, giving activates the reward system in our brain. When we help someone, dopamine is released: the same substance that is released when we achieve something we're proud of. This gives us a feeling of satisfaction, warmth, and positivity. You don't need to make a huge gift; even small contributions, like donating bottle deposits or sharing a message, activate this effect.",
+    "blog-connection-title": "Connection with others",
+    "blog-connection-text":
+      "Additionally, giving strengthens our sense of connection. Humans are social beings. We thrive when we are part of something bigger than ourselves. By supporting a foundation, you feel part of a larger whole — a movement toward improvement. You contribute to a solution rather than standing on the sidelines.",
+    "blog-meaning-title": "Finding meaning",
+    "blog-meaning-text":
+      "Finally, giving brings meaning. In a world that is fast, busy, and sometimes overwhelming, people increasingly seek ways to experience purpose. Helping provides that feeling almost immediately. It connects who you are with what you find important.",
+    "blog-ashe-experience-title": "Our experience at Ashe Foundation",
+    "blog-ashe-experience-text":
+      "At Ashe Foundation, we see this happen daily. Donors often tell us that they gain just as much as the communities we support. Not financially, but in value, connection, and fulfillment.",
+    "blog-cta-give-title": "Experience it yourself",
+    "blog-cta-give-text":
+      "Discover how good it feels to contribute to a better world. Every contribution, no matter how small, makes a difference.",
+    "blog-category-psychology": "Psychology",
+    "donate-now": "Donate now",
+    "giving-happy-caption": "Giving activates the reward system in our brain",
   },
 };
 
